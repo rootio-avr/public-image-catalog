@@ -1,6 +1,6 @@
 # Root Curated rabbitmq
 
-Root-curated rabbitmq images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [rabbitmq](https://hub.docker.com/_/rabbitmq).
+Root-curated rabbitmq images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [rabbitmq-exporter](https://hub.docker.com/_/rabbitmq-exporter).
 
 ## Why Root Curated Images?
 Root-curated images offer:
@@ -31,7 +31,7 @@ Detailed license compliance information can be found at [root.io/trust-center](h
 The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/feature/license/debian/rabbitmq/).
 
 ## Usage Information
-For detailed examples and usage instructions, see the official Docker rabbitmq documentation [here](https://hub.docker.com/_/rabbitmq).
+For detailed examples and usage instructions, see the official Docker rabbitmq-exporter documentation [here](https://hub.docker.com/_/rabbitmq-exporter).
 
 ## Support and Feedback
 We welcome your feedback! Please direct all questions, feedback, or issues to [support@root.io](mailto:support@root.io).
