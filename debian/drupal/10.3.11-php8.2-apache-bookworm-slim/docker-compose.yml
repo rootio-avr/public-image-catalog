@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+  drupal:
+    image: drupal:test
+    container_name: drupal
+    ports:
+      - "8080:80"
+    environment:
+      DRUPAL_DB_HOST: db
+      DRUPAL_DB_PORT: 5432
+      DRUPAL_DB_NAME: drupal
+      DRUPAL_DB_USER: drupal
+      DRUPAL_DB_PASSWORD: drupal
+    depends_on:
+      - db
+    volumes:
+      - drupal-new-data:/var/www/html
+    restart: always
+
+  db:
+    image: postgres:15
+    container_name: drupal_db
+    environment:
+      POSTGRES_DB: drupal
+      POSTGRES_USER: drupal
+      POSTGRES_PASSWORD: drupal
+    volumes:
+      - db-new-data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  drupal-new-data:
+  db-new-data:
