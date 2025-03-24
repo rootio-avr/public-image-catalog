@@ -1,6 +1,6 @@
 # Root Curated node
 
-Root-curated node images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [node](https://hub.docker.com/_/node).
+Root-curated node images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [prom/node-exporter](https://hub.docker.com/r/prom/node-exporter).
 
 ## Why Root Curated Images?
 Root-curated images offer:
@@ -31,7 +31,7 @@ Detailed license compliance information can be found at [root.io/trust-center](h
 The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/feature/license/debian/node/).
 
 ## Usage Information
-For detailed examples and usage instructions, see the official Docker node documentation [here](https://hub.docker.com/_/node).
+For detailed examples and usage instructions, see the official Docker prom/node-exporter documentation [here](https://hub.docker.com/r/prom/node-exporter).
 
 ## Support and Feedback
 We welcome your feedback! Please direct all questions, feedback, or issues to [support@root.io](mailto:support@root.io).
