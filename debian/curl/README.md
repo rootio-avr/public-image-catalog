@@ -18,7 +18,6 @@ Root-curated images offer:
 ## Licenses and Compliance Obligations
 All licence information can be found for individual tags [here](https://github.com/rootio-avr/public-image-catalog/tree/feature/license/debian/curl/).
 
-
 Root obligations:
 - Clearly identify and attribute included software
 - Provide appropriate license compliance information
