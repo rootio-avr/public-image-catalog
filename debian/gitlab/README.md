@@ -1,6 +1,6 @@
 # Root Curated gitlab
 
-Root-curated gitlab images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/glab](https://hub.docker.com/r/gitlab/glab).
+Root-curated gitlab images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/gitlab-performance-tool](https://hub.docker.com/r/gitlab/gitlab-performance-tool).
 
 ## Why Root Curated Images?
 Root-curated images offer:
@@ -31,7 +31,7 @@ Detailed license compliance information can be found at [root.io/trust-center](h
 The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/feature/license/debian/gitlab/).
 
 ## Usage Information
-For detailed examples and usage instructions, see the official Docker gitlab/glab documentation [here](https://hub.docker.com/r/gitlab/glab).
+For detailed examples and usage instructions, see the official Docker gitlab/gitlab-performance-tool documentation [here](https://hub.docker.com/r/gitlab/gitlab-performance-tool).
 
 ## Support and Feedback
 We welcome your feedback! Please direct all questions, feedback, or issues to [support@root.io](mailto:support@root.io).
