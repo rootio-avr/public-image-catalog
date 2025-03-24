@@ -1,0 +1,152 @@
+# Stage 1: Build PHP
+FROM debian:bookworm-slim AS php-builder
+
+# Install build dependencies
+ENV PHPIZE_DEPS \
+    autoconf \
+    dpkg-dev \
+    file \
+    g++ \
+    gcc \
+    libtool \
+    bison \
+    libc-dev \
+    make \
+    pkg-config \
+    re2c
+
+RUN set -eux; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
+        $PHPIZE_DEPS \
+        ca-certificates \
+        curl \
+        xz-utils \
+        apache2-dev \
+        libargon2-dev \
+        libcurl4-openssl-dev \
+        libonig-dev \
+        libreadline-dev \
+        libsodium-dev \
+        libsqlite3-dev \
+        libssl-dev \
+        libxml2-dev \
+        zlib1g-dev \
+        gnupg \
+    ; \
+    mkdir -p /usr/src/php; \
+    rm -rf /var/lib/apt/lists/*
+# Copy the docker-php-ext-* files from the context to the image
+# Copy docker-php-ext-* and docker-php-source from the context to the image
+COPY docker-php-ext-* docker-php-source docker-php-entrypoint /usr/local/bin/
+ENV PHP_INI_DIR /usr/local/etc/php
+ENV PATH="/usr/local/bin:$PATH"
+# Ensure the files are executable
+RUN chmod +x /usr/local/bin/docker-php-ext-* /usr/local/bin/docker-php-source
+ENV PHP_VERSION 8.2.26
+ENV PHP_URL="https://www.php.net/distributions/php-8.2.26.tar.xz" \
+    PHP_SHA256="54747400cb4874288ad41a785e6147e2ff546cceeeb55c23c00c771ac125c6ef"
+
+RUN curl -fsSL "$PHP_URL" -o php.tar.xz; \
+    echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; \
+    tar -xJf php.tar.xz -C /usr/src/php --strip-components=1; \
+    rm php.tar.xz; \
+    cd /usr/src/php; \
+    ./configure \
+        --prefix=/usr/local \
+        --with-config-file-path=/usr/local/etc/php \
+        --with-config-file-scan-dir=/usr/local/etc/php/conf.d \
+        --enable-mbstring \
+        --enable-mysqlnd \
+        --with-password-argon2 \
+        --with-sodium=shared \
+        --with-curl \
+        --with-openssl \
+        --with-readline \
+        --with-zlib \
+        --disable-cgi \
+        --with-apxs2=/usr/bin/apxs \
+        --enable-opcache \
+    ; \
+    make -j "$(nproc)"; \
+    make install; \
+    mkdir -p /usr/local/include/php/modules; \
+    cp -r /usr/src/php/modules/* /usr/local/include/php/modules; \
+    rm -rf /usr/src/php; \
+    mkdir -p /usr/local/etc/php/conf.d;
+
+
+# Stage 2: Final Apache + PHP Runtime
+FROM debian:bookworm-slim
+
+# Install runtime dependencies
+RUN set -eux; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
+        apache2 \
+        libargon2-1 \
+        libsodium23 \
+        libcurl4 \
+        libonig5 \
+        libreadline8 \
+        libsqlite3-0 \
+        libssl3 \
+        libxml2 \
+        zlib1g \
+        ; \
+    rm -rf /var/lib/apt/lists/*
+
+
+# Copy PHP from the builder stage
+COPY --from=php-builder /usr/local /usr/local
+COPY --from=php-builder /usr/lib/apache2/modules/libphp.so /usr/lib/apache2/modules/libphp.so
+
+RUN echo 'LoadModule php_module /usr/lib/apache2/modules/libphp.so' > /etc/apache2/mods-available/php8.2.load && \
+    a2enmod php8.2
+# Disable threaded MPM and enable prefork MPM
+RUN a2dismod mpm_event && a2enmod mpm_prefork
+
+
+# Configure Apache for PHP and Drupal
+RUN set -eux; \
+    a2enmod rewrite php8.2 headers expires; \
+    echo '<FilesMatch ".+\.ph(p[3457]?|tml)$">' > /etc/apache2/conf-available/php.conf; \
+    echo '\tSetHandler application/x-httpd-php' >> /etc/apache2/conf-available/php.conf; \
+    echo '</FilesMatch>' >> /etc/apache2/conf-available/php.conf; \
+    echo '<FilesMatch ".+\.phps$">' >> /etc/apache2/conf-available/php.conf; \
+    echo '\tSetHandler application/x-httpd-php-source' >> /etc/apache2/conf-available/php.conf; \
+    echo '</FilesMatch>' >> /etc/apache2/conf-available/php.conf; \
+    echo '<FilesMatch "^\.ht">' >> /etc/apache2/conf-available/php.conf; \
+    echo '\tRequire all denied' >> /etc/apache2/conf-available/php.conf; \
+    echo '</FilesMatch>' >> /etc/apache2/conf-available/php.conf; \
+    echo '<Directory /var/www/html>' >> /etc/apache2/conf-available/php.conf; \
+    echo '\tAllowOverride All' >> /etc/apache2/conf-available/php.conf; \
+    echo '</Directory>' >> /etc/apache2/conf-available/php.conf; \
+    a2enconf php
+# Add apache2-foreground script
+RUN echo '#!/bin/bash\nexec apachectl -DFOREGROUND' > /usr/local/bin/apache2-foreground && \
+    chmod +x /usr/local/bin/apache2-foreground
+
+
+# Configure PHP extensions
+RUN echo "zend_extension=/usr/local/include/php/modules/opcache.so" > /usr/local/etc/php/conf.d/opcache.ini && \
+    echo "extension=/usr/local/include/php/modules/sodium.so" > /usr/local/etc/php/conf.d/sodium.ini
+  
+
+#     # Add phpinfo script
+# RUN echo '<?php phpinfo(); ?>' > /var/www/html/index.php
+RUN rm -f /var/www/html/index.html
+
+ENTRYPOINT ["docker-php-entrypoint"]
+# https://httpd.apache.org/docs/2.4/stopping.html#gracefulstop
+STOPSIGNAL SIGWINCH
+
+# Set working directory
+WORKDIR /var/www/html
+
+
+# Expose port
+EXPOSE 80
+
+# Set the default command
+CMD ["apache2-foreground"]
