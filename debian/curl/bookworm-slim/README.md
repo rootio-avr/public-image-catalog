@@ -155,7 +155,6 @@ This image includes software under the following licenses:
 - text://BSD-4-clause and IBM-as-is
 - text://IBM-as-is
 
-
 Root obligations:
 - Clearly identify and attribute included software
 - Provide appropriate license compliance information
