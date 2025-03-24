@@ -1,6 +1,6 @@
 # Root Curated grafana
 
-Root-curated grafana images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [grafana/agent](https://hub.docker.com/r/grafana/agent).
+Root-curated grafana images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [grafana/alloy](https://hub.docker.com/r/grafana/alloy).
 
 ## Why Root Curated Images?
 Root-curated images offer:
@@ -31,7 +31,7 @@ Detailed license compliance information can be found at [root.io/trust-center](h
 The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/feature/license/ubuntu/grafana/).
 
 ## Usage Information
-For detailed examples and usage instructions, see the official Docker grafana/agent documentation [here](https://hub.docker.com/r/grafana/agent).
+For detailed examples and usage instructions, see the official Docker grafana/alloy documentation [here](https://hub.docker.com/r/grafana/alloy).
 
 ## Support and Feedback
 We welcome your feedback! Please direct all questions, feedback, or issues to [support@root.io](mailto:support@root.io).
