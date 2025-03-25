@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:55c22211-478f-4eb1-a1c4-159a987b9b57",
+  "serialNumber": "urn:uuid:2300276c-2a8c-4736-a735-0f9adca65aa7",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-24T06:05:09+00:00",
+    "timestamp": "2025-03-25T04:58:33+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "a6af29d7-0d6f-45f6-bdff-7ce1fe67c5bb",
+      "bom-ref": "a3611bb9-8456-4130-8405-efa991a21560",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -50,7 +50,7 @@
   },
   "components": [
     {
-      "bom-ref": "c60aae2e-7475-442d-9892-da800d04e890",
+      "bom-ref": "0494c59f-1981-43a3-9c54-a6fa6730326e",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -8032,13 +8032,7 @@
   ],
   "dependencies": [
     {
-      "ref": "a6af29d7-0d6f-45f6-bdff-7ce1fe67c5bb",
-      "dependsOn": [
-        "c60aae2e-7475-442d-9892-da800d04e890"
-      ]
-    },
-    {
-      "ref": "c60aae2e-7475-442d-9892-da800d04e890",
+      "ref": "0494c59f-1981-43a3-9c54-a6fa6730326e",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
@@ -8146,6 +8140,12 @@
         "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1"
+      ]
+    },
+    {
+      "ref": "a3611bb9-8456-4130-8405-efa991a21560",
+      "dependsOn": [
+        "0494c59f-1981-43a3-9c54-a6fa6730326e"
       ]
     },
     {
@@ -14759,6 +14759,7 @@
         284
       ],
       "description": "The PAM module pam_cap.so of libcap configuration supports group names starting with \u201c@\u201d, during actual parsing, configurations not starting with \u201c@\u201d are incorrectly recognized as group names. This may result in nonintended users being granted an inherited capability set, potentially leading to security risks. Attackers can exploit this vulnerability to achieve local privilege escalation on systems where /etc/security/capability.conf is used to configure user inherited privileges by constructing specific usernames.",
+      "recommendation": "Upgrade libcap2 to version 1:2.66-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-1390"
