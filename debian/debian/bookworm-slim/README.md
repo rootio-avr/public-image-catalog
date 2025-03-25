@@ -121,6 +121,11 @@ This image includes software under the following licenses:
 - public-domain-sha1
 - same-as-rest-of-p11kit
 
+This Docker image may include software licensed under the GNU General Public License v2.0 (GPL-2.0), including variants with exceptions.
+
+In accordance with the license terms, the source code for all GPL-2.0 licensed components is available upon request.
+
+To request the source code, please contact us at [support@root.io](mailto:support@root.io).
 
 Root obligations:
 - Clearly identify and attribute included software

@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:8a28ece5-f855-428b-9731-354100549698",
+  "serialNumber": "urn:uuid:c7090825-1336-4e13-a8ed-0dcfa0be00d7",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-21T05:36:39+00:00",
+    "timestamp": "2025-03-25T04:58:59+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "2950f6dc-bf8d-4960-bc05-e38c9b18e28e",
+      "bom-ref": "82f3459e-c174-4c0d-a695-99d3d0645410",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -38,7 +38,7 @@
   },
   "components": [
     {
-      "bom-ref": "bad751ab-84d2-41ab-b012-5e40965195d9",
+      "bom-ref": "adecb0d0-b06a-4e86-b7f1-374a35b13739",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -7211,13 +7211,13 @@
   ],
   "dependencies": [
     {
-      "ref": "2950f6dc-bf8d-4960-bc05-e38c9b18e28e",
+      "ref": "82f3459e-c174-4c0d-a695-99d3d0645410",
       "dependsOn": [
-        "bad751ab-84d2-41ab-b012-5e40965195d9"
+        "adecb0d0-b06a-4e86-b7f1-374a35b13739"
       ]
     },
     {
-      "ref": "bad751ab-84d2-41ab-b012-5e40965195d9",
+      "ref": "adecb0d0-b06a-4e86-b7f1-374a35b13739",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
@@ -10332,7 +10332,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -10350,7 +10350,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -10492,7 +10492,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
+          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -10504,7 +10504,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -10912,7 +10912,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -11070,7 +11070,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -11131,6 +11131,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -11143,7 +11146,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -11567,7 +11570,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -11582,7 +11585,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -11866,6 +11869,7 @@
         284
       ],
       "description": "The PAM module pam_cap.so of libcap configuration supports group names starting with \u201c@\u201d, during actual parsing, configurations not starting with \u201c@\u201d are incorrectly recognized as group names. This may result in nonintended users being granted an inherited capability set, potentially leading to security risks. Attackers can exploit this vulnerability to achieve local privilege escalation on systems where /etc/security/capability.conf is used to configure user inherited privileges by constructing specific usernames.",
+      "recommendation": "Upgrade libcap2 to version 1:2.66-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-1390"
