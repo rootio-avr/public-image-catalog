@@ -155,7 +155,7 @@ This image includes software under the following licenses:
 - text://BSD-4-clause and IBM-as-is
 - text://IBM-as-is
 
-This Docker image may include software licensed under the GNU General Public License v2.0 (GPL-2.0), including variants with exceptions (e.g., Autoconf, Libtool, Bison).
+This Docker image may include software licensed under the GNU General Public License v2.0 (GPL-2.0), including variants with exceptions.
 
 In accordance with the license terms, the source code for all GPL-2.0 licensed components is available upon request.
 
