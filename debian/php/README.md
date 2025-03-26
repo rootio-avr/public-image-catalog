@@ -3,7 +3,7 @@
 Root-curated php images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [php](https://hub.docker.com/_/php).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/php](https://hub.docker.com/r/rootpublic/php).
+The public Docker image is available on Docker Hub under the repository [rootpublic/php](https://hub.docker.com/r/rootpublic/php).
 
 ## Why Root Curated Images?
 Root-curated images offer:
