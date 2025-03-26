@@ -3,7 +3,7 @@
 Root-curated prometheus images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [prometheus](https://hub.docker.com/_/prometheus).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/prometheus](https://hub.docker.com/r/rootpublic/prometheus).
+The public image can be retrieved from our public docker hub repository [rootpublic/prometheus](https://hub.docker.com/r/rootpublic/prometheus).
 
 ## Why Root Curated Images?
 Root-curated images offer:
