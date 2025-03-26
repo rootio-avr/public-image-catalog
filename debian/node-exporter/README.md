@@ -3,7 +3,7 @@
 Root-curated node-exporter images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [prom/node-exporter](https://hub.docker.com/r/prom/node-exporter).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/node-exporter](https://hub.docker.com/r/rootpublic/node-exporter).
+The public Docker image is available on Docker Hub under the repository [rootpublic/node-exporter](https://hub.docker.com/r/rootpublic/node-exporter).
 
 ## Why Root Curated Images?
 Root-curated images offer:
