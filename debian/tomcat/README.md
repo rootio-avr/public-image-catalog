@@ -3,7 +3,7 @@
 Root-curated tomcat images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [tomcat](https://hub.docker.com/_/tomcat).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/tomcat](https://hub.docker.com/r/rootpublic/tomcat).
+The public Docker image is available on Docker Hub under the repository [rootpublic/tomcat](https://hub.docker.com/r/rootpublic/tomcat).
 
 ## Why Root Curated Images?
 Root-curated images offer:
