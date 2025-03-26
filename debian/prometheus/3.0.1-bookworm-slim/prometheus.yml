@@ -1,0 +1,9 @@
+# Global config
+global:
+  scrape_interval: 15s
+
+# Scrape config for Prometheus itself
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
