@@ -8,14 +8,14 @@ The catalog is structured in the following way:
 ```txt
 root/
 ├── <ecosystem>/
-│   ├── <distribution>/
-│   │   ├── <image>/
+│   ├── <image>/
+│   │   ├── <image tag>/
 │   │   │   ├── LICENSE
 │   │   │   ├── Dockerfile
 │   │   │   ├── README.md
 │   │   │   └── <other files...>
-│   │   └── <other patches...>/
-│   └── <other distributions...>/
+│   │   └── <other tags...>/
+│   └── <other images...>/
 └── <other ecosystems...>
 ```
 
