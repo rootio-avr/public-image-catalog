@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:74bd32d6-caad-4cac-ae78-9c859e8a69eb",
+  "serialNumber": "urn:uuid:3edce403-2b7f-46e3-86bf-4871553b91ba",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:30:23+00:00",
+    "timestamp": "2025-03-26T10:09:01+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "9cb56270-d7f9-443b-8e87-e19a410e027b",
+      "bom-ref": "9e55cc32-653a-452b-ba99-b5cfc508f8f1",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -82,7 +82,7 @@
   },
   "components": [
     {
-      "bom-ref": "196d59dd-a9dd-4fdb-9a72-a0ae4b163f3e",
+      "bom-ref": "8b122cb0-b340-4eb6-b05e-523f5b547af6",
       "type": "application",
       "name": "usr/bin/grafana-agent",
       "properties": [
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "bom-ref": "b9266a30-a656-4da8-9193-a67b7d2b32b5",
+      "bom-ref": "f12a08c5-a3e2-4cfd-89dd-e7ac0ea56a9e",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "24.04",
@@ -20200,20 +20200,20 @@
   ],
   "dependencies": [
     {
-      "ref": "196d59dd-a9dd-4fdb-9a72-a0ae4b163f3e",
+      "ref": "8b122cb0-b340-4eb6-b05e-523f5b547af6",
       "dependsOn": [
         "pkg:golang/github.com/grafana/agent@v0.43.4-WIP"
       ]
     },
     {
-      "ref": "9cb56270-d7f9-443b-8e87-e19a410e027b",
+      "ref": "9e55cc32-653a-452b-ba99-b5cfc508f8f1",
       "dependsOn": [
-        "196d59dd-a9dd-4fdb-9a72-a0ae4b163f3e",
-        "b9266a30-a656-4da8-9193-a67b7d2b32b5"
+        "8b122cb0-b340-4eb6-b05e-523f5b547af6",
+        "f12a08c5-a3e2-4cfd-89dd-e7ac0ea56a9e"
       ]
     },
     {
-      "ref": "b9266a30-a656-4da8-9193-a67b7d2b32b5",
+      "ref": "f12a08c5-a3e2-4cfd-89dd-e7ac0ea56a9e",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04",
         "pkg:deb/ubuntu/base-files@13ubuntu10.1?arch=amd64&distro=ubuntu-24.04",
@@ -24373,7 +24373,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -24434,9 +24434,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -24449,7 +24446,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -24586,9 +24583,6 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-10963"
         },
         {
-          "url": "https://bugzilla.redhat.com/2319212"
-        },
-        {
           "url": "https://bugzilla.redhat.com/2324291"
         },
         {
@@ -24604,7 +24598,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-10244.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -25681,6 +25675,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "azure"
           },
           "severity": "medium"
@@ -25842,6 +25842,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
         {
           "source": {
             "name": "ghsa"
