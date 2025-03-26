@@ -16,7 +16,7 @@ Root-curated images offer:
 - [Learn About Root](https://www.root.io)
 
 ## Licenses and Compliance Obligations
-All licence information can be found for individual tags [here](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/prometheus/).
+All license information can be found for each individual tag.
 
 Root obligations:
 - Clearly identify and attribute included software
