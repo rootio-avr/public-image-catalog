@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:aa8d0400-46e3-4de2-a3c0-993849691e46",
+  "serialNumber": "urn:uuid:e0158d3d-cfc2-41cc-8021-a476fb8048c2",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:29:07+00:00",
+    "timestamp": "2025-03-26T10:07:57+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "0c207d77-5398-4f2e-aa3a-6772493f823a",
+      "bom-ref": "3ea23605-8089-413a-9748-960b13f5c25f",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -70,55 +70,7 @@
   },
   "components": [
     {
-      "bom-ref": "0c4f8859-e937-49a8-b6da-24b92f9b133b",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.8",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "0cfc2e93-6650-46fd-bb30-06b8ff7a1e75",
-      "type": "library",
-      "name": "bundler",
-      "version": "2.6.2",
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:gem/bundler@2.6.2",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/ruby/gems/3.4.0/specifications/default/bundler-2.6.2.gemspec"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:8369260806a4858296198da356ce2290978f0a8cafa44c567863256685ef6e49"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:4131ca0652cf449a74c9b31bf262b6f2c2a3ac33ca8f4e9d51d4d6428f5c2f0a"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gemspec"
-        }
-      ]
-    },
-    {
-      "bom-ref": "2f345c25-18d9-496c-ab5b-00c5788fdf7b",
+      "bom-ref": "4b581bc4-85f5-4533-98c0-aedb088b3631",
       "type": "library",
       "name": "bundler",
       "version": "2.6.2",
@@ -142,6 +94,54 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:6d65010251b892571e9f5939c5428545ff722853716ec81a0ff61b6b59ff9568"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gemspec"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7bcb8de4-b483-4ac0-865c-f727be2392ee",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.8",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e7bedc1a-bd5e-40a3-997c-ece3541b6174",
+      "type": "library",
+      "name": "bundler",
+      "version": "2.6.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/bundler@2.6.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/ruby/gems/3.4.0/specifications/default/bundler-2.6.2.gemspec"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:8369260806a4858296198da356ce2290978f0a8cafa44c567863256685ef6e49"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:4131ca0652cf449a74c9b31bf262b6f2c2a3ac33ca8f4e9d51d4d6428f5c2f0a"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11226,11 +11226,11 @@
   ],
   "dependencies": [
     {
-      "ref": "0c207d77-5398-4f2e-aa3a-6772493f823a",
+      "ref": "3ea23605-8089-413a-9748-960b13f5c25f",
       "dependsOn": [
-        "0c4f8859-e937-49a8-b6da-24b92f9b133b",
-        "0cfc2e93-6650-46fd-bb30-06b8ff7a1e75",
-        "2f345c25-18d9-496c-ab5b-00c5788fdf7b",
+        "4b581bc4-85f5-4533-98c0-aedb088b3631",
+        "7bcb8de4-b483-4ac0-865c-f727be2392ee",
+        "e7bedc1a-bd5e-40a3-997c-ece3541b6174",
         "pkg:gem/abbrev@0.1.2",
         "pkg:gem/activesupport@7.1.3",
         "pkg:gem/addressable@2.8.6",
@@ -11354,7 +11354,11 @@
       ]
     },
     {
-      "ref": "0c4f8859-e937-49a8-b6da-24b92f9b133b",
+      "ref": "4b581bc4-85f5-4533-98c0-aedb088b3631",
+      "dependsOn": []
+    },
+    {
+      "ref": "7bcb8de4-b483-4ac0-865c-f727be2392ee",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
@@ -11451,11 +11455,7 @@
       ]
     },
     {
-      "ref": "0cfc2e93-6650-46fd-bb30-06b8ff7a1e75",
-      "dependsOn": []
-    },
-    {
-      "ref": "2f345c25-18d9-496c-ab5b-00c5788fdf7b",
+      "ref": "e7bedc1a-bd5e-40a3-997c-ece3541b6174",
       "dependsOn": []
     },
     {
@@ -14987,7 +14987,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -15005,7 +15005,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -15147,7 +15147,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -15159,7 +15159,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -15567,7 +15567,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -15725,7 +15725,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -15786,9 +15786,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -15801,7 +15798,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -16338,7 +16335,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -16353,7 +16350,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -16607,6 +16604,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "azure"
           },
           "severity": "medium"
@@ -16814,6 +16817,12 @@
         },
         {
           "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.3,
@@ -16921,6 +16930,12 @@
         },
         {
           "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.3,
@@ -17022,6 +17037,12 @@
           "severity": "medium",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "medium"
         },
         {
           "source": {
