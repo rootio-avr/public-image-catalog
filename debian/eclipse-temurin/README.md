@@ -3,7 +3,7 @@
 Root-curated eclipse-temurin images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [eclipse-temurin](https://hub.docker.com/_/eclipse-temurin).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/eclipse-temurin](https://hub.docker.com/r/rootpublic/eclipse-temurin).
+The public Docker image is available on Docker Hub under the repository [rootpublic/eclipse-temurin](https://hub.docker.com/r/rootpublic/eclipse-temurin).
 
 ## Why Root Curated Images?
 Root-curated images offer:
