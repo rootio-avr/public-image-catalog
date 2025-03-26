@@ -1,6 +1,6 @@
-# Root Curated curl(https://hub.docker.com/r/rootpublic/curl)
+# Root Curated [curl](https://hub.docker.com/r/rootpublic/curl)
 
-Root-curated curl(https://hub.docker.com/r/rootpublic/curl) images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [rootioinc/common-curl](https://hub.docker.com/r/rootioinc/common-curl).
+Root-curated [curl](https://hub.docker.com/r/rootpublic/curl) images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [rootioinc/common-curl](https://hub.docker.com/r/rootioinc/common-curl).
 
 ## Why Root Curated Images?
 Root-curated images offer:
