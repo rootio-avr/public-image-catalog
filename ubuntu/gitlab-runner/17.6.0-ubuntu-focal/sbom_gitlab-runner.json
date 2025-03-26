@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:0581dd33-f5a4-4e98-b05d-82a8a1dc187d",
+  "serialNumber": "urn:uuid:010dad62-a11c-48bd-8566-c14decfa7119",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:30:01+00:00",
+    "timestamp": "2025-03-26T10:06:28+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "4c6d1d9e-a29e-4e8b-b224-cb98b85c7d5f",
+      "bom-ref": "28871ddc-c6e4-4413-af00-0c5fa61058d2",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -62,7 +62,7 @@
   },
   "components": [
     {
-      "bom-ref": "846abf71-3d70-496a-819c-e0984acad6af",
+      "bom-ref": "187ff5fc-e380-4cd5-9044-cfcc8cb574fb",
       "type": "application",
       "name": "usr/local/bin/gitlab-runner",
       "properties": [
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "bom-ref": "8b8264db-b00d-462e-991f-925b1bbc2962",
+      "bom-ref": "2a78d63b-ffe8-453e-91f3-9ba1ce476476",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "20.04",
@@ -10796,20 +10796,20 @@
   ],
   "dependencies": [
     {
-      "ref": "4c6d1d9e-a29e-4e8b-b224-cb98b85c7d5f",
-      "dependsOn": [
-        "846abf71-3d70-496a-819c-e0984acad6af",
-        "8b8264db-b00d-462e-991f-925b1bbc2962"
-      ]
-    },
-    {
-      "ref": "846abf71-3d70-496a-819c-e0984acad6af",
+      "ref": "187ff5fc-e380-4cd5-9044-cfcc8cb574fb",
       "dependsOn": [
         "pkg:golang/gitlab.com/gitlab-org/gitlab-runner"
       ]
     },
     {
-      "ref": "8b8264db-b00d-462e-991f-925b1bbc2962",
+      "ref": "28871ddc-c6e4-4413-af00-0c5fa61058d2",
+      "dependsOn": [
+        "187ff5fc-e380-4cd5-9044-cfcc8cb574fb",
+        "2a78d63b-ffe8-453e-91f3-9ba1ce476476"
+      ]
+    },
+    {
+      "ref": "2a78d63b-ffe8-453e-91f3-9ba1ce476476",
       "dependsOn": [
         "pkg:deb/ubuntu/adduser@3.118ubuntu2?arch=all&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/apt@2.0.10?arch=amd64&distro=ubuntu-20.04",
@@ -13788,7 +13788,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -13852,7 +13852,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -13912,9 +13912,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -13927,7 +13924,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -14685,6 +14682,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
         {
           "source": {
             "name": "ghsa"
