@@ -3,7 +3,7 @@
 Root-curated zookeeper images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [zookeeper](https://hub.docker.com/_/zookeeper).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/zookeeper](https://hub.docker.com/r/rootpublic/zookeeper).
+The public Docker image is available on Docker Hub under the repository [rootpublic/zookeeper](https://hub.docker.com/r/rootpublic/zookeeper).
 
 ## Why Root Curated Images?
 Root-curated images offer:
