@@ -3,7 +3,7 @@
 Root-curated gitlab-agent-ci-image images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/gitlab-agent-ci-image](https://hub.docker.com/r/gitlab/gitlab-agent-ci-image).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/gitlab-agent-ci-image](https://hub.docker.com/r/rootpublic/gitlab-agent-ci-image).
+The public Docker image is available on Docker Hub under the repository [rootpublic/gitlab-agent-ci-image](https://hub.docker.com/r/rootpublic/gitlab-agent-ci-image).
 
 ## Why Root Curated Images?
 Root-curated images offer:
