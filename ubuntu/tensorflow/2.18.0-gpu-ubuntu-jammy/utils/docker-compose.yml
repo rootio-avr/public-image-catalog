@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  tensorflow:
+    image: tensorflow:cpu  # Replace with your image name
+    user: "${UID}:${GID}"  # Run as the current host user to avoid permission issues
+    volumes:
+      - ./data:/app/data  # Mount a local directory to the container
+    working_dir: /app     # Set the working directory inside the container
+    environment:
+      - PYTHONUNBUFFERED=1  # Ensure Python output is unbuffered
+    command: bash -c "python3 -c 'import tensorflow as tf; print(tf.__version__)'"  # Test TensorFlow installation
