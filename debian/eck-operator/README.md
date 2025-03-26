@@ -3,7 +3,7 @@
 Root-curated eck-operator images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [elastic/eck-operator](https://hub.docker.com/r/elastic/eck-operator).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/eck-operator](https://hub.docker.com/r/rootpublic/eck-operator).
+The public image can be retrieved from our public docker hub repository [rootpublic/eck-operator](https://hub.docker.com/r/rootpublic/eck-operator).
 
 ## Why Root Curated Images?
 Root-curated images offer:
