@@ -139,8 +139,6 @@ User obligations:
 
 Detailed license compliance information can be found at [root.io/trust-center](https://root.io/trust-center).
 
-## Source & Dockerfile
-The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/ubuntu/grafana-agent/v0.43.4-ubuntu-noble/).
 
 ## Usage Information
 For detailed examples and usage instructions, see the official Docker grafana/agent documentation [here](https://hub.docker.com/r/grafana/agent).
