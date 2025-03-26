@@ -3,7 +3,7 @@
 Root-curated rabbitmq images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [rabbitmq](https://hub.docker.com/_/rabbitmq).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/rabbitmq](https://hub.docker.com/r/rootpublic/rabbitmq).
+The public image can be retrieved from our public docker hub repository [rootpublic/rabbitmq](https://hub.docker.com/r/rootpublic/rabbitmq).
 
 ## Why Root Curated Images?
 Root-curated images offer:
