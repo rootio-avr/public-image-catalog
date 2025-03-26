@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:7fbd294c-5280-4581-9771-8ff7fa9d55bd",
+  "serialNumber": "urn:uuid:82965219-3048-4d94-ad6f-1dc09abc3cd8",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:57:33+00:00",
+    "timestamp": "2025-03-26T11:02:45+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "3071bd64-06c6-4c57-8317-629dd02ce7e4",
+      "bom-ref": "b3324992-f791-4e2b-8aea-9c44242e6d53",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -82,7 +82,7 @@
   },
   "components": [
     {
-      "bom-ref": "d45db30a-b2d9-4e13-aef7-8d1f4e54cbc3",
+      "bom-ref": "4e52f1bd-e47c-4556-a382-ea6ad2e29202",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "22.04",
@@ -10827,50 +10827,7 @@
   ],
   "dependencies": [
     {
-      "ref": "3071bd64-06c6-4c57-8317-629dd02ce7e4",
-      "dependsOn": [
-        "d45db30a-b2d9-4e13-aef7-8d1f4e54cbc3",
-        "pkg:maven/ch.qos.logback/logback-classic@1.2.13",
-        "pkg:maven/ch.qos.logback/logback-core@1.2.13",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
-        "pkg:maven/commons-cli/commons-cli@1.5.0",
-        "pkg:maven/commons-io/commons-io@2.11.0",
-        "pkg:maven/io.dropwizard.metrics/metrics-core@4.1.12.1",
-        "pkg:maven/io.netty/netty-buffer@4.1.105.Final",
-        "pkg:maven/io.netty/netty-codec@4.1.105.Final",
-        "pkg:maven/io.netty/netty-common@4.1.105.Final",
-        "pkg:maven/io.netty/netty-handler@4.1.105.Final",
-        "pkg:maven/io.netty/netty-resolver@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport-classes-epoll@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport-native-epoll@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport@4.1.105.Final",
-        "pkg:maven/io.prometheus/simpleclient@0.9.0",
-        "pkg:maven/io.prometheus/simpleclient_common@0.9.0",
-        "pkg:maven/io.prometheus/simpleclient_hotspot@0.9.0",
-        "pkg:maven/io.prometheus/simpleclient_servlet@0.9.0",
-        "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
-        "pkg:maven/jline/jline@2.14.6",
-        "pkg:maven/org.apache.yetus/audience-annotations@0.12.0",
-        "pkg:maven/org.apache.zookeeper/zookeeper-jute@3.8.4",
-        "pkg:maven/org.apache.zookeeper/zookeeper-prometheus-metrics@3.8.4",
-        "pkg:maven/org.apache.zookeeper/zookeeper@3.8.4",
-        "pkg:maven/org.eclipse.jetty/jetty-http@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-io@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-security@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-server@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-util@9.4.53.v20231009",
-        "pkg:maven/org.jctools/jctools-core@3.1.0",
-        "pkg:maven/org.slf4j/slf4j-api@1.7.30",
-        "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5"
-      ]
-    },
-    {
-      "ref": "d45db30a-b2d9-4e13-aef7-8d1f4e54cbc3",
+      "ref": "4e52f1bd-e47c-4556-a382-ea6ad2e29202",
       "dependsOn": [
         "pkg:deb/ubuntu/adduser@3.118ubuntu5?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/apt@2.4.13?arch=amd64&distro=ubuntu-22.04",
@@ -11020,6 +10977,49 @@
         "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/wget@1.21.2-2ubuntu1.1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/zlib1g@1.2.11.dfsg-2ubuntu9.2?arch=amd64&distro=ubuntu-22.04&epoch=1"
+      ]
+    },
+    {
+      "ref": "b3324992-f791-4e2b-8aea-9c44242e6d53",
+      "dependsOn": [
+        "4e52f1bd-e47c-4556-a382-ea6ad2e29202",
+        "pkg:maven/ch.qos.logback/logback-classic@1.2.13",
+        "pkg:maven/ch.qos.logback/logback-core@1.2.13",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
+        "pkg:maven/commons-cli/commons-cli@1.5.0",
+        "pkg:maven/commons-io/commons-io@2.11.0",
+        "pkg:maven/io.dropwizard.metrics/metrics-core@4.1.12.1",
+        "pkg:maven/io.netty/netty-buffer@4.1.105.Final",
+        "pkg:maven/io.netty/netty-codec@4.1.105.Final",
+        "pkg:maven/io.netty/netty-common@4.1.105.Final",
+        "pkg:maven/io.netty/netty-handler@4.1.105.Final",
+        "pkg:maven/io.netty/netty-resolver@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport-classes-epoll@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport-native-epoll@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport@4.1.105.Final",
+        "pkg:maven/io.prometheus/simpleclient@0.9.0",
+        "pkg:maven/io.prometheus/simpleclient_common@0.9.0",
+        "pkg:maven/io.prometheus/simpleclient_hotspot@0.9.0",
+        "pkg:maven/io.prometheus/simpleclient_servlet@0.9.0",
+        "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
+        "pkg:maven/jline/jline@2.14.6",
+        "pkg:maven/org.apache.yetus/audience-annotations@0.12.0",
+        "pkg:maven/org.apache.zookeeper/zookeeper-jute@3.8.4",
+        "pkg:maven/org.apache.zookeeper/zookeeper-prometheus-metrics@3.8.4",
+        "pkg:maven/org.apache.zookeeper/zookeeper@3.8.4",
+        "pkg:maven/org.eclipse.jetty/jetty-http@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-io@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-security@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-server@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-util@9.4.53.v20231009",
+        "pkg:maven/org.jctools/jctools-core@3.1.0",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.30",
+        "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5"
       ]
     },
     {
@@ -13076,7 +13076,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2022-4899"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0894"
+          "url": "https://access.redhat.com/errata/RHSA-2024:1141"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2022-4899"
@@ -13307,7 +13307,7 @@
           "url": "https://bugzilla.redhat.com/2258794"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0894.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-1141.html"
         },
         {
           "url": "https://github.com/facebook/zstd"
@@ -13911,7 +13911,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -13975,7 +13975,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -14035,9 +14035,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -14050,7 +14047,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -14650,7 +14647,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -14711,7 +14708,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26458"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26458"
@@ -14721,6 +14718,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -14735,7 +14735,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -14817,7 +14817,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -14881,7 +14881,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26461"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26461"
@@ -14891,6 +14891,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -14905,7 +14908,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -15048,7 +15051,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/09/4"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:8860"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9474"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-3596"
@@ -15069,7 +15072,7 @@
           "url": "https://datatracker.ietf.org/doc/html/rfc2865"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-8860.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9474.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:4935"
@@ -16019,6 +16022,12 @@
         "url": "https://git.launchpad.net/ubuntu-cve-tracker"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
         {
           "source": {
             "name": "azure"
