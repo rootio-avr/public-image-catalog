@@ -3,7 +3,7 @@
 Root-curated drupal images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [drupal](https://hub.docker.com/_/drupal).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/drupal](https://hub.docker.com/r/rootpublic/drupal).
+The public image can be retrieved from our public docker hub repository [rootpublic/drupal](https://hub.docker.com/r/rootpublic/drupal).
 
 ## Why Root Curated Images?
 Root-curated images offer:
