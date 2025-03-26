@@ -3,7 +3,7 @@
 Root-curated pgbouncer-exporter images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [pgbouncer-exporter](https://hub.docker.com/_/pgbouncer-exporter).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/pgbouncer-exporter](https://hub.docker.com/r/rootpublic/pgbouncer-exporter).
+The public Docker image is available on Docker Hub under the repository [rootpublic/pgbouncer-exporter](https://hub.docker.com/r/rootpublic/pgbouncer-exporter).
 
 ## Why Root Curated Images?
 Root-curated images offer:
