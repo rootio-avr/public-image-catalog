@@ -3,7 +3,7 @@
 Root-curated openjdk images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [ibm-semeru-runtimes](https://hub.docker.com/_/ibm-semeru-runtimes).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/openjdk](https://hub.docker.com/r/rootpublic/openjdk).
+The public image can be retrieved from our public docker hub repository [rootpublic/openjdk](https://hub.docker.com/r/rootpublic/openjdk).
 
 ## Why Root Curated Images?
 Root-curated images offer:
