@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:64d75460-270e-480f-b2e1-3ee8506659c9",
+  "serialNumber": "urn:uuid:d1c9eab0-7f91-431a-bb6e-f7ef8613d6f4",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:56:30+00:00",
+    "timestamp": "2025-03-26T10:31:39+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "f49db492-fdc3-49b8-8264-6618f4eccf86",
+      "bom-ref": "5a91e233-56d8-4c75-a813-66d7d43f7776",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -46,7 +46,7 @@
   },
   "components": [
     {
-      "bom-ref": "eec62405-7c7a-405e-94ff-6d2d20984bc7",
+      "bom-ref": "289e1fc1-2d42-478e-b067-eaeae7615e44",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "20.04",
@@ -5999,7 +5999,7 @@
   ],
   "dependencies": [
     {
-      "ref": "eec62405-7c7a-405e-94ff-6d2d20984bc7",
+      "ref": "289e1fc1-2d42-478e-b067-eaeae7615e44",
       "dependsOn": [
         "pkg:deb/ubuntu/adduser@3.118ubuntu2?arch=all&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/apt@2.0.10?arch=amd64&distro=ubuntu-20.04",
@@ -6096,9 +6096,9 @@
       ]
     },
     {
-      "ref": "f49db492-fdc3-49b8-8264-6618f4eccf86",
+      "ref": "5a91e233-56d8-4c75-a813-66d7d43f7776",
       "dependsOn": [
-        "eec62405-7c7a-405e-94ff-6d2d20984bc7"
+        "289e1fc1-2d42-478e-b067-eaeae7615e44"
       ]
     },
     {
@@ -7849,7 +7849,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -7913,7 +7913,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -7973,9 +7973,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -7988,7 +7985,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
