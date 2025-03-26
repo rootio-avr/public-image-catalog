@@ -3,7 +3,7 @@
 Root-curated golang images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [golang](https://hub.docker.com/_/golang).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/golang](https://hub.docker.com/r/rootpublic/golang).
+The public image can be retrieved from our public docker hub repository [rootpublic/golang](https://hub.docker.com/r/rootpublic/golang).
 
 ## Why Root Curated Images?
 Root-curated images offer:
