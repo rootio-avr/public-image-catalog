@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:3c53c4b1-ad83-4b2e-a578-40de3b8a9ddb",
+  "serialNumber": "urn:uuid:5df678c9-7dce-4ac5-849d-f077f7505524",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:09:36+00:00",
+    "timestamp": "2025-03-26T14:16:18+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "20f1d8da-d06e-4dc7-b762-89f8ee72fe5a",
+      "bom-ref": "effce002-e631-4a8f-babd-2fcf99c806c1",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -78,19 +78,19 @@
   },
   "components": [
     {
-      "bom-ref": "0b609317-3154-4d3a-8dcd-c8dd3e04bc27",
+      "bom-ref": "11302c5d-43d5-455c-9615-156d39298787",
       "type": "library",
-      "name": "github.com/fatih/color",
-      "version": "v1.17.0",
-      "purl": "pkg:golang/github.com/fatih/color@v1.17.0",
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.20",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "bom-ref": "0ba5d868-0fbf-4d2d-bb53-3215104dd438",
+      "bom-ref": "18cbe3f9-f64d-4e00-8c02-7cdbda0d632a",
       "type": "library",
       "name": "golang.org/x/sys",
       "version": "v0.29.0",
@@ -120,7 +120,59 @@
       ]
     },
     {
-      "bom-ref": "17c788ba-46c7-46a2-ad23-5e9f9d46b1b2",
+      "bom-ref": "193c360d-f952-4de6-9663-7e54cc5846d2",
+      "type": "library",
+      "name": "github.com/mattn/go-colorable",
+      "version": "v0.1.13",
+      "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "39febb99-01f8-4fae-902f-fd49b70242f3",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.9",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4aa6a4a2-eff9-45ea-a1fe-9286bf51fadf",
+      "type": "application",
+      "name": "usr/local/bin/grafana",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "69e17f45-1cb0-404f-a9d1-f58dae40bffd",
       "type": "library",
       "name": "./pkg/util/xorm",
       "properties": [
@@ -139,116 +191,7 @@
       ]
     },
     {
-      "bom-ref": "1e25a4a6-6bed-4352-ae49-af62d9862853",
-      "type": "application",
-      "name": "usr/local/bin/grafana-server",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "28af97a2-d444-4b75-8a9f-5f3d2de48dc4",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.9",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "32c82e41-e740-4b3c-9999-1709271a183d",
-      "type": "application",
-      "name": "usr/local/bin/grafana",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3c1ef421-d302-40ab-80da-d7ede85e2d9d",
-      "type": "library",
-      "name": "github.com/mattn/go-isatty",
-      "version": "v0.0.20",
-      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3c32b9c1-6277-4e12-b36c-b0ceeeac4c73",
-      "type": "library",
-      "name": "github.com/grafana/grafana",
-      "version": "11.4.0",
-      "purl": "pkg:golang/github.com/grafana/grafana@11.4.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "69ec176b-72c2-4a7b-9c96-c70fd2e5b9b3",
-      "type": "library",
-      "name": "github.com/mattn/go-isatty",
-      "version": "v0.0.20",
-      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8a80c2bf-9755-47db-8caa-02c307406235",
+      "bom-ref": "73d171c1-59b6-443f-a70a-d266c2aadfb5",
       "type": "library",
       "name": "golang.org/x/sys",
       "version": "v0.29.0",
@@ -269,70 +212,7 @@
       ]
     },
     {
-      "bom-ref": "9609e841-3881-4b2e-a6bb-0e5318684e71",
-      "type": "library",
-      "name": "stdlib",
-      "version": "1.23.5",
-      "purl": "pkg:golang/stdlib@1.23.5",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9ed9392f-152a-408d-89c6-9e23983b54f0",
-      "type": "library",
-      "name": "github.com/grafana/grafana",
-      "version": "11.4.0",
-      "purl": "pkg:golang/github.com/grafana/grafana@11.4.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a04b1f3f-6d0e-4160-8945-1d6bf95413aa",
-      "type": "library",
-      "name": "github.com/mattn/go-colorable",
-      "version": "v0.1.13",
-      "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "bd9ed1d9-b410-4a57-8e48-aafc0491726f",
+      "bom-ref": "81394ed3-88bb-42e8-8f34-24a17b4c631a",
       "type": "library",
       "name": "github.com/mattn/go-colorable",
       "version": "v0.1.13",
@@ -353,7 +233,28 @@
       ]
     },
     {
-      "bom-ref": "bec5fed4-41b9-40a1-81e6-57f3a9fdd8a7",
+      "bom-ref": "859f94dc-eb9d-414f-80e5-0c4a242ff982",
+      "type": "library",
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.20",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "916b57e1-956c-46cc-a05f-d2fb786cf528",
       "type": "library",
       "name": "github.com/fatih/color",
       "version": "v1.17.0",
@@ -374,7 +275,7 @@
       ]
     },
     {
-      "bom-ref": "d82e4681-8368-4371-b268-7397c53ee051",
+      "bom-ref": "9d1e0158-b521-4258-9f8d-b370461ce74c",
       "type": "library",
       "name": "stdlib",
       "version": "1.23.5",
@@ -390,6 +291,105 @@
         },
         {
           "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "aef1665e-dcf8-4e45-b46a-56cba2489157",
+      "type": "library",
+      "name": "github.com/grafana/grafana",
+      "version": "11.4.0",
+      "purl": "pkg:golang/github.com/grafana/grafana@11.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b60ef650-bb2e-4400-9265-96484eb22d02",
+      "type": "library",
+      "name": "stdlib",
+      "version": "1.23.5",
+      "purl": "pkg:golang/stdlib@1.23.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f04cb5bd-9088-4806-8761-e63c54e3d97d",
+      "type": "library",
+      "name": "github.com/fatih/color",
+      "version": "v1.17.0",
+      "purl": "pkg:golang/github.com/fatih/color@v1.17.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f052ba7a-6aad-494e-80ab-ef87484e3b6c",
+      "type": "library",
+      "name": "github.com/grafana/grafana",
+      "version": "11.4.0",
+      "purl": "pkg:golang/github.com/grafana/grafana@11.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ffc86848-779c-4e61-8ec7-15b85918e843",
+      "type": "application",
+      "name": "usr/local/bin/grafana-server",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
           "value": "gobinary"
         }
       ]
@@ -18703,44 +18703,19 @@
   ],
   "dependencies": [
     {
-      "ref": "0b609317-3154-4d3a-8dcd-c8dd3e04bc27",
+      "ref": "11302c5d-43d5-455c-9615-156d39298787",
       "dependsOn": []
     },
     {
-      "ref": "0ba5d868-0fbf-4d2d-bb53-3215104dd438",
+      "ref": "18cbe3f9-f64d-4e00-8c02-7cdbda0d632a",
       "dependsOn": []
     },
     {
-      "ref": "17c788ba-46c7-46a2-ad23-5e9f9d46b1b2",
+      "ref": "193c360d-f952-4de6-9663-7e54cc5846d2",
       "dependsOn": []
     },
     {
-      "ref": "1e25a4a6-6bed-4352-ae49-af62d9862853",
-      "dependsOn": [
-        "3c32b9c1-6277-4e12-b36c-b0ceeeac4c73"
-      ]
-    },
-    {
-      "ref": "20f1d8da-d06e-4dc7-b762-89f8ee72fe5a",
-      "dependsOn": [
-        "1e25a4a6-6bed-4352-ae49-af62d9862853",
-        "28af97a2-d444-4b75-8a9f-5f3d2de48dc4",
-        "32c82e41-e740-4b3c-9999-1709271a183d",
-        "pkg:npm/%40grafana-plugins/grafana-azure-monitor-datasource@11.3.1",
-        "pkg:npm/%40grafana-plugins/grafana-postgresql-datasource@11.3.1",
-        "pkg:npm/%40grafana-plugins/grafana-pyroscope-datasource@11.3.1",
-        "pkg:npm/%40grafana-plugins/grafana-testdata-datasource@11.3.1",
-        "pkg:npm/%40grafana-plugins/jaeger@11.3.1",
-        "pkg:npm/%40grafana-plugins/mssql@11.3.1",
-        "pkg:npm/%40grafana-plugins/mysql@11.3.1",
-        "pkg:npm/%40grafana-plugins/parca@11.3.1",
-        "pkg:npm/%40grafana-plugins/stackdriver@11.3.1",
-        "pkg:npm/%40grafana-plugins/tempo@11.3.1",
-        "pkg:npm/%40grafana-plugins/zipkin@11.3.1"
-      ]
-    },
-    {
-      "ref": "28af97a2-d444-4b75-8a9f-5f3d2de48dc4",
+      "ref": "39febb99-01f8-4fae-902f-fd49b70242f3",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.9",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.9",
@@ -18862,46 +18837,44 @@
       ]
     },
     {
-      "ref": "32c82e41-e740-4b3c-9999-1709271a183d",
+      "ref": "4aa6a4a2-eff9-45ea-a1fe-9286bf51fadf",
       "dependsOn": [
-        "9ed9392f-152a-408d-89c6-9e23983b54f0"
+        "aef1665e-dcf8-4e45-b46a-56cba2489157"
       ]
     },
     {
-      "ref": "3c1ef421-d302-40ab-80da-d7ede85e2d9d",
+      "ref": "69e17f45-1cb0-404f-a9d1-f58dae40bffd",
       "dependsOn": []
     },
     {
-      "ref": "3c32b9c1-6277-4e12-b36c-b0ceeeac4c73",
+      "ref": "73d171c1-59b6-443f-a70a-d266c2aadfb5",
+      "dependsOn": []
+    },
+    {
+      "ref": "81394ed3-88bb-42e8-8f34-24a17b4c631a",
+      "dependsOn": []
+    },
+    {
+      "ref": "859f94dc-eb9d-414f-80e5-0c4a242ff982",
+      "dependsOn": []
+    },
+    {
+      "ref": "916b57e1-956c-46cc-a05f-d2fb786cf528",
+      "dependsOn": []
+    },
+    {
+      "ref": "9d1e0158-b521-4258-9f8d-b370461ce74c",
+      "dependsOn": []
+    },
+    {
+      "ref": "aef1665e-dcf8-4e45-b46a-56cba2489157",
       "dependsOn": [
-        "0ba5d868-0fbf-4d2d-bb53-3215104dd438",
-        "3c1ef421-d302-40ab-80da-d7ede85e2d9d",
-        "9609e841-3881-4b2e-a6bb-0e5318684e71",
-        "a04b1f3f-6d0e-4160-8945-1d6bf95413aa",
-        "bec5fed4-41b9-40a1-81e6-57f3a9fdd8a7"
-      ]
-    },
-    {
-      "ref": "69ec176b-72c2-4a7b-9c96-c70fd2e5b9b3",
-      "dependsOn": []
-    },
-    {
-      "ref": "8a80c2bf-9755-47db-8caa-02c307406235",
-      "dependsOn": []
-    },
-    {
-      "ref": "9609e841-3881-4b2e-a6bb-0e5318684e71",
-      "dependsOn": []
-    },
-    {
-      "ref": "9ed9392f-152a-408d-89c6-9e23983b54f0",
-      "dependsOn": [
-        "0b609317-3154-4d3a-8dcd-c8dd3e04bc27",
-        "17c788ba-46c7-46a2-ad23-5e9f9d46b1b2",
-        "69ec176b-72c2-4a7b-9c96-c70fd2e5b9b3",
-        "8a80c2bf-9755-47db-8caa-02c307406235",
-        "bd9ed1d9-b410-4a57-8e48-aafc0491726f",
-        "d82e4681-8368-4371-b268-7397c53ee051",
+        "69e17f45-1cb0-404f-a9d1-f58dae40bffd",
+        "73d171c1-59b6-443f-a70a-d266c2aadfb5",
+        "81394ed3-88bb-42e8-8f34-24a17b4c631a",
+        "859f94dc-eb9d-414f-80e5-0c4a242ff982",
+        "9d1e0158-b521-4258-9f8d-b370461ce74c",
+        "f04cb5bd-9088-4806-8761-e63c54e3d97d",
         "pkg:golang/buf.build/gen/go/parca-dev/parca/bufbuild/connect-go@v1.10.0-20240523185345-933eab74d046.1",
         "pkg:golang/buf.build/gen/go/parca-dev/parca/protocolbuffers/go@v1.34.1-20240523185345-933eab74d046.1",
         "pkg:golang/cloud.google.com/go/auth/oauth2adapt@v0.2.4",
@@ -19342,20 +19315,47 @@
       ]
     },
     {
-      "ref": "a04b1f3f-6d0e-4160-8945-1d6bf95413aa",
+      "ref": "b60ef650-bb2e-4400-9265-96484eb22d02",
       "dependsOn": []
     },
     {
-      "ref": "bd9ed1d9-b410-4a57-8e48-aafc0491726f",
+      "ref": "effce002-e631-4a8f-babd-2fcf99c806c1",
+      "dependsOn": [
+        "39febb99-01f8-4fae-902f-fd49b70242f3",
+        "4aa6a4a2-eff9-45ea-a1fe-9286bf51fadf",
+        "ffc86848-779c-4e61-8ec7-15b85918e843",
+        "pkg:npm/%40grafana-plugins/grafana-azure-monitor-datasource@11.3.1",
+        "pkg:npm/%40grafana-plugins/grafana-postgresql-datasource@11.3.1",
+        "pkg:npm/%40grafana-plugins/grafana-pyroscope-datasource@11.3.1",
+        "pkg:npm/%40grafana-plugins/grafana-testdata-datasource@11.3.1",
+        "pkg:npm/%40grafana-plugins/jaeger@11.3.1",
+        "pkg:npm/%40grafana-plugins/mssql@11.3.1",
+        "pkg:npm/%40grafana-plugins/mysql@11.3.1",
+        "pkg:npm/%40grafana-plugins/parca@11.3.1",
+        "pkg:npm/%40grafana-plugins/stackdriver@11.3.1",
+        "pkg:npm/%40grafana-plugins/tempo@11.3.1",
+        "pkg:npm/%40grafana-plugins/zipkin@11.3.1"
+      ]
+    },
+    {
+      "ref": "f04cb5bd-9088-4806-8761-e63c54e3d97d",
       "dependsOn": []
     },
     {
-      "ref": "bec5fed4-41b9-40a1-81e6-57f3a9fdd8a7",
-      "dependsOn": []
+      "ref": "f052ba7a-6aad-494e-80ab-ef87484e3b6c",
+      "dependsOn": [
+        "11302c5d-43d5-455c-9615-156d39298787",
+        "18cbe3f9-f64d-4e00-8c02-7cdbda0d632a",
+        "193c360d-f952-4de6-9663-7e54cc5846d2",
+        "916b57e1-956c-46cc-a05f-d2fb786cf528",
+        "b60ef650-bb2e-4400-9265-96484eb22d02"
+      ]
     },
     {
-      "ref": "d82e4681-8368-4371-b268-7397c53ee051",
-      "dependsOn": []
+      "ref": "ffc86848-779c-4e61-8ec7-15b85918e843",
+      "dependsOn": [
+        "f052ba7a-6aad-494e-80ab-ef87484e3b6c"
+      ]
     },
     {
       "ref": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.9",
@@ -26633,7 +26633,7 @@
       "updated": "2025-01-31T16:15:30+00:00",
       "affects": [
         {
-          "ref": "3c32b9c1-6277-4e12-b36c-b0ceeeac4c73",
+          "ref": "aef1665e-dcf8-4e45-b46a-56cba2489157",
           "versions": [
             {
               "version": "11.4.0",
@@ -26642,7 +26642,7 @@
           ]
         },
         {
-          "ref": "9ed9392f-152a-408d-89c6-9e23983b54f0",
+          "ref": "f052ba7a-6aad-494e-80ab-ef87484e3b6c",
           "versions": [
             {
               "version": "11.4.0",
@@ -28945,7 +28945,7 @@
       "updated": "2025-02-21T18:15:32+00:00",
       "affects": [
         {
-          "ref": "9609e841-3881-4b2e-a6bb-0e5318684e71",
+          "ref": "9d1e0158-b521-4258-9f8d-b370461ce74c",
           "versions": [
             {
               "version": "1.23.5",
@@ -28954,7 +28954,7 @@
           ]
         },
         {
-          "ref": "d82e4681-8368-4371-b268-7397c53ee051",
+          "ref": "b60ef650-bb2e-4400-9265-96484eb22d02",
           "versions": [
             {
               "version": "1.23.5",
