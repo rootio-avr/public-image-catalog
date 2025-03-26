@@ -3,7 +3,7 @@
 Root-curated redis images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [redis](https://hub.docker.com/_/redis).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/redis](https://hub.docker.com/r/rootpublic/redis).
+The public image can be retrieved from our public docker hub repository [rootpublic/redis](https://hub.docker.com/r/rootpublic/redis).
 
 ## Why Root Curated Images?
 Root-curated images offer:
