@@ -3,7 +3,7 @@
 Root-curated postgis images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [postgis/postgis](https://hub.docker.com/r/postgis/postgis).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/postgis](https://hub.docker.com/r/rootpublic/postgis).
+The public Docker image is available on Docker Hub under the repository [rootpublic/postgis](https://hub.docker.com/r/rootpublic/postgis).
 
 ## Why Root Curated Images?
 Root-curated images offer:
