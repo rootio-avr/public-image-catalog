@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:d47ae66a-27f8-45d1-bd9d-93c8ce61a72e",
+  "serialNumber": "urn:uuid:443b984d-9703-4b18-baed-0a0aecd73fe8",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:18:59+00:00",
+    "timestamp": "2025-03-26T09:55:29+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "b3dee826-d1fd-4c6d-9f7d-711b840def30",
+      "bom-ref": "fc1a72b0-5f03-4be1-a1d8-bfb8c2305631",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -94,12 +94,12 @@
   },
   "components": [
     {
-      "bom-ref": "048d7700-ed01-458a-984d-f0a45f77d059",
+      "bom-ref": "0c540919-3e00-4a0a-9ed9-5753af2a795d",
       "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-databind",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+      "group": "net.logstash.logback",
+      "name": "logstash-logback-encoder",
+      "version": "8.0",
+      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -120,111 +120,7 @@
       ]
     },
     {
-      "bom-ref": "04f422ae-feb1-4de9-8503-a3242f42d698",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-logback",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-logback-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "2278e4b7-f0ce-49f4-8810-b5717f4051a0",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.12",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/slf4j-api-2.0.12.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3461f226-9efa-4b8e-b9ba-ac13cb01689a",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.12",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "39342e32-6430-4d4b-a5fa-e09e3a3f387e",
-      "type": "library",
-      "group": "jakarta.json",
-      "name": "jakarta.json-api",
-      "version": "2.1.3",
-      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3b0287ac-a11a-46a9-aaa7-1a219ce2f2ec",
+      "bom-ref": "1250ba73-1ecd-4b1a-9dcd-1e39828ffca1",
       "type": "library",
       "group": "org.owasp",
       "name": "security-logging-logback",
@@ -250,7 +146,33 @@
       ]
     },
     {
-      "bom-ref": "3d837e05-4a5b-47c4-ab8d-c75c4bfd3428",
+      "bom-ref": "1a0a2c7b-c372-4abd-884a-41c12dc47415",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.12",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1e91cc11-6928-4735-a6b3-c7809e6210b5",
       "type": "library",
       "group": "ch.qos.logback",
       "name": "logback-classic",
@@ -276,16 +198,16 @@
       ]
     },
     {
-      "bom-ref": "3e4db516-fba6-49ad-9b16-a8a40e1a5197",
+      "bom-ref": "2a81a709-db35-42e8-a585-f9e270018065",
       "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-core",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.12",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-core-1.5.12.jar"
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/slf4j-api-2.0.12.jar"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -302,111 +224,7 @@
       ]
     },
     {
-      "bom-ref": "43a9f1f4-1cdc-4342-afef-c0d9af434234",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-common",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-common-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4789c24c-d986-4f06-812e-6009cb7b0d68",
-      "type": "library",
-      "group": "net.logstash.logback",
-      "name": "logstash-logback-encoder",
-      "version": "8.0",
-      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4c66cd52-3367-4b8c-8760-4313d88bc1a2",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-annotations",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-annotations-2.17.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "50595641-b219-44d0-9291-bb69458e1066",
-      "type": "library",
-      "group": "com.github.stephenc.jcip",
-      "name": "jcip-annotations",
-      "version": "1.0-1",
-      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/nimbus-jose-jwt-9.40.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "56c39881-0738-42ca-8754-158a66ecd04c",
+      "bom-ref": "366f5321-76b4-4d6f-bc79-f0170ca73f78",
       "type": "library",
       "group": "com.github.stephenc.jcip",
       "name": "jcip-annotations",
@@ -432,215 +250,7 @@
       ]
     },
     {
-      "bom-ref": "589bba36-44d0-4c60-8654-924a283a0955",
-      "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-classic",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "77c07a71-0b91-40c5-a3a0-27df2dd0d776",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-common",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7caa86e0-25d3-41c5-81ee-482dd4cef961",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-databind",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-databind-2.17.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8d9e8039-76cd-4dee-bb1a-44806cb8118c",
-      "type": "library",
-      "group": "jakarta.json",
-      "name": "jakarta.json-api",
-      "version": "2.1.3",
-      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-api-2.1.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "996c288a-8c29-4f2f-adfc-c6d6038f8c95",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-core",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9bd72426-dbfe-4cc2-a9be-4a9c8e62017f",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-annotations",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "c2d1a3b4-d81e-4090-a251-3bd1bccaf8ea",
-      "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-core",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "daf59ca4-88fd-42d7-92a8-3364b0b59ae7",
-      "type": "library",
-      "group": "net.logstash.logback",
-      "name": "logstash-logback-encoder",
-      "version": "8.0",
-      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logstash-logback-encoder-8.0.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "e58590f6-5de7-4566-ba39-c25b101fe3ae",
+      "bom-ref": "4a4c4fed-795d-4abc-bfc1-5e77fd4db3c0",
       "type": "library",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-core",
@@ -666,7 +276,111 @@
       ]
     },
     {
-      "bom-ref": "f3f1cb1f-1ded-48ae-9a8a-7718140df47c",
+      "bom-ref": "560117d1-93d5-45a8-b4d2-bb8d4564f4dc",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6578d411-1c07-4feb-a343-88dd6c2b58aa",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-databind-2.17.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.12",
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-core-1.5.12.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7c5d55ae-16fa-4e23-b11b-022df1f172db",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7e6d782d-3126-497f-b5d8-ea2612984af0",
       "type": "operating-system",
       "name": "debian",
       "version": "12.7",
@@ -678,6 +392,292 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7f465774-7d74-4919-a247-ec01664a706a",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-common",
+      "version": "1.1.7",
+      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-common-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "87333b5a-fdb3-4763-9078-3ef37642ec5f",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8d778622-4bde-42e8-874d-450eef44e82a",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-logback",
+      "version": "1.1.7",
+      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-logback-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a67b795a-284f-4bd8-af0c-091dc343215e",
+      "type": "library",
+      "group": "jakarta.json",
+      "name": "jakarta.json-api",
+      "version": "2.1.3",
+      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a7c23087-933d-41ad-acb9-6dba0568aca5",
+      "type": "library",
+      "group": "net.logstash.logback",
+      "name": "logstash-logback-encoder",
+      "version": "8.0",
+      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logstash-logback-encoder-8.0.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d24a1d12-4a7a-4c48-b165-e27ce108c6e8",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-annotations-2.17.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d27b7677-5bab-40a2-b5bd-5c2a8bfe5944",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-common",
+      "version": "1.1.7",
+      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d98d9a15-b4c1-42bc-90df-7089c838a884",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.5.12",
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dbf4e4ce-ed90-4b4f-8208-9aac4afffa11",
+      "type": "library",
+      "group": "com.github.stephenc.jcip",
+      "name": "jcip-annotations",
+      "version": "1.0-1",
+      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/nimbus-jose-jwt-9.40.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f0bb626c-936d-4c0d-8c45-791f5a93fbcc",
+      "type": "library",
+      "group": "jakarta.json",
+      "name": "jakarta.json-api",
+      "version": "2.1.3",
+      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-api-2.1.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.12",
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
         }
       ]
     },
@@ -12750,107 +12750,214 @@
   ],
   "dependencies": [
     {
-      "ref": "048d7700-ed01-458a-984d-f0a45f77d059",
+      "ref": "0c540919-3e00-4a0a-9ed9-5753af2a795d",
       "dependsOn": []
     },
     {
-      "ref": "04f422ae-feb1-4de9-8503-a3242f42d698",
+      "ref": "1250ba73-1ecd-4b1a-9dcd-1e39828ffca1",
       "dependsOn": []
     },
     {
-      "ref": "2278e4b7-f0ce-49f4-8810-b5717f4051a0",
+      "ref": "1a0a2c7b-c372-4abd-884a-41c12dc47415",
       "dependsOn": []
     },
     {
-      "ref": "3461f226-9efa-4b8e-b9ba-ac13cb01689a",
+      "ref": "1e91cc11-6928-4735-a6b3-c7809e6210b5",
       "dependsOn": []
     },
     {
-      "ref": "39342e32-6430-4d4b-a5fa-e09e3a3f387e",
+      "ref": "2a81a709-db35-42e8-a585-f9e270018065",
       "dependsOn": []
     },
     {
-      "ref": "3b0287ac-a11a-46a9-aaa7-1a219ce2f2ec",
+      "ref": "366f5321-76b4-4d6f-bc79-f0170ca73f78",
       "dependsOn": []
     },
     {
-      "ref": "3d837e05-4a5b-47c4-ab8d-c75c4bfd3428",
+      "ref": "4a4c4fed-795d-4abc-bfc1-5e77fd4db3c0",
       "dependsOn": []
     },
     {
-      "ref": "3e4db516-fba6-49ad-9b16-a8a40e1a5197",
+      "ref": "560117d1-93d5-45a8-b4d2-bb8d4564f4dc",
       "dependsOn": []
     },
     {
-      "ref": "43a9f1f4-1cdc-4342-afef-c0d9af434234",
+      "ref": "6578d411-1c07-4feb-a343-88dd6c2b58aa",
       "dependsOn": []
     },
     {
-      "ref": "4789c24c-d986-4f06-812e-6009cb7b0d68",
+      "ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
       "dependsOn": []
     },
     {
-      "ref": "4c66cd52-3367-4b8c-8760-4313d88bc1a2",
+      "ref": "7c5d55ae-16fa-4e23-b11b-022df1f172db",
       "dependsOn": []
     },
     {
-      "ref": "50595641-b219-44d0-9291-bb69458e1066",
-      "dependsOn": []
-    },
-    {
-      "ref": "56c39881-0738-42ca-8754-158a66ecd04c",
-      "dependsOn": []
-    },
-    {
-      "ref": "589bba36-44d0-4c60-8654-924a283a0955",
-      "dependsOn": []
-    },
-    {
-      "ref": "77c07a71-0b91-40c5-a3a0-27df2dd0d776",
-      "dependsOn": []
-    },
-    {
-      "ref": "7caa86e0-25d3-41c5-81ee-482dd4cef961",
-      "dependsOn": []
-    },
-    {
-      "ref": "8d9e8039-76cd-4dee-bb1a-44806cb8118c",
-      "dependsOn": []
-    },
-    {
-      "ref": "996c288a-8c29-4f2f-adfc-c6d6038f8c95",
-      "dependsOn": []
-    },
-    {
-      "ref": "9bd72426-dbfe-4cc2-a9be-4a9c8e62017f",
-      "dependsOn": []
-    },
-    {
-      "ref": "b3dee826-d1fd-4c6d-9f7d-711b840def30",
+      "ref": "7e6d782d-3126-497f-b5d8-ea2612984af0",
       "dependsOn": [
-        "048d7700-ed01-458a-984d-f0a45f77d059",
-        "04f422ae-feb1-4de9-8503-a3242f42d698",
-        "2278e4b7-f0ce-49f4-8810-b5717f4051a0",
-        "3461f226-9efa-4b8e-b9ba-ac13cb01689a",
-        "39342e32-6430-4d4b-a5fa-e09e3a3f387e",
-        "3b0287ac-a11a-46a9-aaa7-1a219ce2f2ec",
-        "3d837e05-4a5b-47c4-ab8d-c75c4bfd3428",
-        "3e4db516-fba6-49ad-9b16-a8a40e1a5197",
-        "43a9f1f4-1cdc-4342-afef-c0d9af434234",
-        "4789c24c-d986-4f06-812e-6009cb7b0d68",
-        "4c66cd52-3367-4b8c-8760-4313d88bc1a2",
-        "50595641-b219-44d0-9291-bb69458e1066",
-        "56c39881-0738-42ca-8754-158a66ecd04c",
-        "589bba36-44d0-4c60-8654-924a283a0955",
-        "77c07a71-0b91-40c5-a3a0-27df2dd0d776",
-        "7caa86e0-25d3-41c5-81ee-482dd4cef961",
-        "8d9e8039-76cd-4dee-bb1a-44806cb8118c",
-        "996c288a-8c29-4f2f-adfc-c6d6038f8c95",
-        "9bd72426-dbfe-4cc2-a9be-4a9c8e62017f",
-        "c2d1a3b4-d81e-4090-a251-3bd1bccaf8ea",
-        "daf59ca4-88fd-42d7-92a8-3364b0b59ae7",
-        "e58590f6-5de7-4566-ba39-c25b101fe3ae",
-        "f3f1cb1f-1ded-48ae-9a8a-7718140df47c",
+        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/base-files@12.4%2Bdeb12u7?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u8?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u8?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.7&epoch=2",
+        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libpsl5@0.21.2-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libsystemd0@252.30-1~deb12u2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libudev1@252.30-1~deb12u2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.7&epoch=1",
+        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/tzdata@2024a-0%2Bdeb12u1?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.7",
+        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/wget@1.21.3-1%2Bb2?arch=amd64&distro=debian-12.7",
+        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.7&epoch=1"
+      ]
+    },
+    {
+      "ref": "7f465774-7d74-4919-a247-ec01664a706a",
+      "dependsOn": []
+    },
+    {
+      "ref": "87333b5a-fdb3-4763-9078-3ef37642ec5f",
+      "dependsOn": []
+    },
+    {
+      "ref": "8d778622-4bde-42e8-874d-450eef44e82a",
+      "dependsOn": []
+    },
+    {
+      "ref": "a67b795a-284f-4bd8-af0c-091dc343215e",
+      "dependsOn": []
+    },
+    {
+      "ref": "a7c23087-933d-41ad-acb9-6dba0568aca5",
+      "dependsOn": []
+    },
+    {
+      "ref": "d24a1d12-4a7a-4c48-b165-e27ce108c6e8",
+      "dependsOn": []
+    },
+    {
+      "ref": "d27b7677-5bab-40a2-b5bd-5c2a8bfe5944",
+      "dependsOn": []
+    },
+    {
+      "ref": "d98d9a15-b4c1-42bc-90df-7089c838a884",
+      "dependsOn": []
+    },
+    {
+      "ref": "dbf4e4ce-ed90-4b4f-8208-9aac4afffa11",
+      "dependsOn": []
+    },
+    {
+      "ref": "f0bb626c-936d-4c0d-8c45-791f5a93fbcc",
+      "dependsOn": []
+    },
+    {
+      "ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
+      "dependsOn": []
+    },
+    {
+      "ref": "fc1a72b0-5f03-4be1-a1d8-bfb8c2305631",
+      "dependsOn": [
+        "0c540919-3e00-4a0a-9ed9-5753af2a795d",
+        "1250ba73-1ecd-4b1a-9dcd-1e39828ffca1",
+        "1a0a2c7b-c372-4abd-884a-41c12dc47415",
+        "1e91cc11-6928-4735-a6b3-c7809e6210b5",
+        "2a81a709-db35-42e8-a585-f9e270018065",
+        "366f5321-76b4-4d6f-bc79-f0170ca73f78",
+        "4a4c4fed-795d-4abc-bfc1-5e77fd4db3c0",
+        "560117d1-93d5-45a8-b4d2-bb8d4564f4dc",
+        "6578d411-1c07-4feb-a343-88dd6c2b58aa",
+        "73f25324-d555-4af2-8d1e-d679beaa3fe2",
+        "7c5d55ae-16fa-4e23-b11b-022df1f172db",
+        "7e6d782d-3126-497f-b5d8-ea2612984af0",
+        "7f465774-7d74-4919-a247-ec01664a706a",
+        "87333b5a-fdb3-4763-9078-3ef37642ec5f",
+        "8d778622-4bde-42e8-874d-450eef44e82a",
+        "a67b795a-284f-4bd8-af0c-091dc343215e",
+        "a7c23087-933d-41ad-acb9-6dba0568aca5",
+        "d24a1d12-4a7a-4c48-b165-e27ce108c6e8",
+        "d27b7677-5bab-40a2-b5bd-5c2a8bfe5944",
+        "d98d9a15-b4c1-42bc-90df-7089c838a884",
+        "dbf4e4ce-ed90-4b4f-8208-9aac4afffa11",
+        "f0bb626c-936d-4c0d-8c45-791f5a93fbcc",
+        "f7e54ea3-c83d-4e03-9ae5-33358567811a",
         "pkg:maven/com.ethlo.time/itu@1.10.2",
         "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.3",
         "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.17.2",
@@ -13056,113 +13163,6 @@
         "pkg:maven/us.springett/cpe-parser@2.1.0",
         "pkg:maven/us.springett/cvss-calculator@1.4.2",
         "pkg:maven/us.springett/owasp-risk-rating-calculator@1.0.1"
-      ]
-    },
-    {
-      "ref": "c2d1a3b4-d81e-4090-a251-3bd1bccaf8ea",
-      "dependsOn": []
-    },
-    {
-      "ref": "daf59ca4-88fd-42d7-92a8-3364b0b59ae7",
-      "dependsOn": []
-    },
-    {
-      "ref": "e58590f6-5de7-4566-ba39-c25b101fe3ae",
-      "dependsOn": []
-    },
-    {
-      "ref": "f3f1cb1f-1ded-48ae-9a8a-7718140df47c",
-      "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u7?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u8?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u8?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.7&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpsl5@0.21.2-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsystemd0@252.30-1~deb12u2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libudev1@252.30-1~deb12u2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/tzdata@2024a-0%2Bdeb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/wget@1.21.3-1%2Bb2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.7&epoch=1"
       ]
     },
     {
@@ -17129,7 +17129,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -17147,7 +17147,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -17289,7 +17289,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -17301,7 +17301,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -17709,7 +17709,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -17867,7 +17867,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -17928,9 +17928,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -17943,7 +17940,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -18305,7 +18302,7 @@
       "updated": "2025-01-03T14:15:24+00:00",
       "affects": [
         {
-          "ref": "3e4db516-fba6-49ad-9b16-a8a40e1a5197",
+          "ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
           "versions": [
             {
               "version": "1.5.12",
@@ -18314,7 +18311,7 @@
           ]
         },
         {
-          "ref": "c2d1a3b4-d81e-4090-a251-3bd1bccaf8ea",
+          "ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
           "versions": [
             {
               "version": "1.5.12",
@@ -18382,7 +18379,7 @@
       "updated": "2025-01-03T14:15:24+00:00",
       "affects": [
         {
-          "ref": "3e4db516-fba6-49ad-9b16-a8a40e1a5197",
+          "ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
           "versions": [
             {
               "version": "1.5.12",
@@ -18391,7 +18388,7 @@
           ]
         },
         {
-          "ref": "c2d1a3b4-d81e-4090-a251-3bd1bccaf8ea",
+          "ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
           "versions": [
             {
               "version": "1.5.12",
@@ -18591,7 +18588,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -18606,7 +18603,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -18755,7 +18752,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-38428"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:5299"
+          "url": "https://access.redhat.com/errata/RHSA-2024:6192"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-38428"
@@ -18764,7 +18761,7 @@
           "url": "https://bugzilla.redhat.com/2292836"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-5299.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-6192.html"
         },
         {
           "url": "https://git.savannah.gnu.org/cgit/wget.git/commit/?id=ed0c7c7e0e8f7298352646b2fd6e06a11e242ace"
@@ -18983,6 +18980,12 @@
         "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
         {
           "source": {
             "name": "azure"
