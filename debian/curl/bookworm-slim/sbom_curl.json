@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:4d17e3fc-8f07-4176-a079-d5a68d2ea355",
+  "serialNumber": "urn:uuid:d0507840-307c-4f1f-914f-2145720df5eb",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T13:42:09+00:00",
+    "timestamp": "2025-03-26T13:48:48+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "509598bc-eb99-4ee8-9b78-9d232cb85b6d",
+      "bom-ref": "24c492b1-a79e-41c1-a119-a93f6ee2c897",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -50,7 +50,7 @@
   },
   "components": [
     {
-      "bom-ref": "cec3e152-b66b-4938-98e7-fdf2dd1796b6",
+      "bom-ref": "5b7b6571-e3fb-4b81-9d31-d79e636fadec",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -8032,13 +8032,13 @@
   ],
   "dependencies": [
     {
-      "ref": "509598bc-eb99-4ee8-9b78-9d232cb85b6d",
+      "ref": "24c492b1-a79e-41c1-a119-a93f6ee2c897",
       "dependsOn": [
-        "cec3e152-b66b-4938-98e7-fdf2dd1796b6"
+        "5b7b6571-e3fb-4b81-9d31-d79e636fadec"
       ]
     },
     {
-      "ref": "cec3e152-b66b-4938-98e7-fdf2dd1796b6",
+      "ref": "5b7b6571-e3fb-4b81-9d31-d79e636fadec",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
