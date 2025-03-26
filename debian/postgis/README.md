@@ -2,6 +2,9 @@
 
 Root-curated postgis images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [postgis/postgis](https://hub.docker.com/r/postgis/postgis).
 
+## Docker Image
+The public Docker image is available on Docker Hub under the repository name [rootpublic/postgis](https://hub.docker.com/r/rootpublic/postgis).
+
 ## Why Root Curated Images?
 Root-curated images offer:
 - Reduced image size
@@ -26,9 +29,6 @@ User obligations:
 - Adhere to the terms of licenses listed above
 
 Detailed license compliance information can be found at [root.io/trust-center](https://root.io/trust-center).
-
-## Source & Dockerfile
-The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/postgis/).
 
 ## Usage Information
 For detailed examples and usage instructions, see the official Docker postgis/postgis documentation [here](https://hub.docker.com/r/postgis/postgis).
