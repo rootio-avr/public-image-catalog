@@ -3,7 +3,7 @@
 Root-curated gpt-data-generator images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/gpt-data-generator](https://hub.docker.com/r/gitlab/gpt-data-generator).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/gpt-data-generator](https://hub.docker.com/r/rootpublic/gpt-data-generator).
+The public Docker image is available on Docker Hub under the repository [rootpublic/gpt-data-generator](https://hub.docker.com/r/rootpublic/gpt-data-generator).
 
 ## Why Root Curated Images?
 Root-curated images offer:
