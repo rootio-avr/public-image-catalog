@@ -3,7 +3,7 @@
 Root-curated gitlab-performance-tool images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/gitlab-performance-tool](https://hub.docker.com/r/gitlab/gitlab-performance-tool).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/gitlab-performance-tool](https://hub.docker.com/r/rootpublic/gitlab-performance-tool).
+The public Docker image is available on Docker Hub under the repository [rootpublic/gitlab-performance-tool](https://hub.docker.com/r/rootpublic/gitlab-performance-tool).
 
 ## Why Root Curated Images?
 Root-curated images offer:

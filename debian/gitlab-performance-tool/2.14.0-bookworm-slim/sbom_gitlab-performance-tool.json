@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:883ecd3b-e18d-4e23-8d30-34d2975cc554",
+  "serialNumber": "urn:uuid:84d90356-876a-4990-b367-6fdc0c37caa7",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:05:32+00:00",
+    "timestamp": "2025-03-26T14:09:30+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "acfbe743-103d-4483-be15-565d096d03d1",
+      "bom-ref": "dbaaddff-03a3-467f-b8bc-1c85d32410d1",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -74,7 +74,54 @@
   },
   "components": [
     {
-      "bom-ref": "73a4bcc9-c3b1-4db4-960a-48d818757eae",
+      "bom-ref": "37eee584-9b7e-491b-b9b3-642cba497c0a",
+      "type": "application",
+      "name": "usr/local/bin/k6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b2d2f364-cd0f-4909-b2d5-56654d11bc65",
+      "type": "library",
+      "name": "bundler",
+      "version": "2.6.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/bundler@2.6.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/ruby/gems/3.4.0/specifications/default/bundler-2.6.2.gemspec"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e5dcf34dfab4d4667a2c5b81c27878d42d9634e337ddad776829d960eb7cc1ec"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:ea32e1b1b79d06b220eb5e5be75a07ad8e1596f63cdbd477bdb697d05d1bdd2a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gemspec"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cee4a2cd-af88-4343-92fc-b56fe462817f",
       "type": "library",
       "name": "bundler",
       "version": "2.6.2",
@@ -106,22 +153,7 @@
       ]
     },
     {
-      "bom-ref": "d77a3f5a-b942-4bee-adb7-26ff71adc7e4",
-      "type": "application",
-      "name": "usr/local/bin/k6",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "dfe29fb0-2e9f-4bfb-8ab0-42918046a10d",
+      "bom-ref": "e01e5362-dfe4-48b2-ac98-f1434fc69372",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -133,38 +165,6 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "fc4fc4d2-3b76-4df6-a7c7-f06cddc59f0e",
-      "type": "library",
-      "name": "bundler",
-      "version": "2.6.2",
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:gem/bundler@2.6.2",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/ruby/gems/3.4.0/specifications/default/bundler-2.6.2.gemspec"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:e5dcf34dfab4d4667a2c5b81c27878d42d9634e337ddad776829d960eb7cc1ec"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:ea32e1b1b79d06b220eb5e5be75a07ad8e1596f63cdbd477bdb697d05d1bdd2a"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gemspec"
         }
       ]
     },
@@ -13113,16 +13113,26 @@
   ],
   "dependencies": [
     {
-      "ref": "73a4bcc9-c3b1-4db4-960a-48d818757eae",
+      "ref": "37eee584-9b7e-491b-b9b3-642cba497c0a",
+      "dependsOn": [
+        "pkg:golang/go.k6.io/k6"
+      ]
+    },
+    {
+      "ref": "b2d2f364-cd0f-4909-b2d5-56654d11bc65",
       "dependsOn": []
     },
     {
-      "ref": "acfbe743-103d-4483-be15-565d096d03d1",
+      "ref": "cee4a2cd-af88-4343-92fc-b56fe462817f",
+      "dependsOn": []
+    },
+    {
+      "ref": "dbaaddff-03a3-467f-b8bc-1c85d32410d1",
       "dependsOn": [
-        "73a4bcc9-c3b1-4db4-960a-48d818757eae",
-        "d77a3f5a-b942-4bee-adb7-26ff71adc7e4",
-        "dfe29fb0-2e9f-4bfb-8ab0-42918046a10d",
-        "fc4fc4d2-3b76-4df6-a7c7-f06cddc59f0e",
+        "37eee584-9b7e-491b-b9b3-642cba497c0a",
+        "b2d2f364-cd0f-4909-b2d5-56654d11bc65",
+        "cee4a2cd-af88-4343-92fc-b56fe462817f",
+        "e01e5362-dfe4-48b2-ac98-f1434fc69372",
         "pkg:gem/abbrev@0.1.2",
         "pkg:gem/activesupport@7.1.3",
         "pkg:gem/addressable@2.8.6",
@@ -13246,13 +13256,7 @@
       ]
     },
     {
-      "ref": "d77a3f5a-b942-4bee-adb7-26ff71adc7e4",
-      "dependsOn": [
-        "pkg:golang/go.k6.io/k6"
-      ]
-    },
-    {
-      "ref": "dfe29fb0-2e9f-4bfb-8ab0-42918046a10d",
+      "ref": "e01e5362-dfe4-48b2-ac98-f1434fc69372",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
@@ -13347,10 +13351,6 @@
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1"
       ]
-    },
-    {
-      "ref": "fc4fc4d2-3b76-4df6-a7c7-f06cddc59f0e",
-      "dependsOn": []
     },
     {
       "ref": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
