@@ -3,7 +3,7 @@
 Root-curated owasp-nettacker images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [owasp/nettacker](https://hub.docker.com/r/owasp/nettacker).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/owasp-nettacker](https://hub.docker.com/r/rootpublic/owasp-nettacker).
+The public Docker image is available on Docker Hub under the repository [rootpublic/owasp-nettacker](https://hub.docker.com/r/rootpublic/owasp-nettacker).
 
 ## Why Root Curated Images?
 Root-curated images offer:
