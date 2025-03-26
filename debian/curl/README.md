@@ -3,7 +3,7 @@
 Root-curated curl images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [rootioinc/common-curl](https://hub.docker.com/r/rootioinc/common-curl).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/curl](https://hub.docker.com/r/rootpublic/curl).
+The public image can be retrieved from our public docker hub repository [rootpublic/curl](https://hub.docker.com/r/rootpublic/curl).
 
 ## Why Root Curated Images?
 Root-curated images offer:
