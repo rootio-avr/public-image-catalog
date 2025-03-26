@@ -2,6 +2,9 @@
 
 Root-curated node-exporter images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [prom/node-exporter](https://hub.docker.com/r/prom/node-exporter).
 
+## Docker Image
+The public Docker image is available on Docker Hub under the repository name [rootpublic/node-exporter](https://hub.docker.com/r/rootpublic/node-exporter).
+
 ## Why Root Curated Images?
 Root-curated images offer:
 - Reduced image size
@@ -26,9 +29,6 @@ User obligations:
 - Adhere to the terms of licenses listed above
 
 Detailed license compliance information can be found at [root.io/trust-center](https://root.io/trust-center).
-
-## Source & Dockerfile
-The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/node-exporter/).
 
 ## Usage Information
 For detailed examples and usage instructions, see the official Docker prom/node-exporter documentation [here](https://hub.docker.com/r/prom/node-exporter).
