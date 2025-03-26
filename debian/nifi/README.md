@@ -3,7 +3,7 @@
 Root-curated nifi images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [apache/nifi](https://hub.docker.com/r/apache/nifi).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/nifi](https://hub.docker.com/r/rootpublic/nifi).
+The public Docker image is available on Docker Hub under the repository [rootpublic/nifi](https://hub.docker.com/r/rootpublic/nifi).
 
 ## Why Root Curated Images?
 Root-curated images offer:
