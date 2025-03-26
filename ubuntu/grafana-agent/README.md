@@ -3,7 +3,7 @@
 Root-curated grafana-agent images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [grafana/agent](https://hub.docker.com/r/grafana/agent).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/grafana-agent](https://hub.docker.com/r/rootpublic/grafana-agent).
+The public Docker image is available on Docker Hub under the repository [rootpublic/grafana-agent](https://hub.docker.com/r/rootpublic/grafana-agent).
 
 ## Why Root Curated Images?
 Root-curated images offer:
