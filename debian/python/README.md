@@ -3,7 +3,7 @@
 Root-curated python images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [python](https://hub.docker.com/_/python).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/python](https://hub.docker.com/r/rootpublic/python).
+The public Docker image is available on Docker Hub under the repository [rootpublic/python](https://hub.docker.com/r/rootpublic/python).
 
 ## Why Root Curated Images?
 Root-curated images offer:
