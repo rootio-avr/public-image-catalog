@@ -3,7 +3,7 @@
 Root-curated gitlab-glab images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/glab](https://hub.docker.com/r/gitlab/glab).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/gitlab-glab](https://hub.docker.com/r/rootpublic/gitlab-glab).
+The public Docker image is available on Docker Hub under the repository [rootpublic/gitlab-glab](https://hub.docker.com/r/rootpublic/gitlab-glab).
 
 ## Why Root Curated Images?
 Root-curated images offer:
