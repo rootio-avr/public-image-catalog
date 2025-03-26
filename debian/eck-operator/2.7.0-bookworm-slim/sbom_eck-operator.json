@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:39e716cd-c264-4daa-beaa-64692c76dbb0",
+  "serialNumber": "urn:uuid:6b9602c1-ba4b-4798-bd4a-aec1fbe8c248",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T09:58:26+00:00",
+    "timestamp": "2025-03-26T14:00:04+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "d8f2d9f5-fc1a-4e6c-91b6-acdfb5f28644",
+      "bom-ref": "1781d13a-e643-4c40-a1ee-1491969f4e91",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -94,7 +94,7 @@
   },
   "components": [
     {
-      "bom-ref": "4601b151-dba7-4084-aabb-2768dd10ee00",
+      "bom-ref": "2f77a6fd-54a8-42c5-b1f8-48e2653d7498",
       "type": "operating-system",
       "name": "debian",
       "version": "12.9",
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "bom-ref": "b9b64a42-6e65-4735-ad40-175efe35f653",
+      "bom-ref": "4c984d32-d068-42c9-a1f7-567d104c8dac",
       "type": "application",
       "name": "elastic-operator",
       "properties": [
@@ -8904,7 +8904,14 @@
   ],
   "dependencies": [
     {
-      "ref": "4601b151-dba7-4084-aabb-2768dd10ee00",
+      "ref": "1781d13a-e643-4c40-a1ee-1491969f4e91",
+      "dependsOn": [
+        "2f77a6fd-54a8-42c5-b1f8-48e2653d7498",
+        "4c984d32-d068-42c9-a1f7-567d104c8dac"
+      ]
+    },
+    {
+      "ref": "2f77a6fd-54a8-42c5-b1f8-48e2653d7498",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.9",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.9",
@@ -9000,16 +9007,9 @@
       ]
     },
     {
-      "ref": "b9b64a42-6e65-4735-ad40-175efe35f653",
+      "ref": "4c984d32-d068-42c9-a1f7-567d104c8dac",
       "dependsOn": [
         "pkg:golang/github.com/elastic/cloud-on-k8s/v2"
-      ]
-    },
-    {
-      "ref": "d8f2d9f5-fc1a-4e6c-91b6-acdfb5f28644",
-      "dependsOn": [
-        "4601b151-dba7-4084-aabb-2768dd10ee00",
-        "b9b64a42-6e65-4735-ad40-175efe35f653"
       ]
     },
     {
