@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:41725f0e-811d-4dc2-aef2-61785cf093c8",
+  "serialNumber": "urn:uuid:c3bdbaaf-81ad-4a9e-ac8c-1f0a05349d2f",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:09:16+00:00",
+    "timestamp": "2025-03-26T14:15:50+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "73397085-e7fc-40e2-a40c-61f8021b5d6b",
+      "bom-ref": "c3563ded-d59a-4400-9580-32d0d52de8dc",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -82,7 +82,22 @@
   },
   "components": [
     {
-      "bom-ref": "376de6e0-a837-4a19-8187-f9feffc600bb",
+      "bom-ref": "09fde1d0-ceda-4341-85e2-8f6c77c52896",
+      "type": "application",
+      "name": "usr/bin/alloy",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "506d66e5-2b2a-4a85-8c20-eadce4135773",
       "type": "library",
       "name": "./syntax",
       "properties": [
@@ -101,7 +116,7 @@
       ]
     },
     {
-      "bom-ref": "b8125c59-762f-4db7-9ad8-a767129cea1e",
+      "bom-ref": "71b9f7b8-0363-48ac-8c54-b3e21a161e0c",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "24.04",
@@ -113,21 +128,6 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "ubuntu"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d869b95d-dca9-47ac-8080-aea8f9aea6c4",
-      "type": "application",
-      "name": "usr/bin/alloy",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
         }
       ]
     },
@@ -23520,18 +23520,17 @@
   ],
   "dependencies": [
     {
-      "ref": "376de6e0-a837-4a19-8187-f9feffc600bb",
-      "dependsOn": []
-    },
-    {
-      "ref": "73397085-e7fc-40e2-a40c-61f8021b5d6b",
+      "ref": "09fde1d0-ceda-4341-85e2-8f6c77c52896",
       "dependsOn": [
-        "b8125c59-762f-4db7-9ad8-a767129cea1e",
-        "d869b95d-dca9-47ac-8080-aea8f9aea6c4"
+        "pkg:golang/github.com/grafana/alloy@v1.5.1"
       ]
     },
     {
-      "ref": "b8125c59-762f-4db7-9ad8-a767129cea1e",
+      "ref": "506d66e5-2b2a-4a85-8c20-eadce4135773",
+      "dependsOn": []
+    },
+    {
+      "ref": "71b9f7b8-0363-48ac-8c54-b3e21a161e0c",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04",
         "pkg:deb/ubuntu/base-files@13ubuntu10.1?arch=amd64&distro=ubuntu-24.04",
@@ -23631,9 +23630,10 @@
       ]
     },
     {
-      "ref": "d869b95d-dca9-47ac-8080-aea8f9aea6c4",
+      "ref": "c3563ded-d59a-4400-9580-32d0d52de8dc",
       "dependsOn": [
-        "pkg:golang/github.com/grafana/alloy@v1.5.1"
+        "09fde1d0-ceda-4341-85e2-8f6c77c52896",
+        "71b9f7b8-0363-48ac-8c54-b3e21a161e0c"
       ]
     },
     {
@@ -25398,7 +25398,7 @@
     {
       "ref": "pkg:golang/github.com/grafana/alloy@v1.5.1",
       "dependsOn": [
-        "376de6e0-a837-4a19-8187-f9feffc600bb",
+        "506d66e5-2b2a-4a85-8c20-eadce4135773",
         "pkg:golang/cloud.google.com/go/auth/oauth2adapt@v0.2.2",
         "pkg:golang/cloud.google.com/go/auth@v0.7.0",
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.5.2",
