@@ -187,8 +187,6 @@ User obligations:
 
 Detailed license compliance information can be found at [root.io/trust-center](https://root.io/trust-center).
 
-## Source & Dockerfile
-The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/gitlab-glab/1.51.0-bookworm-slim/).
 
 ## Usage Information
 For detailed examples and usage instructions, see the official Docker gitlab/glab documentation [here](https://hub.docker.com/r/gitlab/glab).

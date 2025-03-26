@@ -2,6 +2,9 @@
 
 Root-curated gitlab-glab images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/glab](https://hub.docker.com/r/gitlab/glab).
 
+## Docker Image
+The public Docker image is available on Docker Hub under the repository name [rootpublic/gitlab-glab](https://hub.docker.com/r/rootpublic/gitlab-glab).
+
 ## Why Root Curated Images?
 Root-curated images offer:
 - Reduced image size
@@ -26,9 +29,6 @@ User obligations:
 - Adhere to the terms of licenses listed above
 
 Detailed license compliance information can be found at [root.io/trust-center](https://root.io/trust-center).
-
-## Source & Dockerfile
-The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/gitlab-glab/).
 
 ## Usage Information
 For detailed examples and usage instructions, see the official Docker gitlab/glab documentation [here](https://hub.docker.com/r/gitlab/glab).
