@@ -3,7 +3,7 @@
 Root-curated dependencytrack-apiserver images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [dependencytrack/apiserver](https://hub.docker.com/r/dependencytrack/apiserver).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/dependencytrack-apiserver](https://hub.docker.com/r/rootpublic/dependencytrack-apiserver).
+The public image can be retrieved from our public docker hub repository [rootpublic/dependencytrack-apiserver](https://hub.docker.com/r/rootpublic/dependencytrack-apiserver).
 
 ## Why Root Curated Images?
 Root-curated images offer:
