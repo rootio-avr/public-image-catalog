@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:feec4c82-9963-46e3-a719-34ec2d88f916",
+  "serialNumber": "urn:uuid:3399881a-d15f-4dfa-b080-f5e9be7a34eb",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:56:32+00:00",
+    "timestamp": "2025-03-26T10:35:16+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "599d7a5b-78e6-4191-bf27-3ed033e9417d",
+      "bom-ref": "11013266-2652-4757-b697-1a69ea118255",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -150,7 +150,23 @@
   },
   "components": [
     {
-      "bom-ref": "3bea2d26-0132-4af6-9a62-82ec2cbed7e0",
+      "bom-ref": "10a92759-d1bc-4580-86c3-44df6f3ce01b",
+      "type": "operating-system",
+      "name": "ubuntu",
+      "version": "22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "ubuntu"
+        }
+      ]
+    },
+    {
+      "bom-ref": "67367f63-8917-4b12-b087-c621199a75e2",
       "type": "library",
       "group": "@jupyterlab",
       "name": "application-top",
@@ -187,23 +203,7 @@
       ]
     },
     {
-      "bom-ref": "7c92d274-0c1f-49ac-8e76-5f40e0b994b0",
-      "type": "operating-system",
-      "name": "ubuntu",
-      "version": "22.04",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "ubuntu"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8d2d63ec-04e7-4e39-9d4a-fc330fa94547",
+      "bom-ref": "a11f4f80-08d9-42f4-831b-3892a65ebdf6",
       "type": "library",
       "group": "@jupyterlab",
       "name": "application-top",
@@ -219,7 +219,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/jupyterlab/static/package.json"
+          "value": "usr/local/lib/python3.11/site-packages/jupyterlab/staging/package.json"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "bom-ref": "8dca1cda-1609-4edf-adb9-b6f1f5576a5f",
+      "bom-ref": "d4596a0e-e9c9-4e56-ac2e-236df0aae2db",
       "type": "library",
       "group": "@jupyterlab",
       "name": "application-top",
@@ -256,7 +256,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/jupyterlab/staging/package.json"
+          "value": "usr/local/lib/python3.11/site-packages/jupyterlab/static/package.json"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -15627,170 +15627,7 @@
   ],
   "dependencies": [
     {
-      "ref": "3bea2d26-0132-4af6-9a62-82ec2cbed7e0",
-      "dependsOn": []
-    },
-    {
-      "ref": "599d7a5b-78e6-4191-bf27-3ed033e9417d",
-      "dependsOn": [
-        "3bea2d26-0132-4af6-9a62-82ec2cbed7e0",
-        "7c92d274-0c1f-49ac-8e76-5f40e0b994b0",
-        "8d2d63ec-04e7-4e39-9d4a-fc330fa94547",
-        "8dca1cda-1609-4edf-adb9-b6f1f5576a5f",
-        "pkg:npm/%40jupyter-notebook/lab-extension@7.3.2",
-        "pkg:npm/%40jupyter-widgets/jupyterlab-manager@5.0.13",
-        "pkg:npm/%40jupyterlab/galata-extension@5.3.4",
-        "pkg:npm/%40jupyterlab/mock-consumer@4.3.5",
-        "pkg:npm/%40jupyterlab/mock-extension@4.3.5",
-        "pkg:npm/%40jupyterlab/mock-incompat@0.1.0",
-        "pkg:npm/%40jupyterlab/mock-mime-extension@0.3.0",
-        "pkg:npm/%40jupyterlab/mock-package@0.1.0",
-        "pkg:npm/%40jupyterlab/mock-provider@4.3.5",
-        "pkg:npm/%40jupyterlab/mock-token@4.3.5",
-        "pkg:npm/jupyterlab_pygments@0.3.0",
-        "pkg:npm/test-hyphens-underscore@3.0.2",
-        "pkg:npm/test-hyphens@3.0.2",
-        "pkg:npm/test_no_hyphens@3.0.2",
-        "pkg:pypi/absl-py@2.1.0",
-        "pkg:pypi/anyio@4.8.0",
-        "pkg:pypi/argon2-cffi-bindings@21.2.0",
-        "pkg:pypi/argon2-cffi@23.1.0",
-        "pkg:pypi/arrow@1.3.0",
-        "pkg:pypi/asttokens@3.0.0",
-        "pkg:pypi/astunparse@1.6.3",
-        "pkg:pypi/async-lru@2.0.4",
-        "pkg:pypi/attrs@25.1.0",
-        "pkg:pypi/babel@2.17.0",
-        "pkg:pypi/beautifulsoup4@4.13.3",
-        "pkg:pypi/bleach@6.2.0",
-        "pkg:pypi/certifi@2025.1.31",
-        "pkg:pypi/cffi@1.17.1",
-        "pkg:pypi/charset-normalizer@3.4.1",
-        "pkg:pypi/comm@0.2.2",
-        "pkg:pypi/contourpy@1.3.1",
-        "pkg:pypi/cryptography@42.0.4",
-        "pkg:pypi/cycler@0.12.1",
-        "pkg:pypi/debugpy@1.8.12",
-        "pkg:pypi/decorator@5.1.1",
-        "pkg:pypi/defusedxml@0.7.1",
-        "pkg:pypi/example@21.12",
-        "pkg:pypi/executing@2.2.0",
-        "pkg:pypi/fastjsonschema@2.21.1",
-        "pkg:pypi/flatbuffers@25.1.24",
-        "pkg:pypi/fonttools@4.55.8",
-        "pkg:pypi/fqdn@1.5.1",
-        "pkg:pypi/gast@0.6.0",
-        "pkg:pypi/google-pasta@0.2.0",
-        "pkg:pypi/grpcio@1.70.0",
-        "pkg:pypi/h11@0.14.0",
-        "pkg:pypi/h5py@3.12.1",
-        "pkg:pypi/html5lib@1.1",
-        "pkg:pypi/httpcore@1.0.7",
-        "pkg:pypi/httpx@0.28.1",
-        "pkg:pypi/idna@3.10",
-        "pkg:pypi/ipykernel@6.29.5",
-        "pkg:pypi/ipython@8.32.0",
-        "pkg:pypi/ipywidgets@8.1.5",
-        "pkg:pypi/isoduration@20.11.0",
-        "pkg:pypi/jedi@0.19.2",
-        "pkg:pypi/jinja2@3.1.5",
-        "pkg:pypi/json5@0.10.0",
-        "pkg:pypi/jsonpointer@3.0.0",
-        "pkg:pypi/jsonschema-specifications@2024.10.1",
-        "pkg:pypi/jsonschema@4.23.0",
-        "pkg:pypi/jupyter-client@8.6.3",
-        "pkg:pypi/jupyter-console@6.6.3",
-        "pkg:pypi/jupyter-core@5.7.2",
-        "pkg:pypi/jupyter-events@0.12.0",
-        "pkg:pypi/jupyter-http-over-ws@0.0.8",
-        "pkg:pypi/jupyter-lsp@2.2.5",
-        "pkg:pypi/jupyter-server-terminals@0.5.3",
-        "pkg:pypi/jupyter-server@2.15.0",
-        "pkg:pypi/jupyter@1.1.1",
-        "pkg:pypi/jupyterlab-pygments@0.3.0",
-        "pkg:pypi/jupyterlab-server@2.27.3",
-        "pkg:pypi/jupyterlab-widgets@3.0.13",
-        "pkg:pypi/jupyterlab@4.3.5",
-        "pkg:pypi/keras@3.8.0",
-        "pkg:pypi/kiwisolver@1.4.8",
-        "pkg:pypi/libclang@18.1.1",
-        "pkg:pypi/markdown-it-py@3.0.0",
-        "pkg:pypi/markdown@3.7",
-        "pkg:pypi/markupsafe@3.0.2",
-        "pkg:pypi/matplotlib-inline@0.1.7",
-        "pkg:pypi/matplotlib@3.10.0",
-        "pkg:pypi/mdurl@0.1.2",
-        "pkg:pypi/mistune@3.1.1",
-        "pkg:pypi/ml-dtypes@0.4.1",
-        "pkg:pypi/namex@0.0.8",
-        "pkg:pypi/nbclient@0.10.2",
-        "pkg:pypi/nbconvert@7.16.6",
-        "pkg:pypi/nbformat@5.10.4",
-        "pkg:pypi/nest-asyncio@1.6.0",
-        "pkg:pypi/notebook-shim@0.2.4",
-        "pkg:pypi/notebook@7.3.2",
-        "pkg:pypi/numpy@2.0.2",
-        "pkg:pypi/opt-einsum@3.4.0",
-        "pkg:pypi/optree@0.14.0",
-        "pkg:pypi/overrides@7.7.0",
-        "pkg:pypi/packaging@24.2",
-        "pkg:pypi/pandocfilters@1.5.1",
-        "pkg:pypi/parso@0.8.4",
-        "pkg:pypi/pexpect@4.9.0",
-        "pkg:pypi/pillow@11.1.0",
-        "pkg:pypi/pip@25.0",
-        "pkg:pypi/platformdirs@4.3.6",
-        "pkg:pypi/prometheus-client@0.21.1",
-        "pkg:pypi/prompt-toolkit@3.0.50",
-        "pkg:pypi/protobuf@5.29.3",
-        "pkg:pypi/psutil@6.1.1",
-        "pkg:pypi/ptyprocess@0.7.0",
-        "pkg:pypi/pure-eval@0.2.3",
-        "pkg:pypi/pycparser@2.22",
-        "pkg:pypi/pygments@2.19.1",
-        "pkg:pypi/pyjwt@2.4.0",
-        "pkg:pypi/pyparsing@3.2.1",
-        "pkg:pypi/python-dateutil@2.9.0.post0",
-        "pkg:pypi/python-json-logger@3.2.1",
-        "pkg:pypi/pyyaml@6.0.2",
-        "pkg:pypi/pyzmq@26.2.1",
-        "pkg:pypi/referencing@0.36.2",
-        "pkg:pypi/requests@2.32.3",
-        "pkg:pypi/rfc3339-validator@0.1.4",
-        "pkg:pypi/rfc3986-validator@0.1.1",
-        "pkg:pypi/rich@13.9.4",
-        "pkg:pypi/rpds-py@0.22.3",
-        "pkg:pypi/send2trash@1.8.3",
-        "pkg:pypi/setuptools@70.0.0",
-        "pkg:pypi/six@1.17.0",
-        "pkg:pypi/sniffio@1.3.1",
-        "pkg:pypi/soupsieve@2.6",
-        "pkg:pypi/stack-data@0.6.3",
-        "pkg:pypi/tensorboard-data-server@0.7.2",
-        "pkg:pypi/tensorboard@2.18.0",
-        "pkg:pypi/tensorflow-io-gcs-filesystem@0.37.1",
-        "pkg:pypi/tensorflow@2.18.0",
-        "pkg:pypi/termcolor@2.5.0",
-        "pkg:pypi/terminado@0.18.1",
-        "pkg:pypi/tinycss2@1.4.0",
-        "pkg:pypi/tornado@6.4.2",
-        "pkg:pypi/traitlets@5.14.3",
-        "pkg:pypi/types-python-dateutil@2.9.0.20241206",
-        "pkg:pypi/typing-extensions@4.12.2",
-        "pkg:pypi/uri-template@1.3.0",
-        "pkg:pypi/urllib3@2.3.0",
-        "pkg:pypi/wcwidth@0.2.13",
-        "pkg:pypi/webcolors@24.11.1",
-        "pkg:pypi/webencodings@0.5.1",
-        "pkg:pypi/websocket-client@1.8.0",
-        "pkg:pypi/werkzeug@3.1.3",
-        "pkg:pypi/wheel@0.45.1",
-        "pkg:pypi/widgetsnbextension@4.0.13",
-        "pkg:pypi/wrapt@1.17.2"
-      ]
-    },
-    {
-      "ref": "7c92d274-0c1f-49ac-8e76-5f40e0b994b0",
+      "ref": "10a92759-d1bc-4580-86c3-44df6f3ce01b",
       "dependsOn": [
         "pkg:deb/ubuntu/adduser@3.118ubuntu5?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/apt@2.4.10?arch=amd64&distro=ubuntu-22.04",
@@ -15955,11 +15792,174 @@
       ]
     },
     {
-      "ref": "8d2d63ec-04e7-4e39-9d4a-fc330fa94547",
+      "ref": "11013266-2652-4757-b697-1a69ea118255",
+      "dependsOn": [
+        "10a92759-d1bc-4580-86c3-44df6f3ce01b",
+        "67367f63-8917-4b12-b087-c621199a75e2",
+        "a11f4f80-08d9-42f4-831b-3892a65ebdf6",
+        "d4596a0e-e9c9-4e56-ac2e-236df0aae2db",
+        "pkg:npm/%40jupyter-notebook/lab-extension@7.3.2",
+        "pkg:npm/%40jupyter-widgets/jupyterlab-manager@5.0.13",
+        "pkg:npm/%40jupyterlab/galata-extension@5.3.4",
+        "pkg:npm/%40jupyterlab/mock-consumer@4.3.5",
+        "pkg:npm/%40jupyterlab/mock-extension@4.3.5",
+        "pkg:npm/%40jupyterlab/mock-incompat@0.1.0",
+        "pkg:npm/%40jupyterlab/mock-mime-extension@0.3.0",
+        "pkg:npm/%40jupyterlab/mock-package@0.1.0",
+        "pkg:npm/%40jupyterlab/mock-provider@4.3.5",
+        "pkg:npm/%40jupyterlab/mock-token@4.3.5",
+        "pkg:npm/jupyterlab_pygments@0.3.0",
+        "pkg:npm/test-hyphens-underscore@3.0.2",
+        "pkg:npm/test-hyphens@3.0.2",
+        "pkg:npm/test_no_hyphens@3.0.2",
+        "pkg:pypi/absl-py@2.1.0",
+        "pkg:pypi/anyio@4.8.0",
+        "pkg:pypi/argon2-cffi-bindings@21.2.0",
+        "pkg:pypi/argon2-cffi@23.1.0",
+        "pkg:pypi/arrow@1.3.0",
+        "pkg:pypi/asttokens@3.0.0",
+        "pkg:pypi/astunparse@1.6.3",
+        "pkg:pypi/async-lru@2.0.4",
+        "pkg:pypi/attrs@25.1.0",
+        "pkg:pypi/babel@2.17.0",
+        "pkg:pypi/beautifulsoup4@4.13.3",
+        "pkg:pypi/bleach@6.2.0",
+        "pkg:pypi/certifi@2025.1.31",
+        "pkg:pypi/cffi@1.17.1",
+        "pkg:pypi/charset-normalizer@3.4.1",
+        "pkg:pypi/comm@0.2.2",
+        "pkg:pypi/contourpy@1.3.1",
+        "pkg:pypi/cryptography@42.0.4",
+        "pkg:pypi/cycler@0.12.1",
+        "pkg:pypi/debugpy@1.8.12",
+        "pkg:pypi/decorator@5.1.1",
+        "pkg:pypi/defusedxml@0.7.1",
+        "pkg:pypi/example@21.12",
+        "pkg:pypi/executing@2.2.0",
+        "pkg:pypi/fastjsonschema@2.21.1",
+        "pkg:pypi/flatbuffers@25.1.24",
+        "pkg:pypi/fonttools@4.55.8",
+        "pkg:pypi/fqdn@1.5.1",
+        "pkg:pypi/gast@0.6.0",
+        "pkg:pypi/google-pasta@0.2.0",
+        "pkg:pypi/grpcio@1.70.0",
+        "pkg:pypi/h11@0.14.0",
+        "pkg:pypi/h5py@3.12.1",
+        "pkg:pypi/html5lib@1.1",
+        "pkg:pypi/httpcore@1.0.7",
+        "pkg:pypi/httpx@0.28.1",
+        "pkg:pypi/idna@3.10",
+        "pkg:pypi/ipykernel@6.29.5",
+        "pkg:pypi/ipython@8.32.0",
+        "pkg:pypi/ipywidgets@8.1.5",
+        "pkg:pypi/isoduration@20.11.0",
+        "pkg:pypi/jedi@0.19.2",
+        "pkg:pypi/jinja2@3.1.5",
+        "pkg:pypi/json5@0.10.0",
+        "pkg:pypi/jsonpointer@3.0.0",
+        "pkg:pypi/jsonschema-specifications@2024.10.1",
+        "pkg:pypi/jsonschema@4.23.0",
+        "pkg:pypi/jupyter-client@8.6.3",
+        "pkg:pypi/jupyter-console@6.6.3",
+        "pkg:pypi/jupyter-core@5.7.2",
+        "pkg:pypi/jupyter-events@0.12.0",
+        "pkg:pypi/jupyter-http-over-ws@0.0.8",
+        "pkg:pypi/jupyter-lsp@2.2.5",
+        "pkg:pypi/jupyter-server-terminals@0.5.3",
+        "pkg:pypi/jupyter-server@2.15.0",
+        "pkg:pypi/jupyter@1.1.1",
+        "pkg:pypi/jupyterlab-pygments@0.3.0",
+        "pkg:pypi/jupyterlab-server@2.27.3",
+        "pkg:pypi/jupyterlab-widgets@3.0.13",
+        "pkg:pypi/jupyterlab@4.3.5",
+        "pkg:pypi/keras@3.8.0",
+        "pkg:pypi/kiwisolver@1.4.8",
+        "pkg:pypi/libclang@18.1.1",
+        "pkg:pypi/markdown-it-py@3.0.0",
+        "pkg:pypi/markdown@3.7",
+        "pkg:pypi/markupsafe@3.0.2",
+        "pkg:pypi/matplotlib-inline@0.1.7",
+        "pkg:pypi/matplotlib@3.10.0",
+        "pkg:pypi/mdurl@0.1.2",
+        "pkg:pypi/mistune@3.1.1",
+        "pkg:pypi/ml-dtypes@0.4.1",
+        "pkg:pypi/namex@0.0.8",
+        "pkg:pypi/nbclient@0.10.2",
+        "pkg:pypi/nbconvert@7.16.6",
+        "pkg:pypi/nbformat@5.10.4",
+        "pkg:pypi/nest-asyncio@1.6.0",
+        "pkg:pypi/notebook-shim@0.2.4",
+        "pkg:pypi/notebook@7.3.2",
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/opt-einsum@3.4.0",
+        "pkg:pypi/optree@0.14.0",
+        "pkg:pypi/overrides@7.7.0",
+        "pkg:pypi/packaging@24.2",
+        "pkg:pypi/pandocfilters@1.5.1",
+        "pkg:pypi/parso@0.8.4",
+        "pkg:pypi/pexpect@4.9.0",
+        "pkg:pypi/pillow@11.1.0",
+        "pkg:pypi/pip@25.0",
+        "pkg:pypi/platformdirs@4.3.6",
+        "pkg:pypi/prometheus-client@0.21.1",
+        "pkg:pypi/prompt-toolkit@3.0.50",
+        "pkg:pypi/protobuf@5.29.3",
+        "pkg:pypi/psutil@6.1.1",
+        "pkg:pypi/ptyprocess@0.7.0",
+        "pkg:pypi/pure-eval@0.2.3",
+        "pkg:pypi/pycparser@2.22",
+        "pkg:pypi/pygments@2.19.1",
+        "pkg:pypi/pyjwt@2.4.0",
+        "pkg:pypi/pyparsing@3.2.1",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/python-json-logger@3.2.1",
+        "pkg:pypi/pyyaml@6.0.2",
+        "pkg:pypi/pyzmq@26.2.1",
+        "pkg:pypi/referencing@0.36.2",
+        "pkg:pypi/requests@2.32.3",
+        "pkg:pypi/rfc3339-validator@0.1.4",
+        "pkg:pypi/rfc3986-validator@0.1.1",
+        "pkg:pypi/rich@13.9.4",
+        "pkg:pypi/rpds-py@0.22.3",
+        "pkg:pypi/send2trash@1.8.3",
+        "pkg:pypi/setuptools@70.0.0",
+        "pkg:pypi/six@1.17.0",
+        "pkg:pypi/sniffio@1.3.1",
+        "pkg:pypi/soupsieve@2.6",
+        "pkg:pypi/stack-data@0.6.3",
+        "pkg:pypi/tensorboard-data-server@0.7.2",
+        "pkg:pypi/tensorboard@2.18.0",
+        "pkg:pypi/tensorflow-io-gcs-filesystem@0.37.1",
+        "pkg:pypi/tensorflow@2.18.0",
+        "pkg:pypi/termcolor@2.5.0",
+        "pkg:pypi/terminado@0.18.1",
+        "pkg:pypi/tinycss2@1.4.0",
+        "pkg:pypi/tornado@6.4.2",
+        "pkg:pypi/traitlets@5.14.3",
+        "pkg:pypi/types-python-dateutil@2.9.0.20241206",
+        "pkg:pypi/typing-extensions@4.12.2",
+        "pkg:pypi/uri-template@1.3.0",
+        "pkg:pypi/urllib3@2.3.0",
+        "pkg:pypi/wcwidth@0.2.13",
+        "pkg:pypi/webcolors@24.11.1",
+        "pkg:pypi/webencodings@0.5.1",
+        "pkg:pypi/websocket-client@1.8.0",
+        "pkg:pypi/werkzeug@3.1.3",
+        "pkg:pypi/wheel@0.45.1",
+        "pkg:pypi/widgetsnbextension@4.0.13",
+        "pkg:pypi/wrapt@1.17.2"
+      ]
+    },
+    {
+      "ref": "67367f63-8917-4b12-b087-c621199a75e2",
       "dependsOn": []
     },
     {
-      "ref": "8dca1cda-1609-4edf-adb9-b6f1f5576a5f",
+      "ref": "a11f4f80-08d9-42f4-831b-3892a65ebdf6",
+      "dependsOn": []
+    },
+    {
+      "ref": "d4596a0e-e9c9-4e56-ac2e-236df0aae2db",
       "dependsOn": []
     },
     {
@@ -18783,7 +18783,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2022-4899"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0894"
+          "url": "https://access.redhat.com/errata/RHSA-2024:1141"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2022-4899"
@@ -19014,7 +19014,7 @@
           "url": "https://bugzilla.redhat.com/2258794"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0894.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-1141.html"
         },
         {
           "url": "https://github.com/facebook/zstd"
@@ -19577,13 +19577,31 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/05/16/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0888"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2447"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-3446"
         },
         {
+          "url": "https://bugzilla.redhat.com/2223016"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2224962"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2227852"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2248616"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2257571"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258502"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2259944"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2224962"
@@ -19634,7 +19652,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45235"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0888.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2447.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2264"
@@ -19963,10 +19981,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/11/06/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7877"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2447"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-3817"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2223016"
         },
         {
           "url": "https://bugzilla.redhat.com/2224962"
@@ -19978,7 +19999,16 @@
           "url": "https://bugzilla.redhat.com/2248616"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7877.html"
+          "url": "https://bugzilla.redhat.com/2257571"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258502"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2259944"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2447.html"
         },
         {
           "url": "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a1eb62c29db6cb5eec707f9338aee00f44e26f5"
@@ -20199,7 +20229,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-4016"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7187"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6705"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-4016"
@@ -20214,7 +20244,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4016"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7187.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6705.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7187"
@@ -20591,7 +20621,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -20770,7 +20800,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4911"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-5455.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-5453.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:5455"
@@ -20955,7 +20985,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4911"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-5455.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-5453.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:5455"
@@ -21485,10 +21515,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/03/11/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7877"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2447"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-5678"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2223016"
         },
         {
           "url": "https://bugzilla.redhat.com/2224962"
@@ -21500,7 +21533,16 @@
           "url": "https://bugzilla.redhat.com/2248616"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7877.html"
+          "url": "https://bugzilla.redhat.com/2257571"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258502"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2259944"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2447.html"
         },
         {
           "url": "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055"
@@ -21673,13 +21715,19 @@
           "url": "https://bugzilla.redhat.com/2248445"
         },
         {
+          "url": "https://bugzilla.redhat.com/2258412"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258544"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2248445"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5981"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0155.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-0533.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0155"
@@ -22120,7 +22168,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -22261,7 +22309,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-7104"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0253"
+          "url": "https://access.redhat.com/errata/RHSA-2024:0465"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-7104"
@@ -22276,7 +22324,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7104"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0253.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-0465.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0253"
@@ -22446,7 +22494,13 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-0553"
         },
         {
+          "url": "https://bugzilla.redhat.com/2248445"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2258412"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258544"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2258412"
@@ -22455,7 +22509,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0553"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0627.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-0533.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0627"
@@ -22874,7 +22928,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -22934,9 +22988,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -22949,7 +23000,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -23617,7 +23668,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -23632,7 +23683,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -23872,7 +23923,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -23933,7 +23984,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26458"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26458"
@@ -23943,6 +23994,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -23957,7 +24011,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -24039,7 +24093,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -24103,7 +24157,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26461"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26461"
@@ -24113,6 +24167,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -24127,7 +24184,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -24479,6 +24536,9 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-28834"
         },
         {
+          "url": "https://bugzilla.redhat.com/2269084"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2269228"
         },
         {
@@ -24494,7 +24554,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28835"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-1784.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2570.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2570"
@@ -24795,13 +24855,25 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3269"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2961"
         },
         {
           "url": "https://bugzilla.redhat.com/2273404"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2277202"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2277204"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2277205"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2277206"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
@@ -24834,7 +24906,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3269.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3339"
@@ -24980,10 +25052,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33599"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25028,7 +25103,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3339"
@@ -25159,10 +25234,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33600"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25207,7 +25285,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3339"
@@ -25332,10 +25410,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33601"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25380,7 +25461,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3339"
@@ -25505,10 +25586,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33602"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25553,7 +25637,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3339"
@@ -25687,7 +25771,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/09/4"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:8860"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9474"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-3596"
@@ -25708,7 +25792,7 @@
           "url": "https://datatracker.ietf.org/doc/html/rfc2865"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-8860.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9474.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:4935"
@@ -25872,7 +25956,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-37370"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:5312"
+          "url": "https://access.redhat.com/errata/RHSA-2024:6166"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-37370"
@@ -25884,7 +25968,7 @@
           "url": "https://bugzilla.redhat.com/2294677"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-5312.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-6166.html"
         },
         {
           "url": "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef"
@@ -26033,7 +26117,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-37371"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:1673"
+          "url": "https://access.redhat.com/errata/RHSA-2025:1671"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-37371"
@@ -26186,7 +26270,7 @@
           "url": "https://bugzilla.redhat.com/2339305"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-1673.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-1671.html"
         },
         {
           "url": "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef"
@@ -26790,7 +26874,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/08/15/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:1673"
+          "url": "https://access.redhat.com/errata/RHSA-2025:1671"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-5535"
@@ -26949,7 +27033,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5535"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-1673.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-1671.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:7848"
@@ -27623,6 +27707,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "azure"
           },
           "severity": "medium"
@@ -27891,6 +27981,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "azure"
           },
           "severity": "medium"
@@ -27906,6 +28002,12 @@
             "name": "ghsa"
           },
           "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
         },
         {
           "source": {
@@ -27943,6 +28045,12 @@
         },
         {
           "url": "https://github.com/pallets/jinja/security/advisories/GHSA-cpwx-vrp4-4pq7"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-27516.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3113.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-27516"
