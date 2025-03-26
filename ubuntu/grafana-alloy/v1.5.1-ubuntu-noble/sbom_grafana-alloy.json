@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:7f72ab76-be33-4875-8674-0b19501d9889",
+  "serialNumber": "urn:uuid:41725f0e-811d-4dc2-aef2-61785cf093c8",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-25T07:32:29+00:00",
+    "timestamp": "2025-03-26T10:09:16+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "f4663b88-75a6-4649-b1da-cef13e49be10",
+      "bom-ref": "73397085-e7fc-40e2-a40c-61f8021b5d6b",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -82,22 +82,7 @@
   },
   "components": [
     {
-      "bom-ref": "13341cee-ec9e-43c6-b659-d4df6e4f50d3",
-      "type": "application",
-      "name": "usr/bin/alloy",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "48f35db5-d6a5-443f-acf7-d5c54a784a45",
+      "bom-ref": "376de6e0-a837-4a19-8187-f9feffc600bb",
       "type": "library",
       "name": "./syntax",
       "properties": [
@@ -116,7 +101,7 @@
       ]
     },
     {
-      "bom-ref": "568e765c-518f-44aa-a82b-403b98b1454a",
+      "bom-ref": "b8125c59-762f-4db7-9ad8-a767129cea1e",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "24.04",
@@ -128,6 +113,21 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "ubuntu"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d869b95d-dca9-47ac-8080-aea8f9aea6c4",
+      "type": "application",
+      "name": "usr/bin/alloy",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
         }
       ]
     },
@@ -23520,17 +23520,18 @@
   ],
   "dependencies": [
     {
-      "ref": "13341cee-ec9e-43c6-b659-d4df6e4f50d3",
-      "dependsOn": [
-        "pkg:golang/github.com/grafana/alloy@v1.5.1"
-      ]
-    },
-    {
-      "ref": "48f35db5-d6a5-443f-acf7-d5c54a784a45",
+      "ref": "376de6e0-a837-4a19-8187-f9feffc600bb",
       "dependsOn": []
     },
     {
-      "ref": "568e765c-518f-44aa-a82b-403b98b1454a",
+      "ref": "73397085-e7fc-40e2-a40c-61f8021b5d6b",
+      "dependsOn": [
+        "b8125c59-762f-4db7-9ad8-a767129cea1e",
+        "d869b95d-dca9-47ac-8080-aea8f9aea6c4"
+      ]
+    },
+    {
+      "ref": "b8125c59-762f-4db7-9ad8-a767129cea1e",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04",
         "pkg:deb/ubuntu/base-files@13ubuntu10.1?arch=amd64&distro=ubuntu-24.04",
@@ -23630,10 +23631,9 @@
       ]
     },
     {
-      "ref": "f4663b88-75a6-4649-b1da-cef13e49be10",
+      "ref": "d869b95d-dca9-47ac-8080-aea8f9aea6c4",
       "dependsOn": [
-        "13341cee-ec9e-43c6-b659-d4df6e4f50d3",
-        "568e765c-518f-44aa-a82b-403b98b1454a"
+        "pkg:golang/github.com/grafana/alloy@v1.5.1"
       ]
     },
     {
@@ -25398,7 +25398,7 @@
     {
       "ref": "pkg:golang/github.com/grafana/alloy@v1.5.1",
       "dependsOn": [
-        "48f35db5-d6a5-443f-acf7-d5c54a784a45",
+        "376de6e0-a837-4a19-8187-f9feffc600bb",
         "pkg:golang/cloud.google.com/go/auth/oauth2adapt@v0.2.2",
         "pkg:golang/cloud.google.com/go/auth@v0.7.0",
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.5.2",
@@ -28403,7 +28403,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -28464,9 +28464,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -28479,7 +28476,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -28616,9 +28613,6 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-10963"
         },
         {
-          "url": "https://bugzilla.redhat.com/2319212"
-        },
-        {
           "url": "https://bugzilla.redhat.com/2324291"
         },
         {
@@ -28634,7 +28628,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-10244.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -29720,6 +29714,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "azure"
           },
           "severity": "medium"
@@ -29863,6 +29863,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
         {
           "source": {
             "name": "ghsa"
