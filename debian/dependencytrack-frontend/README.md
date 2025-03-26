@@ -3,7 +3,7 @@
 Root-curated dependencytrack-frontend images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [dependencytrack/frontend](https://hub.docker.com/r/dependencytrack/frontend).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/dependencytrack-frontend](https://hub.docker.com/r/rootpublic/dependencytrack-frontend).
+The public image can be retrieved from our public docker hub repository [rootpublic/dependencytrack-frontend](https://hub.docker.com/r/rootpublic/dependencytrack-frontend).
 
 ## Why Root Curated Images?
 Root-curated images offer:
