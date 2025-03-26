@@ -1,0 +1,57 @@
+# Change base image to nginxinc/nginx-unprivileged:1.27.3-bookworm
+FROM nginxinc/nginx-unprivileged:1.27.3-bookworm
+
+# Arguments that can be passed at build time
+ARG COMMIT_SHA=unknown
+ARG APP_VERSION=0.0.0
+ARG APP_DIR=/opt/owasp/dependency-track-frontend/
+
+ENV TZ=Etc/UTC \
+    LANG=C.UTF-8 \
+    # Set default settings that may get overridden to empty values by
+    # the entrypoint script, if not explicitly provided by the user
+    OIDC_SCOPE="openid profile email" \
+    BASE_PATH="/"
+
+USER root
+
+# Copy the static HTML and JS files to the application directory
+COPY ./dist ${APP_DIR}
+
+# Create the directory where the frontend files will be deployed to (${APP_DIR})
+# Ensure UID 101 & GID 0 own all the needed directories
+# Add jq to easily manipulate config.json in entrypoint script
+RUN chown -R 101:0 ${APP_DIR} \
+    && chmod -R g=u ${APP_DIR} \
+    && apt-get update && apt-get install -y --no-install-recommends \
+    jq \
+    tzdata \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set timezone
+RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
+
+# Specify the user to run as (in numeric format for compatibility with Kubernetes/OpenShift's SCC)
+USER 101
+
+RUN mkdir /etc/nginx/templates
+
+# Setup entrypoint
+COPY --chown=101:0 ./docker/etc/nginx/templates/default.conf.template /etc/nginx/templates/default.conf.template
+COPY --chmod=755 ./docker/docker-entrypoint.d/ /docker-entrypoint.d/
+
+# Specify the container working directory
+WORKDIR ${APP_DIR}
+
+# metadata labels
+LABEL \
+    org.opencontainers.image.vendor="OWASP" \
+    org.opencontainers.image.title="Official Dependency-Track Frontend Container image" \
+    org.opencontainers.image.description="Dependency-Track is an intelligent Component Analysis platform" \
+    org.opencontainers.image.version="${APP_VERSION}" \
+    org.opencontainers.image.url="https://dependencytrack.org/" \
+    org.opencontainers.image.source="https://github.com/DependencyTrack/frontend" \
+    org.opencontainers.image.revision="${COMMIT_SHA}" \
+    org.opencontainers.image.licenses="Apache-2.0" \
+    maintainer="steve.springett@owasp.org"
