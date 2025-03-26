@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:01053831-94ca-4f77-ba07-fa1ffa156b11",
+  "serialNumber": "urn:uuid:3a5a9a85-3fab-4183-a247-a3b8582ead09",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T09:55:41+00:00",
+    "timestamp": "2025-03-26T13:53:55+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "759b12af-5acc-49ad-a65e-193f42c67be1",
+      "bom-ref": "690ff57a-aeaf-4fd2-bfa5-b3519422703b",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -106,7 +106,7 @@
   },
   "components": [
     {
-      "bom-ref": "31604828-9660-40d3-8b12-b662315d0271",
+      "bom-ref": "0a56c5ea-1ef3-4284-89fd-b83ce5128657",
       "type": "operating-system",
       "name": "debian",
       "version": "12.9",
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "bom-ref": "b3e92911-a850-4c0e-bd29-08c44f9bb6ad",
+      "bom-ref": "8fa71f3f-b8cd-41cc-be66-255a39a96b32",
       "type": "application",
       "name": "opt/drupal/vendor/composer/installed.json",
       "properties": [
@@ -12521,7 +12521,7 @@
   ],
   "dependencies": [
     {
-      "ref": "31604828-9660-40d3-8b12-b662315d0271",
+      "ref": "0a56c5ea-1ef3-4284-89fd-b83ce5128657",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.9",
         "pkg:deb/debian/apache2-bin@2.4.62-1~deb12u2?arch=amd64&distro=debian-12.9",
@@ -12663,14 +12663,14 @@
       ]
     },
     {
-      "ref": "759b12af-5acc-49ad-a65e-193f42c67be1",
+      "ref": "690ff57a-aeaf-4fd2-bfa5-b3519422703b",
       "dependsOn": [
-        "31604828-9660-40d3-8b12-b662315d0271",
-        "b3e92911-a850-4c0e-bd29-08c44f9bb6ad"
+        "0a56c5ea-1ef3-4284-89fd-b83ce5128657",
+        "8fa71f3f-b8cd-41cc-be66-255a39a96b32"
       ]
     },
     {
-      "ref": "b3e92911-a850-4c0e-bd29-08c44f9bb6ad",
+      "ref": "8fa71f3f-b8cd-41cc-be66-255a39a96b32",
       "dependsOn": [
         "pkg:composer/asm89/stack-cors@v2.2.0",
         "pkg:composer/composer/installers@v2.3.0",
