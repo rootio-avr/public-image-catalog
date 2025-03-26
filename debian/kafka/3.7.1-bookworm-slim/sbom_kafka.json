@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:f9ea51b1-4ee5-46a4-80ed-73596d6e3ebb",
+  "serialNumber": "urn:uuid:d74c13bf-5497-4b5b-9b83-3acdede1b01a",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:11:50+00:00",
+    "timestamp": "2025-03-26T14:18:23+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "208013ff-30f1-4853-bd4b-a9068d8aa4bb",
+      "bom-ref": "2956fc23-9fc3-4d9b-a764-4e5f7781a5cd",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -78,7 +78,7 @@
   },
   "components": [
     {
-      "bom-ref": "38d7a84a-bdc3-4583-afd6-1979c035eaa8",
+      "bom-ref": "58eb84f9-6da3-4826-b786-2ddae6fbf766",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -13793,9 +13793,9 @@
   ],
   "dependencies": [
     {
-      "ref": "208013ff-30f1-4853-bd4b-a9068d8aa4bb",
+      "ref": "2956fc23-9fc3-4d9b-a764-4e5f7781a5cd",
       "dependsOn": [
-        "38d7a84a-bdc3-4583-afd6-1979c035eaa8",
+        "58eb84f9-6da3-4826-b786-2ddae6fbf766",
         "pkg:maven/ai.superstream/kafka-clients@3.7.1",
         "pkg:maven/ch.qos.reload4j/reload4j@1.2.25",
         "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.16.2",
@@ -13931,7 +13931,7 @@
       ]
     },
     {
-      "ref": "38d7a84a-bdc3-4583-afd6-1979c035eaa8",
+      "ref": "58eb84f9-6da3-4826-b786-2ddae6fbf766",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/alsa-topology-conf@1.2.5.1-2?arch=all&distro=debian-12.8",
