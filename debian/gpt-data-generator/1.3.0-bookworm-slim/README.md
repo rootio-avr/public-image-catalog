@@ -140,8 +140,6 @@ User obligations:
 
 Detailed license compliance information can be found at [root.io/trust-center](https://root.io/trust-center).
 
-## Source & Dockerfile
-The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/gpt-data-generator/1.3.0-bookworm-slim/).
 
 ## Usage Information
 For detailed examples and usage instructions, see the official Docker gitlab/gpt-data-generator documentation [here](https://hub.docker.com/r/gitlab/gpt-data-generator).
