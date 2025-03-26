@@ -3,7 +3,7 @@
 Root-curated gitlab-runner images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [gitlab/gitlab-runner](https://hub.docker.com/r/gitlab/gitlab-runner).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository name [rootpublic/gitlab-runner](https://hub.docker.com/r/rootpublic/gitlab-runner).
+The public Docker image is available on Docker Hub under the repository [rootpublic/gitlab-runner](https://hub.docker.com/r/rootpublic/gitlab-runner).
 
 ## Why Root Curated Images?
 Root-curated images offer:
