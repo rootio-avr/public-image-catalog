@@ -3,7 +3,7 @@
 Root-curated wordpress images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [wordpress](https://hub.docker.com/_/wordpress).
 
 ## Docker Image
-The public Docker image is available on Docker Hub under the repository [rootpublic/wordpress](https://hub.docker.com/r/rootpublic/wordpress).
+The public image can be retrieved from our public docker hub repository [rootpublic/wordpress](https://hub.docker.com/r/rootpublic/wordpress).
 
 ## Why Root Curated Images?
 Root-curated images offer:
