@@ -1,6 +1,6 @@
 # Root Curated dependencytrack:4.12.2-bookworm-slim
 
-Root-curated dependencytrack:4.12.2-bookworm-slim images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker dependencytrack/apiserver ([4.12.2](https://hub.docker.com/layers/dependencytrack/apiserver/4.12.2/images/sha256-dec4f198697bf1aae0428bc32bc268549672c355b082e0d9a6ccc9f00225419e?context=explore)).
+Root-curated dependencytrack:4.12.2-bookworm-slim images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker dependencytrack/frontend ([4.12.2](https://hub.docker.com/layers/dependencytrack/frontend/4.12.2/images/sha256-5239c59f38dc1f873fbfaa9622ab16a8c7465df3acd3060513c79b0874df6a06?context=explore)).
 
 ## Why Root Curated Images?
 Root-curated images offer:
@@ -24,18 +24,35 @@ This image includes software under the following licenses:
 - Autoconf
 - BSD-2-Clause
 - BSD-2-Clause-NetBSD
+- BSD-2-clause-author
+- BSD-2-clause-verbatim
+- BSD-2.2-clause
 - BSD-3-Clause
+- BSD-3-Clause-Clear
 - BSD-3-clause and/or GPL-3+
 - BSD-3-clause-Aaron-D-Gifford
+- BSD-3-clause-California
 - BSD-3-clause-Cambridge with BINARY LIBRARY-LIKE PACKAGES exception
 - BSD-3-clause-GENERIC
+- BSD-3-clause-JANET
+- BSD-3-clause-John-Birrell
+- BSD-3-clause-PADL
+- BSD-3-clause-Regents
+- BSD-3-clause-author
 - BSD-3-clause-fjord
+- BSD-3-clause-variant
 - BSD-3-clause-with-weird-numbering
 - BSD-4-Clause
 - BSD-4-Clause-UC
+- BSD-4-clause-California
+- BSD-4-clause-KTH
+- BSD-4-clause-Niels-Provos
 - BSD-4-clause-POWERDOG
+- BSD-BY-LC-NE
+- BSD-like-with-advertising-clause
 - BSD-tcp_wrappers
 - BSL-1
+- BSL-1.0
 - BSLA
 - BZIP
 - Beerware
@@ -43,40 +60,56 @@ This image includes software under the following licenses:
 - CC0-1.0
 - Chromium
 - DONT-CHANGE-THE-GPL
+- Expat-ISC
+- Expat-UNM
+- F5
 - FSF-manpages
+- FSF-unlimited
 - FSFAP
 - FSFULLR
+- FTL
 - FreeSoftware
 - GAP
+- GAP~Makefile.in
+- GAP~configure
+- GD
 - GFDL-1.2-only
 - GFDL-1.2-or-later
 - GFDL-1.3+-no-invariant
 - GFDL-1.3-no-invariants-only
 - GFDL-1.3-no-invariants-or-later
 - GFDL-1.3-only
+- GFDL-1.3-or-later
 - GFDL-3
 - GPL with automake exception
 - GPL-1.0-only
 - GPL-1.0-or-later
 - GPL-2 with Linux-syscall-note exception
 - GPL-2+ with Autoconf-data exception
+- GPL-2+ with Libtool exception
 - GPL-2+ with Texinfo exception
 - GPL-2+ with distribution exception
 - GPL-2.0-only
 - GPL-2.0-or-later
+- GPL-2.0-with-autoconf-exception+
 - GPL-2.0-with-bison-exception+
 - GPL-3+ with Autoconf-data exception
 - GPL-3+ with Bison exception
 - GPL-3+ with Bison-2.2 exception
+- GPL-3+ with Libtool exception
 - GPL-3+ with texinfo exception
 - GPL-3.0-only
 - GPL-3.0-or-later
 - GPL-3.0-with-autoconf-exception+
+- HPND
 - HSIEH-BSD
 - HSIEH-DERIVATIVE
+- Hylafax
 - ISC
 - ISC and/or LGPL-2.1+
 - ISC+IBM
+- ISC-Original
+- JCG
 - Kazlib
 - LGPL-2.0-only
 - LGPL-2.0-or-later
@@ -85,31 +118,58 @@ This image includes software under the following licenses:
 - LGPL-3.0-only
 - LGPL-3.0-or-later
 - Latex2e
+- Libpng
 - MIT
+- MIT-1
+- MIT-CMU
+- MIT-Export
+- MIT-OpenVision
 - MIT-US-export
+- MIT-XC
 - MIT-old
 - MIT/X11
 - MPL-1.1
+- MPL-2.0
 - MS-PL
+- NTP
+- NeoSoft-permissive
+- OLDAP-2.8
+- OpenGroup-BSD-like
+- OpenLDAP
+- OpenLDAP-2.8
+- OpenSSL
 - PD
 - PD-debian
+- Public-Domain
 - REGCOMP
 - RFC-Reference
 - RRA-KEEP-THIS-NOTICE
+- RSA-MD
 - SDBM-PUBLIC-DOMAIN
 - SMAIL-GPL
+- SSLeay
 - Sleepycat
 - TCL-like
 - TEXT-TABS
 - TinySCHEME
+- UMich
 - Unicode
+- WEBP
 - X11
+- XFIG
 - Zlib
+- all-permissive
+- bitstream-vera
 - config-h
+- curl
+- custom-1
 - g10-permissive
 - gnulib
+- libpng OR Apache-2.0 OR BSD-3-clause
+- libutil-David-Nugent
 - noderivs
 - none
+- other-1
 - pcre
 - permissive
 - permissive-fsf
@@ -117,11 +177,14 @@ This image includes software under the following licenses:
 - permissive-nowarranty
 - probably-PD
 - public-domain
+- public-domain-1
 - public-domain-md4
 - public-domain-md5
 - public-domain-s-s-d
 - public-domain-sha1
 - same-as-rest-of-p11kit
+- text://BSD-4-clause and IBM-as-is
+- text://IBM-as-is
 
 This Docker image may include software licensed under the GNU General Public License v2.0 (GPL-2.0), including variants with exceptions.
 
@@ -142,7 +205,7 @@ Detailed license compliance information can be found at [root.io/trust-center](h
 The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/dependencytrack/4.12.2-bookworm-slim/).
 
 ## Usage Information
-For detailed examples and usage instructions, see the official Docker dependencytrack/apiserver documentation [here](https://hub.docker.com/r/dependencytrack/apiserver).
+For detailed examples and usage instructions, see the official Docker dependencytrack/frontend documentation [here](https://hub.docker.com/r/dependencytrack/frontend).
 
 ## Support and Feedback
 We welcome your feedback! Please direct all questions, feedback, or issues to [support@root.io](mailto:support@root.io).

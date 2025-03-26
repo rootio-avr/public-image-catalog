@@ -1,6 +1,6 @@
 # Root Curated dependencytrack
 
-Root-curated dependencytrack images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [dependencytrack/apiserver](https://hub.docker.com/r/dependencytrack/apiserver).
+Root-curated dependencytrack images provide a secure, lightweight, and convenient starting point for your containerized applications. Derived from the official Docker [dependencytrack/frontend](https://hub.docker.com/r/dependencytrack/frontend).
 
 ## Why Root Curated Images?
 Root-curated images offer:
@@ -31,7 +31,7 @@ Detailed license compliance information can be found at [root.io/trust-center](h
 The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/dependencytrack/).
 
 ## Usage Information
-For detailed examples and usage instructions, see the official Docker dependencytrack/apiserver documentation [here](https://hub.docker.com/r/dependencytrack/apiserver).
+For detailed examples and usage instructions, see the official Docker dependencytrack/frontend documentation [here](https://hub.docker.com/r/dependencytrack/frontend).
 
 ## Support and Feedback
 We welcome your feedback! Please direct all questions, feedback, or issues to [support@root.io](mailto:support@root.io).
