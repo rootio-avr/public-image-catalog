@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:443b984d-9703-4b18-baed-0a0aecd73fe8",
+  "serialNumber": "urn:uuid:d762ce62-dddf-4247-8b72-50b0f3afd8dd",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T09:55:29+00:00",
+    "timestamp": "2025-03-26T13:53:20+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "fc1a72b0-5f03-4be1-a1d8-bfb8c2305631",
+      "bom-ref": "950ebc88-08fe-440e-a2b5-feefea2999ae",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -94,413 +94,7 @@
   },
   "components": [
     {
-      "bom-ref": "0c540919-3e00-4a0a-9ed9-5753af2a795d",
-      "type": "library",
-      "group": "net.logstash.logback",
-      "name": "logstash-logback-encoder",
-      "version": "8.0",
-      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1250ba73-1ecd-4b1a-9dcd-1e39828ffca1",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-logback",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1a0a2c7b-c372-4abd-884a-41c12dc47415",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.12",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1e91cc11-6928-4735-a6b3-c7809e6210b5",
-      "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-classic",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-classic-1.5.12.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "2a81a709-db35-42e8-a585-f9e270018065",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.12",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/slf4j-api-2.0.12.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "366f5321-76b4-4d6f-bc79-f0170ca73f78",
-      "type": "library",
-      "group": "com.github.stephenc.jcip",
-      "name": "jcip-annotations",
-      "version": "1.0-1",
-      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jcip-annotations-1.0-1.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4a4c4fed-795d-4abc-bfc1-5e77fd4db3c0",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-core",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-core-2.17.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "560117d1-93d5-45a8-b4d2-bb8d4564f4dc",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-databind",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "6578d411-1c07-4feb-a343-88dd6c2b58aa",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-databind",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-databind-2.17.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
-      "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-core",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-core-1.5.12.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7c5d55ae-16fa-4e23-b11b-022df1f172db",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-annotations",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7e6d782d-3126-497f-b5d8-ea2612984af0",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7f465774-7d74-4919-a247-ec01664a706a",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-common",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-common-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "87333b5a-fdb3-4763-9078-3ef37642ec5f",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-core",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8d778622-4bde-42e8-874d-450eef44e82a",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-logback",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-logback-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a67b795a-284f-4bd8-af0c-091dc343215e",
-      "type": "library",
-      "group": "jakarta.json",
-      "name": "jakarta.json-api",
-      "version": "2.1.3",
-      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a7c23087-933d-41ad-acb9-6dba0568aca5",
+      "bom-ref": "0610e553-5476-4ab7-b32d-bee12769aa51",
       "type": "library",
       "group": "net.logstash.logback",
       "name": "logstash-logback-encoder",
@@ -526,111 +120,7 @@
       ]
     },
     {
-      "bom-ref": "d24a1d12-4a7a-4c48-b165-e27ce108c6e8",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-annotations",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-annotations-2.17.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d27b7677-5bab-40a2-b5bd-5c2a8bfe5944",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-common",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d98d9a15-b4c1-42bc-90df-7089c838a884",
-      "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-classic",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "dbf4e4ce-ed90-4b4f-8208-9aac4afffa11",
-      "type": "library",
-      "group": "com.github.stephenc.jcip",
-      "name": "jcip-annotations",
-      "version": "1.0-1",
-      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/nimbus-jose-jwt-9.40.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "f0bb626c-936d-4c0d-8c45-791f5a93fbcc",
+      "bom-ref": "0c6a5c40-f56e-40b0-94b7-f6d8605b8737",
       "type": "library",
       "group": "jakarta.json",
       "name": "jakarta.json-api",
@@ -656,7 +146,7 @@
       ]
     },
     {
-      "bom-ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
+      "bom-ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
       "type": "library",
       "group": "ch.qos.logback",
       "name": "logback-core",
@@ -666,6 +156,516 @@
         {
           "name": "aquasecurity:trivy:FilePath",
           "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "33387378-14d6-46d7-8629-6e130b0f6d38",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.12",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3f5a76e6-4149-4a3b-a21d-af42ed8d008f",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-databind-2.17.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "40078e08-8454-4b9b-8034-219c45868933",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-common",
+      "version": "1.1.7",
+      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4cb4fc45-c6a9-4e7e-a6e1-d350d9f3e321",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.12",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/slf4j-api-2.0.12.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5064e22a-7d61-49b6-bc3d-5741a46a346f",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-logback",
+      "version": "1.1.7",
+      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "56ccd4ff-5041-4da4-a06c-c885430f3a11",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "58b02e9b-2cd7-421a-b0ac-7ccf7087e0e0",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-common",
+      "version": "1.1.7",
+      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-common-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5aa8d5d5-0f31-4989-a2e9-9ae0eaaba038",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-logback",
+      "version": "1.1.7",
+      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-logback-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "63bd37c1-1984-46e8-8b57-b680ac595396",
+      "type": "library",
+      "group": "net.logstash.logback",
+      "name": "logstash-logback-encoder",
+      "version": "8.0",
+      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.12",
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-core-1.5.12.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "91a4b144-7b17-46fc-a5ee-b78519ee3956",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "98541034-d5b0-455d-9005-b383b09e6f48",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-annotations-2.17.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a75c5b3b-8d79-45a3-8c5d-b406ae642bae",
+      "type": "library",
+      "group": "jakarta.json",
+      "name": "jakarta.json-api",
+      "version": "2.1.3",
+      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bf37e066-ab73-4841-8a44-607419913bba",
+      "type": "library",
+      "group": "com.github.stephenc.jcip",
+      "name": "jcip-annotations",
+      "version": "1.0-1",
+      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jcip-annotations-1.0-1.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbdf3ed6-0ee3-4ab6-bd02-ccf2edf50d34",
+      "type": "library",
+      "group": "com.github.stephenc.jcip",
+      "name": "jcip-annotations",
+      "version": "1.0-1",
+      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/nimbus-jose-jwt-9.40.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d0ecc5ce-4c6f-41b0-8ba9-d54dc7d0f7be",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "db512328-929f-4e23-b00d-382b89e5d16f",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.5.12",
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-classic-1.5.12.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "decf530b-9508-49fa-8bb7-7d845600d6b9",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.5.12",
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e0eb0a2d-ea12-4f25-96fe-07228dd0f86f",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f390f845-e2fd-414d-b80f-045b71542e1a",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.17.3",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-core-2.17.3.jar"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -12750,51 +12750,39 @@
   ],
   "dependencies": [
     {
-      "ref": "0c540919-3e00-4a0a-9ed9-5753af2a795d",
+      "ref": "0610e553-5476-4ab7-b32d-bee12769aa51",
       "dependsOn": []
     },
     {
-      "ref": "1250ba73-1ecd-4b1a-9dcd-1e39828ffca1",
+      "ref": "0c6a5c40-f56e-40b0-94b7-f6d8605b8737",
       "dependsOn": []
     },
     {
-      "ref": "1a0a2c7b-c372-4abd-884a-41c12dc47415",
+      "ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
       "dependsOn": []
     },
     {
-      "ref": "1e91cc11-6928-4735-a6b3-c7809e6210b5",
+      "ref": "33387378-14d6-46d7-8629-6e130b0f6d38",
       "dependsOn": []
     },
     {
-      "ref": "2a81a709-db35-42e8-a585-f9e270018065",
+      "ref": "3f5a76e6-4149-4a3b-a21d-af42ed8d008f",
       "dependsOn": []
     },
     {
-      "ref": "366f5321-76b4-4d6f-bc79-f0170ca73f78",
+      "ref": "40078e08-8454-4b9b-8034-219c45868933",
       "dependsOn": []
     },
     {
-      "ref": "4a4c4fed-795d-4abc-bfc1-5e77fd4db3c0",
+      "ref": "4cb4fc45-c6a9-4e7e-a6e1-d350d9f3e321",
       "dependsOn": []
     },
     {
-      "ref": "560117d1-93d5-45a8-b4d2-bb8d4564f4dc",
+      "ref": "5064e22a-7d61-49b6-bc3d-5741a46a346f",
       "dependsOn": []
     },
     {
-      "ref": "6578d411-1c07-4feb-a343-88dd6c2b58aa",
-      "dependsOn": []
-    },
-    {
-      "ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
-      "dependsOn": []
-    },
-    {
-      "ref": "7c5d55ae-16fa-4e23-b11b-022df1f172db",
-      "dependsOn": []
-    },
-    {
-      "ref": "7e6d782d-3126-497f-b5d8-ea2612984af0",
+      "ref": "56ccd4ff-5041-4da4-a06c-c885430f3a11",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.7",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.7",
@@ -12889,75 +12877,51 @@
       ]
     },
     {
-      "ref": "7f465774-7d74-4919-a247-ec01664a706a",
+      "ref": "58b02e9b-2cd7-421a-b0ac-7ccf7087e0e0",
       "dependsOn": []
     },
     {
-      "ref": "87333b5a-fdb3-4763-9078-3ef37642ec5f",
+      "ref": "5aa8d5d5-0f31-4989-a2e9-9ae0eaaba038",
       "dependsOn": []
     },
     {
-      "ref": "8d778622-4bde-42e8-874d-450eef44e82a",
+      "ref": "63bd37c1-1984-46e8-8b57-b680ac595396",
       "dependsOn": []
     },
     {
-      "ref": "a67b795a-284f-4bd8-af0c-091dc343215e",
+      "ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
       "dependsOn": []
     },
     {
-      "ref": "a7c23087-933d-41ad-acb9-6dba0568aca5",
+      "ref": "91a4b144-7b17-46fc-a5ee-b78519ee3956",
       "dependsOn": []
     },
     {
-      "ref": "d24a1d12-4a7a-4c48-b165-e27ce108c6e8",
-      "dependsOn": []
-    },
-    {
-      "ref": "d27b7677-5bab-40a2-b5bd-5c2a8bfe5944",
-      "dependsOn": []
-    },
-    {
-      "ref": "d98d9a15-b4c1-42bc-90df-7089c838a884",
-      "dependsOn": []
-    },
-    {
-      "ref": "dbf4e4ce-ed90-4b4f-8208-9aac4afffa11",
-      "dependsOn": []
-    },
-    {
-      "ref": "f0bb626c-936d-4c0d-8c45-791f5a93fbcc",
-      "dependsOn": []
-    },
-    {
-      "ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
-      "dependsOn": []
-    },
-    {
-      "ref": "fc1a72b0-5f03-4be1-a1d8-bfb8c2305631",
+      "ref": "950ebc88-08fe-440e-a2b5-feefea2999ae",
       "dependsOn": [
-        "0c540919-3e00-4a0a-9ed9-5753af2a795d",
-        "1250ba73-1ecd-4b1a-9dcd-1e39828ffca1",
-        "1a0a2c7b-c372-4abd-884a-41c12dc47415",
-        "1e91cc11-6928-4735-a6b3-c7809e6210b5",
-        "2a81a709-db35-42e8-a585-f9e270018065",
-        "366f5321-76b4-4d6f-bc79-f0170ca73f78",
-        "4a4c4fed-795d-4abc-bfc1-5e77fd4db3c0",
-        "560117d1-93d5-45a8-b4d2-bb8d4564f4dc",
-        "6578d411-1c07-4feb-a343-88dd6c2b58aa",
-        "73f25324-d555-4af2-8d1e-d679beaa3fe2",
-        "7c5d55ae-16fa-4e23-b11b-022df1f172db",
-        "7e6d782d-3126-497f-b5d8-ea2612984af0",
-        "7f465774-7d74-4919-a247-ec01664a706a",
-        "87333b5a-fdb3-4763-9078-3ef37642ec5f",
-        "8d778622-4bde-42e8-874d-450eef44e82a",
-        "a67b795a-284f-4bd8-af0c-091dc343215e",
-        "a7c23087-933d-41ad-acb9-6dba0568aca5",
-        "d24a1d12-4a7a-4c48-b165-e27ce108c6e8",
-        "d27b7677-5bab-40a2-b5bd-5c2a8bfe5944",
-        "d98d9a15-b4c1-42bc-90df-7089c838a884",
-        "dbf4e4ce-ed90-4b4f-8208-9aac4afffa11",
-        "f0bb626c-936d-4c0d-8c45-791f5a93fbcc",
-        "f7e54ea3-c83d-4e03-9ae5-33358567811a",
+        "0610e553-5476-4ab7-b32d-bee12769aa51",
+        "0c6a5c40-f56e-40b0-94b7-f6d8605b8737",
+        "0e404c4c-1e78-4917-a630-960a05b3242d",
+        "33387378-14d6-46d7-8629-6e130b0f6d38",
+        "3f5a76e6-4149-4a3b-a21d-af42ed8d008f",
+        "40078e08-8454-4b9b-8034-219c45868933",
+        "4cb4fc45-c6a9-4e7e-a6e1-d350d9f3e321",
+        "5064e22a-7d61-49b6-bc3d-5741a46a346f",
+        "56ccd4ff-5041-4da4-a06c-c885430f3a11",
+        "58b02e9b-2cd7-421a-b0ac-7ccf7087e0e0",
+        "5aa8d5d5-0f31-4989-a2e9-9ae0eaaba038",
+        "63bd37c1-1984-46e8-8b57-b680ac595396",
+        "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
+        "91a4b144-7b17-46fc-a5ee-b78519ee3956",
+        "98541034-d5b0-455d-9005-b383b09e6f48",
+        "a75c5b3b-8d79-45a3-8c5d-b406ae642bae",
+        "bf37e066-ab73-4841-8a44-607419913bba",
+        "cbdf3ed6-0ee3-4ab6-bd02-ccf2edf50d34",
+        "d0ecc5ce-4c6f-41b0-8ba9-d54dc7d0f7be",
+        "db512328-929f-4e23-b00d-382b89e5d16f",
+        "decf530b-9508-49fa-8bb7-7d845600d6b9",
+        "e0eb0a2d-ea12-4f25-96fe-07228dd0f86f",
+        "f390f845-e2fd-414d-b80f-045b71542e1a",
         "pkg:maven/com.ethlo.time/itu@1.10.2",
         "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.3",
         "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.17.2",
@@ -13164,6 +13128,42 @@
         "pkg:maven/us.springett/cvss-calculator@1.4.2",
         "pkg:maven/us.springett/owasp-risk-rating-calculator@1.0.1"
       ]
+    },
+    {
+      "ref": "98541034-d5b0-455d-9005-b383b09e6f48",
+      "dependsOn": []
+    },
+    {
+      "ref": "a75c5b3b-8d79-45a3-8c5d-b406ae642bae",
+      "dependsOn": []
+    },
+    {
+      "ref": "bf37e066-ab73-4841-8a44-607419913bba",
+      "dependsOn": []
+    },
+    {
+      "ref": "cbdf3ed6-0ee3-4ab6-bd02-ccf2edf50d34",
+      "dependsOn": []
+    },
+    {
+      "ref": "d0ecc5ce-4c6f-41b0-8ba9-d54dc7d0f7be",
+      "dependsOn": []
+    },
+    {
+      "ref": "db512328-929f-4e23-b00d-382b89e5d16f",
+      "dependsOn": []
+    },
+    {
+      "ref": "decf530b-9508-49fa-8bb7-7d845600d6b9",
+      "dependsOn": []
+    },
+    {
+      "ref": "e0eb0a2d-ea12-4f25-96fe-07228dd0f86f",
+      "dependsOn": []
+    },
+    {
+      "ref": "f390f845-e2fd-414d-b80f-045b71542e1a",
+      "dependsOn": []
     },
     {
       "ref": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.7",
@@ -18302,7 +18302,7 @@
       "updated": "2025-01-03T14:15:24+00:00",
       "affects": [
         {
-          "ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
+          "ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
           "versions": [
             {
               "version": "1.5.12",
@@ -18311,7 +18311,7 @@
           ]
         },
         {
-          "ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
+          "ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
           "versions": [
             {
               "version": "1.5.12",
@@ -18379,7 +18379,7 @@
       "updated": "2025-01-03T14:15:24+00:00",
       "affects": [
         {
-          "ref": "73f25324-d555-4af2-8d1e-d679beaa3fe2",
+          "ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
           "versions": [
             {
               "version": "1.5.12",
@@ -18388,7 +18388,7 @@
           ]
         },
         {
-          "ref": "f7e54ea3-c83d-4e03-9ae5-33358567811a",
+          "ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
           "versions": [
             {
               "version": "1.5.12",
