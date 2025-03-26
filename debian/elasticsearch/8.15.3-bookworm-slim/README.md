@@ -178,8 +178,6 @@ User obligations:
 
 Detailed license compliance information can be found at [root.io/trust-center](https://root.io/trust-center).
 
-## Source & Dockerfile
-The Dockerfile and source code for this image are available in our [GitHub Repository](https://github.com/rootio-avr/public-image-catalog/tree/main/debian/elasticsearch/8.15.3-bookworm-slim/).
 
 ## Usage Information
 For detailed examples and usage instructions, see the official Docker elastic/elasticsearch documentation [here](https://hub.docker.com/r/elastic/elasticsearch).
