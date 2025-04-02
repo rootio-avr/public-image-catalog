@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:82965219-3048-4d94-ad6f-1dc09abc3cd8",
+  "serialNumber": "urn:uuid:fbdd6f67-a35f-4a41-a9da-0441ba03157f",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T11:02:45+00:00",
+    "timestamp": "2025-04-02T06:30:14+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "b3324992-f791-4e2b-8aea-9c44242e6d53",
+      "bom-ref": "f1e80db3-bee4-4a42-939a-86272b55aee1",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -82,7 +82,7 @@
   },
   "components": [
     {
-      "bom-ref": "4e52f1bd-e47c-4556-a382-ea6ad2e29202",
+      "bom-ref": "a8e62e44-9935-4664-885b-97f8d093e618",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "22.04",
@@ -9868,6 +9868,12 @@
       "group": "ch.qos.logback",
       "name": "logback-classic",
       "version": "1.2.13",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e9f3458e7354fe4917081237c01fa4999f4e1b86"
+        }
+      ],
       "purl": "pkg:maven/ch.qos.logback/logback-classic@1.2.13",
       "properties": [
         {
@@ -9894,6 +9900,12 @@
       "group": "ch.qos.logback",
       "name": "logback-core",
       "version": "1.2.13",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8ae4a32ed4937b5ebff6891a93c5e957f4e81655"
+        }
+      ],
       "purl": "pkg:maven/ch.qos.logback/logback-core@1.2.13",
       "properties": [
         {
@@ -9920,6 +9932,12 @@
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-annotations",
       "version": "2.15.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4724a65ac8e8d156a24898d50fd5dbd3642870b8"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2",
       "properties": [
         {
@@ -9946,6 +9964,12 @@
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-core",
       "version": "2.15.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a6fe1836469a69b3ff66037c324d75fc66ef137c"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2",
       "properties": [
         {
@@ -9972,6 +9996,12 @@
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-databind",
       "version": "2.15.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9353b021f10c307c00328f52090de2bdb4b6ff9c"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
       "properties": [
         {
@@ -9998,6 +10028,12 @@
       "group": "commons-cli",
       "name": "commons-cli",
       "version": "1.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "dc98be5d5390230684a092589d70ea76a147925c"
+        }
+      ],
       "purl": "pkg:maven/commons-cli/commons-cli@1.5.0",
       "properties": [
         {
@@ -10024,6 +10060,12 @@
       "group": "commons-io",
       "name": "commons-io",
       "version": "2.11.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a2503f302b11ebde7ebc3df41daebe0e4eea3689"
+        }
+      ],
       "purl": "pkg:maven/commons-io/commons-io@2.11.0",
       "properties": [
         {
@@ -10050,6 +10092,12 @@
       "group": "io.dropwizard.metrics",
       "name": "metrics-core",
       "version": "4.1.12.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cb2f351bf4463751201f43bb99865235d5ba07ca"
+        }
+      ],
       "purl": "pkg:maven/io.dropwizard.metrics/metrics-core@4.1.12.1",
       "properties": [
         {
@@ -10076,6 +10124,12 @@
       "group": "io.netty",
       "name": "netty-buffer",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c1c1b4d2c89d2f74c80a2701c124ecfde1ecf067"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-buffer@4.1.105.Final",
       "properties": [
         {
@@ -10102,6 +10156,12 @@
       "group": "io.netty",
       "name": "netty-codec",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4733830b4b2b9111e9bf8136691d07b20027cd51"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-codec@4.1.105.Final",
       "properties": [
         {
@@ -10128,6 +10188,12 @@
       "group": "io.netty",
       "name": "netty-common",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8438fc1de4c10301bb53ceb49ed8db74bd40cc2c"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-common@4.1.105.Final",
       "properties": [
         {
@@ -10154,6 +10220,12 @@
       "group": "io.netty",
       "name": "netty-handler",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7e997e63d0a445c4b352bcd38474d50f06f2eaf1"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-handler@4.1.105.Final",
       "properties": [
         {
@@ -10180,6 +10252,12 @@
       "group": "io.netty",
       "name": "netty-resolver",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e69687e013ded60f3f9054164e121c2702200711"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-resolver@4.1.105.Final",
       "properties": [
         {
@@ -10206,6 +10284,12 @@
       "group": "io.netty",
       "name": "netty-transport-classes-epoll",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e006d3b0cfd5b8133c9fcebfa05d9ae80a721e80"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport-classes-epoll@4.1.105.Final",
       "properties": [
         {
@@ -10232,6 +10316,12 @@
       "group": "io.netty",
       "name": "netty-transport-native-epoll",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cb57e2ef48fe68ca5a90ffd456c4b36147bdd175"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport-native-epoll@4.1.105.Final",
       "properties": [
         {
@@ -10258,6 +10348,12 @@
       "group": "io.netty",
       "name": "netty-transport-native-unix-common",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8bb8ab3a8f1e730c6e7d1d1cf8fc24221eacc6cd"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.105.Final",
       "properties": [
         {
@@ -10284,6 +10380,12 @@
       "group": "io.netty",
       "name": "netty-transport",
       "version": "4.1.105.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5184e1308ed7d853d7061b4e21e47e8de43a28df"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport@4.1.105.Final",
       "properties": [
         {
@@ -10310,6 +10412,12 @@
       "group": "io.prometheus",
       "name": "simpleclient",
       "version": "0.9.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5c3e6d58bead98e74f738e89b0383f66f005897c"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient@0.9.0",
       "properties": [
         {
@@ -10336,6 +10444,12 @@
       "group": "io.prometheus",
       "name": "simpleclient_common",
       "version": "0.9.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c6341fbd22d8ff701f281620ff83233358675c24"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient_common@0.9.0",
       "properties": [
         {
@@ -10362,6 +10476,12 @@
       "group": "io.prometheus",
       "name": "simpleclient_hotspot",
       "version": "0.9.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "18b1ff23534c798d470201b9090d051e287a3a0b"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient_hotspot@0.9.0",
       "properties": [
         {
@@ -10388,6 +10508,12 @@
       "group": "io.prometheus",
       "name": "simpleclient_servlet",
       "version": "0.9.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "969d2bb89960c0bdd605956a09d0f293bfcd41e8"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient_servlet@0.9.0",
       "properties": [
         {
@@ -10414,6 +10540,12 @@
       "group": "javax.servlet",
       "name": "javax.servlet-api",
       "version": "3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3cd63d075497751784b2fa84be59432f4905bf7c"
+        }
+      ],
       "purl": "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
       "properties": [
         {
@@ -10440,6 +10572,12 @@
       "group": "jline",
       "name": "jline",
       "version": "2.14.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c3aeac59c022bdc497c8c48ed86fa50450e4896a"
+        }
+      ],
       "purl": "pkg:maven/jline/jline@2.14.6",
       "properties": [
         {
@@ -10466,6 +10604,12 @@
       "group": "org.apache.yetus",
       "name": "audience-annotations",
       "version": "0.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e0efa60318229590103e31c69ebdaae56d903644"
+        }
+      ],
       "purl": "pkg:maven/org.apache.yetus/audience-annotations@0.12.0",
       "properties": [
         {
@@ -10492,6 +10636,12 @@
       "group": "org.apache.zookeeper",
       "name": "zookeeper-jute",
       "version": "3.8.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "de7b8a41bbe1ccdfc009de51fa6d160db3ca8025"
+        }
+      ],
       "purl": "pkg:maven/org.apache.zookeeper/zookeeper-jute@3.8.4",
       "properties": [
         {
@@ -10518,6 +10668,12 @@
       "group": "org.apache.zookeeper",
       "name": "zookeeper-prometheus-metrics",
       "version": "3.8.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ca6a967448e911447cf513762b56d9b9fa31ec39"
+        }
+      ],
       "purl": "pkg:maven/org.apache.zookeeper/zookeeper-prometheus-metrics@3.8.4",
       "properties": [
         {
@@ -10544,6 +10700,12 @@
       "group": "org.apache.zookeeper",
       "name": "zookeeper",
       "version": "3.8.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6638e37b887b5a279044afbdc9928e19f678eb2e"
+        }
+      ],
       "purl": "pkg:maven/org.apache.zookeeper/zookeeper@3.8.4",
       "properties": [
         {
@@ -10570,6 +10732,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-http",
       "version": "9.4.53.v20231009",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "87faf21eb322753f0527bcb88c43e67044786369"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.53.v20231009",
       "properties": [
         {
@@ -10596,6 +10764,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-io",
       "version": "9.4.53.v20231009",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "70cf7649b27c964ad29bfddf58f3bfe0d30346cf"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-io@9.4.53.v20231009",
       "properties": [
         {
@@ -10622,6 +10796,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-security",
       "version": "9.4.53.v20231009",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6fbc8ebe9046954dc2f51d4ba69c8f8344b05f7f"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-security@9.4.53.v20231009",
       "properties": [
         {
@@ -10648,6 +10828,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-server",
       "version": "9.4.53.v20231009",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8b0e761a0b359db59dae77c00b4213b0586cb994"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.53.v20231009",
       "properties": [
         {
@@ -10674,6 +10860,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-servlet",
       "version": "9.4.53.v20231009",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6670d6a54cdcaedd8090e8cf420fd5dd7d08e859"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.53.v20231009",
       "properties": [
         {
@@ -10700,6 +10892,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-util-ajax",
       "version": "9.4.53.v20231009",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4d20f6206eb7747293697c5f64c2dc5bf4bd54a4"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.53.v20231009",
       "properties": [
         {
@@ -10726,6 +10924,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-util",
       "version": "9.4.53.v20231009",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f72bb4f687b4454052c6f06528ba9910714df947"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-util@9.4.53.v20231009",
       "properties": [
         {
@@ -10752,6 +10956,12 @@
       "group": "org.jctools",
       "name": "jctools-core",
       "version": "3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8438fc1de4c10301bb53ceb49ed8db74bd40cc2c"
+        }
+      ],
       "purl": "pkg:maven/org.jctools/jctools-core@3.1.0",
       "properties": [
         {
@@ -10778,6 +10988,12 @@
       "group": "org.slf4j",
       "name": "slf4j-api",
       "version": "1.7.30",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b5a4b6d16ab13e34a88fae84c35cd5d68cac922c"
+        }
+      ],
       "purl": "pkg:maven/org.slf4j/slf4j-api@1.7.30",
       "properties": [
         {
@@ -10804,6 +11020,12 @@
       "group": "org.xerial.snappy",
       "name": "snappy-java",
       "version": "1.1.10.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ac605269f3598506196e469f1fb0d7ed5c55059e"
+        }
+      ],
       "purl": "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5",
       "properties": [
         {
@@ -10827,162 +11049,56 @@
   ],
   "dependencies": [
     {
-      "ref": "4e52f1bd-e47c-4556-a382-ea6ad2e29202",
+      "ref": "a8e62e44-9935-4664-885b-97f8d093e618",
       "dependsOn": [
-        "pkg:deb/ubuntu/adduser@3.118ubuntu5?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/apt@2.4.13?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/base-files@12ubuntu4.7?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/base-passwd@3.5.52build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/bash@5.1-6ubuntu1.1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/bsdutils@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04&epoch=1",
         "pkg:deb/ubuntu/ca-certificates@20240203~22.04.1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.20?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/dash@0.5.11%2Bgit20210903%2B057cd650a4ed-3build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/debconf@1.5.79ubuntu1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/debianutils@5.5-1ubuntu2?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/diffutils@3.8-0ubuntu2?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/dirmngr@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.3?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/fontconfig-config@2.13.1-4.2ubuntu5?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/fontconfig@2.13.1-4.2ubuntu5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/fonts-dejavu-core@2.37-2build1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gcc-12-base@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gnupg-l10n@2.2.27-3ubuntu2.1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gnupg-utils@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/gnupg@2.2.27-3ubuntu2.1?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/gosu@1.14-1ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpg-agent@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpg-wks-client@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpg-wks-server@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpg@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpgconf@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpgsm@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/grep@3.7-1build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/hostname@3.23ubuntu2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/init-system-helpers@1.62?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libapt-pkg6.0@2.4.13?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libassuan0@2.5.5-1build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libattr1@2.5.1-1build1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libaudit-common@3.0.7-1build1?arch=all&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libaudit1@3.0.7-1build1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libbrotli1@1.0.9-2build6?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libbsd0@0.11.5-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.8?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.8?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.2build3?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libcap2@2.44-1ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libcrypt1@4.4.27-1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.20?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libdb5.3@5.3.28%2Bdfsg1-0.8ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libdebconfclient0@0.261ubuntu1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libexpat1@2.4.7-1ubuntu0.5?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libffi8@3.4.2-4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libfontconfig1@2.13.1-4.2ubuntu5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libfreetype6@2.11.1%2Bdfsg-1ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgmp10@6.2.1%2Bdfsg-3ubuntu1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgpg-error0@1.43-3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libhogweed6@3.7.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libidn2-0@2.3.2-2build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libkeyutils1@1.6.1-2ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libksba8@1.6.0-2ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libldap-2.5-0@2.5.18%2Bdfsg-0ubuntu0.22.04.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/liblz4-1@1.9.3-2build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libmd0@1.0.4-1build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libncurses6@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libncursesw6@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libnettle8@3.7.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libnghttp2-14@1.43.0-1ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libnpth0@1.6-3build2?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libnsl2@1.3.0-2build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2.5?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.5?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libpcre3@8.39-13ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/libpng16-16@1.6.37-3build5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libprocps8@3.3.17-6ubuntu2.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/libpsl5@0.21.0-1.2build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libreadline8@8.1.2-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/librtmp1@2.4%2B20151223.gitfa8646d.1-2build4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsasl2-2@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsasl2-modules-db@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libseccomp2@2.5.3-2ubuntu2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libselinux1@3.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsemanage-common@3.3-1build2?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsemanage2@3.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsepol2@3.3-1build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsqlite3-0@3.37.2-2ubuntu0.3?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.18?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.12?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtirpc-common@1.3.2-2ubuntu0.1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtirpc3@1.3.2-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.12?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libunistring2@1.0-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libxxhash0@0.8.1-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/locales@2.35-0ubuntu3.8?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/login@4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu4?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/mawk@1.3.4.20200120-3?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/ncurses-base@6.3-2ubuntu0.1?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/netcat-openbsd@1.218-4ubuntu1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/netcat@1.218-4ubuntu1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/openssl@3.0.2-0ubuntu1.18?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/p11-kit-modules@0.24.0-6build1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/p11-kit@0.24.0-6build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/passwd@4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/pinentry-curses@1.1.1-1build2?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/procps@3.3.17-6ubuntu2.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/readline-common@8.1.2-1?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/sed@4.8-1ubuntu2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/sensible-utils@0.0.17?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/tzdata@2024b-0ubuntu0.22.04?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/ubuntu-keyring@2021.03.26?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/ucf@3.0043?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/usrmerge@25ubuntu2?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/wget@1.21.2-2ubuntu1.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/zlib1g@1.2.11.dfsg-2ubuntu9.2?arch=amd64&distro=ubuntu-22.04&epoch=1"
+        "pkg:deb/ubuntu/wget@1.21.2-2ubuntu1.1?arch=amd64&distro=ubuntu-22.04"
       ]
     },
     {
-      "ref": "b3324992-f791-4e2b-8aea-9c44242e6d53",
+      "ref": "f1e80db3-bee4-4a42-939a-86272b55aee1",
       "dependsOn": [
-        "4e52f1bd-e47c-4556-a382-ea6ad2e29202",
+        "a8e62e44-9935-4664-885b-97f8d093e618",
         "pkg:maven/ch.qos.logback/logback-classic@1.2.13",
         "pkg:maven/ch.qos.logback/logback-core@1.2.13",
         "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2",
@@ -14210,6 +14326,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -15075,7 +15197,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-9474.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:4935"
+          "url": "https://errata.rockylinux.org/RLSA-2024:8860"
         },
         {
           "url": "https://kb.cert.org/vince/comm/case/1515/"
@@ -15568,6 +15690,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.5,
@@ -15621,6 +15749,9 @@
           "url": "https://security-tracker.debian.org/tracker/CVE-2024-8176"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0009/"
+        },
+        {
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
@@ -15628,7 +15759,7 @@
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-03-17T17:15:36+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libexpat1@2.4.7-1ubuntu0.5?arch=amd64&distro=ubuntu-22.04",
@@ -16368,6 +16499,15 @@
         },
         {
           "source": {
+            "name": "nvd"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.5,
@@ -16411,7 +16551,7 @@
         }
       ],
       "published": "2025-02-10T22:15:38+00:00",
-      "updated": "2025-02-21T18:15:37+00:00",
+      "updated": "2025-03-26T13:14:32+00:00",
       "affects": [
         {
           "ref": "pkg:maven/io.netty/netty-common@4.1.105.Final",
