@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:e78a34dc-412f-4c4e-a9ef-49de028cf45e",
+  "serialNumber": "urn:uuid:ec8c41e0-7335-4bd7-9e8a-931632460ca9",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:23:41+00:00",
+    "timestamp": "2025-04-02T06:13:21+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "6b9ef00a-6ea0-48a6-a82e-709e5efa8d20",
+      "bom-ref": "eefcea0f-a1bc-4a4e-a4e2-418a941024ff",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -118,7 +118,7 @@
   },
   "components": [
     {
-      "bom-ref": "d0f62840-83b6-4bae-b6ee-f0561b561695",
+      "bom-ref": "dbd4faf4-7d7a-4285-a4a9-054270682431",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -17401,245 +17401,47 @@
   ],
   "dependencies": [
     {
-      "ref": "6b9ef00a-6ea0-48a6-a82e-709e5efa8d20",
+      "ref": "dbd4faf4-7d7a-4285-a4a9-054270682431",
       "dependsOn": [
-        "d0f62840-83b6-4bae-b6ee-f0561b561695"
-      ]
-    },
-    {
-      "ref": "d0f62840-83b6-4bae-b6ee-f0561b561695",
-      "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
         "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
         "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/dirmngr@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/fontconfig-config@2.14.1-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/fonts-dejavu-core@2.37-6?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gdal-data@3.6.2%2Bdfsg-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gdal-plugins@3.6.2%2Bdfsg-1%2Bb2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gnupg-l10n@2.2.40-1.1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gnupg-utils@2.2.40-1.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/gnupg@2.2.40-1.1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gpg-agent@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg-wks-client@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg-wks-server@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgconf@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgsm@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
         "pkg:deb/debian/less@590-2.1~deb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libaec0@1.0.6-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libaom3@3.6.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libarmadillo11@11.4.2%2Bdfsg-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libarpack2@3.8.0-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libassuan0@2.5.5-5?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libblas3@3.11.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libblosc1@1.21.3%2Bds-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libboost-serialization1.74.0@1.74.0%2Bds1-21?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbrotli1@1.0.9-2%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbsd0@0.11.7-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-l10n@2.36-9%2Bdeb12u9?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcfitsio10@4.2.0-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcurl3-gnutls@7.88.1-10%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcurl4@7.88.1-10%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdav1d6@1.0.0-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libde265-0@1.0.11-1%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdeflate0@1.14-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libedit2@3.1-20221030-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfontconfig1@2.14.1-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfreetype6@2.12.1%2Bdfsg-5%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfreexl1@1.0.6-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfyba0@4.1.1-8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgdal32@3.6.2%2Bdfsg-1%2Bb2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgdbm-compat4@1.23-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgdbm6@1.23-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgeos-c1v5@3.11.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgeos3.11.1@3.11.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgeotiff5@1.7.1-2%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgfortran5@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgif7@5.2.1-2.5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libgmpxx4ldbl@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhdf4-0-alt@4.2.15-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libheif1@1.15.1-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libicu72@72.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libio-pty-perl@1.17-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libipc-run-perl@20220807.0-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libjbig0@2.1-6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libjpeg62-turbo@2.1.5-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libjson-c5@0.16-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libjson-perl@4.10000-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkmlbase1@1.3.0-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkmldom1@1.3.0-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkmlengine1@1.3.0-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libksba8@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblapack3@3.11.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblcms2-2@2.14-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libldap-2.5-0@2.5.13%2Bdfsg-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblerc4@4.0.0%2Bds-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libllvm16@16.0.6-15~deb12u1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libltdl7@2.4.7-7~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmariadb3@10.11.6-0%2Bdeb12u1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libminizip1@1.1-8%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmpfr6@4.2.0-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnetcdf19@4.9.0-3%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnghttp2-14@1.52.0-1%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnpth0@1.6-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnspr4@4.35-1?arch=amd64&distro=debian-12.8&epoch=2",
         "pkg:deb/debian/libnss-wrapper@1.1.12-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnss3@3.87.1-1%2Bdeb12u1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libnuma1@2.0.16-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libodbc2@2.3.11-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libodbcinst2@2.3.11-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libogdi4.1@4.1.0%2Bds-6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libopenjp2-7@2.5.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libperl5.36@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpng16-16@1.6.39-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpoppler126@22.12.0-2%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpq5@17.2-1.pgdg120%2B1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libproj25@9.1.1-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libprotobuf-c1@1.4.1-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpsl5@0.21.2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libqhull-r8.0@2020.2-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libquadmath0@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/librttopo1@1.1.0-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsfcgal1@1.4.1-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsnappy1v5@1.1.9-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libspatialite7@5.0.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssh2-1@1.10.0-3%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsuperlu5@5.3.0%2Bdfsg1-2%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsystemd0@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsz2@1.0.6-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtiff6@4.5.0-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtirpc-common@1.3.3%2Bds-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libtirpc3@1.3.3%2Bds-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libudev1@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liburiparser1@0.9.7%2Bdfsg-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libwebp7@1.2.4-0.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libx265-199@3.5-2%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxerces-c3.2@3.2.4%2Bdebian-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxslt1.1@1.1.35-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libz3-4@4.8.12-3.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/locales@2.36-9%2Bdeb12u9?arch=all&distro=debian-12.8",
         "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mariadb-common@10.11.6-0%2Bdeb12u1?arch=all&distro=debian-12.8&epoch=1",
         "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mysql-common@5.8%2B1.1.0?arch=all&distro=debian-12.8",
         "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
         "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/openssl@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/perl-modules-5.36@5.36.0-7%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/perl@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/pinentry-curses@1.2.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-13-postgis-3-scripts@3.5.0%2Bdfsg-1.pgdg120%2B1?arch=all&distro=debian-12.8",
         "pkg:deb/debian/postgresql-13-postgis-3@3.5.0%2Bdfsg-1.pgdg120%2B1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-13@13.18-1.pgdg120%2B1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-client-13@13.18-1.pgdg120%2B1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-client-common@267.pgdg120%2B1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-common@267.pgdg120%2B1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/proj-data@9.1.1-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/readline-common@8.2-1.3?arch=all&distro=debian-12.8",
         "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sensible-utils@0.0.17%2Bnmu1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ssl-cert@1.1.2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ucf@3.0043%2Bnmu1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/unixodbc-common@2.3.11-2%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/xz-utils@5.4.1-0.2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1",
         "pkg:deb/debian/zstd@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8"
+      ]
+    },
+    {
+      "ref": "eefcea0f-a1bc-4a4e-a4e2-418a941024ff",
+      "dependsOn": [
+        "dbd4faf4-7d7a-4285-a4a9-054270682431"
       ]
     },
     {
@@ -26600,7 +26402,7 @@
         }
       ],
       "published": "2023-02-03T18:15:13+00:00",
-      "updated": "2024-11-21T06:15:17+00:00",
+      "updated": "2025-03-26T19:15:16+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
@@ -28504,7 +28306,7 @@
         416
       ],
       "description": "xmlXIncludeAddNode in xinclude.c in libxml2 before 2.11.0 has a use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-49043"
@@ -30645,7 +30447,7 @@
         119
       ],
       "description": "Xmlsoft Libxml2 v2.11.0 was discovered to contain an out-of-bounds read via the xmlSAX2StartElement() function at /libxml2/SAX2.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted XML file. NOTE: the vendor's position is that the product does not support the legacy SAX1 interface with custom callbacks; there is a crash even without crafted input.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-39615"
@@ -31041,6 +30843,7 @@
         416
       ],
       "description": "libxml2 through 2.11.5 has a use-after-free that can only occur after a certain memory allocation fails. This occurs in xmlUnlinkNode in tree.c. NOTE: the vendor's position is \"I don't think these issues are critical enough to warrant a CVE ID ... because an attacker typically can't control when memory allocations fail.\"",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-45322"
@@ -31625,6 +31428,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libncursesw6 to version 6.4-4.root.io.1; Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -33466,10 +33270,10 @@
           "source": {
             "name": "redhat"
           },
-          "score": 7.1,
+          "score": 7.8,
           "severity": "medium",
           "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
         },
         {
           "source": {
@@ -33509,7 +33313,7 @@
         }
       ],
       "published": "2024-03-18T11:15:09+00:00",
-      "updated": "2025-03-24T13:02:51+00:00",
+      "updated": "2025-03-26T05:15:39+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libodbc2@2.3.11-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -33919,6 +33723,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -34297,6 +34107,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -34706,7 +34517,7 @@
         416
       ],
       "description": "An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-25062"
@@ -34730,7 +34541,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-2679.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:2679"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3626"
         },
         {
           "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/604"
@@ -35454,7 +35265,7 @@
         }
       ],
       "published": "2024-03-10T05:15:06+00:00",
-      "updated": "2025-02-26T15:14:55+00:00",
+      "updated": "2025-03-28T19:15:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -38561,6 +38372,18 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.8,
@@ -38677,7 +38500,7 @@
         416
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a use-after-free in xmlSchemaIDCFillNodeTables and xmlSchemaBubbleIDCNodeTables in xmlschemas.c. To exploit this, a crafted XML document must be validated against an XML schema with certain identity constraints, or a crafted XML schema must be used.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-56171"
@@ -38710,6 +38533,9 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56171"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0010/"
+        },
+        {
           "url": "https://ubuntu.com/security/notices/USN-7302-1"
         },
         {
@@ -38720,7 +38546,7 @@
         }
       ],
       "published": "2025-02-18T22:15:12+00:00",
-      "updated": "2025-02-18T23:15:09+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
@@ -39242,7 +39068,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-8914.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:8914"
+          "url": "https://errata.rockylinux.org/RLSA-2024:8833"
         },
         {
           "url": "https://gitlab.com/libtiff/libtiff/-/merge_requests/559"
@@ -39429,6 +39255,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.5,
@@ -39483,6 +39315,9 @@
           "url": "https://security-tracker.debian.org/tracker/CVE-2024-8176"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0009/"
+        },
+        {
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
@@ -39490,7 +39325,7 @@
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-03-17T17:15:36+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -40004,6 +39839,12 @@
         },
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "oracle-oval"
           },
           "severity": "high"
@@ -40209,6 +40050,12 @@
         },
         {
           "url": "https://ubuntu.com/security/notices/USN-7245-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7376-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7376-2"
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2025-21490"
@@ -40610,7 +40457,19 @@
         },
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
           },
           "severity": "high"
         },
@@ -40747,7 +40606,7 @@
         121
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a stack-based buffer overflow in xmlSnprintfElements in valid.c. To exploit this, DTD validation must occur for an untrusted document or untrusted DTD. NOTE: this is similar to CVE-2017-9047.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-24928"
@@ -40869,7 +40728,7 @@
         476
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a NULL pointer dereference in xmlPatMatch in pattern.c.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-27113"
@@ -41005,6 +40864,422 @@
           "versions": [
             {
               "version": "2.12.1+dfsg-5+deb12u3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2912",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        119,
+        122
+      ],
+      "description": "A vulnerability was found in HDF5 up to 1.14.6. It has been declared as problematic. Affected by this vulnerability is the function H5O_msg_flush of the file src/H5Omessage.c. The manipulation of the argument oh leads to heap-based buffer overflow. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2912"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5370"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301885"
+        },
+        {
+          "url": "https://vuldb.com/?id.301885"
+        },
+        {
+          "url": "https://vuldb.com/?submit.519966"
+        }
+      ],
+      "published": "2025-03-28T16:15:30+00:00",
+      "updated": "2025-03-28T18:11:40+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2913",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        119,
+        416
+      ],
+      "description": "A vulnerability was found in HDF5 up to 1.14.6. It has been rated as problematic. Affected by this issue is the function H5FL__blk_gc_list of the file src/H5FL.c. The manipulation of the argument H5FL_blk_head_t leads to use after free. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2913"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5376"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301886"
+        },
+        {
+          "url": "https://vuldb.com/?id.301886"
+        },
+        {
+          "url": "https://vuldb.com/?submit.520404"
+        }
+      ],
+      "published": "2025-03-28T17:15:30+00:00",
+      "updated": "2025-03-28T18:11:40+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2914",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        119,
+        122
+      ],
+      "description": "A vulnerability classified as problematic has been found in HDF5 up to 1.14.6. This affects the function H5FS__sinfo_Srialize_Sct_cb of the file src/H5FScache.c. The manipulation of the argument sect leads to heap-based buffer overflow. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2914"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5379"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301887"
+        },
+        {
+          "url": "https://vuldb.com/?id.301887"
+        },
+        {
+          "url": "https://vuldb.com/?submit.520880"
+        }
+      ],
+      "published": "2025-03-28T17:15:30+00:00",
+      "updated": "2025-03-28T18:11:40+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2915",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        119,
+        122
+      ],
+      "description": "A vulnerability classified as problematic was found in HDF5 up to 1.14.6. This vulnerability affects the function H5F__accum_free of the file src/H5Faccum.c. The manipulation of the argument overlap_size leads to heap-based buffer overflow. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2915"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5380"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301888"
+        },
+        {
+          "url": "https://vuldb.com/?id.301888"
+        },
+        {
+          "url": "https://vuldb.com/?submit.520899"
+        }
+      ],
+      "published": "2025-03-28T17:15:30+00:00",
+      "updated": "2025-03-28T18:15:17+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2923",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        119,
+        122
+      ],
+      "description": "A vulnerability, which was classified as problematic, has been found in HDF5 up to 1.14.6. Affected by this issue is the function H5F_addr_encode_len of the file src/H5Fint.c. The manipulation of the argument pp leads to heap-based buffer overflow. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2923"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5381"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301898"
+        },
+        {
+          "url": "https://vuldb.com/?id.301898"
+        },
+        {
+          "url": "https://vuldb.com/?submit.521151"
+        }
+      ],
+      "published": "2025-03-28T19:15:24+00:00",
+      "updated": "2025-03-28T19:15:24+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2924",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        119,
+        122
+      ],
+      "description": "A vulnerability, which was classified as problematic, was found in HDF5 up to 1.14.6. This affects the function H5HL__fl_deserialize of the file src/H5HLcache.c. The manipulation of the argument free_block leads to heap-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2924"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5382"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301899"
+        },
+        {
+          "url": "https://vuldb.com/?id.301899"
+        },
+        {
+          "url": "https://vuldb.com/?submit.521170"
+        }
+      ],
+      "published": "2025-03-28T20:15:26+00:00",
+      "updated": "2025-03-28T20:15:26+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2925",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        119,
+        415
+      ],
+      "description": "A vulnerability has been found in HDF5 up to 1.14.6 and classified as problematic. This vulnerability affects the function H5MM_realloc of the file src/H5MM.c. The manipulation of the argument mem leads to double free. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2925"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5383"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301900"
+        },
+        {
+          "url": "https://vuldb.com/?id.301900"
+        },
+        {
+          "url": "https://vuldb.com/?submit.521193"
+        }
+      ],
+      "published": "2025-03-28T20:15:26+00:00",
+      "updated": "2025-03-28T21:15:17+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2926",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [],
+      "cwes": [
+        404,
+        476
+      ],
+      "description": "A vulnerability was found in HDF5 up to 1.14.6 and classified as problematic. This issue affects the function H5O__cache_chk_serialize of the file src/H5Ocache.c. The manipulation leads to null pointer dereference. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-2926"
+        },
+        {
+          "url": "https://github.com/HDFGroup/hdf5/issues/5384"
+        },
+        {
+          "url": "https://vuldb.com/?ctiid.301901"
+        },
+        {
+          "url": "https://vuldb.com/?id.301901"
+        },
+        {
+          "url": "https://vuldb.com/?submit.521246"
+        }
+      ],
+      "published": "2025-03-28T20:15:26+00:00",
+      "updated": "2025-03-28T21:15:18+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libhdf5-103-1@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libhdf5-hl-100@1.10.8%2Brepack1-1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.10.8+repack1-1",
               "status": "affected"
             }
           ]
