@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:84d90356-876a-4990-b367-6fdc0c37caa7",
+  "serialNumber": "urn:uuid:1e22d1c9-c776-400e-84d8-d7229604f461",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T14:09:30+00:00",
+    "timestamp": "2025-04-02T05:51:23+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "dbaaddff-03a3-467f-b8bc-1c85d32410d1",
+      "bom-ref": "87645925-6c31-4b59-a070-77dadf64b53e",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -74,57 +74,32 @@
   },
   "components": [
     {
-      "bom-ref": "37eee584-9b7e-491b-b9b3-642cba497c0a",
-      "type": "application",
-      "name": "usr/local/bin/k6",
+      "bom-ref": "49ace021-7a92-4e47-b45c-be64684d3a67",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.8",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
+          "value": "os-pkgs"
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
+          "value": "debian"
         }
       ]
     },
     {
-      "bom-ref": "b2d2f364-cd0f-4909-b2d5-56654d11bc65",
+      "bom-ref": "a134fed3-77d8-4891-927e-78a8484704a8",
       "type": "library",
       "name": "bundler",
       "version": "2.6.2",
-      "licenses": [
+      "hashes": [
         {
-          "license": {
-            "name": "MIT"
-          }
+          "alg": "SHA-1",
+          "content": "23f0f9b7f6a3f5d97ac58c32460c365738323e76"
         }
       ],
-      "purl": "pkg:gem/bundler@2.6.2",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/ruby/gems/3.4.0/specifications/default/bundler-2.6.2.gemspec"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:e5dcf34dfab4d4667a2c5b81c27878d42d9634e337ddad776829d960eb7cc1ec"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:ea32e1b1b79d06b220eb5e5be75a07ad8e1596f63cdbd477bdb697d05d1bdd2a"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gemspec"
-        }
-      ]
-    },
-    {
-      "bom-ref": "cee4a2cd-af88-4343-92fc-b56fe462817f",
-      "type": "library",
-      "name": "bundler",
-      "version": "2.6.2",
       "licenses": [
         {
           "license": {
@@ -153,18 +128,55 @@
       ]
     },
     {
-      "bom-ref": "e01e5362-dfe4-48b2-ac98-f1434fc69372",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.8",
+      "bom-ref": "cfd63e4d-6c09-473a-bc50-8acc1b16c866",
+      "type": "library",
+      "name": "bundler",
+      "version": "2.6.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6db3a01d1cb66737b46c4113bec40c88b930f6ac"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/bundler@2.6.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/ruby/gems/3.4.0/specifications/default/bundler-2.6.2.gemspec"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:e5dcf34dfab4d4667a2c5b81c27878d42d9634e337ddad776829d960eb7cc1ec"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:ea32e1b1b79d06b220eb5e5be75a07ad8e1596f63cdbd477bdb697d05d1bdd2a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gemspec"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d7e9128d-dbbb-41f9-9507-14906fd3e514",
+      "type": "application",
+      "name": "usr/local/bin/k6",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
+          "value": "lang-pkgs"
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "debian"
+          "value": "gobinary"
         }
       ]
     },
@@ -7029,6 +7041,12 @@
       "type": "library",
       "name": "abbrev",
       "version": "0.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d860bd69eeba6f56d055abfbf5536a947557b566"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7066,6 +7084,12 @@
       "type": "library",
       "name": "activesupport",
       "version": "7.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8fcfce19b6a837d581d8cd6dd5b675fc4fc07ce8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7098,6 +7122,12 @@
       "type": "library",
       "name": "addressable",
       "version": "2.8.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "032ff87d823a91a16e1a51f383208afc1b4f2714"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7130,6 +7160,12 @@
       "type": "library",
       "name": "base64",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "13edc3bf27000bc8053facdcdd3bb35ab28ecb21"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7167,6 +7203,12 @@
       "type": "library",
       "name": "benchmark",
       "version": "0.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7308f18c57c12ccd8c039e2915c3c90ccfe7d60e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7204,6 +7246,12 @@
       "type": "library",
       "name": "bigdecimal",
       "version": "3.1.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d14fedb2b5e68e88b785e5c399cc7dd8a62955e7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7241,6 +7289,12 @@
       "type": "library",
       "name": "bigdecimal",
       "version": "3.1.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f239d9978ac9fdcfb2e0a54b5b05d6663fa24269"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7278,6 +7332,12 @@
       "type": "library",
       "name": "bundler",
       "version": "2.5.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a45498319d93c09fb437bf15c8e9e532dbfaeeb9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7310,6 +7370,12 @@
       "type": "library",
       "name": "cgi",
       "version": "0.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "87c7cafc04d9f0dba3b8e2c6a17a9278bae1c677"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7347,6 +7413,12 @@
       "type": "library",
       "name": "chronic_duration",
       "version": "0.10.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e20420075e39b1a36b516dc3b55a7e1c41bdcd42"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7379,6 +7451,12 @@
       "type": "library",
       "name": "concurrent-ruby",
       "version": "1.2.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c7ce5c068d239dbfd3411a4d46b1e8ef1277223d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7411,6 +7489,12 @@
       "type": "library",
       "name": "connection_pool",
       "version": "2.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0f084d7c98a8db969f58192859b704634fb9e5c1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7443,6 +7527,12 @@
       "type": "library",
       "name": "csv",
       "version": "3.3.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0cad42dcec5db6785828308867f2c6170fe28b52"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7480,6 +7570,12 @@
       "type": "library",
       "name": "date",
       "version": "3.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6f12dfdd19f4ff70664c0c66a87dde7297ded52f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7517,6 +7613,12 @@
       "type": "library",
       "name": "debug",
       "version": "1.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6874248447c6f42069c4d3306da76ad1ed698ef3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7554,6 +7656,12 @@
       "type": "library",
       "name": "delegate",
       "version": "0.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f4958d02e1f71462e2da1491464b15369a567e58"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7591,6 +7699,12 @@
       "type": "library",
       "name": "did_you_mean",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d46a70a1661740bd902ddd6c36b2dccbba3a7f4a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7623,6 +7737,12 @@
       "type": "library",
       "name": "digest",
       "version": "3.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0d986be13948bee2abffda431f2df76c3d568d7a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7660,6 +7780,12 @@
       "type": "library",
       "name": "domain_name",
       "version": "0.6.20240107",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e6a2b71530cbd8bf0c84b6810739d26869b65922"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7702,6 +7828,12 @@
       "type": "library",
       "name": "down",
       "version": "5.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6a6187966c663ad8428598cb161d5e615ddc3655"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7734,6 +7866,12 @@
       "type": "library",
       "name": "drb",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "edeb1fd76aef6018a485a6cd38ef85a59441d104"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7771,6 +7909,12 @@
       "type": "library",
       "name": "drb",
       "version": "2.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "956612486a15c92deaf32f3384b7988bbec7ac46"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7808,6 +7952,12 @@
       "type": "library",
       "name": "english",
       "version": "0.8.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ff641f2275834f9f512f6d9881221c4fcff1c34f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7845,6 +7995,12 @@
       "type": "library",
       "name": "erb",
       "version": "4.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7f1abedb750d1cc335b8e159e2f8c76a2e5465be"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7882,6 +8038,12 @@
       "type": "library",
       "name": "error_highlight",
       "version": "0.7.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "61a950f2523e72a5acdc85f2e1af4143fb145400"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7914,6 +8076,12 @@
       "type": "library",
       "name": "etc",
       "version": "1.4.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "94e9d266eb97954448065f3e9859fe7d33274511"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7951,6 +8119,12 @@
       "type": "library",
       "name": "fcntl",
       "version": "1.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ad80725fc327f648cccffb4f0fe5afd80930ee28"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7988,6 +8162,12 @@
       "type": "library",
       "name": "ffi-compiler",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bdde68e091d7bd036fe1062ec12ce38262f16cb9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8020,6 +8200,12 @@
       "type": "library",
       "name": "ffi",
       "version": "1.16.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a105862b3cbfc92bec85dfa1ab052e2b3802bf4f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8052,6 +8238,12 @@
       "type": "library",
       "name": "fiddle",
       "version": "1.1.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "990ef0756a961bf628dce7fde26a30f7732cd195"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8089,6 +8281,12 @@
       "type": "library",
       "name": "fileutils",
       "version": "1.7.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c33d25b05bf720b38fe798d4c55fa7e3689e1b1d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8126,6 +8324,12 @@
       "type": "library",
       "name": "find",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "dca8705d80203f639fe8077d192aca541741929e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8163,6 +8367,12 @@
       "type": "library",
       "name": "forwardable",
       "version": "1.3.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "dc6cb3d4df80e2cd38e72918a4732defbacfa66f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8200,6 +8410,12 @@
       "type": "library",
       "name": "getoptlong",
       "version": "0.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "67cedbb4baad18f8e3c77c431cbd6f7038203e39"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8237,6 +8453,12 @@
       "type": "library",
       "name": "graphql-client",
       "version": "0.20.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5751ce112eda70837dbd1bc1cba6a2a13ad6d42b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8269,6 +8491,12 @@
       "type": "library",
       "name": "graphql",
       "version": "2.2.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8717a43b9c9910b7e9a5d18cd01aae054d482bf7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8301,6 +8529,12 @@
       "type": "library",
       "name": "http-cookie",
       "version": "1.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7eb7d3746e7b7ff40e00dbd3e76549c00fd89577"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8333,6 +8567,12 @@
       "type": "library",
       "name": "http-form_data",
       "version": "2.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "447cd41891bcc8b59fcf3c0b00c79c36019ad6c9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8365,6 +8605,12 @@
       "type": "library",
       "name": "http",
       "version": "5.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1ca03a29d2fff1efbb80438e46d02ae6a2d7c168"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8397,6 +8643,12 @@
       "type": "library",
       "name": "i18n",
       "version": "1.14.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "713ecae034134012bc0660df3b78f1b21013e332"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8429,6 +8681,12 @@
       "type": "library",
       "name": "io-console",
       "version": "0.8.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6b7cd25e567291e820b1e426ffae39f1a5155a8f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8466,6 +8724,12 @@
       "type": "library",
       "name": "io-nonblock",
       "version": "0.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cf7067ac2ace8fb8d36d5b34ab80a6343e89790b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8503,6 +8767,12 @@
       "type": "library",
       "name": "io-wait",
       "version": "0.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "37fd1a8c03e380c8211281db243169e8dedce281"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8540,6 +8810,12 @@
       "type": "library",
       "name": "ipaddr",
       "version": "1.2.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "adaa8af3c85f815c59821e8fe0a5b78e94757865"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8577,6 +8853,12 @@
       "type": "library",
       "name": "irb",
       "version": "1.14.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f9760413052a779380b942f6faa5a32fb79c8e90"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8614,6 +8896,12 @@
       "type": "library",
       "name": "json",
       "version": "2.9.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "01639a4f37856c447da8f31ca0b2b75f1c3c4b7d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8646,6 +8934,12 @@
       "type": "library",
       "name": "llhttp-ffi",
       "version": "0.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "322ada5ce31db46a96f390a31295ade300fe2ef1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8678,6 +8972,12 @@
       "type": "library",
       "name": "logger",
       "version": "1.6.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1c66e1a6e448ff1d118860b0eb4ddb130a3ac36e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8715,6 +9015,12 @@
       "type": "library",
       "name": "matrix",
       "version": "0.4.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6e92180c8c37fd63e08a60188229efa81b3402cd"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8752,6 +9058,12 @@
       "type": "library",
       "name": "minitest",
       "version": "5.22.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0c8991ae2085318eda63c3fe06275a70f4b08a55"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8784,6 +9096,12 @@
       "type": "library",
       "name": "minitest",
       "version": "5.25.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "37f1b28d4d182d62171d163c1f63c35d038b7621"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8816,6 +9134,12 @@
       "type": "library",
       "name": "mutex_m",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "83f41f80ffcb74ef912b234bf7aa89e18285b537"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8853,6 +9177,12 @@
       "type": "library",
       "name": "mutex_m",
       "version": "0.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b2bd3cad86b6019b6e1ec696a6f82ced80cbba3c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8890,6 +9220,12 @@
       "type": "library",
       "name": "naturally",
       "version": "2.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d005c5eaff909e1865ea222bc8d0c4526263a9cd"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8922,6 +9258,12 @@
       "type": "library",
       "name": "net-ftp",
       "version": "0.3.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0ec458e7131c484fd46269376915fa5a42225f0b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8959,6 +9301,12 @@
       "type": "library",
       "name": "net-http",
       "version": "0.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4773d70caa656bba1a7936793abfa6880761ec29"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8996,6 +9344,12 @@
       "type": "library",
       "name": "net-imap",
       "version": "0.5.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f9a60dc0f7667ccf924639b8747a0010145eab9d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9033,6 +9387,12 @@
       "type": "library",
       "name": "net-pop",
       "version": "0.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "695c630126d9e3bc561930a549a96a046432ed7e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9070,6 +9430,12 @@
       "type": "library",
       "name": "net-protocol",
       "version": "0.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "15822a5f992bf1609bfea540b198472c036a2222"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9107,6 +9473,12 @@
       "type": "library",
       "name": "net-smtp",
       "version": "0.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0c5e04b611b31091027a370e5735386d7aa5e4b3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9144,6 +9516,12 @@
       "type": "library",
       "name": "nkf",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f4f2f4ac3fcd2d8229a7cc2110b08df7c38dbd35"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9181,6 +9559,12 @@
       "type": "library",
       "name": "numerizer",
       "version": "0.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a4275874e9225617da6ec2c3fd6316ee57399ed6"
+        }
+      ],
       "purl": "pkg:gem/numerizer@0.1.1",
       "properties": [
         {
@@ -9206,6 +9590,12 @@
       "type": "library",
       "name": "observer",
       "version": "0.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "aa22771b924891a028c2605410761b6d2a43e2be"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9243,6 +9633,12 @@
       "type": "library",
       "name": "open-uri",
       "version": "0.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "10a16ae05e0ac9e2e852d0000d83c420f56ff615"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9280,6 +9676,12 @@
       "type": "library",
       "name": "open3",
       "version": "0.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3b9fd22f6084d005585f3fc5ede5ee87872983df"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9317,6 +9719,12 @@
       "type": "library",
       "name": "openssl",
       "version": "3.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4ae2f14a263bb3cba3f4f983a45a30d2d766db90"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9354,6 +9762,12 @@
       "type": "library",
       "name": "optimist",
       "version": "3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8d128671abe3b2c6c02bebc1b365c4c3bf424970"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9386,6 +9800,12 @@
       "type": "library",
       "name": "optparse",
       "version": "0.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d8ab0d09c46c5fa41ff5f02c4708b9ee578abb25"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9423,6 +9843,12 @@
       "type": "library",
       "name": "os",
       "version": "1.1.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "95f4573d50c30263556111ce18f69397eb89c2ff"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9455,6 +9881,12 @@
       "type": "library",
       "name": "ostruct",
       "version": "0.6.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "246709b1d5df4a3fe6a8579bd5cc518b882c8348"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9492,6 +9924,12 @@
       "type": "library",
       "name": "pathname",
       "version": "0.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f718a78dfb81f28b5cbdcbeab6df4bd1a6193438"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9529,6 +9967,12 @@
       "type": "library",
       "name": "power_assert",
       "version": "2.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3910d3129ccdcddd31cf71d97fa5bb830ee4ad4b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9566,6 +10010,12 @@
       "type": "library",
       "name": "pp",
       "version": "0.6.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ffc40553ad9be2b0147766edb0ce07c9fa08f5ea"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9603,6 +10053,12 @@
       "type": "library",
       "name": "prettyprint",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f80871309d322b38956f6cc6ad029deef751bbbf"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9640,6 +10096,12 @@
       "type": "library",
       "name": "prime",
       "version": "0.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7a0c2f99d4889bce0d4f00a08a937b58126cb0ca"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9677,6 +10139,12 @@
       "type": "library",
       "name": "prism",
       "version": "1.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "21502c2af5ab544ae5dc90fe094378c381402bff"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9709,6 +10177,12 @@
       "type": "library",
       "name": "pstore",
       "version": "0.1.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "49267c3f861bc08d3c9a0cda0dd12fc9c9b93edb"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9746,6 +10220,12 @@
       "type": "library",
       "name": "psych",
       "version": "5.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c99bcd91cf0169237aa73cbff9228631fb9e1e47"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9778,6 +10258,12 @@
       "type": "library",
       "name": "public_suffix",
       "version": "5.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cf7f3aaa138818ad6fa2db175a9f67f26d69e120"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9810,6 +10296,12 @@
       "type": "library",
       "name": "racc",
       "version": "1.8.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "45d3d9c67ff6248b9615f630d31342b8f42a2bb2"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9847,6 +10339,12 @@
       "type": "library",
       "name": "rainbow",
       "version": "3.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5fefabf35001874fc4e91265c2fd8715432e1bbe"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9879,6 +10377,12 @@
       "type": "library",
       "name": "rake",
       "version": "13.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bbb3347d482c51a40c3db6af14567286784b0504"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9911,6 +10415,12 @@
       "type": "library",
       "name": "rake",
       "version": "13.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7be6147e9c2357c3b6f357452eb7b7b6a203c78c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9943,6 +10453,12 @@
       "type": "library",
       "name": "rbs",
       "version": "3.8.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "57ddefab41ab15662a678b55f3c090ea0f4847f6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9980,6 +10496,12 @@
       "type": "library",
       "name": "rdoc",
       "version": "6.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3cf9dbd634bf9b3e4b4a3efa6b0d9b55ba9e2487"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10012,6 +10534,12 @@
       "type": "library",
       "name": "readline",
       "version": "0.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "26e62bd3278988f7ae1312da63397a6077e3c244"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10044,6 +10572,12 @@
       "type": "library",
       "name": "reline",
       "version": "0.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f3c8c4e68371d8efa2f998136f8cb7966050a987"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10076,6 +10610,12 @@
       "type": "library",
       "name": "repl_type_completor",
       "version": "0.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5371bf2670dbb25ce2af79ad1d248bd9df6fe9e7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10108,6 +10648,12 @@
       "type": "library",
       "name": "resolv-replace",
       "version": "0.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "01459e7ae4ea5c14702bc98b695ed7313a01644a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10145,6 +10691,12 @@
       "type": "library",
       "name": "resolv",
       "version": "0.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e61ba39625745114841f96e891ab0461c11101d6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10182,6 +10734,12 @@
       "type": "library",
       "name": "rexml",
       "version": "3.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bc3a126304bfff5708c6b67a7f2d20da6a92ac9a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10214,6 +10772,12 @@
       "type": "library",
       "name": "rinda",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a924c27c1e1c3d0f59b285ca7d9f21ca2cb9d42d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10251,6 +10815,12 @@
       "type": "library",
       "name": "rss",
       "version": "0.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "626fd97b0c40b347e749e8b79a004dc02a5d42db"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10283,6 +10853,12 @@
       "type": "library",
       "name": "ruby-progressbar",
       "version": "1.13.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4c973ed564b59eadb261f02e512bf2a95520e217"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10315,6 +10891,12 @@
       "type": "library",
       "name": "ruby2_keywords",
       "version": "0.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0614d336608462258d6365e97311b20c992f28d2"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10352,6 +10934,12 @@
       "type": "library",
       "name": "securerandom",
       "version": "0.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "57ccb2f1b303ead010cf331f3906d0e1f61a55e7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10389,6 +10977,12 @@
       "type": "library",
       "name": "semantic",
       "version": "1.6.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2f57039d2d421537d7b5990622de90722f4d6fb0"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10421,6 +11015,12 @@
       "type": "library",
       "name": "set",
       "version": "1.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5f8d88548bbc59bfa6cc368859c41221d68695ea"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10458,6 +11058,12 @@
       "type": "library",
       "name": "shellwords",
       "version": "0.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "084e1b0cfbf433b6a95472b4db3a01d7ac879c32"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10495,6 +11101,12 @@
       "type": "library",
       "name": "singleton",
       "version": "0.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f165113b7cb1c2d81624088e6fe6455f6b431e30"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10532,6 +11144,12 @@
       "type": "library",
       "name": "stringio",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4ea007d625d9bf2cb838f34e60ac7e8a998382ab"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10569,6 +11187,12 @@
       "type": "library",
       "name": "strscan",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7de1c19c699be3c6354440c4c24835071afcf07a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10606,6 +11230,12 @@
       "type": "library",
       "name": "syntax_suggest",
       "version": "2.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec377fca25b515dd8470a69b021de42e563fc1f1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10638,6 +11268,12 @@
       "type": "library",
       "name": "syslog",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4ace90bb8e4988502a58c1a139637ed5b5dacce9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10675,6 +11311,12 @@
       "type": "library",
       "name": "table_print",
       "version": "1.5.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ca4bcd9983b55c5cb9f00abbbe48707eaa904f46"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10707,6 +11349,12 @@
       "type": "library",
       "name": "tempfile",
       "version": "0.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "72b8e5e6e24533d33552748c032d7eee8c5c6e02"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10744,6 +11392,12 @@
       "type": "library",
       "name": "test-unit",
       "version": "3.6.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "098e28d30ad7f76f08cc1e9256d605b667c1c34b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10786,6 +11440,12 @@
       "type": "library",
       "name": "time",
       "version": "0.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cb7541e4e25b0fb25495c4b17023a061537f29f3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10823,6 +11483,12 @@
       "type": "library",
       "name": "timeout",
       "version": "0.4.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e355dfbd94c59c58a26425990320da8f3af4cd8e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10860,6 +11526,12 @@
       "type": "library",
       "name": "tmpdir",
       "version": "0.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "198dea55ba62af046d28bf3cd8ee960e7d669843"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10897,6 +11569,12 @@
       "type": "library",
       "name": "tsort",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6ab74fec935d3ec55e6acf14cfb755f46a6e21c1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10934,6 +11612,12 @@
       "type": "library",
       "name": "tty-cursor",
       "version": "0.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e9a074893198cc76e5d4edf5cf309548c4050e61"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10966,6 +11650,12 @@
       "type": "library",
       "name": "tty-spinner",
       "version": "0.9.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "39e0260ea6893c9800731c5e6fc881017ea3d657"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10998,6 +11688,12 @@
       "type": "library",
       "name": "typeprof",
       "version": "0.30.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8be330cb07c46bd4138ed942290d2eb0751ec3d8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11030,6 +11726,12 @@
       "type": "library",
       "name": "tzinfo",
       "version": "2.0.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1595c46833751fc520cdef50518301cebe4128b8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11062,6 +11764,12 @@
       "type": "library",
       "name": "un",
       "version": "0.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bb14ec4b2487f12ee71ea6e0745aeff681630f72"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11099,6 +11807,12 @@
       "type": "library",
       "name": "uri",
       "version": "1.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a4c508be9a1b2e394589019d1ce3f431b07fd62e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11136,6 +11850,12 @@
       "type": "library",
       "name": "weakref",
       "version": "0.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "163d4d9c9dc5374805a99e19361684ddf5d9b036"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11173,6 +11893,12 @@
       "type": "library",
       "name": "yaml",
       "version": "0.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "60da1149fe35f62bce4ab42fdd5fd38ff7e4fa00"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11210,6 +11936,12 @@
       "type": "library",
       "name": "zlib",
       "version": "3.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fe9564d857bf52396e4adef4fc7a8443f28d58df"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11258,6 +11990,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "buf.build/gen/go/gogo/protobuf/protocolbuffers/go@v1.31.0-20210810001428-4df00b267f94.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11277,6 +12013,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "buf.build/gen/go/prometheus/prometheus/protocolbuffers/go@v1.31.0-20230627135113-9a12bc2590d2.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11300,6 +12040,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/andybalholm/brotli@v1.1.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11319,6 +12063,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/andybalholm/cascadia@v1.3.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11342,6 +12090,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/Azure/go-ntlmssp@v0.0.0-20221128193559-754e69321358"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11361,6 +12113,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/beorn7/perks@v1.0.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11384,6 +12140,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/bufbuild/protocompile@v0.14.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11403,6 +12163,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/cenkalti/backoff/v4@v4.3.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11426,6 +12190,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/cespare/xxhash/v2@v2.3.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11445,6 +12213,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/chromedp/cdproto@v0.0.0-20240919203636-12af5e8a671f"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11468,6 +12240,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/chromedp/sysutil@v1.0.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11487,6 +12263,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/dgryski/go-rendezvous@v0.0.0-20200823014737-9f7001d12a5f"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11510,6 +12290,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/dlclark/regexp2@v1.11.4"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11529,6 +12313,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/evanw/esbuild@v0.21.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11552,6 +12340,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/fatih/color@v1.18.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11571,6 +12363,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/go-logr/logr@v1.4.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11594,6 +12390,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/go-logr/stdr@v1.2.2"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11613,6 +12413,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/go-sourcemap/sourcemap@v2.1.4+incompatible"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11636,6 +12440,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/golang/protobuf@v1.5.4"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11655,6 +12463,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/google/pprof@v0.0.0-20230728192033-2ba5b33183c6"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11678,6 +12490,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/google/uuid@v1.6.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11697,6 +12513,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/gorilla/websocket@v1.5.3"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11720,6 +12540,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/sobek@v0.0.0-20241024150027-d91f02b05e9b"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11739,6 +12563,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/xk6-browser@v1.9.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11762,6 +12590,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/xk6-dashboard@v0.7.5"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11781,6 +12613,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/xk6-output-opentelemetry@v0.3.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11804,6 +12640,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/xk6-output-prometheus-remote@v0.5.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11823,6 +12663,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/xk6-redis@v0.3.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11846,6 +12690,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/xk6-webcrypto@v0.5.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11865,6 +12713,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grafana/xk6-websockets@v0.7.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11888,6 +12740,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11907,6 +12763,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/grpc-ecosystem/grpc-gateway/v2@v2.22.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11930,6 +12790,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/influxdata/influxdb1-client@v0.0.0-20190402204710-8ff2fc3824fc"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11949,6 +12813,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/jhump/protoreflect@v1.17.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11972,6 +12840,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/josharian/intern@v1.0.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -11991,6 +12863,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/klauspost/compress@v1.17.11"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12014,6 +12890,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mailru/easyjson@v0.7.7"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12033,6 +12913,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mattn/go-colorable@v0.1.13"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12056,6 +12940,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mattn/go-isatty@v0.0.20"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12075,6 +12963,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/matttproud/golang_protobuf_extensions@v1.0.4"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12098,6 +12990,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mstoykov/atlas@v0.0.0-20220811071828-388f114305dd"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12117,6 +13013,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mstoykov/envconfig@v1.5.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12140,6 +13040,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mstoykov/k6-taskqueue-lib@v0.1.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12159,6 +13063,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/nu7hatch/gouuid@v0.0.0-20131221200532-179d4d0c4d8d"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12182,6 +13090,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/pkg/browser@v0.0.0-20210911075715-681adbf594b8"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12201,6 +13113,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/prometheus/client_golang@v1.16.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12224,6 +13140,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/prometheus/client_model@v0.4.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12243,6 +13163,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/prometheus/common@v0.42.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12266,6 +13190,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/prometheus/procfs@v0.10.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12285,6 +13213,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/PuerkitoBio/goquery@v1.9.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12308,6 +13240,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/r3labs/sse/v2@v2.10.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12327,6 +13263,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/redis/go-redis/v9@v9.0.5"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12350,6 +13290,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/serenize/snaker@v0.0.0-20201027110005-a7ad2135616e"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12369,6 +13313,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/sirupsen/logrus@v1.9.3"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12392,6 +13340,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/Soontao/goHttpDigestClient@v0.0.0-20170320082612-6d28bb1415c5"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12411,6 +13363,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/spf13/afero@v1.1.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12434,6 +13390,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/spf13/cobra@v1.4.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12453,6 +13413,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/spf13/pflag@v1.0.5"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12476,6 +13440,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/tidwall/gjson@v1.18.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12495,6 +13463,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/tidwall/match@v1.1.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12518,6 +13490,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/tidwall/pretty@v1.2.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12536,6 +13512,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.k6.io/k6"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12559,6 +13539,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc@v1.28.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12578,6 +13562,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp@v1.28.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12601,6 +13589,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc@v1.29.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12620,6 +13612,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp@v1.29.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12643,6 +13639,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/exporters/otlp/otlptrace@v1.29.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12662,6 +13662,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/metric@v1.29.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12685,6 +13689,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/sdk/metric@v1.28.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12704,6 +13712,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/sdk@v1.29.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12727,6 +13739,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel/trace@v1.29.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12746,6 +13762,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/otel@v1.29.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12769,6 +13789,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "go.opentelemetry.io/proto/otlp@v1.3.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12788,6 +13812,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/crypto/x509roots/fallback@v0.0.0-20240806160748-b2d3a6a4b4d3"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12811,6 +13839,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/crypto@v0.31.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12830,6 +13862,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/net@v0.33.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12853,6 +13889,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/sync@v0.10.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12872,6 +13912,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/sys@v0.28.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12895,6 +13939,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/term@v0.27.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12914,6 +13962,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/text@v0.21.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12937,6 +13989,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/time@v0.7.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12956,6 +14012,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "google.golang.org/genproto/googleapis/api@v0.0.0-20240822170219-fc7c04adadcd"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -12979,6 +14039,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "google.golang.org/genproto/googleapis/rpc@v0.0.0-20240822170219-fc7c04adadcd"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -12998,6 +14062,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "google.golang.org/grpc@v1.67.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -13021,6 +14089,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "google.golang.org/protobuf@v1.35.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -13040,6 +14112,10 @@
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gopkg.in/cenkalti/backoff.v1@v1.1.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -13063,6 +14139,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gopkg.in/guregu/null.v3@v3.3.0"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -13084,17 +14164,21 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gopkg.in/yaml.v3@v3.0.1"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
       ]
     },
     {
-      "bom-ref": "pkg:golang/stdlib@1.23.4",
+      "bom-ref": "pkg:golang/stdlib@v1.23.4",
       "type": "library",
       "name": "stdlib",
-      "version": "1.23.4",
-      "purl": "pkg:golang/stdlib@1.23.4",
+      "version": "v1.23.4",
+      "purl": "pkg:golang/stdlib@v1.23.4",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -13105,6 +14189,10 @@
           "value": "sha256:be01bdcc53546138f78ac01f7d1785e06a3bc47cc19840954f23ca08a229b27e"
         },
         {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "stdlib@v1.23.4"
+        },
+        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
         }
@@ -13113,26 +14201,54 @@
   ],
   "dependencies": [
     {
-      "ref": "37eee584-9b7e-491b-b9b3-642cba497c0a",
+      "ref": "49ace021-7a92-4e47-b45c-be64684d3a67",
       "dependsOn": [
-        "pkg:golang/go.k6.io/k6"
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libyaml-0-2@0.2.5-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8"
       ]
     },
     {
-      "ref": "b2d2f364-cd0f-4909-b2d5-56654d11bc65",
-      "dependsOn": []
-    },
-    {
-      "ref": "cee4a2cd-af88-4343-92fc-b56fe462817f",
-      "dependsOn": []
-    },
-    {
-      "ref": "dbaaddff-03a3-467f-b8bc-1c85d32410d1",
+      "ref": "87645925-6c31-4b59-a070-77dadf64b53e",
       "dependsOn": [
-        "37eee584-9b7e-491b-b9b3-642cba497c0a",
-        "b2d2f364-cd0f-4909-b2d5-56654d11bc65",
-        "cee4a2cd-af88-4343-92fc-b56fe462817f",
-        "e01e5362-dfe4-48b2-ac98-f1434fc69372",
+        "49ace021-7a92-4e47-b45c-be64684d3a67",
+        "a134fed3-77d8-4891-927e-78a8484704a8",
+        "cfd63e4d-6c09-473a-bc50-8acc1b16c866",
+        "d7e9128d-dbbb-41f9-9507-14906fd3e514",
         "pkg:gem/abbrev@0.1.2",
         "pkg:gem/activesupport@7.1.3",
         "pkg:gem/addressable@2.8.6",
@@ -13256,100 +14372,17 @@
       ]
     },
     {
-      "ref": "e01e5362-dfe4-48b2-ac98-f1434fc69372",
+      "ref": "a134fed3-77d8-4891-927e-78a8484704a8",
+      "dependsOn": []
+    },
+    {
+      "ref": "cfd63e4d-6c09-473a-bc50-8acc1b16c866",
+      "dependsOn": []
+    },
+    {
+      "ref": "d7e9128d-dbbb-41f9-9507-14906fd3e514",
       "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsystemd0@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libudev1@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libyaml-0-2@0.2.5-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/openssl@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1"
+        "pkg:golang/go.k6.io/k6"
       ]
     },
     {
@@ -14752,7 +15785,7 @@
         "pkg:golang/gopkg.in/cenkalti/backoff.v1@v1.1.0",
         "pkg:golang/gopkg.in/guregu/null.v3@v3.3.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
-        "pkg:golang/stdlib@1.23.4"
+        "pkg:golang/stdlib@v1.23.4"
       ]
     },
     {
@@ -14860,7 +15893,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:golang/stdlib@1.23.4",
+      "ref": "pkg:golang/stdlib@v1.23.4",
       "dependsOn": []
     }
   ],
@@ -17992,6 +19025,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -18300,6 +19334,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -18529,6 +19569,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -18842,10 +19883,10 @@
       "updated": "2025-02-21T18:15:17+00:00",
       "affects": [
         {
-          "ref": "pkg:golang/stdlib@1.23.4",
+          "ref": "pkg:golang/stdlib@v1.23.4",
           "versions": [
             {
-              "version": "1.23.4",
+              "version": "v1.23.4",
               "status": "affected"
             }
           ]
@@ -18928,10 +19969,10 @@
       "updated": "2025-02-21T18:15:17+00:00",
       "affects": [
         {
-          "ref": "pkg:golang/stdlib@1.23.4",
+          "ref": "pkg:golang/stdlib@v1.23.4",
           "versions": [
             {
-              "version": "1.23.4",
+              "version": "v1.23.4",
               "status": "affected"
             }
           ]
@@ -19247,10 +20288,10 @@
       "updated": "2025-02-21T18:15:32+00:00",
       "affects": [
         {
-          "ref": "pkg:golang/stdlib@1.23.4",
+          "ref": "pkg:golang/stdlib@v1.23.4",
           "versions": [
             {
-              "version": "1.23.4",
+              "version": "v1.23.4",
               "status": "affected"
             }
           ]
@@ -19267,6 +20308,18 @@
         {
           "source": {
             "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "low"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
