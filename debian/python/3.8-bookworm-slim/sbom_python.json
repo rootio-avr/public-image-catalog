@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:21328740-33b4-4f3c-a32b-880a5357c402",
+  "serialNumber": "urn:uuid:11d9c53f-4892-4db6-ae52-4e0b52ae6575",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:27:07+00:00",
+    "timestamp": "2025-04-02T06:18:05+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "3551179e-5903-4b90-b06d-a19dc4cbd873",
+      "bom-ref": "e5f19aca-2ad7-440c-a073-24851693637c",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -50,10 +50,16 @@
   },
   "components": [
     {
-      "bom-ref": "0c0c4319-1234-475d-b8dd-784f9b348849",
+      "bom-ref": "5c9abb17-946d-4cd7-bff2-d02802a45c3e",
       "type": "library",
       "name": "my-test-package",
       "version": "1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6d7a67c18613be4b255812111b4619de979abc28"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -65,7 +71,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.8/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO"
+          "value": "usr/local/lib/python3.8/site-packages/pkg_resources/tests/data/my-test-package_zipped-egg/my_test_package-1.0-py3.7.egg"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -82,7 +88,7 @@
       ]
     },
     {
-      "bom-ref": "515a40da-e861-445a-ae4c-67cc81195511",
+      "bom-ref": "aa1063e3-e276-4527-9a76-e95ca97ea558",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -98,10 +104,16 @@
       ]
     },
     {
-      "bom-ref": "e3d5993b-afcc-498d-9519-7345adbfbbbe",
+      "bom-ref": "fe3499e1-0982-4ee5-9232-f8b3c09c5710",
       "type": "library",
       "name": "my-test-package",
       "version": "1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6d7a67c18613be4b255812111b4619de979abc28"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -113,7 +125,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.8/site-packages/pkg_resources/tests/data/my-test-package_zipped-egg/my_test_package-1.0-py3.7.egg"
+          "value": "usr/local/lib/python3.8/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -7872,6 +7884,12 @@
       "type": "library",
       "name": "autocommand",
       "version": "2.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4310db58f98c12b23286e5fa37f0e27abefb6a4a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7904,6 +7922,12 @@
       "type": "library",
       "name": "backports.tarfile",
       "version": "1.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3dd8d93cf7695d1c9d7574751ab5b0dee5dd7f9a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7936,6 +7960,12 @@
       "type": "library",
       "name": "importlib_metadata",
       "version": "8.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e8c830d8b0942300c7c87b3b8fd15ea1396e07bd"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7968,6 +7998,12 @@
       "type": "library",
       "name": "importlib_resources",
       "version": "6.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7c9b0b50d0e667825dab09902ad8376a5f2945b6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8000,6 +8036,12 @@
       "type": "library",
       "name": "inflect",
       "version": "7.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c37042adc0d1270485f4b8b5b9e085a274dc035b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8032,6 +8074,12 @@
       "type": "library",
       "name": "jaraco.collections",
       "version": "5.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ac0db25aefd2679b4c3265e713d00f6155a94465"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8064,6 +8112,12 @@
       "type": "library",
       "name": "jaraco.context",
       "version": "5.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ac9c92013b2f0fc65d741b32a9fe4b956dd6eb7d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8096,6 +8150,12 @@
       "type": "library",
       "name": "jaraco.functools",
       "version": "4.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b7a18f079de22d10c4c318e54bd8c48177f91333"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8128,6 +8188,12 @@
       "type": "library",
       "name": "jaraco.text",
       "version": "3.12.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a7763789fa56cebbaa849368faac7d386f170399"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8160,6 +8226,12 @@
       "type": "library",
       "name": "more-itertools",
       "version": "10.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ffccec7fd799cc4ab07530954fef3be2472e2c23"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8192,6 +8264,12 @@
       "type": "library",
       "name": "packaging",
       "version": "24.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f99865b8d3b90ad64a0060f7f2f4c6e4faeb0a39"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8229,6 +8307,12 @@
       "type": "library",
       "name": "pip",
       "version": "23.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e977f3c277e38e53e1f3ebadbe15221159455aee"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8261,6 +8345,12 @@
       "type": "library",
       "name": "platformdirs",
       "version": "4.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1ac8a3679afcfeec0ba00851f5f8095dd1b060cd"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8293,6 +8383,12 @@
       "type": "library",
       "name": "setuptools",
       "version": "75.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0200899a9a1b38d65d3aa1e076a4536ce01f8664"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8325,6 +8421,12 @@
       "type": "library",
       "name": "tomli",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d3ea3bda227794ae35fe7ffc5bd6e5fa2a5ef250"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8357,6 +8459,12 @@
       "type": "library",
       "name": "typeguard",
       "version": "4.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9a94672ccfea06156a5f8a321cd0626cfd233ae8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8389,6 +8497,12 @@
       "type": "library",
       "name": "typing_extensions",
       "version": "4.12.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b6ada54b9516d20b69a5dd5cded868da22c5e252"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8421,6 +8535,12 @@
       "type": "library",
       "name": "wheel",
       "version": "0.43.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7ceb6dbe498b69abf4087637c6f500742ff7e2b4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8453,6 +8573,12 @@
       "type": "library",
       "name": "wheel",
       "version": "0.45.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6240a67a4c1cb1501e12755e659b71f8d78e2260"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8485,6 +8611,12 @@
       "type": "library",
       "name": "zipp",
       "version": "3.19.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c53b0e6a2e3d94093e2fe4978926a7439b47d43c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8515,15 +8647,62 @@
   ],
   "dependencies": [
     {
-      "ref": "0c0c4319-1234-475d-b8dd-784f9b348849",
+      "ref": "5c9abb17-946d-4cd7-bff2-d02802a45c3e",
       "dependsOn": []
     },
     {
-      "ref": "3551179e-5903-4b90-b06d-a19dc4cbd873",
+      "ref": "aa1063e3-e276-4527-9a76-e95ca97ea558",
       "dependsOn": [
-        "0c0c4319-1234-475d-b8dd-784f9b348849",
-        "515a40da-e861-445a-ae4c-67cc81195511",
-        "e3d5993b-afcc-498d-9519-7345adbfbbbe",
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libgdbm6@1.23-3?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libnsl2@1.3.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8"
+      ]
+    },
+    {
+      "ref": "e5f19aca-2ad7-440c-a073-24851693637c",
+      "dependsOn": [
+        "5c9abb17-946d-4cd7-bff2-d02802a45c3e",
+        "aa1063e3-e276-4527-9a76-e95ca97ea558",
+        "fe3499e1-0982-4ee5-9232-f8b3c09c5710",
         "pkg:pypi/autocommand@2.2.2",
         "pkg:pypi/backports.tarfile@1.2.0",
         "pkg:pypi/importlib-metadata@8.0.0",
@@ -8547,118 +8726,7 @@
       ]
     },
     {
-      "ref": "515a40da-e861-445a-ae4c-67cc81195511",
-      "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgdbm6@1.23-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnsl2@1.3.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsystemd0@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtirpc-common@1.3.3%2Bds-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libtirpc3@1.3.3%2Bds-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libudev1@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/openssl@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/readline-common@8.2-1.3?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1"
-      ]
-    },
-    {
-      "ref": "e3d5993b-afcc-498d-9519-7345adbfbbbe",
+      "ref": "fe3499e1-0982-4ee5-9232-f8b3c09c5710",
       "dependsOn": []
     },
     {
@@ -12755,6 +12823,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libncursesw6 to version 6.4-4.root.io.1; Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -13476,6 +13545,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -13705,6 +13780,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -14585,7 +14661,7 @@
         }
       ],
       "published": "2024-03-10T05:15:06+00:00",
-      "updated": "2025-02-26T15:14:55+00:00",
+      "updated": "2025-03-28T19:15:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -14814,6 +14890,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.5,
@@ -14868,6 +14950,9 @@
           "url": "https://security-tracker.debian.org/tracker/CVE-2024-8176"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0009/"
+        },
+        {
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
@@ -14875,7 +14960,7 @@
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-03-17T17:15:36+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
