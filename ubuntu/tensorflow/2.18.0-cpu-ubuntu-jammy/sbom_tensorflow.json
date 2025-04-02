@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:90b51b54-50d0-42f6-a3e7-2aaafcde1e8d",
+  "serialNumber": "urn:uuid:bd4a136e-b3b3-4c52-8a48-eee45b0600bc",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T06:12:41+00:00",
+    "timestamp": "2025-04-02T06:23:33+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "2074acbd-2c09-444c-9ef4-1cf6a8c6c6d8",
+      "bom-ref": "e6f196be-9cfd-4383-953c-99a4a49986a0",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -94,7 +94,7 @@
   },
   "components": [
     {
-      "bom-ref": "9cddff86-2e95-463e-8cdd-2037536ccd7b",
+      "bom-ref": "4790069c-9ce4-4996-bee6-16a3787f71f0",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "22.04",
@@ -6525,6 +6525,12 @@
       "type": "library",
       "name": "absl-py",
       "version": "2.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1268049003ab622f3591aedfab3bbdfb1e2d01ca"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6557,6 +6563,12 @@
       "type": "library",
       "name": "astunparse",
       "version": "1.6.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "991a091b975a4f17a65c0f9d229ab98b856ad824"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6589,6 +6601,12 @@
       "type": "library",
       "name": "certifi",
       "version": "2025.1.31",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "25bbdeca64b4bd71ae4a687a3ce67072ec08c996"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6621,6 +6639,12 @@
       "type": "library",
       "name": "cffi",
       "version": "1.17.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5b6ef1ad8e0c13e33cf651a02168fb8fba2aeee3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6653,6 +6677,12 @@
       "type": "library",
       "name": "charset-normalizer",
       "version": "3.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "228206d22a5bfdf722e693aa7ffd14b7dd0080a6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6685,6 +6715,12 @@
       "type": "library",
       "name": "cryptography",
       "version": "42.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3ef1e67f6c229c193ed4fb410e457dbbe1a6ef46"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6722,6 +6758,12 @@
       "type": "library",
       "name": "example",
       "version": "21.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a4b5583f80e2ebbec44e063f83975816ba15cb5c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6754,6 +6796,12 @@
       "type": "library",
       "name": "flatbuffers",
       "version": "25.1.24",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "78051215b34c9fcaef3c592700c93a4a123ee11d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6786,6 +6834,12 @@
       "type": "library",
       "name": "gast",
       "version": "0.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6d491e0860979e5ac5dba10a6e5d79d46cf79ffd"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6818,6 +6872,12 @@
       "type": "library",
       "name": "google-pasta",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "eaae15b620cf101c93adaa1d3803235be59f02a7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6850,6 +6910,12 @@
       "type": "library",
       "name": "grpcio",
       "version": "1.70.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4ce4eeb7ce2484f47520433b4b98dbe7df7c3e64"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6882,6 +6948,12 @@
       "type": "library",
       "name": "h5py",
       "version": "3.12.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cc06f68814fcbb8d4b3b835d284842735cce541b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6914,6 +6986,12 @@
       "type": "library",
       "name": "idna",
       "version": "3.10",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c2b49b407d6a6a30fd069ab3f1ba78107825ef46"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6946,6 +7024,12 @@
       "type": "library",
       "name": "keras",
       "version": "3.8.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8bbc0c8d8d69c6a0401eeaffb5b849ade874a04b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -6978,6 +7062,12 @@
       "type": "library",
       "name": "libclang",
       "version": "18.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0b8d9789cae875610d4a12eaa779c76b80d3610f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7010,6 +7100,12 @@
       "type": "library",
       "name": "markdown-it-py",
       "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "70c9ecb166629d6553abc6ffac1749a244abd081"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7042,6 +7138,12 @@
       "type": "library",
       "name": "Markdown",
       "version": "3.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8d8d79dc091b2d82755f3fecc4088d7e66ccdd95"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7074,6 +7176,12 @@
       "type": "library",
       "name": "MarkupSafe",
       "version": "3.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "63d49e41a073de00f5977837782b2c3338b7d7f4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7106,6 +7214,12 @@
       "type": "library",
       "name": "mdurl",
       "version": "0.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cc9d84bf84be59dd90368ea2f5e3a9fae8f0f1b7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7138,6 +7252,12 @@
       "type": "library",
       "name": "ml-dtypes",
       "version": "0.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3fefa48e8dff06256529440541e0c477824924a7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7170,6 +7290,12 @@
       "type": "library",
       "name": "namex",
       "version": "0.0.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "95df3d2723f4b33eebb9057e2e821a5baac1da6f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7202,6 +7328,12 @@
       "type": "library",
       "name": "numpy",
       "version": "2.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "00554103691ab1801cda74f817c2b9c3cc0de3b4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7234,6 +7366,12 @@
       "type": "library",
       "name": "opt_einsum",
       "version": "3.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b9dd70dcccf8540c2f87f2881869de456082ef88"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7266,6 +7404,12 @@
       "type": "library",
       "name": "optree",
       "version": "0.14.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "751c63350f5887475483b66b2e36f63e44dc8b63"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7298,6 +7442,12 @@
       "type": "library",
       "name": "packaging",
       "version": "24.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "292b8d19cdc308e072817b6407cac3cb5175a060"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7335,6 +7485,12 @@
       "type": "library",
       "name": "pip",
       "version": "25.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9ff8adf3747d701df377559e3f8de8c2d63b0a9a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7367,6 +7523,12 @@
       "type": "library",
       "name": "protobuf",
       "version": "5.29.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7fc3732a0a9ed56d744a2beb16052e0209c35701"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7399,6 +7561,12 @@
       "type": "library",
       "name": "pycparser",
       "version": "2.22",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7ade716b0f2978fe6a0565736c6898403351eb00"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7431,6 +7599,12 @@
       "type": "library",
       "name": "Pygments",
       "version": "2.19.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8921f00f1d733859ecbad2d3b1458d1f8e0db4cc"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7463,6 +7637,12 @@
       "type": "library",
       "name": "PyJWT",
       "version": "2.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0334dd8f7c7ad930a8c90740da55e000f09a79a6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7495,6 +7675,12 @@
       "type": "library",
       "name": "requests",
       "version": "2.32.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2932497ffb7a7e281a919fc9b881c459e56653e0"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7527,6 +7713,12 @@
       "type": "library",
       "name": "rich",
       "version": "13.9.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d340ca2c4a33cd3afb0f14e7c924555176d474e6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7559,6 +7751,12 @@
       "type": "library",
       "name": "setuptools",
       "version": "70.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1cdde028e4e2e91f4467aabd8ec4583f6f1a15ce"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7591,6 +7789,12 @@
       "type": "library",
       "name": "six",
       "version": "1.17.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "483a26554261f6c839703c0e1183f3ef33ff97f1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7623,6 +7827,12 @@
       "type": "library",
       "name": "tensorboard-data-server",
       "version": "0.7.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "01424ba9b2fd265da9805b8e1587b9ac81dfbf0e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7655,6 +7865,12 @@
       "type": "library",
       "name": "tensorboard",
       "version": "2.18.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "95189b78e739e5d78165f1a6959a7307a0a99bab"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7687,6 +7903,12 @@
       "type": "library",
       "name": "tensorflow_cpu",
       "version": "2.18.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "060190707683939203773a5dcffbb6f29e824de7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7719,6 +7941,12 @@
       "type": "library",
       "name": "tensorflow-io-gcs-filesystem",
       "version": "0.37.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d2600b0f3faabed377afec92fc3c8a4a2764184d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7751,6 +7979,12 @@
       "type": "library",
       "name": "termcolor",
       "version": "2.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0da7ece8d83511a489bd023368b2be2f9b5b0e3a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7783,6 +8017,12 @@
       "type": "library",
       "name": "typing_extensions",
       "version": "4.12.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b6ada54b9516d20b69a5dd5cded868da22c5e252"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7815,6 +8055,12 @@
       "type": "library",
       "name": "urllib3",
       "version": "2.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "38b638a43ac53e0156dd807437f4b3aa7df43943"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7847,6 +8093,12 @@
       "type": "library",
       "name": "Werkzeug",
       "version": "3.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "80157b16acb269c35c11f4148412bc86e3c63dd3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7879,6 +8131,12 @@
       "type": "library",
       "name": "wheel",
       "version": "0.45.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6240a67a4c1cb1501e12755e659b71f8d78e2260"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7911,6 +8169,12 @@
       "type": "library",
       "name": "wrapt",
       "version": "1.17.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9ed7be7bb83587f113f5701c13fc993f8187ef00"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7941,9 +8205,52 @@
   ],
   "dependencies": [
     {
-      "ref": "2074acbd-2c09-444c-9ef4-1cf6a8c6c6d8",
+      "ref": "4790069c-9ce4-4996-bee6-16a3787f71f0",
       "dependsOn": [
-        "9cddff86-2e95-463e-8cdd-2037536ccd7b",
+        "pkg:deb/ubuntu/apt@2.4.13?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/base-passwd@3.5.52build1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/bash@5.1-6ubuntu1.1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/bsdutils@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04&epoch=1",
+        "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/dash@0.5.11%2Bgit20210903%2B057cd650a4ed-3build1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/diffutils@3.8-0ubuntu2?arch=amd64&distro=ubuntu-22.04&epoch=1",
+        "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/grep@3.7-1build1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/hostname@3.23ubuntu2?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libattr1@2.5.1-1build1?arch=amd64&distro=ubuntu-22.04&epoch=1",
+        "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.8?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libcap2@2.44-1ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=1",
+        "pkg:deb/ubuntu/libdb5.3@5.3.28%2Bdfsg1-0.8ubuntu3?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libgomp1@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libnsl2@1.3.0-2build2?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.5?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.5?arch=all&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpcre3@8.39-13ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
+        "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/login@4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&epoch=1",
+        "pkg:deb/ubuntu/mawk@1.3.4.20200120-3?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/ncurses-base@6.3-2ubuntu0.1?arch=all&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/procps@3.3.17-6ubuntu2.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
+        "pkg:deb/ubuntu/sed@4.8-1ubuntu2?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/sensible-utils@0.0.17?arch=all&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?arch=amd64&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/usrmerge@25ubuntu2?arch=all&distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04"
+      ]
+    },
+    {
+      "ref": "e6f196be-9cfd-4383-953c-99a4a49986a0",
+      "dependsOn": [
+        "4790069c-9ce4-4996-bee6-16a3787f71f0",
         "pkg:pypi/absl-py@2.1.0",
         "pkg:pypi/astunparse@1.6.3",
         "pkg:pypi/certifi@2025.1.31",
@@ -7988,113 +8295,6 @@
         "pkg:pypi/werkzeug@3.1.3",
         "pkg:pypi/wheel@0.45.1",
         "pkg:pypi/wrapt@1.17.2"
-      ]
-    },
-    {
-      "ref": "9cddff86-2e95-463e-8cdd-2037536ccd7b",
-      "dependsOn": [
-        "pkg:deb/ubuntu/adduser@3.118ubuntu5?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/apt@2.4.13?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/base-files@12ubuntu4.7?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/base-passwd@3.5.52build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/bash@5.1-6ubuntu1.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/bsdutils@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/dash@0.5.11%2Bgit20210903%2B057cd650a4ed-3build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/debconf@1.5.79ubuntu1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/debianutils@5.5-1ubuntu2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/diffutils@3.8-0ubuntu2?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gcc-12-base@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/grep@3.7-1build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/hostname@3.23ubuntu2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/init-system-helpers@1.62?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libapt-pkg6.0@2.4.13?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libattr1@2.5.1-1build1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libaudit-common@3.0.7-1build1?arch=all&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libaudit1@3.0.7-1build1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.8?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.8?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.2build3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libcap2@2.44-1ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libcrypt1@4.4.27-1?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/libdb5.3@5.3.28%2Bdfsg1-0.8ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libdebconfclient0@0.261ubuntu1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libffi8@3.4.2-4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgmp10@6.2.1%2Bdfsg-3ubuntu1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgomp1@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgpg-error0@1.43-3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libhogweed6@3.7.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libidn2-0@2.3.2-2build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libkeyutils1@1.6.1-2ubuntu3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/liblz4-1@1.9.3-2build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libncurses6@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libncursesw6@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libnettle8@3.7.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libnsl2@1.3.0-2build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2.5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.5?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.5?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libpcre3@8.39-13ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/libprocps8@3.3.17-6ubuntu2.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/libseccomp2@2.5.3-2ubuntu2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libselinux1@3.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsemanage-common@3.3-1build2?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsemanage2@3.3-1build2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsepol2@3.3-1build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.18?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.12?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtirpc-common@1.3.2-2ubuntu0.1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libtirpc3@1.3.2-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.12?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libunistring2@1.0-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libxxhash0@0.8.1-1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/login@4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu4?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/mawk@1.3.4.20200120-3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/ncurses-base@6.3-2ubuntu0.1?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/passwd@4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&epoch=1",
-        "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.3?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/procps@3.3.17-6ubuntu2.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
-        "pkg:deb/ubuntu/sed@4.8-1ubuntu2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/sensible-utils@0.0.17?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/ubuntu-keyring@2021.03.26?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/usrmerge@25ubuntu2?arch=all&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
-        "pkg:deb/ubuntu/zlib1g@1.2.11.dfsg-2ubuntu9.2?arch=amd64&distro=ubuntu-22.04&epoch=1"
       ]
     },
     {
@@ -10736,6 +10936,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -11587,7 +11793,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-9474.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:4935"
+          "url": "https://errata.rockylinux.org/RLSA-2024:8860"
         },
         {
           "url": "https://kb.cert.org/vince/comm/case/1515/"
