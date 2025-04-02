@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:28a7c180-f001-48fc-9253-d20a8dea13d8",
+  "serialNumber": "urn:uuid:1c9b1c37-13ff-45bd-b5b3-1a661cfd757f",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:31:14+00:00",
+    "timestamp": "2025-04-02T06:25:01+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "4b0966cd-3289-49ea-b170-442f0d72fae5",
+      "bom-ref": "5f85ee75-6656-4678-ab3f-2c6d761d13f4",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -74,7 +74,7 @@
   },
   "components": [
     {
-      "bom-ref": "bb0ffe30-7984-4ae1-b180-b3073d74a0d2",
+      "bom-ref": "f0cc363e-2571-442d-8622-613c14bce6d3",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -10383,6 +10383,12 @@
       "group": "commons-codec",
       "name": "commons-codec",
       "version": "1.17.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fe5473b73441e664842086b8496b940cd2c3c054"
+        }
+      ],
       "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
       "properties": [
         {
@@ -10409,6 +10415,12 @@
       "group": "commons-daemon",
       "name": "commons-daemon",
       "version": "1.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8308391bc284f7890139b58272819480594135fb"
+        }
+      ],
       "purl": "pkg:maven/commons-daemon/commons-daemon@1.4.1",
       "properties": [
         {
@@ -10435,6 +10447,12 @@
       "group": "org.apache.taglibs",
       "name": "taglibs-standard-impl",
       "version": "1.2.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6bc6265f361f8efd5f1fb230073983e2d2495cec"
+        }
+      ],
       "purl": "pkg:maven/org.apache.taglibs/taglibs-standard-impl@1.2.5",
       "properties": [
         {
@@ -10461,6 +10479,12 @@
       "group": "org.apache.taglibs",
       "name": "taglibs-standard-spec",
       "version": "1.2.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a8dda6f938e91e18d47a6cb8593167222ba6abea"
+        }
+      ],
       "purl": "pkg:maven/org.apache.taglibs/taglibs-standard-spec@1.2.5",
       "properties": [
         {
@@ -10487,6 +10511,12 @@
       "group": "org.apache.tomcat",
       "name": "jakartaee-migration",
       "version": "1.0.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fe5473b73441e664842086b8496b940cd2c3c054"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/jakartaee-migration@1.0.9",
       "properties": [
         {
@@ -10513,6 +10543,12 @@
       "group": "org.apache.tomcat",
       "name": "jakartaee-migration",
       "version": "1.0.9-shaded",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fe5473b73441e664842086b8496b940cd2c3c054"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/jakartaee-migration@1.0.9-shaded",
       "properties": [
         {
@@ -10539,6 +10575,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-annotations-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a40af7a0c20586960c3c7be6d3eb3ba4354d55a8"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-annotations-api@11.0.3",
       "properties": [
         {
@@ -10565,6 +10607,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e2160c428c075764df4f9032e41ce511fe29be98"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-api@11.0.3",
       "properties": [
         {
@@ -10591,6 +10639,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-catalina-ant",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fe3d57f66094fe82c3982df9f8f35062fbe35184"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-catalina-ant@11.0.3",
       "properties": [
         {
@@ -10617,6 +10671,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-catalina-ha",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "495a58695e1089570cd750f77bbf02e500f74a30"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-catalina-ha@11.0.3",
       "properties": [
         {
@@ -10643,6 +10703,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-catalina",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0129ebd738382f5ee3f7f7324a2ddf617a0a17a3"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-catalina@11.0.3",
       "properties": [
         {
@@ -10669,6 +10735,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-coyote-ffm",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d44a58f94834a98eb2afcb350468435d1a97f447"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-coyote-ffm@11.0.3",
       "properties": [
         {
@@ -10695,6 +10767,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-coyote",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "61b80b2da1dfebfdb00cbd354a574f0b6a3060f0"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-coyote@11.0.3",
       "properties": [
         {
@@ -10721,6 +10799,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-dbcp",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "79a0b30875bb356d29aceebff9a4fa8c77a2ec0a"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-dbcp@11.0.3",
       "properties": [
         {
@@ -10747,6 +10831,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-el-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "535c34439dfdb1580e577ae4795ba1c5f45252e7"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-el-api@11.0.3",
       "properties": [
         {
@@ -10773,6 +10863,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-cs",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "576049c15434b09e78552622385651fc1cf76a12"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-cs@11.0.3",
       "properties": [
         {
@@ -10799,6 +10895,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-de",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ab26d51d629bd55be4443ff3ac0bdd5f8a48aca7"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-de@11.0.3",
       "properties": [
         {
@@ -10825,6 +10927,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-es",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3a3d7b7f315f2e70a0f09d3ceec2ac6c7fc8e2f3"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-es@11.0.3",
       "properties": [
         {
@@ -10851,6 +10959,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-fr",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "400f5e468f4aa13031e403cb89e00e1caa2661b0"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-fr@11.0.3",
       "properties": [
         {
@@ -10877,6 +10991,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-ja",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e4534d852b22f392dbe23a254806fd199532f579"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-ja@11.0.3",
       "properties": [
         {
@@ -10903,6 +11023,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-ko",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5c55affc452883314e32c772955a281486e966ff"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-ko@11.0.3",
       "properties": [
         {
@@ -10929,6 +11055,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-pt-BR",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ce43d4cf348ab2656258ec424e2069e2c83664c2"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-pt-BR@11.0.3",
       "properties": [
         {
@@ -10955,6 +11087,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-ru",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6a45edfad707497c3cbc6ee74e618523ad07e133"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-ru@11.0.3",
       "properties": [
         {
@@ -10981,6 +11119,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-i18n-zh-CN",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "34bb5d50a77afa56a2d2bc48e6c6f5cdfdc61861"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-i18n-zh-CN@11.0.3",
       "properties": [
         {
@@ -11007,6 +11151,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-jasper-el",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1099f8839deff402d037c30b5f1c9892c5d3f4be"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-jasper-el@11.0.3",
       "properties": [
         {
@@ -11033,6 +11183,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-jasper",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f8f13277ea9522af2c35c72518344f2f17024ace"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-jasper@11.0.3",
       "properties": [
         {
@@ -11059,6 +11215,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-jaspic-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ecc98d4456c967a701413a0bbab5d4965b720bb0"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-jaspic-api@11.0.3",
       "properties": [
         {
@@ -11085,6 +11247,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-jdbc",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6a124ad0a1727b865c549dadc0b8589a8faa7985"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-jdbc@11.0.3",
       "properties": [
         {
@@ -11111,6 +11279,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-jni",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "431a550208ac11730f71c48ff0be4906633f0713"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-jni@11.0.3",
       "properties": [
         {
@@ -11137,6 +11311,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-jsp-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7a81a43e4cef34fe25276a4a7929bcf8ee87e3b1"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-jsp-api@11.0.3",
       "properties": [
         {
@@ -11163,6 +11343,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-juli",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8bb4d452a339b40b4b76b53356872a372be9f733"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-juli@11.0.3",
       "properties": [
         {
@@ -11189,6 +11375,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-servlet-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "503bc94f8a087f0f15ba7be0f78b389c7e170b9b"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-servlet-api@11.0.3",
       "properties": [
         {
@@ -11215,6 +11407,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-ssi",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "39e1ce5755b13b12a7bf1d9c5d29224a2a2a3a26"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-ssi@11.0.3",
       "properties": [
         {
@@ -11241,6 +11439,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-storeconfig",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "690d061e46c71fab3219a216805ca69ae23f8c9c"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-storeconfig@11.0.3",
       "properties": [
         {
@@ -11267,6 +11471,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-tribes",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0bfd4ed6120524ee00c60c45e43af83db7ec267a"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-tribes@11.0.3",
       "properties": [
         {
@@ -11293,6 +11503,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-util-scan",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ea3dc21dc59d54c41c4d63e9fac276a4c64586f7"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-util-scan@11.0.3",
       "properties": [
         {
@@ -11319,6 +11535,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-util",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b0c53e4e203b53f0b5abcf9ad948191bc4c857fa"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-util@11.0.3",
       "properties": [
         {
@@ -11345,6 +11567,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-websocket-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "48122bb94198f1d051031693ff934c37277c5e07"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-websocket-api@11.0.3",
       "properties": [
         {
@@ -11371,6 +11599,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-websocket-client-api",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "220dce5e2e6791b2c43139b8a3f0e03033c9589b"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-websocket-client-api@11.0.3",
       "properties": [
         {
@@ -11397,6 +11631,12 @@
       "group": "org.apache.tomcat",
       "name": "tomcat-websocket",
       "version": "11.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cb6f353bbe3117f87d81476f237d95489b793c4a"
+        }
+      ],
       "purl": "pkg:maven/org.apache.tomcat/tomcat-websocket@11.0.3",
       "properties": [
         {
@@ -11420,9 +11660,9 @@
   ],
   "dependencies": [
     {
-      "ref": "4b0966cd-3289-49ea-b170-442f0d72fae5",
+      "ref": "5f85ee75-6656-4678-ab3f-2c6d761d13f4",
       "dependsOn": [
-        "bb0ffe30-7984-4ae1-b180-b3073d74a0d2",
+        "f0cc363e-2571-442d-8622-613c14bce6d3",
         "pkg:maven/commons-codec/commons-codec@1.17.1",
         "pkg:maven/commons-daemon/commons-daemon@1.4.1",
         "pkg:maven/org.apache.taglibs/taglibs-standard-impl@1.2.5",
@@ -11466,11 +11706,9 @@
       ]
     },
     {
-      "ref": "bb0ffe30-7984-4ae1-b180-b3073d74a0d2",
+      "ref": "f0cc363e-2571-442d-8622-613c14bce6d3",
       "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
@@ -11478,134 +11716,36 @@
         "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/curl@7.88.1-10%2Bdeb12u12?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/dirmngr@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/fontconfig-config@2.14.1-4?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/fontconfig@2.14.1-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/fonts-dejavu-core@2.37-6?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gnupg-l10n@2.2.40-1.1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gnupg-utils@2.2.40-1.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/gnupg@2.2.40-1.1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gpg-agent@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg-wks-client@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg-wks-server@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgconf@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgsm@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
         "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapr1@1.7.2-3%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libassuan0@2.5.5-5?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbrotli1@1.0.9-2%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-l10n@2.36-9%2Bdeb12u9?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcurl4@7.88.1-10%2Bdeb12u12?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfontconfig1@2.14.1-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfreetype6@2.12.1%2Bdfsg-5%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libksba8@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libldap-2.5-0@2.5.13%2Bdfsg-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnghttp2-14@1.52.0-1%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnpth0@1.6-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpng16-16@1.6.39-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpsl5@0.21.2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssh2-1@1.10.0-3%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsystemd0@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libtcnative-1@1.2.35-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libudev1@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/locales@2.36-9%2Bdeb12u9?arch=all&distro=debian-12.8",
         "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
         "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/openssl@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/p11-kit-modules@0.24.1-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/p11-kit@0.24.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
         "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/pinentry-curses@1.2.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/readline-common@8.2-1.3?arch=all&distro=debian-12.8",
         "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/wget@1.21.3-1%2Bb2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1"
+        "pkg:deb/debian/wget@1.21.3-1%2Bb2?arch=amd64&distro=debian-12.8"
       ]
     },
     {
@@ -17014,6 +17154,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libncursesw6 to version 6.4-4.root.io.1; Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -17521,6 +17662,7 @@
         918
       ],
       "description": "Applications that use Wget to access a remote resource using shorthand URLs and pass arbitrary user credentials in the URL are vulnerable. In these cases attackers can enter crafted credentials which will cause Wget to access an arbitrary host.",
+      "recommendation": "Upgrade wget to version 1.21.3-1+deb12u1.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-10524"
@@ -17666,6 +17808,12 @@
         "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
         {
           "source": {
             "name": "photon"
@@ -17897,6 +18045,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -18877,7 +19026,7 @@
         }
       ],
       "published": "2024-03-10T05:15:06+00:00",
-      "updated": "2025-02-26T15:14:55+00:00",
+      "updated": "2025-03-28T19:15:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -18956,7 +19105,7 @@
         436
       ],
       "description": "url.c in GNU Wget through 1.24.5 mishandles semicolons in the userinfo subcomponent of a URI, and thus there may be insecure behavior in which data that was supposed to be in the userinfo subcomponent is misinterpreted to be part of the host subcomponent.",
-      "recommendation": "Upgrade wget to version 1.21.3-1.root.io.1",
+      "recommendation": "Upgrade wget to version 1.21.3-1+deb12u1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-38428"
@@ -19231,6 +19380,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.5,
@@ -19285,6 +19440,9 @@
           "url": "https://security-tracker.debian.org/tracker/CVE-2024-8176"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0009/"
+        },
+        {
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
@@ -19292,7 +19450,7 @@
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-03-17T17:15:36+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
