@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:3884b485-b761-4135-aa86-daccf6a6c432",
+  "serialNumber": "urn:uuid:a719045e-f444-4dd9-9d16-444a839b1828",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T10:23:55+00:00",
+    "timestamp": "2025-04-02T06:14:28+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "970d38dc-7368-46bb-9006-12a92edd120c",
+      "bom-ref": "e4c36cc1-a004-4dfc-b870-78b01e5e96f1",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -90,7 +90,7 @@
   },
   "components": [
     {
-      "bom-ref": "e68fd4da-8cca-4092-a97f-00c7cc7f90db",
+      "bom-ref": "f92a8411-cd00-43bf-abe7-f0c0e6fc7fa1",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -11341,159 +11341,45 @@
   ],
   "dependencies": [
     {
-      "ref": "970d38dc-7368-46bb-9006-12a92edd120c",
+      "ref": "e4c36cc1-a004-4dfc-b870-78b01e5e96f1",
       "dependsOn": [
-        "e68fd4da-8cca-4092-a97f-00c7cc7f90db"
+        "f92a8411-cd00-43bf-abe7-f0c0e6fc7fa1"
       ]
     },
     {
-      "ref": "e68fd4da-8cca-4092-a97f-00c7cc7f90db",
+      "ref": "f92a8411-cd00-43bf-abe7-f0c0e6fc7fa1",
       "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
         "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/dirmngr@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gnupg-l10n@2.2.40-1.1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gnupg-utils@2.2.40-1.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/gnupg@2.2.40-1.1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gpg-agent@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg-wks-client@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg-wks-server@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpg@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgconf@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgsm@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
         "pkg:deb/debian/less@590-2.1~deb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libassuan0@2.5.5-5?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbsd0@0.11.7-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-l10n@2.36-9%2Bdeb12u9?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libedit2@3.1-20221030-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgdbm-compat4@1.23-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgdbm6@1.23-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libicu72@72.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libio-pty-perl@1.17-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libipc-run-perl@20220807.0-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libjson-perl@4.10000-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libksba8@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libldap-2.5-0@2.5.13%2Bdfsg-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libllvm16@16.0.6-15~deb12u1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnpth0@1.6-3?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libnss-wrapper@1.1.12-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libperl5.36@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpq5@17.2-1.pgdg120%2B1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsystemd0@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libudev1@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxslt1.1@1.1.35-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libz3-4@4.8.12-3.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/locales@2.36-9%2Bdeb12u9?arch=all&distro=debian-12.8",
         "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
         "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/openssl@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/perl-modules-5.36@5.36.0-7%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/perl@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/pinentry-curses@1.2.1-1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/postgresql-17@17.2-1.pgdg120%2B1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-client-17@17.2-1.pgdg120%2B1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-client-common@267.pgdg120%2B1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/postgresql-common@267.pgdg120%2B1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/readline-common@8.2-1.3?arch=all&distro=debian-12.8",
         "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sensible-utils@0.0.17%2Bnmu1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ssl-cert@1.1.2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ucf@3.0043%2Bnmu1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/xz-utils@5.4.1-0.2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1",
         "pkg:deb/debian/zstd@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8"
       ]
     },
@@ -15598,7 +15484,7 @@
         416
       ],
       "description": "xmlXIncludeAddNode in xinclude.c in libxml2 before 2.11.0 has a use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-49043"
@@ -16526,7 +16412,7 @@
         119
       ],
       "description": "Xmlsoft Libxml2 v2.11.0 was discovered to contain an out-of-bounds read via the xmlSAX2StartElement() function at /libxml2/SAX2.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted XML file. NOTE: the vendor's position is that the product does not support the legacy SAX1 interface with custom callbacks; there is a crash even without crafted input.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-39615"
@@ -16754,6 +16640,7 @@
         416
       ],
       "description": "libxml2 through 2.11.5 has a use-after-free that can only occur after a certain memory allocation fails. This occurs in xmlUnlinkNode in tree.c. NOTE: the vendor's position is \"I don't think these issues are critical enough to warrant a CVE ID ... because an attacker typically can't control when memory allocations fail.\"",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-45322"
@@ -17111,6 +16998,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libncursesw6 to version 6.4-4.root.io.1; Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -17428,6 +17316,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -17657,6 +17551,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -17966,7 +17861,7 @@
         416
       ],
       "description": "An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-25062"
@@ -17990,7 +17885,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-2679.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:2679"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3626"
         },
         {
           "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/604"
@@ -18733,6 +18628,18 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.8,
@@ -18849,7 +18756,7 @@
         416
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a use-after-free in xmlSchemaIDCFillNodeTables and xmlSchemaBubbleIDCNodeTables in xmlschemas.c. To exploit this, a crafted XML document must be validated against an XML schema with certain identity constraints, or a crafted XML schema must be used.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-56171"
@@ -18882,6 +18789,9 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56171"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0010/"
+        },
+        {
           "url": "https://ubuntu.com/security/notices/USN-7302-1"
         },
         {
@@ -18892,7 +18802,7 @@
         }
       ],
       "published": "2025-02-18T22:15:12+00:00",
-      "updated": "2025-02-18T23:15:09+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
@@ -19349,7 +19259,19 @@
         },
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
           },
           "severity": "high"
         },
@@ -19486,7 +19408,7 @@
         121
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a stack-based buffer overflow in xmlSnprintfElements in valid.c. To exploit this, DTD validation must occur for an untrusted document or untrusted DTD. NOTE: this is similar to CVE-2017-9047.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-24928"
@@ -19608,7 +19530,7 @@
         476
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a NULL pointer dereference in xmlPatMatch in pattern.c.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-27113"
