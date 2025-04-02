@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:ef3fdb4f-8aa3-465b-8b2d-35835f813ee4",
+  "serialNumber": "urn:uuid:f2ade54c-e00e-426c-91a8-2e0c68250789",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T14:16:48+00:00",
+    "timestamp": "2025-04-01T05:54:19+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "a801bceb-f963-45af-a0e3-0dea870f3901",
+      "bom-ref": "4a74fc9c-5bda-4cc4-8c22-10b86dd63263",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -62,111 +62,7 @@
   },
   "components": [
     {
-      "bom-ref": "00ab9b5b-55d7-49ca-b084-aa65bd5f667e",
-      "type": "library",
-      "group": "jakarta.websocket",
-      "name": "jakarta.websocket-client-api",
-      "version": "2.2.0",
-      "purl": "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "00fa7e82-baaf-40a6-8d9f-38de6db4427f",
-      "type": "library",
-      "group": "jakarta.websocket",
-      "name": "jakarta.websocket-client-api",
-      "version": "2.2.0",
-      "purl": "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "213034fd-b722-46b3-b746-8c76ec6760f6",
-      "type": "library",
-      "group": "org.glassfish.tyrus",
-      "name": "tyrus-container-jdk-client",
-      "version": "2.2.0",
-      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-container-jdk-client@2.2.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3eae6cfe-e570-4aab-b097-c889be3d6d09",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.16",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.16",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/slf4j-api-2.0.16.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "47e53619-2d09-4655-9584-fe1d74c89e17",
+      "bom-ref": "066d86e1-e1b2-4c40-9290-f59553f0b429",
       "type": "library",
       "group": "org.glassfish.tyrus",
       "name": "tyrus-client",
@@ -192,33 +88,7 @@
       ]
     },
     {
-      "bom-ref": "5347aca1-b385-4e73-931a-0ad2fdf9d8af",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.16",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.16",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "53f3451f-bfa6-4e10-bfbd-9ac51bba8a6f",
+      "bom-ref": "07cb8fe2-94f6-4e74-9794-5b1d4a9557a0",
       "type": "library",
       "group": "jakarta.websocket",
       "name": "jakarta.websocket-api",
@@ -227,7 +97,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -244,12 +114,12 @@
       ]
     },
     {
-      "bom-ref": "5a9a6f17-caf2-47ac-be33-356070bc1c4f",
+      "bom-ref": "12dd236c-16ef-4cc3-a81b-2d9f024d9b05",
       "type": "library",
       "group": "org.glassfish.tyrus",
-      "name": "tyrus-spi",
+      "name": "tyrus-container-jdk-client",
       "version": "2.2.0",
-      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-spi@2.2.0",
+      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-container-jdk-client@2.2.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -270,7 +140,48 @@
       ]
     },
     {
-      "bom-ref": "5bf19a94-555a-41bd-be26-30a66dc1946a",
+      "bom-ref": "1e274848-5bd7-4490-a65f-e0f44ff30808",
+      "type": "application",
+      "name": "usr/local/bin/git-lfs",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "44450480-07cb-43f4-b273-fa8fdab3da5c",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-jdk14",
+      "version": "2.0.16",
+      "purl": "pkg:maven/org.slf4j/slf4j-jdk14@2.0.16",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/executable/winstone.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "54975665-de8e-466d-84ad-8ad87a7af152",
       "type": "library",
       "group": "org.glassfish.tyrus",
       "name": "tyrus-core",
@@ -296,137 +207,7 @@
       ]
     },
     {
-      "bom-ref": "6e632b3f-3564-4f44-833a-253271151a0b",
-      "type": "library",
-      "group": "org.jvnet.localizer",
-      "name": "localizer",
-      "version": "1.31",
-      "purl": "pkg:maven/org.jvnet.localizer/localizer@1.31",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/localizer-1.31.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7622de37-c290-4819-8eb2-7dccd7da2943",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-jdk14",
-      "version": "2.0.16",
-      "purl": "pkg:maven/org.slf4j/slf4j-jdk14@2.0.16",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/slf4j-jdk14-2.0.16.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7c3dd2ef-1d81-4672-853c-45e5df09c39e",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "jcl-over-slf4j",
-      "version": "2.0.16",
-      "purl": "pkg:maven/org.slf4j/jcl-over-slf4j@2.0.16",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8971f6fc-8a56-49c2-b9a5-a231cba7da3f",
-      "type": "library",
-      "group": "commons-io",
-      "name": "commons-io",
-      "version": "2.17.0",
-      "purl": "pkg:maven/commons-io/commons-io@2.17.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "902eab24-2412-4f3d-8c05-7ffadf0d601e",
-      "type": "library",
-      "group": "org.jenkins-ci",
-      "name": "annotation-indexer",
-      "version": "1.17",
-      "purl": "pkg:maven/org.jenkins-ci/annotation-indexer@1.17",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/annotation-indexer-1.17.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "99d52d2c-e73c-4210-a80a-29ae50f4e632",
+      "bom-ref": "60f106ac-b6f3-43d1-b751-0f1cf0f9f6bc",
       "type": "library",
       "group": "commons-io",
       "name": "commons-io",
@@ -452,53 +233,12 @@
       ]
     },
     {
-      "bom-ref": "a066fdc9-e8fa-4ca9-9f32-e4ea4d7730b1",
+      "bom-ref": "658d2bb5-69ce-419c-b718-b678d0b81e53",
       "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-jdk14",
-      "version": "2.0.16",
-      "purl": "pkg:maven/org.slf4j/slf4j-jdk14@2.0.16",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/executable/winstone.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a30232fa-1e8a-44b1-9b77-78b4860f851c",
-      "type": "application",
-      "name": "usr/local/bin/git-lfs",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a3879dbe-40c1-42a3-a863-de562bcca946",
-      "type": "library",
-      "group": "org.glassfish.tyrus",
-      "name": "tyrus-spi",
+      "group": "jakarta.websocket",
+      "name": "jakarta.websocket-client-api",
       "version": "2.2.0",
-      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-spi@2.2.0",
+      "purl": "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -519,12 +259,12 @@
       ]
     },
     {
-      "bom-ref": "aa15e049-92ed-4067-87cd-d394054ed50b",
+      "bom-ref": "829fc0f6-4b7b-4ae5-80b5-00fd7e8f7c40",
       "type": "library",
-      "group": "jakarta.websocket",
-      "name": "jakarta.websocket-api",
-      "version": "2.2.0",
-      "purl": "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0",
+      "group": "org.jvnet.localizer",
+      "name": "localizer",
+      "version": "1.31",
+      "purl": "pkg:maven/org.jvnet.localizer/localizer@1.31",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -545,12 +285,106 @@
       ]
     },
     {
-      "bom-ref": "ae6ba305-6c1c-41fc-82a6-683e9e02f5f9",
+      "bom-ref": "88277b22-09d6-439d-8a23-fc675c300081",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.9",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "953d5694-9c9d-4d8b-9555-17eea109769c",
+      "type": "library",
+      "group": "commons-io",
+      "name": "commons-io",
+      "version": "2.17.0",
+      "purl": "pkg:maven/commons-io/commons-io@2.17.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9a1b889f-3099-45b4-a0c0-98d47cbc7a16",
+      "type": "library",
+      "group": "org.jenkins-ci",
+      "name": "annotation-indexer",
+      "version": "1.17",
+      "purl": "pkg:maven/org.jenkins-ci/annotation-indexer@1.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/annotation-indexer-1.17.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a4609f89-a0fd-459f-a822-87404cda4217",
+      "type": "library",
+      "group": "org.jvnet.localizer",
+      "name": "localizer",
+      "version": "1.31",
+      "purl": "pkg:maven/org.jvnet.localizer/localizer@1.31",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/localizer-1.31.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ab77b319-d8d5-45b4-b037-7b0e55fbe486",
       "type": "library",
       "group": "org.glassfish.tyrus",
-      "name": "tyrus-client",
+      "name": "tyrus-container-jdk-client",
       "version": "2.2.0",
-      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-client@2.2.0",
+      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-container-jdk-client@2.2.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -571,7 +405,59 @@
       ]
     },
     {
-      "bom-ref": "b252a9c0-c3c5-4068-bc2d-f5daf3d64466",
+      "bom-ref": "ba8e8414-9d67-4d20-b566-bcab692c187e",
+      "type": "library",
+      "group": "org.glassfish.tyrus.bundles",
+      "name": "tyrus-standalone-client-jdk",
+      "version": "2.2.0",
+      "purl": "pkg:maven/org.glassfish.tyrus.bundles/tyrus-standalone-client-jdk@2.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bb47676d-70c8-4f42-acd7-270fea962ae2",
+      "type": "library",
+      "group": "commons-lang",
+      "name": "commons-lang",
+      "version": "2.6",
+      "purl": "pkg:maven/commons-lang/commons-lang@2.6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c56b879a-8752-4f8c-9e2b-bbffe0e2b03f",
       "type": "library",
       "group": "org.glassfish.tyrus",
       "name": "tyrus-core",
@@ -597,153 +483,7 @@
       ]
     },
     {
-      "bom-ref": "b4814a4c-3f9d-41ae-980b-e146651f467d",
-      "type": "library",
-      "group": "org.glassfish.tyrus",
-      "name": "tyrus-container-jdk-client",
-      "version": "2.2.0",
-      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-container-jdk-client@2.2.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "b5e5fbd2-bd40-4a86-9717-ffd8529e7b9b",
-      "type": "library",
-      "group": "commons-lang",
-      "name": "commons-lang",
-      "version": "2.6",
-      "purl": "pkg:maven/commons-lang/commons-lang@2.6",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/commons-lang-2.6.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "be818031-1404-4c0d-8180-87682ff77dca",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-jdk14",
-      "version": "2.0.16",
-      "purl": "pkg:maven/org.slf4j/slf4j-jdk14@2.0.16",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "c3f882b8-c110-411d-9b58-bf1dafaa0fb2",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "jcl-over-slf4j",
-      "version": "2.0.16",
-      "purl": "pkg:maven/org.slf4j/jcl-over-slf4j@2.0.16",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/jcl-over-slf4j-2.0.16.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ce3dfe37-dee6-4ede-a7d5-1e68318fdba7",
-      "type": "library",
-      "group": "org.glassfish.tyrus.bundles",
-      "name": "tyrus-standalone-client-jdk",
-      "version": "2.2.0",
-      "purl": "pkg:maven/org.glassfish.tyrus.bundles/tyrus-standalone-client-jdk@2.2.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d6bf8c5f-8bed-43f7-8726-d90a9e859ac4",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.9",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "e2a06b19-0610-4f76-9d48-15184be7360a",
+      "bom-ref": "c6f125a2-49ed-44c9-842e-f18ed95d5320",
       "type": "library",
       "group": "org.jenkins-ci",
       "name": "annotation-indexer",
@@ -769,33 +509,7 @@
       ]
     },
     {
-      "bom-ref": "e349ed98-2915-48e4-b9ad-64d4aacc8433",
-      "type": "library",
-      "group": "org.glassfish.tyrus.bundles",
-      "name": "tyrus-standalone-client-jdk",
-      "version": "2.2.0",
-      "purl": "pkg:maven/org.glassfish.tyrus.bundles/tyrus-standalone-client-jdk@2.2.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "f37e0d48-08cd-4422-8a10-08bf6aff62ec",
+      "bom-ref": "c883d0b3-a19b-4bc0-a0b0-675fe128cfcf",
       "type": "library",
       "group": "org.slf4j",
       "name": "slf4j-api",
@@ -821,12 +535,12 @@
       ]
     },
     {
-      "bom-ref": "f5ce4c77-42e2-40b3-a895-35e41e042274",
+      "bom-ref": "cb324a67-629f-4cc6-b1a8-0a62f45d2565",
       "type": "library",
-      "group": "commons-lang",
-      "name": "commons-lang",
-      "version": "2.6",
-      "purl": "pkg:maven/commons-lang/commons-lang@2.6",
+      "group": "org.glassfish.tyrus",
+      "name": "tyrus-spi",
+      "version": "2.2.0",
+      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-spi@2.2.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -847,16 +561,302 @@
       ]
     },
     {
-      "bom-ref": "ff50e3f1-eca9-4445-b3a4-09b9c02e67ad",
+      "bom-ref": "cff41f65-bb97-4267-9ec3-8826a2410785",
       "type": "library",
-      "group": "org.jvnet.localizer",
-      "name": "localizer",
-      "version": "1.31",
-      "purl": "pkg:maven/org.jvnet.localizer/localizer@1.31",
+      "group": "org.glassfish.tyrus.bundles",
+      "name": "tyrus-standalone-client-jdk",
+      "version": "2.2.0",
+      "purl": "pkg:maven/org.glassfish.tyrus.bundles/tyrus-standalone-client-jdk@2.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d2b030e9-4688-46b9-a0df-4f04e841d0fe",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.16",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.16",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/slf4j-api-2.0.16.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d792202e-8f7a-4a5f-b478-de677b0f7647",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "jcl-over-slf4j",
+      "version": "2.0.16",
+      "purl": "pkg:maven/org.slf4j/jcl-over-slf4j@2.0.16",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
           "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d9abe9ac-d587-4bf0-b476-5913c0f46174",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-jdk14",
+      "version": "2.0.16",
+      "purl": "pkg:maven/org.slf4j/slf4j-jdk14@2.0.16",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dcdee652-7a57-41e5-a886-5004712393bb",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.16",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.16",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dd141607-a1e9-42ca-9a2b-627a3bc6072e",
+      "type": "library",
+      "group": "jakarta.websocket",
+      "name": "jakarta.websocket-api",
+      "version": "2.2.0",
+      "purl": "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "df8dbc93-04fc-488d-ad04-5e60a1b0ef6c",
+      "type": "library",
+      "group": "org.glassfish.tyrus",
+      "name": "tyrus-spi",
+      "version": "2.2.0",
+      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-spi@2.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e31ea3d4-b394-4a47-9359-76e5b91fd1a7",
+      "type": "library",
+      "group": "org.glassfish.tyrus",
+      "name": "tyrus-client",
+      "version": "2.2.0",
+      "purl": "pkg:maven/org.glassfish.tyrus/tyrus-client@2.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/remoting-3261.v9c670a_4748a_9.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f25b1de5-d5e3-4255-8e39-f162610d74ee",
+      "type": "library",
+      "group": "commons-lang",
+      "name": "commons-lang",
+      "version": "2.6",
+      "purl": "pkg:maven/commons-lang/commons-lang@2.6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/commons-lang-2.6.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f351fc5e-3d86-4b97-9185-eb14e43bb467",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "jcl-over-slf4j",
+      "version": "2.0.16",
+      "purl": "pkg:maven/org.slf4j/jcl-over-slf4j@2.0.16",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/jcl-over-slf4j-2.0.16.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fdb1a1bd-5d48-4976-b598-9917bfec7e3e",
+      "type": "library",
+      "group": "jakarta.websocket",
+      "name": "jakarta.websocket-client-api",
+      "version": "2.2.0",
+      "purl": "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/cli-2.479.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3081427470356a186f51fd767b353fadd378407c330710a4aeeff30bd9e7d806"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:a193b6acb94201b349d73f0be8ad0ef4ff0ceb97bcda786f48ab74ee902e01eb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ff363647-a1d7-42d1-a4ea-60204b9b47d0",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-jdk14",
+      "version": "2.0.16",
+      "purl": "pkg:maven/org.slf4j/slf4j-jdk14@2.0.16",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/share/jenkins/jenkins.war/WEB-INF/lib/slf4j-jdk14-2.0.16.jar"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -14286,71 +14286,19 @@
   ],
   "dependencies": [
     {
-      "ref": "00ab9b5b-55d7-49ca-b084-aa65bd5f667e",
+      "ref": "066d86e1-e1b2-4c40-9290-f59553f0b429",
       "dependsOn": []
     },
     {
-      "ref": "00fa7e82-baaf-40a6-8d9f-38de6db4427f",
+      "ref": "07cb8fe2-94f6-4e74-9794-5b1d4a9557a0",
       "dependsOn": []
     },
     {
-      "ref": "213034fd-b722-46b3-b746-8c76ec6760f6",
+      "ref": "12dd236c-16ef-4cc3-a81b-2d9f024d9b05",
       "dependsOn": []
     },
     {
-      "ref": "3eae6cfe-e570-4aab-b097-c889be3d6d09",
-      "dependsOn": []
-    },
-    {
-      "ref": "47e53619-2d09-4655-9584-fe1d74c89e17",
-      "dependsOn": []
-    },
-    {
-      "ref": "5347aca1-b385-4e73-931a-0ad2fdf9d8af",
-      "dependsOn": []
-    },
-    {
-      "ref": "53f3451f-bfa6-4e10-bfbd-9ac51bba8a6f",
-      "dependsOn": []
-    },
-    {
-      "ref": "5a9a6f17-caf2-47ac-be33-356070bc1c4f",
-      "dependsOn": []
-    },
-    {
-      "ref": "5bf19a94-555a-41bd-be26-30a66dc1946a",
-      "dependsOn": []
-    },
-    {
-      "ref": "6e632b3f-3564-4f44-833a-253271151a0b",
-      "dependsOn": []
-    },
-    {
-      "ref": "7622de37-c290-4819-8eb2-7dccd7da2943",
-      "dependsOn": []
-    },
-    {
-      "ref": "7c3dd2ef-1d81-4672-853c-45e5df09c39e",
-      "dependsOn": []
-    },
-    {
-      "ref": "8971f6fc-8a56-49c2-b9a5-a231cba7da3f",
-      "dependsOn": []
-    },
-    {
-      "ref": "902eab24-2412-4f3d-8c05-7ffadf0d601e",
-      "dependsOn": []
-    },
-    {
-      "ref": "99d52d2c-e73c-4210-a80a-29ae50f4e632",
-      "dependsOn": []
-    },
-    {
-      "ref": "a066fdc9-e8fa-4ca9-9f32-e4ea4d7730b1",
-      "dependsOn": []
-    },
-    {
-      "ref": "a30232fa-1e8a-44b1-9b77-78b4860f851c",
+      "ref": "1e274848-5bd7-4490-a65f-e0f44ff30808",
       "dependsOn": [
         "pkg:golang/github.com/dpotapov/go-spnego@v0.0.0-20210315154721-298b63a54430",
         "pkg:golang/github.com/git-lfs/git-lfs/v3",
@@ -14383,44 +14331,44 @@
       ]
     },
     {
-      "ref": "a3879dbe-40c1-42a3-a863-de562bcca946",
+      "ref": "44450480-07cb-43f4-b273-fa8fdab3da5c",
       "dependsOn": []
     },
     {
-      "ref": "a801bceb-f963-45af-a0e3-0dea870f3901",
+      "ref": "4a74fc9c-5bda-4cc4-8c22-10b86dd63263",
       "dependsOn": [
-        "00ab9b5b-55d7-49ca-b084-aa65bd5f667e",
-        "00fa7e82-baaf-40a6-8d9f-38de6db4427f",
-        "213034fd-b722-46b3-b746-8c76ec6760f6",
-        "3eae6cfe-e570-4aab-b097-c889be3d6d09",
-        "47e53619-2d09-4655-9584-fe1d74c89e17",
-        "5347aca1-b385-4e73-931a-0ad2fdf9d8af",
-        "53f3451f-bfa6-4e10-bfbd-9ac51bba8a6f",
-        "5a9a6f17-caf2-47ac-be33-356070bc1c4f",
-        "5bf19a94-555a-41bd-be26-30a66dc1946a",
-        "6e632b3f-3564-4f44-833a-253271151a0b",
-        "7622de37-c290-4819-8eb2-7dccd7da2943",
-        "7c3dd2ef-1d81-4672-853c-45e5df09c39e",
-        "8971f6fc-8a56-49c2-b9a5-a231cba7da3f",
-        "902eab24-2412-4f3d-8c05-7ffadf0d601e",
-        "99d52d2c-e73c-4210-a80a-29ae50f4e632",
-        "a066fdc9-e8fa-4ca9-9f32-e4ea4d7730b1",
-        "a30232fa-1e8a-44b1-9b77-78b4860f851c",
-        "a3879dbe-40c1-42a3-a863-de562bcca946",
-        "aa15e049-92ed-4067-87cd-d394054ed50b",
-        "ae6ba305-6c1c-41fc-82a6-683e9e02f5f9",
-        "b252a9c0-c3c5-4068-bc2d-f5daf3d64466",
-        "b4814a4c-3f9d-41ae-980b-e146651f467d",
-        "b5e5fbd2-bd40-4a86-9717-ffd8529e7b9b",
-        "be818031-1404-4c0d-8180-87682ff77dca",
-        "c3f882b8-c110-411d-9b58-bf1dafaa0fb2",
-        "ce3dfe37-dee6-4ede-a7d5-1e68318fdba7",
-        "d6bf8c5f-8bed-43f7-8726-d90a9e859ac4",
-        "e2a06b19-0610-4f76-9d48-15184be7360a",
-        "e349ed98-2915-48e4-b9ad-64d4aacc8433",
-        "f37e0d48-08cd-4422-8a10-08bf6aff62ec",
-        "f5ce4c77-42e2-40b3-a895-35e41e042274",
-        "ff50e3f1-eca9-4445-b3a4-09b9c02e67ad",
+        "066d86e1-e1b2-4c40-9290-f59553f0b429",
+        "07cb8fe2-94f6-4e74-9794-5b1d4a9557a0",
+        "12dd236c-16ef-4cc3-a81b-2d9f024d9b05",
+        "1e274848-5bd7-4490-a65f-e0f44ff30808",
+        "44450480-07cb-43f4-b273-fa8fdab3da5c",
+        "54975665-de8e-466d-84ad-8ad87a7af152",
+        "60f106ac-b6f3-43d1-b751-0f1cf0f9f6bc",
+        "658d2bb5-69ce-419c-b718-b678d0b81e53",
+        "829fc0f6-4b7b-4ae5-80b5-00fd7e8f7c40",
+        "88277b22-09d6-439d-8a23-fc675c300081",
+        "953d5694-9c9d-4d8b-9555-17eea109769c",
+        "9a1b889f-3099-45b4-a0c0-98d47cbc7a16",
+        "a4609f89-a0fd-459f-a822-87404cda4217",
+        "ab77b319-d8d5-45b4-b037-7b0e55fbe486",
+        "ba8e8414-9d67-4d20-b566-bcab692c187e",
+        "bb47676d-70c8-4f42-acd7-270fea962ae2",
+        "c56b879a-8752-4f8c-9e2b-bbffe0e2b03f",
+        "c6f125a2-49ed-44c9-842e-f18ed95d5320",
+        "c883d0b3-a19b-4bc0-a0b0-675fe128cfcf",
+        "cb324a67-629f-4cc6-b1a8-0a62f45d2565",
+        "cff41f65-bb97-4267-9ec3-8826a2410785",
+        "d2b030e9-4688-46b9-a0df-4f04e841d0fe",
+        "d792202e-8f7a-4a5f-b478-de677b0f7647",
+        "d9abe9ac-d587-4bf0-b476-5913c0f46174",
+        "dcdee652-7a57-41e5-a886-5004712393bb",
+        "dd141607-a1e9-42ca-9a2b-627a3bc6072e",
+        "df8dbc93-04fc-488d-ad04-5e60a1b0ef6c",
+        "e31ea3d4-b394-4a47-9359-76e5b91fd1a7",
+        "f25b1de5-d5e3-4255-8e39-f162610d74ee",
+        "f351fc5e-3d86-4b97-9185-eb14e43bb467",
+        "fdb1a1bd-5d48-4976-b598-9917bfec7e3e",
+        "ff363647-a1d7-42d1-a4ea-60204b9b47d0",
         "pkg:maven/activemq/relaxngDatatype@20050407",
         "pkg:maven/args4j/args4j@2.33",
         "pkg:maven/args4j/args4j@2.37",
@@ -14538,39 +14486,23 @@
       ]
     },
     {
-      "ref": "aa15e049-92ed-4067-87cd-d394054ed50b",
+      "ref": "54975665-de8e-466d-84ad-8ad87a7af152",
       "dependsOn": []
     },
     {
-      "ref": "ae6ba305-6c1c-41fc-82a6-683e9e02f5f9",
+      "ref": "60f106ac-b6f3-43d1-b751-0f1cf0f9f6bc",
       "dependsOn": []
     },
     {
-      "ref": "b252a9c0-c3c5-4068-bc2d-f5daf3d64466",
+      "ref": "658d2bb5-69ce-419c-b718-b678d0b81e53",
       "dependsOn": []
     },
     {
-      "ref": "b4814a4c-3f9d-41ae-980b-e146651f467d",
+      "ref": "829fc0f6-4b7b-4ae5-80b5-00fd7e8f7c40",
       "dependsOn": []
     },
     {
-      "ref": "b5e5fbd2-bd40-4a86-9717-ffd8529e7b9b",
-      "dependsOn": []
-    },
-    {
-      "ref": "be818031-1404-4c0d-8180-87682ff77dca",
-      "dependsOn": []
-    },
-    {
-      "ref": "c3f882b8-c110-411d-9b58-bf1dafaa0fb2",
-      "dependsOn": []
-    },
-    {
-      "ref": "ce3dfe37-dee6-4ede-a7d5-1e68318fdba7",
-      "dependsOn": []
-    },
-    {
-      "ref": "d6bf8c5f-8bed-43f7-8726-d90a9e859ac4",
+      "ref": "88277b22-09d6-439d-8a23-fc675c300081",
       "dependsOn": [
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.9",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.9",
@@ -14707,23 +14639,91 @@
       ]
     },
     {
-      "ref": "e2a06b19-0610-4f76-9d48-15184be7360a",
+      "ref": "953d5694-9c9d-4d8b-9555-17eea109769c",
       "dependsOn": []
     },
     {
-      "ref": "e349ed98-2915-48e4-b9ad-64d4aacc8433",
+      "ref": "9a1b889f-3099-45b4-a0c0-98d47cbc7a16",
       "dependsOn": []
     },
     {
-      "ref": "f37e0d48-08cd-4422-8a10-08bf6aff62ec",
+      "ref": "a4609f89-a0fd-459f-a822-87404cda4217",
       "dependsOn": []
     },
     {
-      "ref": "f5ce4c77-42e2-40b3-a895-35e41e042274",
+      "ref": "ab77b319-d8d5-45b4-b037-7b0e55fbe486",
       "dependsOn": []
     },
     {
-      "ref": "ff50e3f1-eca9-4445-b3a4-09b9c02e67ad",
+      "ref": "ba8e8414-9d67-4d20-b566-bcab692c187e",
+      "dependsOn": []
+    },
+    {
+      "ref": "bb47676d-70c8-4f42-acd7-270fea962ae2",
+      "dependsOn": []
+    },
+    {
+      "ref": "c56b879a-8752-4f8c-9e2b-bbffe0e2b03f",
+      "dependsOn": []
+    },
+    {
+      "ref": "c6f125a2-49ed-44c9-842e-f18ed95d5320",
+      "dependsOn": []
+    },
+    {
+      "ref": "c883d0b3-a19b-4bc0-a0b0-675fe128cfcf",
+      "dependsOn": []
+    },
+    {
+      "ref": "cb324a67-629f-4cc6-b1a8-0a62f45d2565",
+      "dependsOn": []
+    },
+    {
+      "ref": "cff41f65-bb97-4267-9ec3-8826a2410785",
+      "dependsOn": []
+    },
+    {
+      "ref": "d2b030e9-4688-46b9-a0df-4f04e841d0fe",
+      "dependsOn": []
+    },
+    {
+      "ref": "d792202e-8f7a-4a5f-b478-de677b0f7647",
+      "dependsOn": []
+    },
+    {
+      "ref": "d9abe9ac-d587-4bf0-b476-5913c0f46174",
+      "dependsOn": []
+    },
+    {
+      "ref": "dcdee652-7a57-41e5-a886-5004712393bb",
+      "dependsOn": []
+    },
+    {
+      "ref": "dd141607-a1e9-42ca-9a2b-627a3bc6072e",
+      "dependsOn": []
+    },
+    {
+      "ref": "df8dbc93-04fc-488d-ad04-5e60a1b0ef6c",
+      "dependsOn": []
+    },
+    {
+      "ref": "e31ea3d4-b394-4a47-9359-76e5b91fd1a7",
+      "dependsOn": []
+    },
+    {
+      "ref": "f25b1de5-d5e3-4255-8e39-f162610d74ee",
+      "dependsOn": []
+    },
+    {
+      "ref": "f351fc5e-3d86-4b97-9185-eb14e43bb467",
+      "dependsOn": []
+    },
+    {
+      "ref": "fdb1a1bd-5d48-4976-b598-9917bfec7e3e",
+      "dependsOn": []
+    },
+    {
+      "ref": "ff363647-a1d7-42d1-a4ea-60204b9b47d0",
       "dependsOn": []
     },
     {
@@ -20349,6 +20349,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -21190,6 +21191,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -21410,6 +21417,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -22381,7 +22389,7 @@
         }
       ],
       "published": "2024-03-10T05:15:06+00:00",
-      "updated": "2025-02-26T15:14:55+00:00",
+      "updated": "2025-03-28T19:15:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.9",
@@ -22985,6 +22993,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.5,
@@ -23039,6 +23053,9 @@
           "url": "https://security-tracker.debian.org/tracker/CVE-2024-8176"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0009/"
+        },
+        {
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
@@ -23046,7 +23063,7 @@
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-03-17T17:15:36+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.9",
@@ -23640,6 +23657,18 @@
         {
           "source": {
             "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "low"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
