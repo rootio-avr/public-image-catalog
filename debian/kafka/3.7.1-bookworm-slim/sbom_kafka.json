@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:d74c13bf-5497-4b5b-9b83-3acdede1b01a",
+  "serialNumber": "urn:uuid:a6dff1b4-0b38-40d2-bdab-0e6458fc5654",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T14:18:23+00:00",
+    "timestamp": "2025-04-02T05:57:40+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "2956fc23-9fc3-4d9b-a764-4e5f7781a5cd",
+      "bom-ref": "6123a560-4ff9-493d-9065-8555c672d1e4",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -78,7 +78,7 @@
   },
   "components": [
     {
-      "bom-ref": "58eb84f9-6da3-4826-b786-2ddae6fbf766",
+      "bom-ref": "0d4218f5-1063-46a0-ad77-376d193dc77c",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -10364,6 +10364,12 @@
       "group": "ai.superstream",
       "name": "kafka-clients",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9d2dc117817ebbef9bab87242deb574ed3835566"
+        }
+      ],
       "purl": "pkg:maven/ai.superstream/kafka-clients@3.7.1",
       "properties": [
         {
@@ -10390,6 +10396,12 @@
       "group": "ch.qos.reload4j",
       "name": "reload4j",
       "version": "1.2.25",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "45921e383a1001c2a599fc4c6cf59af80cdd1cf1"
+        }
+      ],
       "purl": "pkg:maven/ch.qos.reload4j/reload4j@1.2.25",
       "properties": [
         {
@@ -10416,6 +10428,12 @@
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-annotations",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "dfcd11c847ea7276aa073c25f5fe8ee361748d7f"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.16.2",
       "properties": [
         {
@@ -10442,6 +10460,12 @@
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-core",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b4f588bf070f77b604c645a7d60b71eae2e6ea09"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.16.2",
       "properties": [
         {
@@ -10468,6 +10492,12 @@
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-databind",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7fda67535b54d74eebf6157682b835c847410932"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.16.2",
       "properties": [
         {
@@ -10494,6 +10524,12 @@
       "group": "com.fasterxml.jackson.dataformat",
       "name": "jackson-dataformat-csv",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "589c61739a773f581845d3505622007f26b38c2a"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-csv@2.16.2",
       "properties": [
         {
@@ -10520,6 +10556,12 @@
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jdk8",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "02c3593b299fcd1a6b8197876f95da82d7aa7340"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.16.2",
       "properties": [
         {
@@ -10546,6 +10588,12 @@
       "group": "com.fasterxml.jackson.jaxrs",
       "name": "jackson-jaxrs-base",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4628f40bfc84885b1ac2f6e3de467c7bd718391b"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base@2.16.2",
       "properties": [
         {
@@ -10572,6 +10620,12 @@
       "group": "com.fasterxml.jackson.jaxrs",
       "name": "jackson-jaxrs-json-provider",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a97ab203151329db9018792e0089e6fd4ec7322b"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider@2.16.2",
       "properties": [
         {
@@ -10598,6 +10652,12 @@
       "group": "com.fasterxml.jackson.module",
       "name": "jackson-module-jaxb-annotations",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d1274db656edefe242fbd26d3266f7b4abb6f57b"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-jaxb-annotations@2.16.2",
       "properties": [
         {
@@ -10624,6 +10684,12 @@
       "group": "com.fasterxml.jackson.module",
       "name": "jackson-module-scala",
       "version": "2.16.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c16b5aa1cbcf5efae84cba582591bed8b3356765"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-scala@2.16.2",
       "properties": [
         {
@@ -10650,6 +10716,12 @@
       "group": "com.github.ben-manes.caffeine",
       "name": "caffeine",
       "version": "2.9.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b162491f768824d21487551873f9b3b374a7fe19"
+        }
+      ],
       "purl": "pkg:maven/com.github.ben-manes.caffeine/caffeine@2.9.3",
       "properties": [
         {
@@ -10676,6 +10748,12 @@
       "group": "com.github.luben",
       "name": "zstd-jni",
       "version": "1.5.6-3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "823b794106e4bcb80110f49408d1641231f25927"
+        }
+      ],
       "purl": "pkg:maven/com.github.luben/zstd-jni@1.5.6-3",
       "properties": [
         {
@@ -10702,6 +10780,12 @@
       "group": "com.google.code.findbugs",
       "name": "jsr305",
       "version": "3.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "25ea2e8b0c338a877313bd4672d3fe056ea78f0d"
+        }
+      ],
       "purl": "pkg:maven/com.google.code.findbugs/jsr305@3.0.2",
       "properties": [
         {
@@ -10728,6 +10812,12 @@
       "group": "com.google.errorprone",
       "name": "error_prone_annotations",
       "version": "2.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9bc20b94d3ac42489cf6ce1e42509c86f6f861a1"
+        }
+      ],
       "purl": "pkg:maven/com.google.errorprone/error_prone_annotations@2.10.0",
       "properties": [
         {
@@ -10754,6 +10844,12 @@
       "group": "com.google.protobuf",
       "name": "protobuf-java",
       "version": "3.23.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5cc1be17aed4e1e396c6b5359518f369a42ebc37"
+        }
+      ],
       "purl": "pkg:maven/com.google.protobuf/protobuf-java@3.23.4",
       "properties": [
         {
@@ -10780,6 +10876,12 @@
       "group": "com.thoughtworks.paranamer",
       "name": "paranamer",
       "version": "2.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "619eba74c19ccf1da8ebec97a2d7f8ba05773dd6"
+        }
+      ],
       "purl": "pkg:maven/com.thoughtworks.paranamer/paranamer@2.8",
       "properties": [
         {
@@ -10806,6 +10908,12 @@
       "group": "com.typesafe.scala-logging",
       "name": "scala-logging_2.13",
       "version": "3.9.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e5838ddcf8c1c2b612a7956b9f80423a508675db"
+        }
+      ],
       "purl": "pkg:maven/com.typesafe.scala-logging/scala-logging_2.13@3.9.4",
       "properties": [
         {
@@ -10832,6 +10940,12 @@
       "group": "com.yammer.metrics",
       "name": "metrics-core",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f82c035cfa786d3cbec362c38c22a5f5b1bc8724"
+        }
+      ],
       "purl": "pkg:maven/com.yammer.metrics/metrics-core@2.2.0",
       "properties": [
         {
@@ -10858,6 +10972,12 @@
       "group": "commons-beanutils",
       "name": "commons-beanutils",
       "version": "1.9.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d52b9abcd97f38c81342bb7e7ae1eee9b73cba51"
+        }
+      ],
       "purl": "pkg:maven/commons-beanutils/commons-beanutils@1.9.4",
       "properties": [
         {
@@ -10884,6 +11004,12 @@
       "group": "commons-cli",
       "name": "commons-cli",
       "version": "1.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c51c00206bb913cd8612b24abd9fa98ae89719b1"
+        }
+      ],
       "purl": "pkg:maven/commons-cli/commons-cli@1.4",
       "properties": [
         {
@@ -10910,6 +11036,12 @@
       "group": "commons-collections",
       "name": "commons-collections",
       "version": "3.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5"
+        }
+      ],
       "purl": "pkg:maven/commons-collections/commons-collections@3.2.2",
       "properties": [
         {
@@ -10936,6 +11068,12 @@
       "group": "commons-digester",
       "name": "commons-digester",
       "version": "2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "73a8001e7a54a255eef0f03521ec1805dc738ca0"
+        }
+      ],
       "purl": "pkg:maven/commons-digester/commons-digester@2.1",
       "properties": [
         {
@@ -10962,6 +11100,12 @@
       "group": "commons-io",
       "name": "commons-io",
       "version": "2.11.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a2503f302b11ebde7ebc3df41daebe0e4eea3689"
+        }
+      ],
       "purl": "pkg:maven/commons-io/commons-io@2.11.0",
       "properties": [
         {
@@ -10988,6 +11132,12 @@
       "group": "commons-logging",
       "name": "commons-logging",
       "version": "1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4bfc12adfe4842bf07b657f0369c4cb522955686"
+        }
+      ],
       "purl": "pkg:maven/commons-logging/commons-logging@1.2",
       "properties": [
         {
@@ -11014,6 +11164,12 @@
       "group": "commons-validator",
       "name": "commons-validator",
       "version": "1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "76069c915de3787f3ddd8726a56f47a95bfcbb0e"
+        }
+      ],
       "purl": "pkg:maven/commons-validator/commons-validator@1.7",
       "properties": [
         {
@@ -11040,6 +11196,12 @@
       "group": "io.dropwizard.metrics",
       "name": "metrics-core",
       "version": "4.1.12.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cb2f351bf4463751201f43bb99865235d5ba07ca"
+        }
+      ],
       "purl": "pkg:maven/io.dropwizard.metrics/metrics-core@4.1.12.1",
       "properties": [
         {
@@ -11066,6 +11228,12 @@
       "group": "io.netty",
       "name": "netty-buffer",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d918a9ee057d995c362902b54634fc307132aac"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-buffer@4.1.110.Final",
       "properties": [
         {
@@ -11092,6 +11260,12 @@
       "group": "io.netty",
       "name": "netty-codec",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f1fa43b03e93ab88e805b6a4e3e83780c80b47d2"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-codec@4.1.110.Final",
       "properties": [
         {
@@ -11118,6 +11292,12 @@
       "group": "io.netty",
       "name": "netty-common",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec361e7e025c029be50c55c8480080cabcbc01e7"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-common@4.1.110.Final",
       "properties": [
         {
@@ -11144,6 +11324,12 @@
       "group": "io.netty",
       "name": "netty-handler",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "168db749c22652ee7fed1ebf7ec46ce856d75e51"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-handler@4.1.110.Final",
       "properties": [
         {
@@ -11170,6 +11356,12 @@
       "group": "io.netty",
       "name": "netty-resolver",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "66c15921104cda0159b34e316541bc765dfaf3c0"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-resolver@4.1.110.Final",
       "properties": [
         {
@@ -11196,6 +11388,12 @@
       "group": "io.netty",
       "name": "netty-transport-classes-epoll",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3ca1cff0bf82bfd38e89f6946e54f24cbb3424a2"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport-classes-epoll@4.1.110.Final",
       "properties": [
         {
@@ -11222,6 +11420,12 @@
       "group": "io.netty",
       "name": "netty-transport-native-epoll",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0843fbabe636c98f1a2f60dc57e29832b2c612b0"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport-native-epoll@4.1.110.Final",
       "properties": [
         {
@@ -11248,6 +11452,12 @@
       "group": "io.netty",
       "name": "netty-transport-native-unix-common",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a7096e7c0a25a983647909d7513f5d4943d589c0"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.110.Final",
       "properties": [
         {
@@ -11274,6 +11484,12 @@
       "group": "io.netty",
       "name": "netty-transport",
       "version": "4.1.110.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b91f04c39ac14d6a29d07184ef305953ee6e0348"
+        }
+      ],
       "purl": "pkg:maven/io.netty/netty-transport@4.1.110.Final",
       "properties": [
         {
@@ -11300,6 +11516,12 @@
       "group": "io.opentelemetry.proto",
       "name": "opentelemetry-proto",
       "version": "1.0.0-alpha",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "aef3ea96207d6199d97f3cecd1674663894eade1"
+        }
+      ],
       "purl": "pkg:maven/io.opentelemetry.proto/opentelemetry-proto@1.0.0-alpha",
       "properties": [
         {
@@ -11326,6 +11548,12 @@
       "group": "io.swagger.core.v3",
       "name": "swagger-annotations",
       "version": "2.2.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6b14c60519512cd627d59423f109949bea203727"
+        }
+      ],
       "purl": "pkg:maven/io.swagger.core.v3/swagger-annotations@2.2.8",
       "properties": [
         {
@@ -11352,6 +11580,12 @@
       "group": "jakarta.activation",
       "name": "jakarta.activation-api",
       "version": "1.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "99f53adba383cb1bf7c3862844488574b559621f"
+        }
+      ],
       "purl": "pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2",
       "properties": [
         {
@@ -11378,6 +11612,12 @@
       "group": "jakarta.annotation",
       "name": "jakarta.annotation-api",
       "version": "1.3.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "59eb84ee0d616332ff44aba065f3888cf002cd2d"
+        }
+      ],
       "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@1.3.5",
       "properties": [
         {
@@ -11404,6 +11644,12 @@
       "group": "jakarta.validation",
       "name": "jakarta.validation-api",
       "version": "2.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5eacc6522521f7eacb081f95cee1e231648461e7"
+        }
+      ],
       "purl": "pkg:maven/jakarta.validation/jakarta.validation-api@2.0.2",
       "properties": [
         {
@@ -11430,6 +11676,12 @@
       "group": "jakarta.ws.rs",
       "name": "jakarta.ws.rs-api",
       "version": "2.1.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1dcb770bce80a490dff49729b99c7a60e9ecb122"
+        }
+      ],
       "purl": "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@2.1.6",
       "properties": [
         {
@@ -11456,6 +11708,12 @@
       "group": "jakarta.xml.bind",
       "name": "jakarta.xml.bind-api",
       "version": "2.3.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "48e3b9cfc10752fba3521d6511f4165bea951801"
+        }
+      ],
       "purl": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.3",
       "properties": [
         {
@@ -11482,6 +11740,12 @@
       "group": "javax.activation",
       "name": "activation",
       "version": "1.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "485de3a253e23f645037828c07f1d7f1af40763a"
+        }
+      ],
       "purl": "pkg:maven/javax.activation/activation@1.1.1",
       "properties": [
         {
@@ -11508,6 +11772,12 @@
       "group": "javax.activation",
       "name": "javax.activation-api",
       "version": "1.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "85262acf3ca9816f9537ca47d5adeabaead7cb16"
+        }
+      ],
       "purl": "pkg:maven/javax.activation/javax.activation-api@1.2.0",
       "properties": [
         {
@@ -11534,6 +11804,12 @@
       "group": "javax.annotation",
       "name": "javax.annotation-api",
       "version": "1.3.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "934c04d3cfef185a8008e7bf34331b79730a9d43"
+        }
+      ],
       "purl": "pkg:maven/javax.annotation/javax.annotation-api@1.3.2",
       "properties": [
         {
@@ -11560,6 +11836,12 @@
       "group": "javax.servlet",
       "name": "javax.servlet-api",
       "version": "3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3cd63d075497751784b2fa84be59432f4905bf7c"
+        }
+      ],
       "purl": "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
       "properties": [
         {
@@ -11586,6 +11868,12 @@
       "group": "javax.ws.rs",
       "name": "javax.ws.rs-api",
       "version": "2.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d3466bc9321fe84f268a1adb3b90373fc14b0eb5"
+        }
+      ],
       "purl": "pkg:maven/javax.ws.rs/javax.ws.rs-api@2.1.1",
       "properties": [
         {
@@ -11612,6 +11900,12 @@
       "group": "javax.xml.bind",
       "name": "jaxb-api",
       "version": "2.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8531ad5ac454cc2deb9d4d32c40c4d7451939b5d"
+        }
+      ],
       "purl": "pkg:maven/javax.xml.bind/jaxb-api@2.3.1",
       "properties": [
         {
@@ -11638,6 +11932,12 @@
       "group": "net.sf.jopt-simple",
       "name": "jopt-simple",
       "version": "5.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c"
+        }
+      ],
       "purl": "pkg:maven/net.sf.jopt-simple/jopt-simple@5.0.4",
       "properties": [
         {
@@ -11664,6 +11964,12 @@
       "group": "net.sourceforge.argparse4j",
       "name": "argparse4j",
       "version": "0.7.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6f0621d0c3888de39e0f06d01f37ba53a798e657"
+        }
+      ],
       "purl": "pkg:maven/net.sourceforge.argparse4j/argparse4j@0.7.0",
       "properties": [
         {
@@ -11690,6 +11996,12 @@
       "group": "org.apache.commons",
       "name": "commons-lang3",
       "version": "3.8.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6505a72a097d9270f7a9e7bf42c4238283247755"
+        }
+      ],
       "purl": "pkg:maven/org.apache.commons/commons-lang3@3.8.1",
       "properties": [
         {
@@ -11716,6 +12028,12 @@
       "group": "org.apache.kafka",
       "name": "connect-api",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3c640a9234a376741124b94be2bdfaade27f2ca4"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-api@3.7.1",
       "properties": [
         {
@@ -11742,6 +12060,12 @@
       "group": "org.apache.kafka",
       "name": "connect-basic-auth-extension",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ba86085e043cdf4a9ebf9b0c5d34c2fed78dc824"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-basic-auth-extension@3.7.1",
       "properties": [
         {
@@ -11768,6 +12092,12 @@
       "group": "org.apache.kafka",
       "name": "connect-file",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b283fdf657e23c1f9a5b71009512d355913cd38c"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-file@3.7.1",
       "properties": [
         {
@@ -11794,6 +12124,12 @@
       "group": "org.apache.kafka",
       "name": "connect-json",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c7fff0438d889176ad3cd62b9ee3a2de11e35af4"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-json@3.7.1",
       "properties": [
         {
@@ -11820,6 +12156,12 @@
       "group": "org.apache.kafka",
       "name": "connect-mirror-client",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "23399d37c2f8025413f69480918809ea3351bc86"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-mirror-client@3.7.1",
       "properties": [
         {
@@ -11846,6 +12188,12 @@
       "group": "org.apache.kafka",
       "name": "connect-mirror",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "954bad085c917e7b7d6c58b7f18d1b9465d65901"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-mirror@3.7.1",
       "properties": [
         {
@@ -11872,6 +12220,12 @@
       "group": "org.apache.kafka",
       "name": "connect-runtime",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bbfa9f98d35f18d51e6c98731d1fe808b854cd18"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-runtime@3.7.1",
       "properties": [
         {
@@ -11898,6 +12252,12 @@
       "group": "org.apache.kafka",
       "name": "connect-transforms",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e9ab96f487128705e99c7b55f47b607461c424da"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/connect-transforms@3.7.1",
       "properties": [
         {
@@ -11924,6 +12284,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-group-coordinator",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a6de4c401c93091db99ade9b0a480eba3a886cf6"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-group-coordinator@3.7.1",
       "properties": [
         {
@@ -11950,6 +12316,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-log4j-appender",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ac1dafc36a3462c1a147b46895d52b2d5d9fdf60"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-log4j-appender@3.7.1",
       "properties": [
         {
@@ -11976,6 +12348,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-metadata",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "935d3acbe66a20183bdd6b5bf89389db0297ccdf"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-metadata@3.7.1",
       "properties": [
         {
@@ -12002,6 +12380,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-raft",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ac9daefec480b6efa7918eeca36bbf6b526240ab"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-raft@3.7.1",
       "properties": [
         {
@@ -12028,6 +12412,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-server-common",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0ec82756e178128d0bbda1fd4bbd6f135aea42f0"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-server-common@3.7.1",
       "properties": [
         {
@@ -12054,6 +12444,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-server",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4cfc44450a366b77f025911190a1e3fcd854f9f7"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-server@3.7.1",
       "properties": [
         {
@@ -12080,6 +12476,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-shell",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6eec24fd25bfaa754061e855325118fbc21414bd"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-shell@3.7.1",
       "properties": [
         {
@@ -12106,6 +12508,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-storage-api",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a4654c991d62d84985a8af53d72cd9cb27e68427"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-storage-api@3.7.1",
       "properties": [
         {
@@ -12132,6 +12540,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-storage",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "975a1d757b22224147437dc53185bcfd4e8bab89"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-storage@3.7.1",
       "properties": [
         {
@@ -12158,6 +12572,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-streams-examples",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "09f12c50e7a042f0baaf5b65e42681627353c9dd"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-streams-examples@3.7.1",
       "properties": [
         {
@@ -12184,6 +12604,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-streams-scala_2.13",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9d97e62093be88a6a7ec50ae1c74ba9d90f952d7"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-streams-scala_2.13@3.7.1",
       "properties": [
         {
@@ -12210,6 +12636,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-streams-test-utils",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c6bbc69ac7bf9adfe483e4d2a2bc83c1a4149d16"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-streams-test-utils@3.7.1",
       "properties": [
         {
@@ -12236,6 +12668,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-streams",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "532c83067a1e8668df054cff8889545de01c58ce"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-streams@3.7.1",
       "properties": [
         {
@@ -12262,6 +12700,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-tools-api",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0212fba761f31763cdf4f0e0ee3cc13c2101e819"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-tools-api@3.7.1",
       "properties": [
         {
@@ -12288,6 +12732,12 @@
       "group": "org.apache.kafka",
       "name": "kafka-tools",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "922a4355a7bce6d4c28174395186d97a8ed2be1d"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka-tools@3.7.1",
       "properties": [
         {
@@ -12314,6 +12764,12 @@
       "group": "org.apache.kafka",
       "name": "kafka_2.13",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8a7dd02e66fac84d8265f892e5027499ede442a3"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/kafka_2.13@3.7.1",
       "properties": [
         {
@@ -12340,6 +12796,12 @@
       "group": "org.apache.kafka",
       "name": "trogdor",
       "version": "3.7.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a20243054e172c0a9f3fd6a7a8c814effc42c66f"
+        }
+      ],
       "purl": "pkg:maven/org.apache.kafka/trogdor@3.7.1",
       "properties": [
         {
@@ -12366,6 +12828,12 @@
       "group": "org.apache.maven",
       "name": "maven-artifact",
       "version": "3.8.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c4324db6f73f14e1327da2a1acec293d75212ae7"
+        }
+      ],
       "purl": "pkg:maven/org.apache.maven/maven-artifact@3.8.8",
       "properties": [
         {
@@ -12392,6 +12860,12 @@
       "group": "org.apache.yetus",
       "name": "audience-annotations",
       "version": "0.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e0efa60318229590103e31c69ebdaae56d903644"
+        }
+      ],
       "purl": "pkg:maven/org.apache.yetus/audience-annotations@0.12.0",
       "properties": [
         {
@@ -12418,6 +12892,12 @@
       "group": "org.apache.zookeeper",
       "name": "zookeeper-jute",
       "version": "3.8.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "de7b8a41bbe1ccdfc009de51fa6d160db3ca8025"
+        }
+      ],
       "purl": "pkg:maven/org.apache.zookeeper/zookeeper-jute@3.8.4",
       "properties": [
         {
@@ -12444,6 +12924,12 @@
       "group": "org.apache.zookeeper",
       "name": "zookeeper",
       "version": "3.8.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6638e37b887b5a279044afbdc9928e19f678eb2e"
+        }
+      ],
       "purl": "pkg:maven/org.apache.zookeeper/zookeeper@3.8.4",
       "properties": [
         {
@@ -12470,6 +12956,12 @@
       "group": "org.bitbucket.b_c",
       "name": "jose4j",
       "version": "0.9.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7efe6ccf593e52a2b77f98de52238f15b4a67188"
+        }
+      ],
       "purl": "pkg:maven/org.bitbucket.b_c/jose4j@0.9.4",
       "properties": [
         {
@@ -12496,6 +12988,12 @@
       "group": "org.checkerframework",
       "name": "checker-qual",
       "version": "3.19.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "838b42bb6f7f73315167b359d24649845cef1c48"
+        }
+      ],
       "purl": "pkg:maven/org.checkerframework/checker-qual@3.19.0",
       "properties": [
         {
@@ -12522,6 +13020,12 @@
       "group": "org.codehaus.plexus",
       "name": "plexus-utils",
       "version": "3.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9b41b2b76b1bfe3774411fe22f5868058a9fc822"
+        }
+      ],
       "purl": "pkg:maven/org.codehaus.plexus/plexus-utils@3.3.1",
       "properties": [
         {
@@ -12548,6 +13052,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-client",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "43674b6a6f7aa249f145728002d00f3f220e88be"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-client@9.4.54.v20240208",
       "properties": [
         {
@@ -12574,6 +13084,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-continuation",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "825633efcd0952221bf54b036c069218e9a3b20f"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-continuation@9.4.54.v20240208",
       "properties": [
         {
@@ -12600,6 +13116,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-http",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a641b8a694eeefdde64404011471710e51352276"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.54.v20240208",
       "properties": [
         {
@@ -12626,6 +13148,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-io",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "389cb96fc6963b0aa13954164ed0b1c54bf87462"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-io@9.4.54.v20240208",
       "properties": [
         {
@@ -12652,6 +13180,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-security",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7bf0247b413feefce4a18f50c68d7b9e41beaf30"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-security@9.4.54.v20240208",
       "properties": [
         {
@@ -12678,6 +13212,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-server",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "13d439d8a5d8b1ec936f9d6f90dbdd46fcb01820"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.54.v20240208",
       "properties": [
         {
@@ -12704,6 +13244,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-servlet",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "265cdb2c48345ff3c661a15873abbf4c7e4c8300"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.54.v20240208",
       "properties": [
         {
@@ -12730,6 +13276,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-servlets",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "27ebb82b6b96ebbaee209ccc83f33ef683cc9913"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-servlets@9.4.54.v20240208",
       "properties": [
         {
@@ -12756,6 +13308,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-util-ajax",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "973ad9c3e01c2ffae3571a85a3c82c3fb5cab18d"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.54.v20240208",
       "properties": [
         {
@@ -12782,6 +13340,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-util",
       "version": "9.4.54.v20240208",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8da375769a8fe4a32ec52cc2c9ac68f1eb843588"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-util@9.4.54.v20240208",
       "properties": [
         {
@@ -12808,6 +13372,12 @@
       "group": "org.glassfish.hk2.external",
       "name": "aopalliance-repackaged",
       "version": "2.6.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b2eb0a83bcbb44cc5d25f8b18f23be116313a638"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2.external/aopalliance-repackaged@2.6.1",
       "properties": [
         {
@@ -12834,6 +13404,12 @@
       "group": "org.glassfish.hk2.external",
       "name": "jakarta.inject",
       "version": "2.6.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8096ebf722902e75fbd4f532a751e514f02e1eb7"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2.external/jakarta.inject@2.6.1",
       "properties": [
         {
@@ -12860,6 +13436,12 @@
       "group": "org.glassfish.hk2",
       "name": "hk2-api",
       "version": "2.6.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "114bd7afb4a1bd9993527f52a08a252b5d2acac5"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/hk2-api@2.6.1",
       "properties": [
         {
@@ -12886,6 +13468,12 @@
       "group": "org.glassfish.hk2",
       "name": "hk2-locator",
       "version": "2.6.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9dedf9d2022e38ec0743ed44c1ac94ad6149acdd"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/hk2-locator@2.6.1",
       "properties": [
         {
@@ -12912,6 +13500,12 @@
       "group": "org.glassfish.hk2",
       "name": "hk2-utils",
       "version": "2.6.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "396513aa96c1d5a10aa4f75c4dcbf259a698d62d"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/hk2-utils@2.6.1",
       "properties": [
         {
@@ -12938,6 +13532,12 @@
       "group": "org.glassfish.hk2",
       "name": "osgi-resource-locator",
       "version": "1.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "de3b21279df7e755e38275137539be5e2c80dd58"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/osgi-resource-locator@1.0.3",
       "properties": [
         {
@@ -12964,6 +13564,12 @@
       "group": "org.glassfish.jersey.containers",
       "name": "jersey-container-servlet-core",
       "version": "2.39.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2270e8c8b3553fb4b3ac132212642c58f16488f9"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.containers/jersey-container-servlet-core@2.39.1",
       "properties": [
         {
@@ -12990,6 +13596,12 @@
       "group": "org.glassfish.jersey.containers",
       "name": "jersey-container-servlet",
       "version": "2.39.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "333caae8d3581430e6251e57182af1141a72df82"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.containers/jersey-container-servlet@2.39.1",
       "properties": [
         {
@@ -13016,6 +13628,12 @@
       "group": "org.glassfish.jersey.core",
       "name": "jersey-client",
       "version": "2.39.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2b1187bf77721c050bf68829918a1b3cd8be904e"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.core/jersey-client@2.39.1",
       "properties": [
         {
@@ -13042,6 +13660,12 @@
       "group": "org.glassfish.jersey.core",
       "name": "jersey-common",
       "version": "2.39.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "39198bdead74896267646795a7e4b1d86c10e039"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.core/jersey-common@2.39.1",
       "properties": [
         {
@@ -13068,6 +13692,12 @@
       "group": "org.glassfish.jersey.core",
       "name": "jersey-server",
       "version": "2.39.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "62324128215827bd646ddaac8f26cb2bdfe8e999"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.core/jersey-server@2.39.1",
       "properties": [
         {
@@ -13094,6 +13724,12 @@
       "group": "org.glassfish.jersey.inject",
       "name": "jersey-hk2",
       "version": "2.39.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "992005ae2e8ec3b215b2daa788c09eb902ef814b"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.inject/jersey-hk2@2.39.1",
       "properties": [
         {
@@ -13120,6 +13756,12 @@
       "group": "org.javassist",
       "name": "javassist",
       "version": "3.29.2-GA",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6c32028609e5dd4a1b78e10fbcd122b09b3928b1"
+        }
+      ],
       "purl": "pkg:maven/org.javassist/javassist@3.29.2-GA",
       "properties": [
         {
@@ -13146,6 +13788,12 @@
       "group": "org.jctools",
       "name": "jctools-core",
       "version": "3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec361e7e025c029be50c55c8480080cabcbc01e7"
+        }
+      ],
       "purl": "pkg:maven/org.jctools/jctools-core@3.1.0",
       "properties": [
         {
@@ -13172,6 +13820,12 @@
       "group": "org.jline",
       "name": "jansi-core",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jansi-core@3.25.1",
       "properties": [
         {
@@ -13198,6 +13852,12 @@
       "group": "org.jline",
       "name": "jline-builtins",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-builtins@3.25.1",
       "properties": [
         {
@@ -13224,6 +13884,12 @@
       "group": "org.jline",
       "name": "jline-native",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-native@3.25.1",
       "properties": [
         {
@@ -13250,6 +13916,12 @@
       "group": "org.jline",
       "name": "jline-reader",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-reader@3.25.1",
       "properties": [
         {
@@ -13276,6 +13948,12 @@
       "group": "org.jline",
       "name": "jline-remote-ssh",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-remote-ssh@3.25.1",
       "properties": [
         {
@@ -13302,6 +13980,12 @@
       "group": "org.jline",
       "name": "jline-remote-telnet",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-remote-telnet@3.25.1",
       "properties": [
         {
@@ -13328,6 +14012,12 @@
       "group": "org.jline",
       "name": "jline-style",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-style@3.25.1",
       "properties": [
         {
@@ -13354,6 +14044,12 @@
       "group": "org.jline",
       "name": "jline-terminal-ffm",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-terminal-ffm@3.25.1",
       "properties": [
         {
@@ -13380,6 +14076,12 @@
       "group": "org.jline",
       "name": "jline-terminal-jansi",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-terminal-jansi@3.25.1",
       "properties": [
         {
@@ -13406,6 +14108,12 @@
       "group": "org.jline",
       "name": "jline-terminal-jna",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-terminal-jna@3.25.1",
       "properties": [
         {
@@ -13432,6 +14140,12 @@
       "group": "org.jline",
       "name": "jline-terminal-jni",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-terminal-jni@3.25.1",
       "properties": [
         {
@@ -13458,6 +14172,12 @@
       "group": "org.jline",
       "name": "jline-terminal",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline-terminal@3.25.1",
       "properties": [
         {
@@ -13484,6 +14204,12 @@
       "group": "org.jline",
       "name": "jline",
       "version": "3.25.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d5c848825ffca5d798e6fc2987ac573bd424a1b"
+        }
+      ],
       "purl": "pkg:maven/org.jline/jline@3.25.1",
       "properties": [
         {
@@ -13510,6 +14236,12 @@
       "group": "org.lz4",
       "name": "lz4-java",
       "version": "1.8.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4b986a99445e49ea5fbf5d149c4b63f6ed6c6780"
+        }
+      ],
       "purl": "pkg:maven/org.lz4/lz4-java@1.8.0",
       "properties": [
         {
@@ -13536,6 +14268,12 @@
       "group": "org.pcollections",
       "name": "pcollections",
       "version": "4.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "059f3bf5fb28c5f5386804dcf129267416b75d7c"
+        }
+      ],
       "purl": "pkg:maven/org.pcollections/pcollections@4.0.1",
       "properties": [
         {
@@ -13562,6 +14300,12 @@
       "group": "org.reflections",
       "name": "reflections",
       "version": "0.10.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b638d7ca0e0fe0146b60a0e7ba232ad852a73b31"
+        }
+      ],
       "purl": "pkg:maven/org.reflections/reflections@0.10.2",
       "properties": [
         {
@@ -13588,6 +14332,12 @@
       "group": "org.rocksdb",
       "name": "rocksdbjni",
       "version": "7.9.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6409b667493149191b09fe1fce94bada6096a3e9"
+        }
+      ],
       "purl": "pkg:maven/org.rocksdb/rocksdbjni@7.9.2",
       "properties": [
         {
@@ -13614,6 +14364,12 @@
       "group": "org.scala-lang.modules",
       "name": "scala-collection-compat_2.13",
       "version": "2.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2464528d14329ff2b44bceff918d6c00300adcf4"
+        }
+      ],
       "purl": "pkg:maven/org.scala-lang.modules/scala-collection-compat_2.13@2.10.0",
       "properties": [
         {
@@ -13640,6 +14396,12 @@
       "group": "org.scala-lang.modules",
       "name": "scala-java8-compat_2.13",
       "version": "1.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5b54f60ccf03e41e24c466462a72475ee918c304"
+        }
+      ],
       "purl": "pkg:maven/org.scala-lang.modules/scala-java8-compat_2.13@1.0.2",
       "properties": [
         {
@@ -13666,6 +14428,12 @@
       "group": "org.scala-lang",
       "name": "scala-library",
       "version": "2.13.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3c51da898af4ebfac356fcde11388afb2ae8ee82"
+        }
+      ],
       "purl": "pkg:maven/org.scala-lang/scala-library@2.13.12",
       "properties": [
         {
@@ -13692,6 +14460,12 @@
       "group": "org.scala-lang",
       "name": "scala-reflect",
       "version": "2.13.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "88be4dbc90fdd2d12c05b6a872a9add60524461d"
+        }
+      ],
       "purl": "pkg:maven/org.scala-lang/scala-reflect@2.13.12",
       "properties": [
         {
@@ -13718,6 +14492,12 @@
       "group": "org.slf4j",
       "name": "slf4j-api",
       "version": "1.7.36",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6c62681a2f655b49963a5983b8b0950a6120ae14"
+        }
+      ],
       "purl": "pkg:maven/org.slf4j/slf4j-api@1.7.36",
       "properties": [
         {
@@ -13744,6 +14524,12 @@
       "group": "org.slf4j",
       "name": "slf4j-reload4j",
       "version": "1.7.36",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "db708f7d959dee1857ac524636e85ecf2e1781c1"
+        }
+      ],
       "purl": "pkg:maven/org.slf4j/slf4j-reload4j@1.7.36",
       "properties": [
         {
@@ -13770,6 +14556,12 @@
       "group": "org.xerial.snappy",
       "name": "snappy-java",
       "version": "1.1.10.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ac605269f3598506196e469f1fb0d7ed5c55059e"
+        }
+      ],
       "purl": "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5",
       "properties": [
         {
@@ -13793,9 +14585,56 @@
   ],
   "dependencies": [
     {
-      "ref": "2956fc23-9fc3-4d9b-a764-4e5f7781a5cd",
+      "ref": "0d4218f5-1063-46a0-ad77-376d193dc77c",
       "dependsOn": [
-        "58eb84f9-6da3-4826-b786-2ddae6fbf766",
+        "pkg:deb/debian/alsa-topology-conf@1.2.5.1-2?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/alsa-ucm-conf@1.2.8-1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/krb5-locales@1.20.1-2%2Bdeb12u2?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libglib2.0-data@2.74.6-2%2Bdeb12u4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libgpm2@1.20.7-10%2Bb1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/procps@4.0.2-3?arch=amd64&distro=debian-12.8&epoch=2",
+        "pkg:deb/debian/psmisc@23.6-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/shared-mime-info@2.2-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/xdg-user-dirs@0.18-1?arch=amd64&distro=debian-12.8"
+      ]
+    },
+    {
+      "ref": "6123a560-4ff9-493d-9065-8555c672d1e4",
+      "dependsOn": [
+        "0d4218f5-1063-46a0-ad77-376d193dc77c",
         "pkg:maven/ai.superstream/kafka-clients@3.7.1",
         "pkg:maven/ch.qos.reload4j/reload4j@1.2.25",
         "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.16.2",
@@ -13928,152 +14767,6 @@
         "pkg:maven/org.slf4j/slf4j-api@1.7.36",
         "pkg:maven/org.slf4j/slf4j-reload4j@1.7.36",
         "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5"
-      ]
-    },
-    {
-      "ref": "58eb84f9-6da3-4826-b786-2ddae6fbf766",
-      "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/alsa-topology-conf@1.2.5.1-2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/alsa-ucm-conf@1.2.8-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/ca-certificates-java@20230710~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dbus-bin@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dbus-daemon@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dbus-session-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/dbus-system-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/fontconfig-config@2.14.1-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/fonts-dejavu-core@2.37-6?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/java-common@0.74?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/krb5-locales@1.20.1-2%2Bdeb12u2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapparmor1@3.0.8-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libasound2-data@1.2.8-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libasound2@1.2.8-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libavahi-client3@0.8-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libavahi-common-data@0.8-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libavahi-common3@0.8-10?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbrotli1@1.0.9-2%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libcups2@2.4.2-3%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdbus-1-3@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfontconfig1@2.14.1-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libfreetype6@2.12.1%2Bdfsg-5%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libglib2.0-0@2.74.6-2%2Bdeb12u4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libglib2.0-data@2.74.6-2%2Bdeb12u4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgpm2@1.20.7-10%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgraphite2-3@1.3.14-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libharfbuzz0b@6.0.0%2Bdfsg-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libicu72@72.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libjpeg62-turbo@2.1.5-2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblcms2-2@2.14-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libncursesw6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libnspr4@4.35-1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libnss3@3.87.1-1%2Bdeb12u1?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpcsclite1@1.9.9-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpng16-16@1.6.39-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libproc2-0@4.0.2-3?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libsystemd0@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libudev1@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/openssl@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/procps@4.0.2-3?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/psmisc@23.6-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/shared-mime-info@2.2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/xdg-user-dirs@0.18-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.8&epoch=1"
       ]
     },
     {
@@ -18705,7 +19398,7 @@
         416
       ],
       "description": "xmlXIncludeAddNode in xinclude.c in libxml2 before 2.11.0 has a use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-49043"
@@ -20513,7 +21206,7 @@
         119
       ],
       "description": "Xmlsoft Libxml2 v2.11.0 was discovered to contain an out-of-bounds read via the xmlSAX2StartElement() function at /libxml2/SAX2.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted XML file. NOTE: the vendor's position is that the product does not support the legacy SAX1 interface with custom callbacks; there is a crash even without crafted input.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-39615"
@@ -20881,6 +21574,7 @@
         416
       ],
       "description": "libxml2 through 2.11.5 has a use-after-free that can only occur after a certain memory allocation fails. This occurs in xmlUnlinkNode in tree.c. NOTE: the vendor's position is \"I don't think these issues are critical enough to warrant a CVE ID ... because an attacker typically can't control when memory allocations fail.\"",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-45322"
@@ -21238,6 +21932,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libncursesw6 to version 6.4-4.root.io.1; Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -22181,6 +22876,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -22410,6 +23111,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -22719,7 +23421,7 @@
         416
       ],
       "description": "An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-25062"
@@ -22743,7 +23445,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-2679.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:2679"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3626"
         },
         {
           "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/604"
@@ -23454,7 +24156,7 @@
         }
       ],
       "published": "2024-03-10T05:15:06+00:00",
-      "updated": "2025-02-26T15:14:55+00:00",
+      "updated": "2025-03-28T19:15:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -24246,7 +24948,7 @@
         416
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a use-after-free in xmlSchemaIDCFillNodeTables and xmlSchemaBubbleIDCNodeTables in xmlschemas.c. To exploit this, a crafted XML document must be validated against an XML schema with certain identity constraints, or a crafted XML schema must be used.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-56171"
@@ -24279,6 +24981,9 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56171"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0010/"
+        },
+        {
           "url": "https://ubuntu.com/security/notices/USN-7302-1"
         },
         {
@@ -24289,7 +24994,7 @@
         }
       ],
       "published": "2025-02-18T22:15:12+00:00",
-      "updated": "2025-02-18T23:15:09+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
@@ -24668,6 +25373,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.5,
@@ -24722,6 +25433,9 @@
           "url": "https://security-tracker.debian.org/tracker/CVE-2024-8176"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250328-0009/"
+        },
+        {
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
@@ -24729,7 +25443,7 @@
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-03-17T17:15:36+00:00",
+      "updated": "2025-03-28T15:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -25315,7 +26029,7 @@
         121
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a stack-based buffer overflow in xmlSnprintfElements in valid.c. To exploit this, DTD validation must occur for an untrusted document or untrusted DTD. NOTE: this is similar to CVE-2017-9047.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-24928"
@@ -25469,6 +26183,15 @@
         },
         {
           "source": {
+            "name": "nvd"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.5,
@@ -25512,7 +26235,7 @@
         }
       ],
       "published": "2025-02-10T22:15:38+00:00",
-      "updated": "2025-02-21T18:15:37+00:00",
+      "updated": "2025-03-26T13:14:32+00:00",
       "affects": [
         {
           "ref": "pkg:maven/io.netty/netty-common@4.1.110.Final",
@@ -25585,7 +26308,7 @@
         476
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a NULL pointer dereference in xmlPatMatch in pattern.c.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.2",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-27113"
