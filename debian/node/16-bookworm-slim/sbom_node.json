@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:1fadb610-3bc4-4c8f-9e27-cb4316d7b69e",
+  "serialNumber": "urn:uuid:1943342c-6b3a-4a81-be27-c71d2017ed57",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T14:26:11+00:00",
+    "timestamp": "2025-04-02T06:05:12+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "e903cdcc-e1b1-49c1-8488-798a852c518a",
+      "bom-ref": "4bff1e2f-7a8a-4077-85c4-9a9fa96889af",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -54,262 +54,16 @@
   },
   "components": [
     {
-      "bom-ref": "2201b353-d8bd-4d15-9a48-4bc48fa3f0e8",
-      "type": "library",
-      "name": "npm-normalize-package-bin",
-      "version": "2.0.0",
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/npm-normalize-package-bin/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "npm-normalize-package-bin@2.0.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "32d75c36-2f18-4e0c-9ab9-c684293ff6b0",
-      "type": "library",
-      "name": "brace-expansion",
-      "version": "1.1.11",
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/brace-expansion@1.1.11",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/brace-expansion/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "brace-expansion@1.1.11"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "36d20890-2814-4690-89a9-eaaca561d4fa",
-      "type": "library",
-      "name": "npm-normalize-package-bin",
-      "version": "2.0.0",
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/npm-bundled/node_modules/npm-normalize-package-bin/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "npm-normalize-package-bin@2.0.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "407e1059-4dc8-47cc-848d-eb2db4f6eac6",
-      "type": "library",
-      "name": "npm-normalize-package-bin",
-      "version": "2.0.0",
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/npm-pick-manifest/node_modules/npm-normalize-package-bin/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "npm-normalize-package-bin@2.0.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "46f00073-9695-4563-9baf-f50896ab51e6",
-      "type": "library",
-      "name": "minimatch",
-      "version": "3.1.2",
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/minimatch@3.1.2",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/minimatch/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "minimatch@3.1.2"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "582cd311-0a9e-4d09-9912-e52ff48c0734",
-      "type": "library",
-      "name": "npm-normalize-package-bin",
-      "version": "2.0.0",
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/bin-links/node_modules/npm-normalize-package-bin/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "npm-normalize-package-bin@2.0.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "62a55bad-05b7-4e68-a248-c04fef3194aa",
+      "bom-ref": "3d1c0015-46d7-41d6-adaf-71df899f03df",
       "type": "library",
       "name": "glob",
       "version": "7.2.3",
-      "licenses": [
+      "hashes": [
         {
-          "license": {
-            "name": "ISC"
-          }
+          "alg": "SHA-1",
+          "content": "ec0700462dfce89024e67c0437eabca858407176"
         }
       ],
-      "purl": "pkg:npm/glob@7.2.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/glob/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "glob@7.2.3"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "93af1485-64eb-4564-8f50-54b4a16855e4",
-      "type": "library",
-      "name": "glob",
-      "version": "7.2.3",
       "licenses": [
         {
           "license": {
@@ -342,46 +96,16 @@
       ]
     },
     {
-      "bom-ref": "b450efaf-4e03-4336-95d7-2b833ee4a95c",
-      "type": "library",
-      "name": "brace-expansion",
-      "version": "1.1.11",
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/brace-expansion@1.1.11",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/brace-expansion/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "brace-expansion@1.1.11"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "c46d4698-e265-4331-aa06-8dd010e51c2b",
+      "bom-ref": "4f369271-cd01-42f5-b329-6a9f74da23ec",
       "type": "library",
       "name": "npm-normalize-package-bin",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -414,7 +138,49 @@
       ]
     },
     {
-      "bom-ref": "d5c69631-d5fb-4b20-acc8-e31fe7cfc82a",
+      "bom-ref": "50c7af29-cc1c-4b19-aa37-872a05a72dd2",
+      "type": "library",
+      "name": "npm-normalize-package-bin",
+      "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/npm-normalize-package-bin/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "npm-normalize-package-bin@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "56bcd55a-2775-4eb8-9739-e0f3b3c548f9",
       "type": "operating-system",
       "name": "debian",
       "version": "12.1",
@@ -430,10 +196,100 @@
       ]
     },
     {
-      "bom-ref": "fdedb520-aba8-4fe7-9cbb-67df82de14a4",
+      "bom-ref": "59ea2b8a-6c53-4224-93ce-326e0ac1f16a",
       "type": "library",
       "name": "minimatch",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "497003d0b7f274dd0b3bc185a6ea60657933270d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minimatch@3.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/minimatch/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "minimatch@3.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "61b560d2-6f0a-435b-b9f5-daaaa6c40ff8",
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "1.1.11",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a3c20e6ee1cae1c72f9ac87e6f2d1fd2a4254b37"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/brace-expansion@1.1.11",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/brace-expansion/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "brace-expansion@1.1.11"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "894f56dc-6f04-43d6-ad6f-a651c9bdea67",
+      "type": "library",
+      "name": "minimatch",
+      "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "497003d0b7f274dd0b3bc185a6ea60657933270d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -458,6 +314,216 @@
         {
           "name": "aquasecurity:trivy:PkgID",
           "value": "minimatch@3.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8bf4d96d-3f85-45a0-a4a1-beec1f99440c",
+      "type": "library",
+      "name": "npm-normalize-package-bin",
+      "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/bin-links/node_modules/npm-normalize-package-bin/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "npm-normalize-package-bin@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ab0f2c26-2454-4482-bc58-acb710b84270",
+      "type": "library",
+      "name": "npm-normalize-package-bin",
+      "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/npm-pick-manifest/node_modules/npm-normalize-package-bin/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "npm-normalize-package-bin@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b6875da6-d3f7-4a85-9e7a-bd7d963b45b1",
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "1.1.11",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a3c20e6ee1cae1c72f9ac87e6f2d1fd2a4254b37"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/brace-expansion@1.1.11",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/brace-expansion/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "brace-expansion@1.1.11"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bb335e5a-5c89-424c-b862-527e96312e03",
+      "type": "library",
+      "name": "glob",
+      "version": "7.2.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec0700462dfce89024e67c0437eabca858407176"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/glob@7.2.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/glob/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "glob@7.2.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fee62353-3b88-4e25-a2b4-8a016066590f",
+      "type": "library",
+      "name": "npm-normalize-package-bin",
+      "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/npm-bundled/node_modules/npm-normalize-package-bin/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "npm-normalize-package-bin@2.0.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -7098,6 +7164,12 @@
       "group": "@colors",
       "name": "colors",
       "version": "1.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "32854fe5ae88137f329372c00c3dc2f614c94dbb"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7135,6 +7207,12 @@
       "group": "@gar",
       "name": "promisify",
       "version": "1.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "02e977a876bd7e3217381e7ba9d2cb07f379d274"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7172,6 +7250,12 @@
       "group": "@isaacs",
       "name": "string-locale-compare",
       "version": "1.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9dc38644ea6f125e3b06825ff04df5ea22f56094"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7209,6 +7293,12 @@
       "group": "@npmcli",
       "name": "arborist",
       "version": "5.6.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d1a592d62ed99a72ac098333c632f9865e4c4a5f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7246,6 +7336,12 @@
       "group": "@npmcli",
       "name": "ci-detect",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1cacda46066f86204374cd4b0ac5b5e13154cc93"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7283,6 +7379,12 @@
       "group": "@npmcli",
       "name": "config",
       "version": "4.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3788f8dfa678ae2da0d7d133e48118107c3acafd"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7320,6 +7422,12 @@
       "group": "@npmcli",
       "name": "disparity-colors",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2bcd1d6ea8a76c0f52a0ac582492a8558b86c8ca"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7357,6 +7465,12 @@
       "group": "@npmcli",
       "name": "fs",
       "version": "2.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "076ace0af5dbfa348966ffdf477dcfe295582178"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7394,6 +7508,12 @@
       "group": "@npmcli",
       "name": "git",
       "version": "3.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "56b4072860f77eb460cb30e43fed18b6d639f446"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7431,6 +7551,12 @@
       "group": "@npmcli",
       "name": "installed-package-contents",
       "version": "1.0.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "13e43f8a8e8337c30eab2b1348aa7f547e67338d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7468,6 +7594,12 @@
       "group": "@npmcli",
       "name": "map-workspaces",
       "version": "2.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ca2cbbdd379828eae2baf935907fceffa94913db"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7505,6 +7637,12 @@
       "group": "@npmcli",
       "name": "metavuln-calculator",
       "version": "3.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7d7e2b5e8ac9447492a52f54eb84193ee19bbbcf"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7542,6 +7680,12 @@
       "group": "@npmcli",
       "name": "move-file",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9da226148dedeb4c561202aeb4a3de5a44be1835"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7579,6 +7723,12 @@
       "group": "@npmcli",
       "name": "name-from-folder",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "eb22fc8e52aafa129408c58d85aa56f3d114b4f8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7616,6 +7766,12 @@
       "group": "@npmcli",
       "name": "node-gyp",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1df15294562ec8397cef7c8da00a0bbd48fbfade"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7653,6 +7809,12 @@
       "group": "@npmcli",
       "name": "package-json",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "870af0af42bd3c9ea4c90c005b26f3be2451808b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7690,6 +7852,12 @@
       "group": "@npmcli",
       "name": "promise-spawn",
       "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b1683e8135b6213eaeaf02e280ce2dff9147edab"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7727,6 +7895,12 @@
       "group": "@npmcli",
       "name": "query",
       "version": "1.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7d95daf675c6d3cf6efe25516376feb01a2252d4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7764,6 +7938,12 @@
       "group": "@npmcli",
       "name": "run-script",
       "version": "4.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5fdf8b00b0e96740a70e37b81c542161de163309"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7801,6 +7981,12 @@
       "group": "@tootallnate",
       "name": "once",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f811250e6ad2116f4a996c7ac512a2d66c5b2240"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7837,6 +8023,12 @@
       "type": "library",
       "name": "abbrev",
       "version": "1.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bfc3606e605421f81936c77f156694df03ea1f55"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7873,6 +8065,12 @@
       "type": "library",
       "name": "agent-base",
       "version": "6.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "609a1aaa756f9bd0d85449d4c9e1040c170e9115"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7909,6 +8107,12 @@
       "type": "library",
       "name": "agentkeepalive",
       "version": "4.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b6de76a1b2ae39738f38218c2d1d6c5b319597e7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7945,6 +8149,12 @@
       "type": "library",
       "name": "aggregate-error",
       "version": "3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1a2aa44c34e2912cc96c75d0f1c2865a23a5e6f8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -7981,6 +8191,12 @@
       "type": "library",
       "name": "ansi-regex",
       "version": "5.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f1b78e043012e1ab5689d57377093e88f1400677"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8017,6 +8233,12 @@
       "type": "library",
       "name": "ansi-styles",
       "version": "4.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3c9ef7bd0a1c3d805814c654c457cc315c48c116"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8053,6 +8275,12 @@
       "type": "library",
       "name": "aproba",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6ef09990f223572c66907d053a82fadd8ad8475e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8089,6 +8317,12 @@
       "type": "library",
       "name": "archy",
       "version": "1.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3bd81e8f9d8e79057497b7473c6eac4f3d519149"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8125,6 +8359,12 @@
       "type": "library",
       "name": "are-we-there-yet",
       "version": "3.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d792cfe57d00f2091f3d8d2625450abc412db2f6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8161,6 +8401,12 @@
       "type": "library",
       "name": "asap",
       "version": "2.0.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c768bb58495d19e1d5d195d3f212204714c7378d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8197,6 +8443,12 @@
       "type": "library",
       "name": "balanced-match",
       "version": "1.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ef0a0d2fd68c3396309ab54ab08c5f8d362436ea"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8233,6 +8485,12 @@
       "type": "library",
       "name": "bin-links",
       "version": "3.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3fbc7e78dcc8d81a9bc8941291d78f933a613630"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8269,6 +8527,12 @@
       "type": "library",
       "name": "binary-extensions",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "db5533c64b2cca9d5d3b7de9b86c0a817ed5e12d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8305,6 +8569,12 @@
       "type": "library",
       "name": "brace-expansion",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7b48982e1637dd5dee1f571cd7c98054b46fb032"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8341,6 +8611,12 @@
       "type": "library",
       "name": "builtins",
       "version": "5.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "058c6e8b5b85a6bbfb7baca27ae10fdc15a9a524"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8377,6 +8653,12 @@
       "type": "library",
       "name": "cacache",
       "version": "16.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d5151ca7996deae1db51e9770642549ac299c763"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8413,6 +8695,12 @@
       "type": "library",
       "name": "chalk",
       "version": "4.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "651223fdfe370f7eeea056c8bb29f6303cabb3c1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8449,6 +8737,12 @@
       "type": "library",
       "name": "chownr",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a23947ade20a2757d5abf7f9fec197c2674c0a20"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8485,6 +8779,12 @@
       "type": "library",
       "name": "cidr-regex",
       "version": "3.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a2d15050978a7b7152f375947c1608619ade8293"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8521,6 +8821,12 @@
       "type": "library",
       "name": "clean-stack",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4783e06a89ee21c7109f053235b03211ec87f5af"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8557,6 +8863,12 @@
       "type": "library",
       "name": "cli-columns",
       "version": "4.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "06c7ce3d82ba512eafa34bab2566bcce77d4beb9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8593,6 +8905,12 @@
       "type": "library",
       "name": "cli-table3",
       "version": "0.6.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "12f6b349deee5c0a1481f2b754b86bf6007c60b4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8629,6 +8947,12 @@
       "type": "library",
       "name": "clone",
       "version": "1.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "aff949171735d4627ccf32e41c14eb18d64ebc00"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8665,6 +8989,12 @@
       "type": "library",
       "name": "cmd-shim",
       "version": "5.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e1e63e7b134b8064a320ba4578e4a0464ba1180e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8701,6 +9031,12 @@
       "type": "library",
       "name": "color-convert",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "03f26ab8597e0117b7ad15bcfa9f0b31c8375ea9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8737,6 +9073,12 @@
       "type": "library",
       "name": "color-name",
       "version": "1.1.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "411d7c87d5b1dec0d479aa13e3406b5c38ac34f5"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8773,6 +9115,12 @@
       "type": "library",
       "name": "color-support",
       "version": "1.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a47d93a86d7864eb1866a3367f7c5ace53dc18d1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8809,6 +9157,12 @@
       "type": "library",
       "name": "columnify",
       "version": "1.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2cfbe3a16bfea5927381b82a926376a2aec4d966"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8845,6 +9199,12 @@
       "type": "library",
       "name": "common-ancestor-path",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "164a1acbc7cc3127c78c5da7b26667bf93b8b8c3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8881,6 +9241,12 @@
       "type": "library",
       "name": "concat-map",
       "version": "0.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "10e204a14998c9e1d13bba6ab5243194a94d5d6a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8917,6 +9283,12 @@
       "type": "library",
       "name": "console-control-strings",
       "version": "1.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "48149fd6456eb7fa73b547c26577132ed9fb15ca"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8953,6 +9325,12 @@
       "type": "library",
       "name": "corepack",
       "version": "0.17.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f2aa9d9f7b12e7591d1eced8fece9f7b77e5d7c3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -8989,6 +9367,12 @@
       "type": "library",
       "name": "cssesc",
       "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3a37cece4f715e91ef0aed027baea0039bb20087"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9025,6 +9409,12 @@
       "type": "library",
       "name": "debug",
       "version": "4.3.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ed6fe3dcf77a4c2ddadde904c5b1fc47cf9893c7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9061,6 +9451,12 @@
       "type": "library",
       "name": "debuglog",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "55c93d42b1fe75f7656ef1e894e90d079b3e5d02"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9097,6 +9493,12 @@
       "type": "library",
       "name": "defaults",
       "version": "1.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "913f9321329b3ab8f74eeed86a1929b82bcc7743"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9133,6 +9535,12 @@
       "type": "library",
       "name": "delegates",
       "version": "1.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f192d34b412f6fda6a541acee81de9e0d48648bb"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9169,6 +9577,12 @@
       "type": "library",
       "name": "depd",
       "version": "1.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f7628780acc25dc2bf90d09203940e23977b7ada"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9205,6 +9619,12 @@
       "type": "library",
       "name": "dezalgo",
       "version": "1.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e76c429cd5b1361bf67337040355ae74c0dd490f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9241,6 +9661,12 @@
       "type": "library",
       "name": "diff",
       "version": "5.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9f6351a0f3350a75b958aa545dfa50436883b9d2"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9277,6 +9703,12 @@
       "type": "library",
       "name": "emoji-regex",
       "version": "8.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c26fe90da5886724a2676b8e3d5890beeacaad20"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9313,6 +9745,12 @@
       "type": "library",
       "name": "encoding",
       "version": "0.1.13",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "52b117f2bc3113970224b9dc97b7fc18f7df30ab"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9349,6 +9787,12 @@
       "type": "library",
       "name": "env-paths",
       "version": "2.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b5b570f41c1d3e8f251fd06d075cefea4a3449a9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9385,6 +9829,12 @@
       "type": "library",
       "name": "err-code",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5c7bc63340bc312d1563bb2b369e333e1165ab04"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9421,6 +9871,12 @@
       "type": "library",
       "name": "fastest-levenshtein",
       "version": "1.0.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "59aec1fb1d09aedb3e8c099d9a2faf6b20544d43"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9457,6 +9913,12 @@
       "type": "library",
       "name": "fs-minipass",
       "version": "2.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "55871ab123b38e2af83fdab7b189a4a61ba46465"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9493,6 +9955,12 @@
       "type": "library",
       "name": "fs.realpath",
       "version": "1.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2ec89eb99a2117211b3879fa1bf42a4aac964a32"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9529,6 +9997,12 @@
       "type": "library",
       "name": "function-bind",
       "version": "1.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e3924c41d1dab8b3fa142fd4ce087bca025f9f8f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9565,6 +10039,12 @@
       "type": "library",
       "name": "gauge",
       "version": "4.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4fcf177b51dd6ac24efce2242b42e97148785e7d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9601,6 +10081,12 @@
       "type": "library",
       "name": "glob",
       "version": "8.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8bdc5c0f5c35a3ce72d9b319b118c3236f0236cf"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9637,6 +10123,12 @@
       "type": "library",
       "name": "graceful-fs",
       "version": "4.2.10",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4f88663f5ecab52448a4428e4b100d423bcac688"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9673,6 +10165,12 @@
       "type": "library",
       "name": "has-flag",
       "version": "4.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "688a5d7d9b58962757fdb849c4876e2ed534e12b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9709,6 +10207,12 @@
       "type": "library",
       "name": "has-unicode",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f25b286b591e5aa36e855957980e27569961d706"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9745,6 +10249,12 @@
       "type": "library",
       "name": "has",
       "version": "1.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0b2fcbe54bbe41cdd6f10a52e137143b5dbc9edf"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9781,6 +10291,12 @@
       "type": "library",
       "name": "hosted-git-info",
       "version": "5.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "eb75ac6703676f2e2d296347ef68ae4145f592f6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9817,6 +10333,12 @@
       "type": "library",
       "name": "http-cache-semantics",
       "version": "4.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c04d9b4c66f89d66838317509ad63bd1c81dbf99"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9853,6 +10375,12 @@
       "type": "library",
       "name": "http-proxy-agent",
       "version": "5.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "46c1370c1b73ca9e8097772507030fc65bf0a133"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9889,6 +10417,12 @@
       "type": "library",
       "name": "https-proxy-agent",
       "version": "5.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8c0a375492fc2b2fc37efae92d78ddd0b07de53a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9925,6 +10459,12 @@
       "type": "library",
       "name": "humanize-ms",
       "version": "1.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e6e3f6368e65173263dd3f9fa806de8e74c54217"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9961,6 +10501,12 @@
       "type": "library",
       "name": "iconv-lite",
       "version": "0.6.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a3d90badf75db503f5dd3ff3fb76d120d1424978"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -9997,6 +10543,12 @@
       "type": "library",
       "name": "ignore-walk",
       "version": "5.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "da932de5e38f4df7b1a5b46ed350c85bb65700b5"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10033,6 +10585,12 @@
       "type": "library",
       "name": "imurmurhash",
       "version": "0.1.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a28f2b413385af4188c4fc0ad1e0c38c2cd03cf4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10069,6 +10627,12 @@
       "type": "library",
       "name": "indent-string",
       "version": "4.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8e67654392f062ebc5cd54e0f7d06427700e73b9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10105,6 +10669,12 @@
       "type": "library",
       "name": "infer-owner",
       "version": "1.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "520dabd4fd509ef15c618b6a8dac1f070f82a4dc"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10141,6 +10711,12 @@
       "type": "library",
       "name": "inflight",
       "version": "1.0.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "40e50820beed8bfee8ce186d5be617a8c213e7e1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10177,6 +10753,12 @@
       "type": "library",
       "name": "inherits",
       "version": "2.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "62b11dd736a0047fbd8d2dc0406d2118a549a359"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10213,6 +10795,12 @@
       "type": "library",
       "name": "ini",
       "version": "3.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "740fb6b55212555001ca36654091450f9b6d0027"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10249,6 +10837,12 @@
       "type": "library",
       "name": "init-package-json",
       "version": "3.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "91e78d5a1f77b7c39577cd302cafcf598ae293ed"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10285,6 +10879,12 @@
       "type": "library",
       "name": "ip-regex",
       "version": "4.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9a5c770c2159de4c17b7a7cc478be4a9e63f7b9e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10321,6 +10921,12 @@
       "type": "library",
       "name": "ip",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e30787a4d020bca9e734678d71ea30463781fc19"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10357,6 +10963,12 @@
       "type": "library",
       "name": "is-cidr",
       "version": "4.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5b9ed45f87a562306d3040d99d46478a006b4856"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10393,6 +11005,12 @@
       "type": "library",
       "name": "is-core-module",
       "version": "2.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3c726ee1b5f14440704979792f3c4388bf2960f8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10429,6 +11047,12 @@
       "type": "library",
       "name": "is-fullwidth-code-point",
       "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "49dbcba3eb3e3cba5b97bce28eb6194775d23c88"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10465,6 +11089,12 @@
       "type": "library",
       "name": "is-lambda",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d7d1ac3b9e27615002074f87da8c39e91995ee88"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10501,6 +11131,12 @@
       "type": "library",
       "name": "isexe",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3b3eab80c4ffd08eef6b3381b98de7be3649d06b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10537,6 +11173,12 @@
       "type": "library",
       "name": "json-parse-even-better-errors",
       "version": "2.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bfcbf98eb348b690f0cd413bec0826557bd2e0ad"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10573,6 +11215,12 @@
       "type": "library",
       "name": "json-stringify-nice",
       "version": "1.1.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "adef02a4345a493535ccb990b09f850508ae516f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10609,6 +11257,12 @@
       "type": "library",
       "name": "jsonparse",
       "version": "1.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec0bb766bf32ebd53d835393da006bb834a663fd"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10645,6 +11299,12 @@
       "type": "library",
       "name": "just-diff-apply",
       "version": "5.4.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "63697125c3b918cb1d38cc40b236f6016ea47649"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10681,6 +11341,12 @@
       "type": "library",
       "name": "just-diff",
       "version": "5.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5d3ff54da0ac2652e7676abf28522b48d9c4b064"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10717,6 +11383,12 @@
       "type": "library",
       "name": "libnpmaccess",
       "version": "6.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b42d84a9209da45adbe373b96783d81e29995795"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10753,6 +11425,12 @@
       "type": "library",
       "name": "libnpmdiff",
       "version": "4.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec54063e8f364745b214e8161196ec781258ba1b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10789,6 +11467,12 @@
       "type": "library",
       "name": "libnpmexec",
       "version": "4.0.14",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d659ce86ed8a34b256fbb0cbdba1c63f15ddb8b1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10825,6 +11509,12 @@
       "type": "library",
       "name": "libnpmfund",
       "version": "3.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "76f5bc60a0acebb2b33da61d7c142fd152b244d8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10861,6 +11551,12 @@
       "type": "library",
       "name": "libnpmhook",
       "version": "8.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "84efc34278cd86820878ec1ccf36f8f72b04aeed"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10897,6 +11593,12 @@
       "type": "library",
       "name": "libnpmorg",
       "version": "4.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b63c53c16947126f98b1cb80b078bf72055aec61"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10933,6 +11635,12 @@
       "type": "library",
       "name": "libnpmpack",
       "version": "4.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2be93ed2000f3e6fb53ad5db266cbe0a6f1be7dc"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -10969,6 +11677,12 @@
       "type": "library",
       "name": "libnpmpublish",
       "version": "6.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3d7953082078492bbfdaa651cb1de1dc6d563f3b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11005,6 +11719,12 @@
       "type": "library",
       "name": "libnpmsearch",
       "version": "5.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ca4fc368241eb2839d63b682e6754bd45c975eb4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11041,6 +11761,12 @@
       "type": "library",
       "name": "libnpmteam",
       "version": "4.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9c591da10d84929e147a307dfe15c3e9707078f4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11077,6 +11803,12 @@
       "type": "library",
       "name": "libnpmversion",
       "version": "3.0.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "30f0b512e482fb7ac6ddf06192c311a9bc5c31fc"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11113,6 +11845,12 @@
       "type": "library",
       "name": "lru-cache",
       "version": "6.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "05256617890052107b341acf6cbe16fd9f22f86c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11149,6 +11887,12 @@
       "type": "library",
       "name": "lru-cache",
       "version": "7.13.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ea2c2eeda0241327134ac8c8e0b97111bf9e8da1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11185,6 +11929,12 @@
       "type": "library",
       "name": "make-fetch-happen",
       "version": "10.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c0b89598170536864b6f0ec268516d9ee31c5dd6"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11221,6 +11971,12 @@
       "type": "library",
       "name": "minimatch",
       "version": "5.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0bd9e5dddab634f7616f544cc2fd2726c47615eb"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11257,6 +12013,12 @@
       "type": "library",
       "name": "minipass-collect",
       "version": "1.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ff5c7864735844778d9f653604ac1754604f89c4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11293,6 +12055,12 @@
       "type": "library",
       "name": "minipass-fetch",
       "version": "2.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec6952fd5f96b278e5ddecf4a3c32f0bbb0a1377"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11329,6 +12097,12 @@
       "type": "library",
       "name": "minipass-flush",
       "version": "1.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c89612a2a9c68141b8271bbc94bcc88067c29790"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11365,6 +12139,12 @@
       "type": "library",
       "name": "minipass-json-stream",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c8f7beda672238b058d197ebf254caa9fca12a8b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11401,6 +12181,12 @@
       "type": "library",
       "name": "minipass-pipeline",
       "version": "1.2.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e30c58465801deaceb4b81898e531c75679563b1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11437,6 +12223,12 @@
       "type": "library",
       "name": "minipass-sized",
       "version": "1.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "615e0e93dfdbc65b217029380591abc9e9b64136"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11473,6 +12265,12 @@
       "type": "library",
       "name": "minipass",
       "version": "3.3.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "99acb53809bc01e50e4b974f72566b6bb1fa7e5b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11509,6 +12307,12 @@
       "type": "library",
       "name": "minizlib",
       "version": "2.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5745585933310f7807eebd4e9bc01e2d83ba160d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11545,6 +12349,12 @@
       "type": "library",
       "name": "mkdirp-infer-owner",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4be3e0762c929686b49e5bcd7081e1781a06a31a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11581,6 +12391,12 @@
       "type": "library",
       "name": "mkdirp",
       "version": "1.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "46da394a85c88f3288e19ccd89c03174e1360c52"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11617,6 +12433,12 @@
       "type": "library",
       "name": "ms",
       "version": "2.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fe112804e727b4f3489e9a52900349d0a4ed302c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11653,6 +12475,12 @@
       "type": "library",
       "name": "ms",
       "version": "2.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c290eb97736177176d071da4ac855ab995685c97"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11689,6 +12517,12 @@
       "type": "library",
       "name": "mute-stream",
       "version": "0.0.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "64184590d401d81c99eb1eb991d13a3bf2c9d606"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11725,6 +12559,12 @@
       "type": "library",
       "name": "negotiator",
       "version": "0.6.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3c1b22e6ecae04b514912326957e6a205b015098"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11761,6 +12601,12 @@
       "type": "library",
       "name": "node-gyp",
       "version": "9.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5ab46a82660d9c36ca547fea3d9a4557c87af572"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11797,6 +12643,12 @@
       "type": "library",
       "name": "nopt",
       "version": "5.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bb6de23bed529e3e5ea2583b0f1702ebb9d02805"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11833,6 +12685,12 @@
       "type": "library",
       "name": "nopt",
       "version": "6.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b7df729e3080f74b3513e982f8588d636d28e27e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11869,6 +12727,12 @@
       "type": "library",
       "name": "normalize-package-data",
       "version": "4.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "276c8c6ebf69d8dad42f63b1cc087995694e980c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11905,6 +12769,12 @@
       "type": "library",
       "name": "npm-audit-report",
       "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "10b5b1204e8ae142514e5b1c0726654f1a5ad7d7"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11941,6 +12811,12 @@
       "type": "library",
       "name": "npm-bundled",
       "version": "1.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "aee4023f29d5d73bbb7dedaa7187b2711b0a34e4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -11977,6 +12853,12 @@
       "type": "library",
       "name": "npm-bundled",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6b84acc4bbaa9bcdfe2a38b2a4627758c764b8d5"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12013,6 +12895,12 @@
       "type": "library",
       "name": "npm-init",
       "version": "0.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b8d91c173b081aed5a79f13b5ce27c546f5cdc75"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12049,6 +12937,12 @@
       "type": "library",
       "name": "npm-install-checks",
       "version": "5.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4f25684f8a782468d4fa44be19c946414bd35b32"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12085,6 +12979,12 @@
       "type": "library",
       "name": "npm-normalize-package-bin",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "11198c06f8e234719166cd7209046b80fc516ebe"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12121,6 +13021,12 @@
       "type": "library",
       "name": "npm-package-arg",
       "version": "9.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8f732bc0c4553889c5c7a9ee46d96a7dc78f1414"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12157,6 +13063,12 @@
       "type": "library",
       "name": "npm-packlist",
       "version": "5.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "28a0b16f062de28c1c6dc39d649fa7ccf415c7f8"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12193,6 +13105,12 @@
       "type": "library",
       "name": "npm-pick-manifest",
       "version": "7.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3daeea3a322d258ee4ede29ded80bd0ff2ff213b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12229,6 +13147,12 @@
       "type": "library",
       "name": "npm-profile",
       "version": "6.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8c21e8a87b1bcdf237a20394f1703f544883baef"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12265,6 +13189,12 @@
       "type": "library",
       "name": "npm-registry-fetch",
       "version": "13.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "58715c800baca7e77e1360d4c59af82266fcc705"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12301,6 +13231,12 @@
       "type": "library",
       "name": "npm-user-validate",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d50a0fa52c490fc2a3b1d938a853131e71aa5489"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12337,6 +13273,12 @@
       "type": "library",
       "name": "npm",
       "version": "8.19.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e6a47195afd4c34c63d237d0f632de0b968c9fef"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12373,6 +13315,12 @@
       "type": "library",
       "name": "npmlog",
       "version": "6.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "41bc0fcee7ad3ab38c8de1c030a849af36bbb262"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12409,6 +13357,12 @@
       "type": "library",
       "name": "once",
       "version": "1.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b2456f0417ad4f7dec058401908740c4da1ee7ba"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12445,6 +13399,12 @@
       "type": "library",
       "name": "opener",
       "version": "1.5.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b77c67c6d08a20c0bb8fb02cef47ff294e67d0aa"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12481,6 +13441,12 @@
       "type": "library",
       "name": "p-map",
       "version": "4.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5f275de37ed635969b147d1adac21fd6d36ced42"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12517,6 +13483,12 @@
       "type": "library",
       "name": "pacote",
       "version": "13.6.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9875fa0117b43e43a8146d1e6da86e46a5a02a80"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12553,6 +13525,12 @@
       "type": "library",
       "name": "parse-conflict-json",
       "version": "2.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d541bc8ecdb352445d9ef171531ab94d160ff24d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12589,6 +13567,12 @@
       "type": "library",
       "name": "path-is-absolute",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "51b80416ea8aff0f6f04b15ee2e114250ba1a14c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12625,6 +13609,12 @@
       "type": "library",
       "name": "postcss-selector-parser",
       "version": "6.0.10",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f43bd66fbd47755fac997ce935ad9e51fc691cbe"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12661,6 +13651,12 @@
       "type": "library",
       "name": "proc-log",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e0e0edc3a5a123d3289d39712ba03238a723521e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12697,6 +13693,12 @@
       "type": "library",
       "name": "promise-all-reject-late",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c88aa929d83fb2bbf326f7c62103da6b8c48c4df"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12733,6 +13735,12 @@
       "type": "library",
       "name": "promise-call-limit",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3958948cec81f683834fb88138bd09e81e335481"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12769,6 +13777,12 @@
       "type": "library",
       "name": "promise-inflight",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "46be8c622d5a7a8c74a905df7eafb893fdb8a965"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12805,6 +13819,12 @@
       "type": "library",
       "name": "promise-retry",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fc649cbedea73287db37a431e5761e9c0b4abca9"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12841,6 +13861,12 @@
       "type": "library",
       "name": "promzard",
       "version": "0.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d72724e086788519b6e1ec87fd718098ed11e42b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12877,6 +13903,12 @@
       "type": "library",
       "name": "qrcode-terminal",
       "version": "0.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4a84ac3decfe9f31da851b98dedd698f935b83bc"
+        }
+      ],
       "purl": "pkg:npm/qrcode-terminal@0.12.0",
       "properties": [
         {
@@ -12906,6 +13938,12 @@
       "type": "library",
       "name": "read-cmd-shim",
       "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a3f3ddba722e699359cc91fe6104c0a31c2a45b2"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12942,6 +13980,12 @@
       "type": "library",
       "name": "read-package-json-fast",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "87edd9c18b9d6b4539a9b6e8aa90a2915abd248f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -12978,6 +14022,12 @@
       "type": "library",
       "name": "read-package-json",
       "version": "5.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2b16bcb7d512bf4caa38c90f21883e0c48c0315d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13014,6 +14064,12 @@
       "type": "library",
       "name": "read",
       "version": "1.0.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "17799e21bb3dd9471dd087323a9ece7c0656bd80"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13050,6 +14106,12 @@
       "type": "library",
       "name": "readable-stream",
       "version": "3.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4f3593bcaecc3f79d125dc955a4e1efff3bc1214"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13086,6 +14148,12 @@
       "type": "library",
       "name": "readdir-scoped-modules",
       "version": "1.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a87e66624ac1f4d4871d104c44e76c952be51fd3"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13122,6 +14190,12 @@
       "type": "library",
       "name": "retry",
       "version": "0.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "10dd0941e4e65c436c4f7111efdb1679c966c478"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13158,6 +14232,12 @@
       "type": "library",
       "name": "rimraf",
       "version": "3.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ed8ec0789d4558ea2492b653fd0be9f16b90020d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13194,6 +14274,12 @@
       "type": "library",
       "name": "safe-buffer",
       "version": "5.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6ce1dddfb8739c577ae2ad84f1aba01427791f57"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13230,6 +14316,12 @@
       "type": "library",
       "name": "safer-buffer",
       "version": "2.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5ed0fab8e5cac53e4d072acbd82fca9be08f5e67"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13266,6 +14358,12 @@
       "type": "library",
       "name": "semver",
       "version": "7.3.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "885d4954bbb8cfa8715490fbf0f6de17f97958da"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13302,6 +14400,12 @@
       "type": "library",
       "name": "set-blocking",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1fd9e7bbe562d20ee078877ba14aaef71a6dea6a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13338,6 +14442,12 @@
       "type": "library",
       "name": "signal-exit",
       "version": "3.0.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "69859ffcd06c12c103de10319bd03a2b5cbcb903"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13374,6 +14484,12 @@
       "type": "library",
       "name": "smart-buffer",
       "version": "4.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a9db89be9421029bd73baf8199042a08253a0b59"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13410,6 +14526,12 @@
       "type": "library",
       "name": "socks-proxy-agent",
       "version": "7.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e942fb85a95e0c47e6330f2abd707ffb4a1da603"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13446,6 +14568,12 @@
       "type": "library",
       "name": "socks",
       "version": "2.7.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f4709a31f91f95067d179d47ee85a3698ccccf43"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13482,6 +14610,12 @@
       "type": "library",
       "name": "spdx-correct",
       "version": "3.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "eba96c8bd8b053765501ab03ae928872425e366d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13518,6 +14652,12 @@
       "type": "library",
       "name": "spdx-exceptions",
       "version": "2.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0ec1694e2f10ad1545e9132cde02fe7a82f9d320"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13554,6 +14694,12 @@
       "type": "library",
       "name": "spdx-expression-parse",
       "version": "3.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "72082a3e9d4efe5a06c914b7ffa738f35b550ffb"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13590,6 +14736,12 @@
       "type": "library",
       "name": "spdx-license-ids",
       "version": "3.0.11",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cc7c49b3c1255997bce99aa435f2bac5fffa8500"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13626,6 +14778,12 @@
       "type": "library",
       "name": "ssri",
       "version": "9.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "298c8b396d3a00f0692b019eca1caf231143ed7d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13662,6 +14820,12 @@
       "type": "library",
       "name": "string-width",
       "version": "4.2.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a5306c15bba6cb123d9f061ca85eb56576c6638f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13698,6 +14862,12 @@
       "type": "library",
       "name": "string_decoder",
       "version": "1.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3e519b003fbce961f41cc48fa4237c6debda1266"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13734,6 +14904,12 @@
       "type": "library",
       "name": "strip-ansi",
       "version": "6.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "892d549c672831716abe655f087946d2644f2852"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13770,6 +14946,12 @@
       "type": "library",
       "name": "supports-color",
       "version": "7.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3c4abe10bd7383f277a3eac3ce43359fd92ad32e"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13806,6 +14988,12 @@
       "type": "library",
       "name": "tar",
       "version": "6.1.11",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2b75cbe92c71a61e07dd80e785740e35a68c773b"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13842,6 +15030,12 @@
       "type": "library",
       "name": "text-table",
       "version": "0.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f63faee888ad065881dff49fc3e3de8ac57b2ae2"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13878,6 +15072,12 @@
       "type": "library",
       "name": "tiny-relative-date",
       "version": "1.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "07c10ed6a09d36ada94f639b94e9793485d9d6e1"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13914,6 +15114,12 @@
       "type": "library",
       "name": "treeverse",
       "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e6eb0d46decf97a0ce03248b9b4a3929aa5fd78a"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13950,6 +15156,12 @@
       "type": "library",
       "name": "unique-filename",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "93f7a0cf72570201c32fd4f61fdafa0cf8d2597c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -13986,6 +15198,12 @@
       "type": "library",
       "name": "unique-slug",
       "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1dcb6d6c96ba61c992fc361edfc359410bd47991"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14022,6 +15240,12 @@
       "type": "library",
       "name": "util-deprecate",
       "version": "1.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2e69081e7bab6e09d3dcfd680716fdeea577431d"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14058,6 +15282,12 @@
       "type": "library",
       "name": "validate-npm-package-license",
       "version": "3.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a938b65349aed1eb3852d98dc1a8431209faf99f"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14094,6 +15324,12 @@
       "type": "library",
       "name": "validate-npm-package-name",
       "version": "4.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a53dfe23d7fdac2512e7bb66eb44da1fd95f9779"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14130,6 +15366,12 @@
       "type": "library",
       "name": "walk-up-path",
       "version": "1.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4ccdb7e22f68c3cb54de4cbdb4a3cfde585c7190"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14166,6 +15408,12 @@
       "type": "library",
       "name": "wcwidth",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9d7d784ec58f56c69ef9a539dc79f6335e31486c"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14202,6 +15450,12 @@
       "type": "library",
       "name": "which",
       "version": "2.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "402837c5ba60f95b309957adc4657b8fe4fb1f05"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14238,6 +15492,12 @@
       "type": "library",
       "name": "wide-align",
       "version": "1.1.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7f52b4652fe9ff874b294815483566da18d118ec"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14274,6 +15534,12 @@
       "type": "library",
       "name": "wrappy",
       "version": "1.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "156d61004996b07079664753e7b5c415b99e4c89"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14310,6 +15576,12 @@
       "type": "library",
       "name": "write-file-atomic",
       "version": "4.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d909a1b3d3f81e1d49e46cafcb536c11bddaf0c4"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14346,6 +15618,12 @@
       "type": "library",
       "name": "yallist",
       "version": "4.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d6a16b480cbd582f969b3d0ed89a157316268d10"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14382,6 +15660,12 @@
       "type": "library",
       "name": "yarn",
       "version": "1.22.19",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5745ca84b5d3a2bd9a36955edca8790c4347a295"
+        }
+      ],
       "licenses": [
         {
           "license": {
@@ -14416,153 +15700,24 @@
   ],
   "dependencies": [
     {
-      "ref": "2201b353-d8bd-4d15-9a48-4bc48fa3f0e8",
+      "ref": "3d1c0015-46d7-41d6-adaf-71df899f03df",
       "dependsOn": []
     },
     {
-      "ref": "32d75c36-2f18-4e0c-9ab9-c684293ff6b0",
-      "dependsOn": []
-    },
-    {
-      "ref": "36d20890-2814-4690-89a9-eaaca561d4fa",
-      "dependsOn": []
-    },
-    {
-      "ref": "407e1059-4dc8-47cc-848d-eb2db4f6eac6",
-      "dependsOn": []
-    },
-    {
-      "ref": "46f00073-9695-4563-9baf-f50896ab51e6",
-      "dependsOn": []
-    },
-    {
-      "ref": "582cd311-0a9e-4d09-9912-e52ff48c0734",
-      "dependsOn": []
-    },
-    {
-      "ref": "62a55bad-05b7-4e68-a248-c04fef3194aa",
-      "dependsOn": []
-    },
-    {
-      "ref": "93af1485-64eb-4564-8f50-54b4a16855e4",
-      "dependsOn": []
-    },
-    {
-      "ref": "b450efaf-4e03-4336-95d7-2b833ee4a95c",
-      "dependsOn": []
-    },
-    {
-      "ref": "c46d4698-e265-4331-aa06-8dd010e51c2b",
-      "dependsOn": []
-    },
-    {
-      "ref": "d5c69631-d5fb-4b20-acc8-e31fe7cfc82a",
+      "ref": "4bff1e2f-7a8a-4077-85c4-9a9fa96889af",
       "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/debian-archive-keyring@2023.3?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/debianutils@5.7-0.4?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.1&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libpam-modules@1.5.2-6?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/libpam0g@1.5.2-6?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bb3?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libsystemd0@252.12-1~deb12u1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libudev1@252.12-1~deb12u1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/mount@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.1&epoch=1",
-        "pkg:deb/debian/perl-base@5.36.0-7?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/tzdata@2023c-5?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/usr-is-merged@35?arch=all&distro=debian-12.1",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/util-linux@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.1&epoch=1"
-      ]
-    },
-    {
-      "ref": "e903cdcc-e1b1-49c1-8488-798a852c518a",
-      "dependsOn": [
-        "2201b353-d8bd-4d15-9a48-4bc48fa3f0e8",
-        "32d75c36-2f18-4e0c-9ab9-c684293ff6b0",
-        "36d20890-2814-4690-89a9-eaaca561d4fa",
-        "407e1059-4dc8-47cc-848d-eb2db4f6eac6",
-        "46f00073-9695-4563-9baf-f50896ab51e6",
-        "582cd311-0a9e-4d09-9912-e52ff48c0734",
-        "62a55bad-05b7-4e68-a248-c04fef3194aa",
-        "93af1485-64eb-4564-8f50-54b4a16855e4",
-        "b450efaf-4e03-4336-95d7-2b833ee4a95c",
-        "c46d4698-e265-4331-aa06-8dd010e51c2b",
-        "d5c69631-d5fb-4b20-acc8-e31fe7cfc82a",
-        "fdedb520-aba8-4fe7-9cbb-67df82de14a4",
+        "3d1c0015-46d7-41d6-adaf-71df899f03df",
+        "4f369271-cd01-42f5-b329-6a9f74da23ec",
+        "50c7af29-cc1c-4b19-aa37-872a05a72dd2",
+        "56bcd55a-2775-4eb8-9739-e0f3b3c548f9",
+        "59ea2b8a-6c53-4224-93ce-326e0ac1f16a",
+        "61b560d2-6f0a-435b-b9f5-daaaa6c40ff8",
+        "894f56dc-6f04-43d6-ad6f-a651c9bdea67",
+        "8bf4d96d-3f85-45a0-a4a1-beec1f99440c",
+        "ab0f2c26-2454-4482-bc58-acb710b84270",
+        "b6875da6-d3f7-4a85-9e7a-bd7d963b45b1",
+        "bb335e5a-5c89-424c-b862-527e96312e03",
+        "fee62353-3b88-4e25-a2b4-8a016066590f",
         "pkg:npm/%40colors/colors@1.5.0",
         "pkg:npm/%40gar/promisify@1.1.3",
         "pkg:npm/%40isaacs/string-locale-compare@1.1.0",
@@ -14769,7 +15924,83 @@
       ]
     },
     {
-      "ref": "fdedb520-aba8-4fe7-9cbb-67df82de14a4",
+      "ref": "4f369271-cd01-42f5-b329-6a9f74da23ec",
+      "dependsOn": []
+    },
+    {
+      "ref": "50c7af29-cc1c-4b19-aa37-872a05a72dd2",
+      "dependsOn": []
+    },
+    {
+      "ref": "56bcd55a-2775-4eb8-9739-e0f3b3c548f9",
+      "dependsOn": [
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb2?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1&epoch=1",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.1&epoch=1",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.1",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.1&epoch=1",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libmount1@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6?arch=all&distro=debian-12.1",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.1&epoch=1",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/mount@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.1",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/perl-base@5.36.0-7?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.1",
+        "pkg:deb/debian/tzdata@2023c-5?arch=all&distro=debian-12.1",
+        "pkg:deb/debian/util-linux@2.38.1-5%2Bb1?arch=amd64&distro=debian-12.1"
+      ]
+    },
+    {
+      "ref": "59ea2b8a-6c53-4224-93ce-326e0ac1f16a",
+      "dependsOn": []
+    },
+    {
+      "ref": "61b560d2-6f0a-435b-b9f5-daaaa6c40ff8",
+      "dependsOn": []
+    },
+    {
+      "ref": "894f56dc-6f04-43d6-ad6f-a651c9bdea67",
+      "dependsOn": []
+    },
+    {
+      "ref": "8bf4d96d-3f85-45a0-a4a1-beec1f99440c",
+      "dependsOn": []
+    },
+    {
+      "ref": "ab0f2c26-2454-4482-bc58-acb710b84270",
+      "dependsOn": []
+    },
+    {
+      "ref": "b6875da6-d3f7-4a85-9e7a-bd7d963b45b1",
+      "dependsOn": []
+    },
+    {
+      "ref": "bb335e5a-5c89-424c-b862-527e96312e03",
+      "dependsOn": []
+    },
+    {
+      "ref": "fee62353-3b88-4e25-a2b4-8a016066590f",
       "dependsOn": []
     },
     {
@@ -18489,7 +19720,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2023-0959.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2023:0959"
+          "url": "https://errata.rockylinux.org/RLSA-2023:0842"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2022-48303.html"
@@ -18523,7 +19754,7 @@
         }
       ],
       "published": "2023-01-30T04:15:08+00:00",
-      "updated": "2024-11-21T07:33:07+00:00",
+      "updated": "2025-03-27T21:15:40+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2?arch=amd64&distro=debian-12.1",
@@ -20027,7 +21258,7 @@
         }
       ],
       "published": "2023-12-18T14:15:08+00:00",
-      "updated": "2024-11-21T08:29:38+00:00",
+      "updated": "2025-03-27T14:42:34+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/perl-base@5.36.0-7?arch=amd64&distro=debian-12.1",
@@ -20600,15 +21831,6 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263896"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263897"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263909"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263911"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263914"
         },
         {
@@ -20627,22 +21849,13 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-50868"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5517"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5679"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6516"
-        },
-        {
           "url": "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2024-01.html"
         },
         {
           "url": "https://errata.almalinux.org/9/ALSA-2024-2551.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:2551"
+          "url": "https://errata.rockylinux.org/RLSA-2024:1782"
         },
         {
           "url": "https://gitlab.nic.cz/knot/knot-resolver/-/releases/v5.7.1"
@@ -20824,6 +22037,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -20993,15 +22207,6 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263896"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263897"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263909"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263911"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2263914"
         },
         {
@@ -21020,15 +22225,6 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-50868"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5517"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5679"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6516"
-        },
-        {
           "url": "https://datatracker.ietf.org/doc/html/rfc5155"
         },
         {
@@ -21038,7 +22234,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-2551.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:2551"
+          "url": "https://errata.rockylinux.org/RLSA-2024:1782"
         },
         {
           "url": "https://gitlab.nic.cz/knot/knot-resolver/-/releases/v5.7.1"
@@ -22414,6 +23610,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -22530,6 +23732,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -23063,22 +24266,16 @@
           "url": "https://bugzilla.redhat.com/2269228"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2269084"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2269228"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28834"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28835"
-        },
-        {
           "url": "https://errata.almalinux.org/9/ALSA-2024-2570.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:2570"
+          "url": "https://errata.rockylinux.org/RLSA-2024:1784"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2024-28834.html"
@@ -23612,37 +24809,13 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277204"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277205"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
-        },
-        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33600"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33601"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
           "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3269"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2024-2961.html"
@@ -23806,9 +24979,6 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -23819,9 +24989,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -23839,7 +25006,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
@@ -23873,7 +25040,7 @@
         }
       ],
       "published": "2024-05-06T20:15:11+00:00",
-      "updated": "2025-02-13T18:18:03+00:00",
+      "updated": "2025-03-26T21:15:22+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u1?arch=amd64&distro=debian-12.1",
@@ -23918,7 +25085,7 @@
           "source": {
             "name": "cbl-mariner"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -23988,9 +25155,6 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -24001,9 +25165,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -24021,7 +25182,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
@@ -24055,7 +25216,7 @@
         }
       ],
       "published": "2024-05-06T20:15:11+00:00",
-      "updated": "2025-02-13T18:18:03+00:00",
+      "updated": "2025-03-27T15:15:52+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u1?arch=amd64&distro=debian-12.1",
@@ -24164,9 +25325,6 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -24177,9 +25335,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -24197,7 +25352,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
@@ -24340,9 +25495,6 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -24353,9 +25505,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -24373,7 +25522,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
