@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:d762ce62-dddf-4247-8b72-50b0f3afd8dd",
+  "serialNumber": "urn:uuid:8b46875d-753b-4aa2-ae10-4bdb5589b03a",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-03-26T13:53:20+00:00",
+    "timestamp": "2025-04-02T05:38:12+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.56.2"
+          "version": "v0.60.0_root_v0.0.1"
         }
       ]
     },
     "component": {
-      "bom-ref": "950ebc88-08fe-440e-a2b5-feefea2999ae",
+      "bom-ref": "ff0e7f1b-c688-4e30-85f9-305d557aadaf",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -94,391 +94,17 @@
   },
   "components": [
     {
-      "bom-ref": "0610e553-5476-4ab7-b32d-bee12769aa51",
-      "type": "library",
-      "group": "net.logstash.logback",
-      "name": "logstash-logback-encoder",
-      "version": "8.0",
-      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logstash-logback-encoder-8.0.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "0c6a5c40-f56e-40b0-94b7-f6d8605b8737",
+      "bom-ref": "00f5d20e-bd66-4655-a3f2-6c7676a603ab",
       "type": "library",
       "group": "jakarta.json",
       "name": "jakarta.json-api",
       "version": "2.1.3",
-      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
-      "properties": [
+      "hashes": [
         {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-api-2.1.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
         }
-      ]
-    },
-    {
-      "bom-ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
-      "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-core",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "33387378-14d6-46d7-8629-6e130b0f6d38",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.12",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3f5a76e6-4149-4a3b-a21d-af42ed8d008f",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-databind",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-databind-2.17.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "40078e08-8454-4b9b-8034-219c45868933",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-common",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4cb4fc45-c6a9-4e7e-a6e1-d350d9f3e321",
-      "type": "library",
-      "group": "org.slf4j",
-      "name": "slf4j-api",
-      "version": "2.0.12",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/slf4j-api-2.0.12.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "5064e22a-7d61-49b6-bc3d-5741a46a346f",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-logback",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "56ccd4ff-5041-4da4-a06c-c885430f3a11",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "58b02e9b-2cd7-421a-b0ac-7ccf7087e0e0",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-common",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-common-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "5aa8d5d5-0f31-4989-a2e9-9ae0eaaba038",
-      "type": "library",
-      "group": "org.owasp",
-      "name": "security-logging-logback",
-      "version": "1.1.7",
-      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-logback-1.1.7.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "63bd37c1-1984-46e8-8b57-b680ac595396",
-      "type": "library",
-      "group": "net.logstash.logback",
-      "name": "logstash-logback-encoder",
-      "version": "8.0",
-      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
-      "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-core",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-core-1.5.12.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "91a4b144-7b17-46fc-a5ee-b78519ee3956",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-annotations",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "98541034-d5b0-455d-9005-b383b09e6f48",
-      "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-annotations",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-annotations-2.17.3.jar"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a75c5b3b-8d79-45a3-8c5d-b406ae642bae",
-      "type": "library",
-      "group": "jakarta.json",
-      "name": "jakarta.json-api",
-      "version": "2.1.3",
+      ],
       "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
       "properties": [
         {
@@ -500,16 +126,22 @@
       ]
     },
     {
-      "bom-ref": "bf37e066-ab73-4841-8a44-607419913bba",
+      "bom-ref": "20822873-0f66-4cfd-bfbd-c770c981cb32",
       "type": "library",
-      "group": "com.github.stephenc.jcip",
-      "name": "jcip-annotations",
-      "version": "1.0-1",
-      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jcip-annotations-1.0-1.jar"
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -526,11 +158,17 @@
       ]
     },
     {
-      "bom-ref": "cbdf3ed6-0ee3-4ab6-bd02-ccf2edf50d34",
+      "bom-ref": "3f072e8d-4394-44fb-808b-880d582c4ab1",
       "type": "library",
       "group": "com.github.stephenc.jcip",
       "name": "jcip-annotations",
       "version": "1.0-1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
       "properties": [
         {
@@ -552,12 +190,50 @@
       ]
     },
     {
-      "bom-ref": "d0ecc5ce-4c6f-41b0-8ba9-d54dc7d0f7be",
+      "bom-ref": "4d73b41b-3451-4b39-bab9-bc853ae1f788",
       "type": "library",
-      "group": "com.fasterxml.jackson.core",
-      "name": "jackson-core",
-      "version": "2.17.3",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logback-core-1.5.12.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6627ab9c-7966-43ba-af62-829056773e01",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-common",
+      "version": "1.1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -578,11 +254,289 @@
       ]
     },
     {
-      "bom-ref": "db512328-929f-4e23-b00d-382b89e5d16f",
+      "bom-ref": "7552496a-a725-4b6b-944e-cdfb4e3eed64",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-databind-2.17.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "780b9329-620c-4e1e-942e-83aa4e669a9c",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-logback",
+      "version": "1.1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "82443b88-b909-46bc-90ca-4f9fe6de6584",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-logback",
+      "version": "1.1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/org.owasp/security-logging-logback@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-logback-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8cc80225-58cd-4c43-b76f-2f8267347600",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/slf4j-api-2.0.12.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "925b02dc-c359-46e0-b759-d247f4f98ca5",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9766d052-81fb-46cf-bc1a-bedc4fa11d3a",
+      "type": "library",
+      "group": "net.logstash.logback",
+      "name": "logstash-logback-encoder",
+      "version": "8.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/logstash-logback-encoder-8.0.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a21bfb74-f400-41b7-9d14-018b690b5470",
+      "type": "library",
+      "group": "org.owasp",
+      "name": "security-logging-common",
+      "version": "1.1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/org.owasp/security-logging-common@1.1.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/security-logging-common-1.1.7.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a68cdb73-9cf3-4e0d-a5c9-f38c73ece792",
       "type": "library",
       "group": "ch.qos.logback",
       "name": "logback-classic",
       "version": "1.5.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a6f20162-f173-4198-8349-b046bc8b48b2",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-core-2.17.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a9311a8d-950c-4470-923c-b35970867c0d",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.5.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
       "properties": [
         {
@@ -604,12 +558,82 @@
       ]
     },
     {
-      "bom-ref": "decf530b-9508-49fa-8bb7-7d845600d6b9",
+      "bom-ref": "b33f3ff1-ea9b-4bf4-aa2b-61398332b76b",
       "type": "library",
-      "group": "ch.qos.logback",
-      "name": "logback-classic",
-      "version": "1.5.12",
-      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.12",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-annotations-2.17.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b41068dd-36a4-45f5-8bbd-c2a59521d025",
+      "type": "library",
+      "group": "com.github.stephenc.jcip",
+      "name": "jcip-annotations",
+      "version": "1.0-1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/com.github.stephenc.jcip/jcip-annotations@1.0-1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jcip-annotations-1.0-1.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bbf8e972-bf0f-485a-82ca-8b24857bd19b",
+      "type": "library",
+      "group": "net.logstash.logback",
+      "name": "logstash-logback-encoder",
+      "version": "8.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/net.logstash.logback/logstash-logback-encoder@8.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
@@ -630,11 +654,17 @@
       ]
     },
     {
-      "bom-ref": "e0eb0a2d-ea12-4f25-96fe-07228dd0f86f",
+      "bom-ref": "cb9579b2-690e-49a7-a35d-057d024c8ac7",
       "type": "library",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-databind",
       "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.3",
       "properties": [
         {
@@ -656,16 +686,118 @@
       ]
     },
     {
-      "bom-ref": "f390f845-e2fd-414d-b80f-045b71542e1a",
+      "bom-ref": "cb9980ec-858d-4aeb-ac71-fbbeb7c0318b",
+      "type": "library",
+      "group": "jakarta.json",
+      "name": "jakarta.json-api",
+      "version": "2.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/jakarta.json/jakarta.json-api@2.1.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jakarta.json-api-2.1.3.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ef6331ff-4256-42e7-abe6-6489dd785bf3",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f5b51e1f-ffc9-45b7-8e85-d4240804a191",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:4997dd5ab99a3d29a551dbda8ed89e41f8e03270af6d36aacd085bcc24585345"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:09971a0aa6a5a191c86241e952d88e9b8842c2772131ef2d0c864afeb7ff9a58"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fd270b1e-6736-4cc8-892a-8932ab6ac22e",
       "type": "library",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-core",
       "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.3",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar/WEB-INF/lib/jackson-core-2.17.3.jar"
+          "value": "opt/owasp/dependency-track/dependency-track-apiserver.jar"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -7423,6 +7555,12 @@
       "group": "com.ethlo.time",
       "name": "itu",
       "version": "1.10.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.ethlo.time/itu@1.10.2",
       "properties": [
         {
@@ -7449,6 +7587,12 @@
       "group": "com.fasterxml.jackson.dataformat",
       "name": "jackson-dataformat-xml",
       "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.3",
       "properties": [
         {
@@ -7475,6 +7619,12 @@
       "group": "com.fasterxml.jackson.dataformat",
       "name": "jackson-dataformat-yaml",
       "version": "2.17.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.17.2",
       "properties": [
         {
@@ -7501,6 +7651,12 @@
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jdk8",
       "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.17.3",
       "properties": [
         {
@@ -7527,6 +7683,12 @@
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jsr310",
       "version": "2.17.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.17.2",
       "properties": [
         {
@@ -7553,6 +7715,12 @@
       "group": "com.fasterxml.jackson.jakarta.rs",
       "name": "jackson-jakarta-rs-base",
       "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.jakarta.rs/jackson-jakarta-rs-base@2.17.3",
       "properties": [
         {
@@ -7579,6 +7747,12 @@
       "group": "com.fasterxml.jackson.jakarta.rs",
       "name": "jackson-jakarta-rs-json-provider",
       "version": "2.17.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.jakarta.rs/jackson-jakarta-rs-json-provider@2.17.3",
       "properties": [
         {
@@ -7605,6 +7779,12 @@
       "group": "com.fasterxml.jackson.module",
       "name": "jackson-module-jakarta-xmlbind-annotations",
       "version": "2.17.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-jakarta-xmlbind-annotations@2.17.2",
       "properties": [
         {
@@ -7631,6 +7811,12 @@
       "group": "com.fasterxml.woodstox",
       "name": "woodstox-core",
       "version": "7.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml.woodstox/woodstox-core@7.0.0",
       "properties": [
         {
@@ -7657,6 +7843,12 @@
       "group": "com.fasterxml",
       "name": "classmate",
       "version": "1.5.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.fasterxml/classmate@1.5.1",
       "properties": [
         {
@@ -7683,6 +7875,12 @@
       "group": "com.github.ben-manes.caffeine",
       "name": "caffeine",
       "version": "3.1.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.ben-manes.caffeine/caffeine@3.1.8",
       "properties": [
         {
@@ -7709,6 +7907,12 @@
       "group": "com.github.jnr",
       "name": "jffi",
       "version": "1.3.13",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jffi@1.3.13",
       "properties": [
         {
@@ -7735,6 +7939,12 @@
       "group": "com.github.jnr",
       "name": "jffi",
       "version": "1.3.13-native",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jffi@1.3.13-native",
       "properties": [
         {
@@ -7761,6 +7971,12 @@
       "group": "com.github.jnr",
       "name": "jnr-a64asm",
       "version": "1.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jnr-a64asm@1.0.0",
       "properties": [
         {
@@ -7787,6 +8003,12 @@
       "group": "com.github.jnr",
       "name": "jnr-constants",
       "version": "0.10.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jnr-constants@0.10.4",
       "properties": [
         {
@@ -7813,6 +8035,12 @@
       "group": "com.github.jnr",
       "name": "jnr-enxio",
       "version": "0.32.17",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jnr-enxio@0.32.17",
       "properties": [
         {
@@ -7839,6 +8067,12 @@
       "group": "com.github.jnr",
       "name": "jnr-ffi",
       "version": "2.2.16",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jnr-ffi@2.2.16",
       "properties": [
         {
@@ -7865,6 +8099,12 @@
       "group": "com.github.jnr",
       "name": "jnr-posix",
       "version": "3.1.19",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jnr-posix@3.1.19",
       "properties": [
         {
@@ -7891,6 +8131,12 @@
       "group": "com.github.jnr",
       "name": "jnr-unixsocket",
       "version": "0.38.22",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jnr-unixsocket@0.38.22",
       "properties": [
         {
@@ -7917,6 +8163,12 @@
       "group": "com.github.jnr",
       "name": "jnr-x86asm",
       "version": "1.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.jnr/jnr-x86asm@1.0.2",
       "properties": [
         {
@@ -7943,6 +8195,12 @@
       "group": "com.github.package-url",
       "name": "packageurl-java",
       "version": "1.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.github.package-url/packageurl-java@1.5.0",
       "properties": [
         {
@@ -7969,6 +8227,12 @@
       "group": "com.google.api-client",
       "name": "google-api-client",
       "version": "2.6.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.api-client/google-api-client@2.6.0",
       "properties": [
         {
@@ -7995,6 +8259,12 @@
       "group": "com.google.api",
       "name": "gax",
       "version": "2.51.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.api/gax@2.51.0",
       "properties": [
         {
@@ -8021,6 +8291,12 @@
       "group": "com.google.apis",
       "name": "google-api-services-sqladmin",
       "version": "v1beta4-rev20240724-2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.apis/google-api-services-sqladmin@v1beta4-rev20240724-2.0.0",
       "properties": [
         {
@@ -8047,6 +8323,12 @@
       "group": "com.google.auth",
       "name": "google-auth-library-credentials",
       "version": "1.24.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.auth/google-auth-library-credentials@1.24.1",
       "properties": [
         {
@@ -8073,6 +8355,12 @@
       "group": "com.google.auth",
       "name": "google-auth-library-oauth2-http",
       "version": "1.24.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.auth/google-auth-library-oauth2-http@1.24.1",
       "properties": [
         {
@@ -8099,6 +8387,12 @@
       "group": "com.google.auto.value",
       "name": "auto-value-annotations",
       "version": "1.10.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.auto.value/auto-value-annotations@1.10.4",
       "properties": [
         {
@@ -8125,6 +8419,12 @@
       "group": "com.google.cloud.sql",
       "name": "cloud-sql-connector-jdbc-sqlserver",
       "version": "1.20.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.cloud.sql/cloud-sql-connector-jdbc-sqlserver@1.20.1",
       "properties": [
         {
@@ -8151,6 +8451,12 @@
       "group": "com.google.cloud.sql",
       "name": "jdbc-socket-factory-core",
       "version": "1.20.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.cloud.sql/jdbc-socket-factory-core@1.20.1",
       "properties": [
         {
@@ -8177,6 +8483,12 @@
       "group": "com.google.cloud.sql",
       "name": "mysql-socket-factory-connector-j-8",
       "version": "1.20.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.cloud.sql/mysql-socket-factory-connector-j-8@1.20.1",
       "properties": [
         {
@@ -8203,6 +8515,12 @@
       "group": "com.google.cloud.sql",
       "name": "postgres-socket-factory",
       "version": "1.20.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.cloud.sql/postgres-socket-factory@1.20.1",
       "properties": [
         {
@@ -8229,6 +8547,12 @@
       "group": "com.google.code.findbugs",
       "name": "jsr305",
       "version": "3.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.code.findbugs/jsr305@3.0.2",
       "properties": [
         {
@@ -8255,6 +8579,12 @@
       "group": "com.google.code.gson",
       "name": "gson",
       "version": "2.11.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.code.gson/gson@2.11.0",
       "properties": [
         {
@@ -8281,6 +8611,12 @@
       "group": "com.google.code.gson",
       "name": "gson",
       "version": "2.8.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.code.gson/gson@2.8.9",
       "properties": [
         {
@@ -8307,6 +8643,12 @@
       "group": "com.google.errorprone",
       "name": "error_prone_annotations",
       "version": "2.18.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0",
       "properties": [
         {
@@ -8333,6 +8675,12 @@
       "group": "com.google.guava",
       "name": "failureaccess",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.guava/failureaccess@1.0.1",
       "properties": [
         {
@@ -8359,6 +8707,12 @@
       "group": "com.google.guava",
       "name": "guava",
       "version": "32.0.1-jre",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.guava/guava@32.0.1-jre",
       "properties": [
         {
@@ -8385,6 +8739,12 @@
       "group": "com.google.guava",
       "name": "listenablefuture",
       "version": "9999.0-empty-to-avoid-conflict-with-guava",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava",
       "properties": [
         {
@@ -8411,6 +8771,12 @@
       "group": "com.google.http-client",
       "name": "google-http-client-apache-v2",
       "version": "1.44.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.http-client/google-http-client-apache-v2@1.44.2",
       "properties": [
         {
@@ -8437,6 +8803,12 @@
       "group": "com.google.http-client",
       "name": "google-http-client-gson",
       "version": "1.44.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.http-client/google-http-client-gson@1.44.2",
       "properties": [
         {
@@ -8463,6 +8835,12 @@
       "group": "com.google.http-client",
       "name": "google-http-client",
       "version": "1.44.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.http-client/google-http-client@1.44.2",
       "properties": [
         {
@@ -8489,6 +8867,12 @@
       "group": "com.google.j2objc",
       "name": "j2objc-annotations",
       "version": "2.8",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.j2objc/j2objc-annotations@2.8",
       "properties": [
         {
@@ -8515,6 +8899,12 @@
       "group": "com.google.oauth-client",
       "name": "google-oauth-client",
       "version": "1.36.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.oauth-client/google-oauth-client@1.36.0",
       "properties": [
         {
@@ -8541,6 +8931,12 @@
       "group": "com.google.protobuf",
       "name": "protobuf-java-util",
       "version": "4.28.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.protobuf/protobuf-java-util@4.28.2",
       "properties": [
         {
@@ -8567,6 +8963,12 @@
       "group": "com.google.protobuf",
       "name": "protobuf-java",
       "version": "4.28.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.google.protobuf/protobuf-java@4.28.2",
       "properties": [
         {
@@ -8593,6 +8995,12 @@
       "group": "com.h2database",
       "name": "h2",
       "version": "2.3.232",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.h2database/h2@2.3.232",
       "properties": [
         {
@@ -8619,6 +9027,12 @@
       "group": "com.microsoft.sqlserver",
       "name": "mssql-jdbc",
       "version": "12.8.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.microsoft.sqlserver/mssql-jdbc@12.8.1",
       "properties": [
         {
@@ -8645,6 +9059,12 @@
       "group": "com.microsoft.sqlserver",
       "name": "mssql-jdbc",
       "version": "12.8.1.jre11",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.microsoft.sqlserver/mssql-jdbc@12.8.1.jre11",
       "properties": [
         {
@@ -8671,6 +9091,12 @@
       "group": "com.mysql",
       "name": "mysql-connector-j",
       "version": "8.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.mysql/mysql-connector-j@8.2.0",
       "properties": [
         {
@@ -8697,6 +9123,12 @@
       "group": "com.networknt",
       "name": "json-schema-validator",
       "version": "1.5.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.networknt/json-schema-validator@1.5.2",
       "properties": [
         {
@@ -8723,6 +9155,12 @@
       "group": "com.nimbusds",
       "name": "content-type",
       "version": "2.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.nimbusds/content-type@2.3",
       "properties": [
         {
@@ -8749,6 +9187,12 @@
       "group": "com.nimbusds",
       "name": "lang-tag",
       "version": "1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.nimbusds/lang-tag@1.7",
       "properties": [
         {
@@ -8775,6 +9219,12 @@
       "group": "com.nimbusds",
       "name": "nimbus-jose-jwt",
       "version": "9.40",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.nimbusds/nimbus-jose-jwt@9.40",
       "properties": [
         {
@@ -8801,6 +9251,12 @@
       "group": "com.nimbusds",
       "name": "oauth2-oidc-sdk",
       "version": "11.20.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.nimbusds/oauth2-oidc-sdk@11.20.1",
       "properties": [
         {
@@ -8827,6 +9283,12 @@
       "group": "com.samskivert",
       "name": "jmustache",
       "version": "1.16",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.samskivert/jmustache@1.16",
       "properties": [
         {
@@ -8853,6 +9315,12 @@
       "group": "com.sun.istack",
       "name": "istack-commons-runtime",
       "version": "4.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.2",
       "properties": [
         {
@@ -8879,6 +9347,12 @@
       "group": "com.sun.xml.bind.jaxb",
       "name": "isorelax",
       "version": "20090621",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.sun.xml.bind.jaxb/isorelax@20090621",
       "properties": [
         {
@@ -8905,6 +9379,12 @@
       "group": "com.zaxxer",
       "name": "HikariCP",
       "version": "5.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/com.zaxxer/HikariCP@5.1.0",
       "properties": [
         {
@@ -8931,6 +9411,12 @@
       "group": "commons-codec",
       "name": "commons-codec",
       "version": "1.17.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
       "properties": [
         {
@@ -8957,6 +9443,12 @@
       "group": "commons-io",
       "name": "commons-io",
       "version": "2.18.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/commons-io/commons-io@2.18.0",
       "properties": [
         {
@@ -8983,6 +9475,12 @@
       "group": "commons-logging",
       "name": "commons-logging",
       "version": "1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/commons-logging/commons-logging@1.2",
       "properties": [
         {
@@ -9009,6 +9507,12 @@
       "group": "io.github.classgraph",
       "name": "classgraph",
       "version": "4.8.176",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.classgraph/classgraph@4.8.176",
       "properties": [
         {
@@ -9035,6 +9539,12 @@
       "group": "io.github.jeremylong",
       "name": "open-vulnerability-clients",
       "version": "7.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.jeremylong/open-vulnerability-clients@7.0.0",
       "properties": [
         {
@@ -9061,6 +9571,12 @@
       "group": "io.github.resilience4j",
       "name": "resilience4j-bulkhead",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.resilience4j/resilience4j-bulkhead@2.2.0",
       "properties": [
         {
@@ -9087,6 +9603,12 @@
       "group": "io.github.resilience4j",
       "name": "resilience4j-circuitbreaker",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.resilience4j/resilience4j-circuitbreaker@2.2.0",
       "properties": [
         {
@@ -9113,6 +9635,12 @@
       "group": "io.github.resilience4j",
       "name": "resilience4j-core",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.resilience4j/resilience4j-core@2.2.0",
       "properties": [
         {
@@ -9139,6 +9667,12 @@
       "group": "io.github.resilience4j",
       "name": "resilience4j-micrometer",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.resilience4j/resilience4j-micrometer@2.2.0",
       "properties": [
         {
@@ -9165,6 +9699,12 @@
       "group": "io.github.resilience4j",
       "name": "resilience4j-ratelimiter",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.resilience4j/resilience4j-ratelimiter@2.2.0",
       "properties": [
         {
@@ -9191,6 +9731,12 @@
       "group": "io.github.resilience4j",
       "name": "resilience4j-retry",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.resilience4j/resilience4j-retry@2.2.0",
       "properties": [
         {
@@ -9217,6 +9763,12 @@
       "group": "io.github.resilience4j",
       "name": "resilience4j-timelimiter",
       "version": "2.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.github.resilience4j/resilience4j-timelimiter@2.2.0",
       "properties": [
         {
@@ -9243,6 +9795,12 @@
       "group": "io.grpc",
       "name": "grpc-api",
       "version": "1.60.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.grpc/grpc-api@1.60.1",
       "properties": [
         {
@@ -9269,6 +9827,12 @@
       "group": "io.grpc",
       "name": "grpc-context",
       "version": "1.60.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.grpc/grpc-context@1.60.1",
       "properties": [
         {
@@ -9295,6 +9859,12 @@
       "group": "io.jsonwebtoken",
       "name": "jjwt-api",
       "version": "0.12.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.jsonwebtoken/jjwt-api@0.12.6",
       "properties": [
         {
@@ -9321,6 +9891,12 @@
       "group": "io.jsonwebtoken",
       "name": "jjwt-impl",
       "version": "0.12.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.jsonwebtoken/jjwt-impl@0.12.6",
       "properties": [
         {
@@ -9347,6 +9923,12 @@
       "group": "io.jsonwebtoken",
       "name": "jjwt-jackson",
       "version": "0.12.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.jsonwebtoken/jjwt-jackson@0.12.6",
       "properties": [
         {
@@ -9373,6 +9955,12 @@
       "group": "io.jsonwebtoken",
       "name": "jjwt",
       "version": "0.12.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.jsonwebtoken/jjwt@0.12.6",
       "properties": [
         {
@@ -9399,6 +9987,12 @@
       "group": "io.micrometer",
       "name": "micrometer-commons",
       "version": "1.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.micrometer/micrometer-commons@1.10.0",
       "properties": [
         {
@@ -9425,6 +10019,12 @@
       "group": "io.micrometer",
       "name": "micrometer-core",
       "version": "1.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.micrometer/micrometer-core@1.10.0",
       "properties": [
         {
@@ -9451,6 +10051,12 @@
       "group": "io.micrometer",
       "name": "micrometer-observation",
       "version": "1.10.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.micrometer/micrometer-observation@1.10.0",
       "properties": [
         {
@@ -9477,6 +10083,12 @@
       "group": "io.micrometer",
       "name": "micrometer-registry-prometheus",
       "version": "1.11.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.micrometer/micrometer-registry-prometheus@1.11.4",
       "properties": [
         {
@@ -9503,6 +10115,12 @@
       "group": "io.opencensus",
       "name": "opencensus-api",
       "version": "0.31.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.opencensus/opencensus-api@0.31.1",
       "properties": [
         {
@@ -9529,6 +10147,12 @@
       "group": "io.opencensus",
       "name": "opencensus-contrib-http-util",
       "version": "0.31.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.opencensus/opencensus-contrib-http-util@0.31.1",
       "properties": [
         {
@@ -9555,6 +10179,12 @@
       "group": "io.pebbletemplates",
       "name": "pebble",
       "version": "3.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.pebbletemplates/pebble@3.2.2",
       "properties": [
         {
@@ -9581,6 +10211,12 @@
       "group": "io.prometheus",
       "name": "simpleclient",
       "version": "0.16.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient@0.16.0",
       "properties": [
         {
@@ -9607,6 +10243,12 @@
       "group": "io.prometheus",
       "name": "simpleclient_common",
       "version": "0.16.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient_common@0.16.0",
       "properties": [
         {
@@ -9633,6 +10275,12 @@
       "group": "io.prometheus",
       "name": "simpleclient_tracer_common",
       "version": "0.16.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient_tracer_common@0.16.0",
       "properties": [
         {
@@ -9659,6 +10307,12 @@
       "group": "io.prometheus",
       "name": "simpleclient_tracer_otel",
       "version": "0.16.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient_tracer_otel@0.16.0",
       "properties": [
         {
@@ -9685,6 +10339,12 @@
       "group": "io.prometheus",
       "name": "simpleclient_tracer_otel_agent",
       "version": "0.16.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.prometheus/simpleclient_tracer_otel_agent@0.16.0",
       "properties": [
         {
@@ -9711,6 +10371,12 @@
       "group": "io.swagger.core.v3",
       "name": "swagger-annotations-jakarta",
       "version": "2.2.25",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.swagger.core.v3/swagger-annotations-jakarta@2.2.25",
       "properties": [
         {
@@ -9737,6 +10403,12 @@
       "group": "io.swagger.core.v3",
       "name": "swagger-core-jakarta",
       "version": "2.2.25",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.swagger.core.v3/swagger-core-jakarta@2.2.25",
       "properties": [
         {
@@ -9763,6 +10435,12 @@
       "group": "io.swagger.core.v3",
       "name": "swagger-integration-jakarta",
       "version": "2.2.25",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.swagger.core.v3/swagger-integration-jakarta@2.2.25",
       "properties": [
         {
@@ -9789,6 +10467,12 @@
       "group": "io.swagger.core.v3",
       "name": "swagger-jaxrs2-jakarta",
       "version": "2.2.25",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.swagger.core.v3/swagger-jaxrs2-jakarta@2.2.25",
       "properties": [
         {
@@ -9815,6 +10499,12 @@
       "group": "io.swagger.core.v3",
       "name": "swagger-models-jakarta",
       "version": "2.2.25",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/io.swagger.core.v3/swagger-models-jakarta@2.2.25",
       "properties": [
         {
@@ -9841,6 +10531,12 @@
       "group": "jakarta.activation",
       "name": "jakarta.activation-api",
       "version": "2.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.3",
       "properties": [
         {
@@ -9867,6 +10563,12 @@
       "group": "jakarta.annotation",
       "name": "jakarta.annotation-api",
       "version": "2.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1",
       "properties": [
         {
@@ -9893,6 +10595,12 @@
       "group": "jakarta.el",
       "name": "jakarta.el-api",
       "version": "5.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.el/jakarta.el-api@5.0.1",
       "properties": [
         {
@@ -9919,6 +10627,12 @@
       "group": "jakarta.inject",
       "name": "jakarta.inject-api",
       "version": "2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1",
       "properties": [
         {
@@ -9945,6 +10659,12 @@
       "group": "jakarta.mail",
       "name": "jakarta.mail-api",
       "version": "2.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.mail/jakarta.mail-api@2.1.3",
       "properties": [
         {
@@ -9971,6 +10691,12 @@
       "group": "jakarta.servlet",
       "name": "jakarta.servlet-api",
       "version": "6.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0",
       "properties": [
         {
@@ -9997,6 +10723,12 @@
       "group": "jakarta.validation",
       "name": "jakarta.validation-api",
       "version": "3.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.validation/jakarta.validation-api@3.0.2",
       "properties": [
         {
@@ -10023,6 +10755,12 @@
       "group": "jakarta.ws.rs",
       "name": "jakarta.ws.rs-api",
       "version": "3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@3.1.0",
       "properties": [
         {
@@ -10049,6 +10787,12 @@
       "group": "jakarta.xml.bind",
       "name": "jakarta.xml.bind-api",
       "version": "4.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.2",
       "properties": [
         {
@@ -10075,6 +10819,12 @@
       "group": "javax.transaction",
       "name": "javax.transaction-api",
       "version": "1.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/javax.transaction/javax.transaction-api@1.3",
       "properties": [
         {
@@ -10101,6 +10851,12 @@
       "group": "net.java.dev.msv",
       "name": "xsdlib",
       "version": "2022.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/net.java.dev.msv/xsdlib@2022.7",
       "properties": [
         {
@@ -10127,6 +10883,12 @@
       "group": "net.minidev",
       "name": "accessors-smart",
       "version": "2.5.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/net.minidev/accessors-smart@2.5.2",
       "properties": [
         {
@@ -10153,6 +10915,12 @@
       "group": "net.minidev",
       "name": "json-smart",
       "version": "2.5.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/net.minidev/json-smart@2.5.2",
       "properties": [
         {
@@ -10179,6 +10947,12 @@
       "group": "oauth.signpost",
       "name": "signpost-core",
       "version": "2.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/oauth.signpost/signpost-core@2.1.1",
       "properties": [
         {
@@ -10205,6 +10979,12 @@
       "group": "org.apache.commons",
       "name": "commons-collections4",
       "version": "4.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.commons/commons-collections4@4.4",
       "properties": [
         {
@@ -10231,6 +11011,12 @@
       "group": "org.apache.commons",
       "name": "commons-compress",
       "version": "1.27.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.commons/commons-compress@1.27.1",
       "properties": [
         {
@@ -10257,6 +11043,12 @@
       "group": "org.apache.commons",
       "name": "commons-lang3",
       "version": "3.17.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.commons/commons-lang3@3.17.0",
       "properties": [
         {
@@ -10283,6 +11075,12 @@
       "group": "org.apache.commons",
       "name": "commons-text",
       "version": "1.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.commons/commons-text@1.12.0",
       "properties": [
         {
@@ -10309,6 +11107,12 @@
       "group": "org.apache.httpcomponents.client5",
       "name": "httpclient5",
       "version": "5.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.4",
       "properties": [
         {
@@ -10335,6 +11139,12 @@
       "group": "org.apache.httpcomponents.core5",
       "name": "httpcore5-h2",
       "version": "5.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.3",
       "properties": [
         {
@@ -10361,6 +11171,12 @@
       "group": "org.apache.httpcomponents.core5",
       "name": "httpcore5",
       "version": "5.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.3",
       "properties": [
         {
@@ -10387,6 +11203,12 @@
       "group": "org.apache.httpcomponents",
       "name": "httpclient",
       "version": "4.5.14",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.14",
       "properties": [
         {
@@ -10413,6 +11235,12 @@
       "group": "org.apache.httpcomponents",
       "name": "httpcore",
       "version": "4.4.16",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.16",
       "properties": [
         {
@@ -10439,6 +11267,12 @@
       "group": "org.apache.httpcomponents",
       "name": "httpmime",
       "version": "4.5.14",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.httpcomponents/httpmime@4.5.14",
       "properties": [
         {
@@ -10465,6 +11299,12 @@
       "group": "org.apache.lucene",
       "name": "lucene-analyzers-common",
       "version": "8.11.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.lucene/lucene-analyzers-common@8.11.4",
       "properties": [
         {
@@ -10491,6 +11331,12 @@
       "group": "org.apache.lucene",
       "name": "lucene-core",
       "version": "8.11.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.lucene/lucene-core@8.11.4",
       "properties": [
         {
@@ -10517,6 +11363,12 @@
       "group": "org.apache.lucene",
       "name": "lucene-queries",
       "version": "8.11.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.lucene/lucene-queries@8.11.4",
       "properties": [
         {
@@ -10543,6 +11395,12 @@
       "group": "org.apache.lucene",
       "name": "lucene-queryparser",
       "version": "8.11.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.lucene/lucene-queryparser@8.11.4",
       "properties": [
         {
@@ -10569,6 +11427,12 @@
       "group": "org.apache.lucene",
       "name": "lucene-sandbox",
       "version": "8.11.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.lucene/lucene-sandbox@8.11.4",
       "properties": [
         {
@@ -10595,6 +11459,12 @@
       "group": "org.apache.maven",
       "name": "maven-artifact",
       "version": "3.9.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.apache.maven/maven-artifact@3.9.9",
       "properties": [
         {
@@ -10621,6 +11491,12 @@
       "group": "org.brotli",
       "name": "dec",
       "version": "0.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.brotli/dec@0.1.2",
       "properties": [
         {
@@ -10647,6 +11523,12 @@
       "group": "org.checkerframework",
       "name": "checker-qual",
       "version": "3.42.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.checkerframework/checker-qual@3.42.0",
       "properties": [
         {
@@ -10673,6 +11555,12 @@
       "group": "org.codehaus.plexus",
       "name": "plexus-utils",
       "version": "3.5.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.codehaus.plexus/plexus-utils@3.5.1",
       "properties": [
         {
@@ -10699,6 +11587,12 @@
       "group": "org.codehaus.woodstox",
       "name": "stax2-api",
       "version": "4.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2",
       "properties": [
         {
@@ -10725,6 +11619,12 @@
       "group": "org.cyclonedx",
       "name": "cyclonedx-core-java",
       "version": "9.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.cyclonedx/cyclonedx-core-java@9.1.0",
       "properties": [
         {
@@ -10751,6 +11651,12 @@
       "group": "org.datanucleus",
       "name": "datanucleus-api-jdo",
       "version": "6.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.datanucleus/datanucleus-api-jdo@6.0.4",
       "properties": [
         {
@@ -10777,6 +11683,12 @@
       "group": "org.datanucleus",
       "name": "datanucleus-core",
       "version": "6.0.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.datanucleus/datanucleus-core@6.0.9",
       "properties": [
         {
@@ -10803,6 +11715,12 @@
       "group": "org.datanucleus",
       "name": "datanucleus-rdbms",
       "version": "6.0.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.datanucleus/datanucleus-rdbms@6.0.9",
       "properties": [
         {
@@ -10829,6 +11747,12 @@
       "group": "org.datanucleus",
       "name": "javax.jdo",
       "version": "3.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.datanucleus/javax.jdo@3.2.1",
       "properties": [
         {
@@ -10855,6 +11779,12 @@
       "group": "org.dependencytrack",
       "name": "dependency-track",
       "version": "4.12.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.dependencytrack/dependency-track@4.12.2",
       "properties": [
         {
@@ -10881,6 +11811,12 @@
       "group": "org.eclipse.angus",
       "name": "angus-activation",
       "version": "2.0.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.angus/angus-activation@2.0.2",
       "properties": [
         {
@@ -10907,6 +11843,12 @@
       "group": "org.eclipse.angus",
       "name": "angus-core",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.angus/angus-core@2.0.3",
       "properties": [
         {
@@ -10933,6 +11875,12 @@
       "group": "org.eclipse.angus",
       "name": "angus-mail",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.angus/angus-mail@2.0.3",
       "properties": [
         {
@@ -10959,6 +11907,12 @@
       "group": "org.eclipse.angus",
       "name": "imap",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.angus/imap@2.0.3",
       "properties": [
         {
@@ -10985,6 +11939,12 @@
       "group": "org.eclipse.angus",
       "name": "logging-mailhandler",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.angus/logging-mailhandler@2.0.3",
       "properties": [
         {
@@ -11011,6 +11971,12 @@
       "group": "org.eclipse.angus",
       "name": "pop3",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.angus/pop3@2.0.3",
       "properties": [
         {
@@ -11037,6 +12003,12 @@
       "group": "org.eclipse.angus",
       "name": "smtp",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.angus/smtp@2.0.3",
       "properties": [
         {
@@ -11063,6 +12035,12 @@
       "group": "org.eclipse.jetty.ee10",
       "name": "jetty-ee10-servlet",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty.ee10/jetty-ee10-servlet@12.0.15",
       "properties": [
         {
@@ -11089,6 +12067,12 @@
       "group": "org.eclipse.jetty.ee10",
       "name": "jetty-ee10-webapp",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty.ee10/jetty-ee10-webapp@12.0.15",
       "properties": [
         {
@@ -11115,6 +12099,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-deploy",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-deploy@12.0.15",
       "properties": [
         {
@@ -11141,6 +12131,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-ee",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-ee@12.0.15",
       "properties": [
         {
@@ -11167,6 +12163,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-http",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-http@12.0.15",
       "properties": [
         {
@@ -11193,6 +12195,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-io",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-io@12.0.15",
       "properties": [
         {
@@ -11219,6 +12227,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-security",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-security@12.0.15",
       "properties": [
         {
@@ -11245,6 +12259,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-server",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-server@12.0.15",
       "properties": [
         {
@@ -11271,6 +12291,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-session",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-session@12.0.15",
       "properties": [
         {
@@ -11297,6 +12323,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-util",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-util@12.0.15",
       "properties": [
         {
@@ -11323,6 +12355,12 @@
       "group": "org.eclipse.jetty",
       "name": "jetty-xml",
       "version": "12.0.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.jetty/jetty-xml@12.0.15",
       "properties": [
         {
@@ -11349,6 +12387,12 @@
       "group": "org.eclipse.microprofile.health",
       "name": "microprofile-health-api",
       "version": "4.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.microprofile.health/microprofile-health-api@4.0.1",
       "properties": [
         {
@@ -11375,6 +12419,12 @@
       "group": "org.eclipse.parsson",
       "name": "jakarta.json",
       "version": "1.1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.parsson/jakarta.json@1.1.7",
       "properties": [
         {
@@ -11401,6 +12451,12 @@
       "group": "org.eclipse.parsson",
       "name": "parsson",
       "version": "1.1.7",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.eclipse.parsson/parsson@1.1.7",
       "properties": [
         {
@@ -11427,6 +12483,12 @@
       "group": "org.glassfish.corba",
       "name": "glassfish-corba-omgapi",
       "version": "4.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.corba/glassfish-corba-omgapi@4.2.2",
       "properties": [
         {
@@ -11453,6 +12515,12 @@
       "group": "org.glassfish.expressly",
       "name": "expressly",
       "version": "5.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.expressly/expressly@5.0.0",
       "properties": [
         {
@@ -11479,6 +12547,12 @@
       "group": "org.glassfish.hk2.external",
       "name": "aopalliance-repackaged",
       "version": "3.0.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2.external/aopalliance-repackaged@3.0.6",
       "properties": [
         {
@@ -11505,6 +12579,12 @@
       "group": "org.glassfish.hk2",
       "name": "hk2-api",
       "version": "3.0.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/hk2-api@3.0.6",
       "properties": [
         {
@@ -11531,6 +12611,12 @@
       "group": "org.glassfish.hk2",
       "name": "hk2-locator",
       "version": "3.0.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/hk2-locator@3.0.6",
       "properties": [
         {
@@ -11557,6 +12643,12 @@
       "group": "org.glassfish.hk2",
       "name": "hk2-utils",
       "version": "3.0.6",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/hk2-utils@3.0.6",
       "properties": [
         {
@@ -11583,6 +12675,12 @@
       "group": "org.glassfish.hk2",
       "name": "osgi-resource-locator",
       "version": "1.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.hk2/osgi-resource-locator@1.0.3",
       "properties": [
         {
@@ -11609,6 +12707,12 @@
       "group": "org.glassfish.jaxb",
       "name": "jaxb-core",
       "version": "4.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.5",
       "properties": [
         {
@@ -11635,6 +12739,12 @@
       "group": "org.glassfish.jaxb",
       "name": "jaxb-runtime",
       "version": "4.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.5",
       "properties": [
         {
@@ -11661,6 +12771,12 @@
       "group": "org.glassfish.jaxb",
       "name": "txw2",
       "version": "4.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jaxb/txw2@4.0.5",
       "properties": [
         {
@@ -11687,6 +12803,12 @@
       "group": "org.glassfish.jersey.containers",
       "name": "jersey-container-servlet-core",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.containers/jersey-container-servlet-core@3.1.9",
       "properties": [
         {
@@ -11713,6 +12835,12 @@
       "group": "org.glassfish.jersey.containers",
       "name": "jersey-container-servlet",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.containers/jersey-container-servlet@3.1.9",
       "properties": [
         {
@@ -11739,6 +12867,12 @@
       "group": "org.glassfish.jersey.core",
       "name": "jersey-client",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.core/jersey-client@3.1.9",
       "properties": [
         {
@@ -11765,6 +12899,12 @@
       "group": "org.glassfish.jersey.core",
       "name": "jersey-common",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.core/jersey-common@3.1.9",
       "properties": [
         {
@@ -11791,6 +12931,12 @@
       "group": "org.glassfish.jersey.core",
       "name": "jersey-server",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.core/jersey-server@3.1.9",
       "properties": [
         {
@@ -11817,6 +12963,12 @@
       "group": "org.glassfish.jersey.ext",
       "name": "jersey-bean-validation",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.ext/jersey-bean-validation@3.1.9",
       "properties": [
         {
@@ -11843,6 +12995,12 @@
       "group": "org.glassfish.jersey.ext",
       "name": "jersey-entity-filtering",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.ext/jersey-entity-filtering@3.1.9",
       "properties": [
         {
@@ -11869,6 +13027,12 @@
       "group": "org.glassfish.jersey.inject",
       "name": "jersey-hk2",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.inject/jersey-hk2@3.1.9",
       "properties": [
         {
@@ -11895,6 +13059,12 @@
       "group": "org.glassfish.jersey.media",
       "name": "jersey-media-json-jackson",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.media/jersey-media-json-jackson@3.1.9",
       "properties": [
         {
@@ -11921,6 +13091,12 @@
       "group": "org.glassfish.jersey.media",
       "name": "jersey-media-multipart",
       "version": "3.1.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.glassfish.jersey.media/jersey-media-multipart@3.1.9",
       "properties": [
         {
@@ -11947,6 +13123,12 @@
       "group": "org.hdrhistogram",
       "name": "HdrHistogram",
       "version": "2.1.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12",
       "properties": [
         {
@@ -11973,6 +13155,12 @@
       "group": "org.hibernate.validator",
       "name": "hibernate-validator",
       "version": "8.0.1.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.hibernate.validator/hibernate-validator@8.0.1.Final",
       "properties": [
         {
@@ -11999,6 +13187,12 @@
       "group": "org.javassist",
       "name": "javassist",
       "version": "3.30.2-GA",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.javassist/javassist@3.30.2-GA",
       "properties": [
         {
@@ -12025,6 +13219,12 @@
       "group": "org.jboss.logging",
       "name": "jboss-logging",
       "version": "3.6.0.Final",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.jboss.logging/jboss-logging@3.6.0.Final",
       "properties": [
         {
@@ -12051,6 +13251,12 @@
       "group": "org.json",
       "name": "json",
       "version": "20240303",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.json/json@20240303",
       "properties": [
         {
@@ -12077,6 +13283,12 @@
       "group": "org.jvnet.mimepull",
       "name": "mimepull",
       "version": "1.9.15",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.jvnet.mimepull/mimepull@1.9.15",
       "properties": [
         {
@@ -12103,6 +13315,12 @@
       "group": "org.kohsuke",
       "name": "github-api",
       "version": "1.323",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.kohsuke/github-api@1.323",
       "properties": [
         {
@@ -12129,6 +13347,12 @@
       "group": "org.latencyutils",
       "name": "LatencyUtils",
       "version": "2.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3",
       "properties": [
         {
@@ -12155,6 +13379,12 @@
       "group": "org.mindrot",
       "name": "jbcrypt",
       "version": "0.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.mindrot/jbcrypt@0.4",
       "properties": [
         {
@@ -12181,6 +13411,12 @@
       "group": "org.ow2.asm",
       "name": "asm-analysis",
       "version": "9.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.ow2.asm/asm-analysis@9.2",
       "properties": [
         {
@@ -12207,6 +13443,12 @@
       "group": "org.ow2.asm",
       "name": "asm-commons",
       "version": "9.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.ow2.asm/asm-commons@9.2",
       "properties": [
         {
@@ -12233,6 +13475,12 @@
       "group": "org.ow2.asm",
       "name": "asm-tree",
       "version": "9.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.ow2.asm/asm-tree@9.2",
       "properties": [
         {
@@ -12259,6 +13507,12 @@
       "group": "org.ow2.asm",
       "name": "asm-util",
       "version": "9.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.ow2.asm/asm-util@9.2",
       "properties": [
         {
@@ -12285,6 +13539,12 @@
       "group": "org.ow2.asm",
       "name": "asm",
       "version": "9.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.ow2.asm/asm@9.4",
       "properties": [
         {
@@ -12311,6 +13571,12 @@
       "group": "org.owasp.encoder",
       "name": "encoder-jsp",
       "version": "1.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.owasp.encoder/encoder-jsp@1.3.1",
       "properties": [
         {
@@ -12337,6 +13603,12 @@
       "group": "org.owasp.encoder",
       "name": "encoder",
       "version": "1.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.owasp.encoder/encoder@1.3.1",
       "properties": [
         {
@@ -12363,6 +13635,12 @@
       "group": "org.postgresql",
       "name": "postgresql",
       "version": "42.7.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.postgresql/postgresql@42.7.4",
       "properties": [
         {
@@ -12389,6 +13667,12 @@
       "group": "org.slf4j",
       "name": "jcl-over-slf4j",
       "version": "2.0.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.slf4j/jcl-over-slf4j@2.0.12",
       "properties": [
         {
@@ -12415,6 +13699,12 @@
       "group": "org.slf4j",
       "name": "jul-to-slf4j",
       "version": "2.0.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.12",
       "properties": [
         {
@@ -12441,6 +13731,12 @@
       "group": "org.slf4j",
       "name": "log4j-over-slf4j",
       "version": "2.0.12",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.slf4j/log4j-over-slf4j@2.0.12",
       "properties": [
         {
@@ -12467,6 +13763,12 @@
       "group": "org.slf4j",
       "name": "log4j-over-slf4j",
       "version": "2.0.16",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.slf4j/log4j-over-slf4j@2.0.16",
       "properties": [
         {
@@ -12493,6 +13795,12 @@
       "group": "org.unbescape",
       "name": "unbescape",
       "version": "1.1.6.RELEASE",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.unbescape/unbescape@1.1.6.RELEASE",
       "properties": [
         {
@@ -12519,6 +13827,12 @@
       "group": "org.yaml",
       "name": "snakeyaml",
       "version": "2.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/org.yaml/snakeyaml@2.3",
       "properties": [
         {
@@ -12545,6 +13859,12 @@
       "group": "us.springett",
       "name": "alpine-common",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/alpine-common@3.1.2",
       "properties": [
         {
@@ -12571,6 +13891,12 @@
       "group": "us.springett",
       "name": "alpine-executable-war",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/alpine-executable-war@3.1.2",
       "properties": [
         {
@@ -12597,6 +13923,12 @@
       "group": "us.springett",
       "name": "alpine-infra",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/alpine-infra@3.1.2",
       "properties": [
         {
@@ -12623,6 +13955,12 @@
       "group": "us.springett",
       "name": "alpine-model",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/alpine-model@3.1.2",
       "properties": [
         {
@@ -12649,6 +13987,12 @@
       "group": "us.springett",
       "name": "alpine-server",
       "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/alpine-server@3.1.2",
       "properties": [
         {
@@ -12675,6 +14019,12 @@
       "group": "us.springett",
       "name": "cpe-parser",
       "version": "2.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/cpe-parser@2.1.0",
       "properties": [
         {
@@ -12701,6 +14051,12 @@
       "group": "us.springett",
       "name": "cvss-calculator",
       "version": "1.4.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/cvss-calculator@1.4.2",
       "properties": [
         {
@@ -12727,6 +14083,12 @@
       "group": "us.springett",
       "name": "owasp-risk-rating-calculator",
       "version": "1.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0c329d076180ad3e40fa0de0bcd8a2e36bfdbcb"
+        }
+      ],
       "purl": "pkg:maven/us.springett/owasp-risk-rating-calculator@1.0.1",
       "properties": [
         {
@@ -12750,178 +14112,159 @@
   ],
   "dependencies": [
     {
-      "ref": "0610e553-5476-4ab7-b32d-bee12769aa51",
+      "ref": "00f5d20e-bd66-4655-a3f2-6c7676a603ab",
       "dependsOn": []
     },
     {
-      "ref": "0c6a5c40-f56e-40b0-94b7-f6d8605b8737",
+      "ref": "20822873-0f66-4cfd-bfbd-c770c981cb32",
       "dependsOn": []
     },
     {
-      "ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
+      "ref": "3f072e8d-4394-44fb-808b-880d582c4ab1",
       "dependsOn": []
     },
     {
-      "ref": "33387378-14d6-46d7-8629-6e130b0f6d38",
+      "ref": "4d73b41b-3451-4b39-bab9-bc853ae1f788",
       "dependsOn": []
     },
     {
-      "ref": "3f5a76e6-4149-4a3b-a21d-af42ed8d008f",
+      "ref": "6627ab9c-7966-43ba-af62-829056773e01",
       "dependsOn": []
     },
     {
-      "ref": "40078e08-8454-4b9b-8034-219c45868933",
+      "ref": "7552496a-a725-4b6b-944e-cdfb4e3eed64",
       "dependsOn": []
     },
     {
-      "ref": "4cb4fc45-c6a9-4e7e-a6e1-d350d9f3e321",
+      "ref": "780b9329-620c-4e1e-942e-83aa4e669a9c",
       "dependsOn": []
     },
     {
-      "ref": "5064e22a-7d61-49b6-bc3d-5741a46a346f",
+      "ref": "82443b88-b909-46bc-90ca-4f9fe6de6584",
       "dependsOn": []
     },
     {
-      "ref": "56ccd4ff-5041-4da4-a06c-c885430f3a11",
+      "ref": "8cc80225-58cd-4c43-b76f-2f8267347600",
+      "dependsOn": []
+    },
+    {
+      "ref": "925b02dc-c359-46e0-b759-d247f4f98ca5",
       "dependsOn": [
-        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.7",
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u7?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7&epoch=1",
         "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/dpkg@1.21.22?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/gcc-12-base@12.2.0-14?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/gpgv@2.2.40-1.1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.7",
         "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libaudit-common@3.0.9-1?arch=all&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u8?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u8?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libcap2@2.66-4?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/libcom-err2@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.7&epoch=1",
         "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libffi8@3.4.4-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgcc-s1@12.2.0-14?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgmp10@6.2.1%2Bdfsg1-1.1?arch=amd64&distro=debian-12.7&epoch=2",
-        "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libgpg-error0@1.46-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libhogweed6@3.8.1-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libnettle8@3.8.1-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpcre2-8-0@10.42-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libpsl5@0.21.2-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsemanage-common@3.4-1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libsystemd0@252.30-1~deb12u2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libudev1@252.30-1~deb12u2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libunistring2@1.0-2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.7&epoch=1",
-        "pkg:deb/debian/logsave@1.47.0-2?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.7",
         "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/passwd@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.7&epoch=1",
         "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/tzdata@2024a-0%2Bdeb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/usr-is-merged@37~deb12u1?arch=all&distro=debian-12.7",
-        "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u1?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/wget@1.21.3-1%2Bb2?arch=amd64&distro=debian-12.7",
-        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.7&epoch=1"
+        "pkg:deb/debian/wget@1.21.3-1%2Bb2?arch=amd64&distro=debian-12.7"
       ]
     },
     {
-      "ref": "58b02e9b-2cd7-421a-b0ac-7ccf7087e0e0",
+      "ref": "9766d052-81fb-46cf-bc1a-bedc4fa11d3a",
       "dependsOn": []
     },
     {
-      "ref": "5aa8d5d5-0f31-4989-a2e9-9ae0eaaba038",
+      "ref": "a21bfb74-f400-41b7-9d14-018b690b5470",
       "dependsOn": []
     },
     {
-      "ref": "63bd37c1-1984-46e8-8b57-b680ac595396",
+      "ref": "a68cdb73-9cf3-4e0d-a5c9-f38c73ece792",
       "dependsOn": []
     },
     {
-      "ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
+      "ref": "a6f20162-f173-4198-8349-b046bc8b48b2",
       "dependsOn": []
     },
     {
-      "ref": "91a4b144-7b17-46fc-a5ee-b78519ee3956",
+      "ref": "a9311a8d-950c-4470-923c-b35970867c0d",
       "dependsOn": []
     },
     {
-      "ref": "950ebc88-08fe-440e-a2b5-feefea2999ae",
+      "ref": "b33f3ff1-ea9b-4bf4-aa2b-61398332b76b",
+      "dependsOn": []
+    },
+    {
+      "ref": "b41068dd-36a4-45f5-8bbd-c2a59521d025",
+      "dependsOn": []
+    },
+    {
+      "ref": "bbf8e972-bf0f-485a-82ca-8b24857bd19b",
+      "dependsOn": []
+    },
+    {
+      "ref": "cb9579b2-690e-49a7-a35d-057d024c8ac7",
+      "dependsOn": []
+    },
+    {
+      "ref": "cb9980ec-858d-4aeb-ac71-fbbeb7c0318b",
+      "dependsOn": []
+    },
+    {
+      "ref": "ef6331ff-4256-42e7-abe6-6489dd785bf3",
+      "dependsOn": []
+    },
+    {
+      "ref": "f5b51e1f-ffc9-45b7-8e85-d4240804a191",
+      "dependsOn": []
+    },
+    {
+      "ref": "fd270b1e-6736-4cc8-892a-8932ab6ac22e",
+      "dependsOn": []
+    },
+    {
+      "ref": "ff0e7f1b-c688-4e30-85f9-305d557aadaf",
       "dependsOn": [
-        "0610e553-5476-4ab7-b32d-bee12769aa51",
-        "0c6a5c40-f56e-40b0-94b7-f6d8605b8737",
-        "0e404c4c-1e78-4917-a630-960a05b3242d",
-        "33387378-14d6-46d7-8629-6e130b0f6d38",
-        "3f5a76e6-4149-4a3b-a21d-af42ed8d008f",
-        "40078e08-8454-4b9b-8034-219c45868933",
-        "4cb4fc45-c6a9-4e7e-a6e1-d350d9f3e321",
-        "5064e22a-7d61-49b6-bc3d-5741a46a346f",
-        "56ccd4ff-5041-4da4-a06c-c885430f3a11",
-        "58b02e9b-2cd7-421a-b0ac-7ccf7087e0e0",
-        "5aa8d5d5-0f31-4989-a2e9-9ae0eaaba038",
-        "63bd37c1-1984-46e8-8b57-b680ac595396",
-        "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
-        "91a4b144-7b17-46fc-a5ee-b78519ee3956",
-        "98541034-d5b0-455d-9005-b383b09e6f48",
-        "a75c5b3b-8d79-45a3-8c5d-b406ae642bae",
-        "bf37e066-ab73-4841-8a44-607419913bba",
-        "cbdf3ed6-0ee3-4ab6-bd02-ccf2edf50d34",
-        "d0ecc5ce-4c6f-41b0-8ba9-d54dc7d0f7be",
-        "db512328-929f-4e23-b00d-382b89e5d16f",
-        "decf530b-9508-49fa-8bb7-7d845600d6b9",
-        "e0eb0a2d-ea12-4f25-96fe-07228dd0f86f",
-        "f390f845-e2fd-414d-b80f-045b71542e1a",
+        "00f5d20e-bd66-4655-a3f2-6c7676a603ab",
+        "20822873-0f66-4cfd-bfbd-c770c981cb32",
+        "3f072e8d-4394-44fb-808b-880d582c4ab1",
+        "4d73b41b-3451-4b39-bab9-bc853ae1f788",
+        "6627ab9c-7966-43ba-af62-829056773e01",
+        "7552496a-a725-4b6b-944e-cdfb4e3eed64",
+        "780b9329-620c-4e1e-942e-83aa4e669a9c",
+        "82443b88-b909-46bc-90ca-4f9fe6de6584",
+        "8cc80225-58cd-4c43-b76f-2f8267347600",
+        "925b02dc-c359-46e0-b759-d247f4f98ca5",
+        "9766d052-81fb-46cf-bc1a-bedc4fa11d3a",
+        "a21bfb74-f400-41b7-9d14-018b690b5470",
+        "a68cdb73-9cf3-4e0d-a5c9-f38c73ece792",
+        "a6f20162-f173-4198-8349-b046bc8b48b2",
+        "a9311a8d-950c-4470-923c-b35970867c0d",
+        "b33f3ff1-ea9b-4bf4-aa2b-61398332b76b",
+        "b41068dd-36a4-45f5-8bbd-c2a59521d025",
+        "bbf8e972-bf0f-485a-82ca-8b24857bd19b",
+        "cb9579b2-690e-49a7-a35d-057d024c8ac7",
+        "cb9980ec-858d-4aeb-ac71-fbbeb7c0318b",
+        "ef6331ff-4256-42e7-abe6-6489dd785bf3",
+        "f5b51e1f-ffc9-45b7-8e85-d4240804a191",
+        "fd270b1e-6736-4cc8-892a-8932ab6ac22e",
         "pkg:maven/com.ethlo.time/itu@1.10.2",
         "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.3",
         "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.17.2",
@@ -13128,42 +14471,6 @@
         "pkg:maven/us.springett/cvss-calculator@1.4.2",
         "pkg:maven/us.springett/owasp-risk-rating-calculator@1.0.1"
       ]
-    },
-    {
-      "ref": "98541034-d5b0-455d-9005-b383b09e6f48",
-      "dependsOn": []
-    },
-    {
-      "ref": "a75c5b3b-8d79-45a3-8c5d-b406ae642bae",
-      "dependsOn": []
-    },
-    {
-      "ref": "bf37e066-ab73-4841-8a44-607419913bba",
-      "dependsOn": []
-    },
-    {
-      "ref": "cbdf3ed6-0ee3-4ab6-bd02-ccf2edf50d34",
-      "dependsOn": []
-    },
-    {
-      "ref": "d0ecc5ce-4c6f-41b0-8ba9-d54dc7d0f7be",
-      "dependsOn": []
-    },
-    {
-      "ref": "db512328-929f-4e23-b00d-382b89e5d16f",
-      "dependsOn": []
-    },
-    {
-      "ref": "decf530b-9508-49fa-8bb7-7d845600d6b9",
-      "dependsOn": []
-    },
-    {
-      "ref": "e0eb0a2d-ea12-4f25-96fe-07228dd0f86f",
-      "dependsOn": []
-    },
-    {
-      "ref": "f390f845-e2fd-414d-b80f-045b71542e1a",
-      "dependsOn": []
     },
     {
       "ref": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.7",
@@ -17795,6 +19102,7 @@
         }
       ],
       "description": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry().",
+      "recommendation": "Upgrade libtinfo6 to version 6.4-4.root.io.1; Upgrade ncurses-base to version 6.4-4.root.io.1; Upgrade ncurses-bin to version 6.4-4.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-50495"
@@ -18026,6 +19334,7 @@
         918
       ],
       "description": "Applications that use Wget to access a remote resource using shorthand URLs and pass arbitrary user credentials in the URL are vulnerable. In these cases attackers can enter crafted credentials which will cause Wget to access an arbitrary host.",
+      "recommendation": "Upgrade wget to version 1.21.3-1+deb12u1.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-10524"
@@ -18173,6 +19482,12 @@
       "ratings": [
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -18302,7 +19617,7 @@
       "updated": "2025-01-03T14:15:24+00:00",
       "affects": [
         {
-          "ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
+          "ref": "4d73b41b-3451-4b39-bab9-bc853ae1f788",
           "versions": [
             {
               "version": "1.5.12",
@@ -18311,7 +19626,7 @@
           ]
         },
         {
-          "ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
+          "ref": "f5b51e1f-ffc9-45b7-8e85-d4240804a191",
           "versions": [
             {
               "version": "1.5.12",
@@ -18379,7 +19694,7 @@
       "updated": "2025-01-03T14:15:24+00:00",
       "affects": [
         {
-          "ref": "0e404c4c-1e78-4917-a630-960a05b3242d",
+          "ref": "4d73b41b-3451-4b39-bab9-bc853ae1f788",
           "versions": [
             {
               "version": "1.5.12",
@@ -18388,7 +19703,7 @@
           ]
         },
         {
-          "ref": "7eacf4d5-b3b2-4222-a64f-dee916dff1a3",
+          "ref": "f5b51e1f-ffc9-45b7-8e85-d4240804a191",
           "versions": [
             {
               "version": "1.5.12",
@@ -18443,6 +19758,7 @@
         208
       ],
       "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.",
+      "recommendation": "Upgrade libgcrypt20 to version 1.10.1-3.root.io.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-2236"
@@ -18746,7 +20062,7 @@
         436
       ],
       "description": "url.c in GNU Wget through 1.24.5 mishandles semicolons in the userinfo subcomponent of a URI, and thus there may be insecure behavior in which data that was supposed to be in the userinfo subcomponent is misinterpreted to be part of the host subcomponent.",
-      "recommendation": "Upgrade wget to version 1.21.3-1.root.io.1",
+      "recommendation": "Upgrade wget to version 1.21.3-1+deb12u1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-38428"
