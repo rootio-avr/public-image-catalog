@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:40bf2507-ac04-4cf4-a405-773a02a91aa5",
+  "serialNumber": "urn:uuid:b2f1ad7f-bda5-4b43-a5aa-89e652d5e2ff",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T05:47:21+00:00",
+    "timestamp": "2025-04-03T05:45:08+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "de66bd20-55e3-481d-a34f-f80fb8caee72",
+      "bom-ref": "931254df-ef0d-4fe6-9164-2e4a4dddca65",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -98,7 +98,7 @@
   },
   "components": [
     {
-      "bom-ref": "18c9dae8-884d-4e5d-9f70-334ff326239e",
+      "bom-ref": "f5e028cd-da61-4344-8b47-0b0c6841f0bd",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -7805,7 +7805,13 @@
   ],
   "dependencies": [
     {
-      "ref": "18c9dae8-884d-4e5d-9f70-334ff326239e",
+      "ref": "931254df-ef0d-4fe6-9164-2e4a4dddca65",
+      "dependsOn": [
+        "f5e028cd-da61-4344-8b47-0b0c6841f0bd"
+      ]
+    },
+    {
+      "ref": "f5e028cd-da61-4344-8b47-0b0c6841f0bd",
       "dependsOn": [
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
@@ -7845,12 +7851,6 @@
         "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
         "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8"
-      ]
-    },
-    {
-      "ref": "de66bd20-55e3-481d-a34f-f80fb8caee72",
-      "dependsOn": [
-        "18c9dae8-884d-4e5d-9f70-334ff326239e"
       ]
     },
     {
@@ -11620,7 +11620,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -11638,7 +11638,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -11780,7 +11780,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
+          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -11792,7 +11792,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -12209,7 +12209,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -12368,7 +12368,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -12429,6 +12429,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -12441,7 +12444,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -12848,6 +12851,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2024:9404"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3530"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3534"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2236"
         },
         {
@@ -12888,7 +12897,7 @@
         }
       ],
       "published": "2024-03-06T22:15:57+00:00",
-      "updated": "2024-11-21T09:09:19+00:00",
+      "updated": "2025-04-02T17:15:37+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
@@ -12985,7 +12994,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -13000,7 +13009,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -13088,7 +13097,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "low"
         },
         {
           "source": {
@@ -13154,7 +13163,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26458"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26458"
@@ -13164,9 +13173,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -13181,7 +13187,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -13263,7 +13269,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "low"
         },
         {
           "source": {
@@ -13332,7 +13338,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26461"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26461"
@@ -13342,9 +13348,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -13359,7 +13362,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -13843,7 +13846,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/02/20/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:1743"
+          "url": "https://access.redhat.com/errata/RHSA-2025:1740"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2025-1094"
@@ -13861,7 +13864,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-1094"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2025-1743.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2025-1740.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2025:1737"
