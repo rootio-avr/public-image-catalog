@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:9f6254b0-5822-4eb2-aca5-39a72ba7ea7b",
+  "serialNumber": "urn:uuid:923ba970-bb25-43be-991c-b5c0f9631c78",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T05:56:46+00:00",
+    "timestamp": "2025-04-03T05:53:54+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "e283fd9c-754d-44bb-bd59-21a709add5e4",
+      "bom-ref": "6b8257f7-40fc-42a9-9072-9bba2f53e040",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -78,63 +78,7 @@
   },
   "components": [
     {
-      "bom-ref": "06398ac9-bbf4-4f39-942b-342e1ebf780f",
-      "type": "application",
-      "name": "usr/local/bin/grafana-server",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "0b7d4949-cec1-4a70-a209-833da2e48b52",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.9",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1aadfa19-4161-4a0f-8fd1-1838ddca7a1e",
-      "type": "library",
-      "name": "github.com/fatih/color",
-      "version": "v1.17.0",
-      "purl": "pkg:golang/github.com/fatih/color@v1.17.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/fatih/color@v1.17.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "48c8a13c-e919-4fa0-afdc-d7ec1241edf3",
+      "bom-ref": "0b7f0a52-c0c3-4032-b8bc-1a6e6d85b2c8",
       "type": "library",
       "name": "stdlib",
       "version": "v1.23.5",
@@ -142,11 +86,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -159,7 +103,7 @@
       ]
     },
     {
-      "bom-ref": "543aab49-033e-4e3f-b573-b308a208a01f",
+      "bom-ref": "133bf2e8-19b5-4284-bace-85ee95a03e22",
       "type": "library",
       "name": "github.com/mattn/go-colorable",
       "version": "v0.1.13",
@@ -184,47 +128,23 @@
       ]
     },
     {
-      "bom-ref": "546e7b98-a570-42de-a51c-a614acdaaa03",
-      "type": "library",
-      "name": "github.com/grafana/grafana",
-      "version": "11.4.0",
-      "purl": "pkg:golang/github.com/grafana/grafana@11.4.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/grafana/grafana@v11.4.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "640cf6f3-6cb1-423f-a1a7-68f5264ebb75",
-      "type": "application",
-      "name": "usr/local/bin/grafana",
+      "bom-ref": "14608157-af35-44aa-b874-c968d3db5f8d",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.9",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
+          "value": "os-pkgs"
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
+          "value": "debian"
         }
       ]
     },
     {
-      "bom-ref": "6cf9643e-241c-4d1e-8554-d0cca2887c36",
+      "bom-ref": "2cc846f6-f46e-4447-987f-4abf91e3fdf7",
       "type": "library",
       "name": "./pkg/util/xorm",
       "properties": [
@@ -247,82 +167,7 @@
       ]
     },
     {
-      "bom-ref": "712dac70-bc5a-4901-b8b7-4d80c2335645",
-      "type": "library",
-      "name": "github.com/mattn/go-isatty",
-      "version": "v0.0.20",
-      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/mattn/go-isatty@v0.0.20"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a0930f6d-470f-41ee-9036-37b569e332f2",
-      "type": "library",
-      "name": "github.com/mattn/go-colorable",
-      "version": "v0.1.13",
-      "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/mattn/go-colorable@v0.1.13"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "b5d3274b-d2b1-41fb-80e2-f93e3572e365",
-      "type": "library",
-      "name": "github.com/mattn/go-isatty",
-      "version": "v0.0.20",
-      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "github.com/mattn/go-isatty@v0.0.20"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "bca065f8-77f7-47ef-9dba-984f33baaa79",
+      "bom-ref": "3656fccb-6cce-46e8-9d25-333ea7a5d912",
       "type": "library",
       "name": "github.com/fatih/color",
       "version": "v1.17.0",
@@ -347,7 +192,32 @@
       ]
     },
     {
-      "bom-ref": "c5d683e0-0e12-43b1-ad29-a3ee40b7a877",
+      "bom-ref": "375cd6df-df1d-4820-ab33-955f240ae01a",
+      "type": "library",
+      "name": "github.com/fatih/color",
+      "version": "v1.17.0",
+      "purl": "pkg:golang/github.com/fatih/color@v1.17.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/fatih/color@v1.17.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4926adff-73de-4553-8eaf-0973cd21e9c5",
       "type": "library",
       "name": "github.com/grafana/grafana",
       "version": "11.4.0",
@@ -372,7 +242,162 @@
       ]
     },
     {
-      "bom-ref": "dd3ce581-281b-44a7-ab16-afb84873172f",
+      "bom-ref": "61fca133-1907-4d80-af4a-aaaa71f3429c",
+      "type": "application",
+      "name": "usr/local/bin/grafana-server",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "74ba5523-4cea-4cb3-93ab-e735fc7c345f",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.29.0",
+      "purl": "pkg:golang/golang.org/x/sys@v0.29.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/sys@v0.29.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a9a08c7f-de28-41f3-bbd9-b77bbe52248e",
+      "type": "library",
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.20",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mattn/go-isatty@v0.0.20"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "aedc9ed1-92a1-4a6d-a12b-11a1dd5cd0ed",
+      "type": "application",
+      "name": "usr/local/bin/grafana",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b973ce21-57f4-4477-8348-0b902ff851fc",
+      "type": "library",
+      "name": "github.com/mattn/go-colorable",
+      "version": "v0.1.13",
+      "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mattn/go-colorable@v0.1.13"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bc18f0fe-bd2b-432c-84be-6cd0d3371f3d",
+      "type": "library",
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.20",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.20",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mattn/go-isatty@v0.0.20"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d52776b0-4ea8-41e2-86cd-39236a22c9c2",
+      "type": "library",
+      "name": "stdlib",
+      "version": "v1.23.5",
+      "purl": "pkg:golang/stdlib@v1.23.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:c393510bfc64bbb98f497e85703f515b149f8ac29294b4c7d7a49da0a2188888"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:cfa7624bbdc8ebb6170b863a3c827d6780f843694d7c041da5574ccde22b1caf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "stdlib@v1.23.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f70b0a75-3033-4927-97da-ee625b4e265a",
       "type": "library",
       "name": "golang.org/x/sys",
       "version": "v0.29.0",
@@ -397,11 +422,11 @@
       ]
     },
     {
-      "bom-ref": "ddf3376f-374c-4f51-a89c-a88c398c85e9",
+      "bom-ref": "fcb64aab-adf7-4022-8444-a280f2c9d8c3",
       "type": "library",
-      "name": "golang.org/x/sys",
-      "version": "v0.29.0",
-      "purl": "pkg:golang/golang.org/x/sys@v0.29.0",
+      "name": "github.com/grafana/grafana",
+      "version": "11.4.0",
+      "purl": "pkg:golang/github.com/grafana/grafana@11.4.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -413,32 +438,7 @@
         },
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "golang.org/x/sys@v0.29.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ea409db4-6973-4d55-a2d8-c1bf60b95a09",
-      "type": "library",
-      "name": "stdlib",
-      "version": "v1.23.5",
-      "purl": "pkg:golang/stdlib@v1.23.5",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:205a4beba0034028e7e8de6f8fd921405ef6c897ba3513fe8ce763fe07905d2c"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:33c8e13c00df82e0fcf8cb1dc93d7df56d67944ee4d7791a8e782a59c0028e3c"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "stdlib@v1.23.5"
+          "value": "github.com/grafana/grafana@v11.4.0"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -20569,13 +20569,15 @@
   ],
   "dependencies": [
     {
-      "ref": "06398ac9-bbf4-4f39-942b-342e1ebf780f",
-      "dependsOn": [
-        "546e7b98-a570-42de-a51c-a614acdaaa03"
-      ]
+      "ref": "0b7f0a52-c0c3-4032-b8bc-1a6e6d85b2c8",
+      "dependsOn": []
     },
     {
-      "ref": "0b7d4949-cec1-4a70-a209-833da2e48b52",
+      "ref": "133bf2e8-19b5-4284-bace-85ee95a03e22",
+      "dependsOn": []
+    },
+    {
+      "ref": "14608157-af35-44aa-b874-c968d3db5f8d",
       "dependsOn": [
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.9",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.9",
@@ -20622,62 +20624,26 @@
       ]
     },
     {
-      "ref": "1aadfa19-4161-4a0f-8fd1-1838ddca7a1e",
+      "ref": "2cc846f6-f46e-4447-987f-4abf91e3fdf7",
       "dependsOn": []
     },
     {
-      "ref": "48c8a13c-e919-4fa0-afdc-d7ec1241edf3",
+      "ref": "3656fccb-6cce-46e8-9d25-333ea7a5d912",
       "dependsOn": []
     },
     {
-      "ref": "543aab49-033e-4e3f-b573-b308a208a01f",
+      "ref": "375cd6df-df1d-4820-ab33-955f240ae01a",
       "dependsOn": []
     },
     {
-      "ref": "546e7b98-a570-42de-a51c-a614acdaaa03",
+      "ref": "4926adff-73de-4553-8eaf-0973cd21e9c5",
       "dependsOn": [
-        "543aab49-033e-4e3f-b573-b308a208a01f",
-        "b5d3274b-d2b1-41fb-80e2-f93e3572e365",
-        "bca065f8-77f7-47ef-9dba-984f33baaa79",
-        "ddf3376f-374c-4f51-a89c-a88c398c85e9",
-        "ea409db4-6973-4d55-a2d8-c1bf60b95a09"
-      ]
-    },
-    {
-      "ref": "640cf6f3-6cb1-423f-a1a7-68f5264ebb75",
-      "dependsOn": [
-        "c5d683e0-0e12-43b1-ad29-a3ee40b7a877"
-      ]
-    },
-    {
-      "ref": "6cf9643e-241c-4d1e-8554-d0cca2887c36",
-      "dependsOn": []
-    },
-    {
-      "ref": "712dac70-bc5a-4901-b8b7-4d80c2335645",
-      "dependsOn": []
-    },
-    {
-      "ref": "a0930f6d-470f-41ee-9036-37b569e332f2",
-      "dependsOn": []
-    },
-    {
-      "ref": "b5d3274b-d2b1-41fb-80e2-f93e3572e365",
-      "dependsOn": []
-    },
-    {
-      "ref": "bca065f8-77f7-47ef-9dba-984f33baaa79",
-      "dependsOn": []
-    },
-    {
-      "ref": "c5d683e0-0e12-43b1-ad29-a3ee40b7a877",
-      "dependsOn": [
-        "1aadfa19-4161-4a0f-8fd1-1838ddca7a1e",
-        "48c8a13c-e919-4fa0-afdc-d7ec1241edf3",
-        "6cf9643e-241c-4d1e-8554-d0cca2887c36",
-        "712dac70-bc5a-4901-b8b7-4d80c2335645",
-        "a0930f6d-470f-41ee-9036-37b569e332f2",
-        "dd3ce581-281b-44a7-ab16-afb84873172f",
+        "2cc846f6-f46e-4447-987f-4abf91e3fdf7",
+        "375cd6df-df1d-4820-ab33-955f240ae01a",
+        "b973ce21-57f4-4477-8348-0b902ff851fc",
+        "bc18f0fe-bd2b-432c-84be-6cd0d3371f3d",
+        "d52776b0-4ea8-41e2-86cd-39236a22c9c2",
+        "f70b0a75-3033-4927-97da-ee625b4e265a",
         "pkg:golang/buf.build/gen/go/parca-dev/parca/bufbuild/connect-go@v1.10.0-20240523185345-933eab74d046.1",
         "pkg:golang/buf.build/gen/go/parca-dev/parca/protocolbuffers/go@v1.34.1-20240523185345-933eab74d046.1",
         "pkg:golang/cloud.google.com/go/auth/oauth2adapt@v0.2.4",
@@ -21118,19 +21084,17 @@
       ]
     },
     {
-      "ref": "dd3ce581-281b-44a7-ab16-afb84873172f",
-      "dependsOn": []
-    },
-    {
-      "ref": "ddf3376f-374c-4f51-a89c-a88c398c85e9",
-      "dependsOn": []
-    },
-    {
-      "ref": "e283fd9c-754d-44bb-bd59-21a709add5e4",
+      "ref": "61fca133-1907-4d80-af4a-aaaa71f3429c",
       "dependsOn": [
-        "06398ac9-bbf4-4f39-942b-342e1ebf780f",
-        "0b7d4949-cec1-4a70-a209-833da2e48b52",
-        "640cf6f3-6cb1-423f-a1a7-68f5264ebb75",
+        "fcb64aab-adf7-4022-8444-a280f2c9d8c3"
+      ]
+    },
+    {
+      "ref": "6b8257f7-40fc-42a9-9072-9bba2f53e040",
+      "dependsOn": [
+        "14608157-af35-44aa-b874-c968d3db5f8d",
+        "61fca133-1907-4d80-af4a-aaaa71f3429c",
+        "aedc9ed1-92a1-4a6d-a12b-11a1dd5cd0ed",
         "pkg:npm/%40grafana-plugins/grafana-azure-monitor-datasource@11.3.1",
         "pkg:npm/%40grafana-plugins/grafana-postgresql-datasource@11.3.1",
         "pkg:npm/%40grafana-plugins/grafana-pyroscope-datasource@11.3.1",
@@ -21145,8 +21109,44 @@
       ]
     },
     {
-      "ref": "ea409db4-6973-4d55-a2d8-c1bf60b95a09",
+      "ref": "74ba5523-4cea-4cb3-93ab-e735fc7c345f",
       "dependsOn": []
+    },
+    {
+      "ref": "a9a08c7f-de28-41f3-bbd9-b77bbe52248e",
+      "dependsOn": []
+    },
+    {
+      "ref": "aedc9ed1-92a1-4a6d-a12b-11a1dd5cd0ed",
+      "dependsOn": [
+        "4926adff-73de-4553-8eaf-0973cd21e9c5"
+      ]
+    },
+    {
+      "ref": "b973ce21-57f4-4477-8348-0b902ff851fc",
+      "dependsOn": []
+    },
+    {
+      "ref": "bc18f0fe-bd2b-432c-84be-6cd0d3371f3d",
+      "dependsOn": []
+    },
+    {
+      "ref": "d52776b0-4ea8-41e2-86cd-39236a22c9c2",
+      "dependsOn": []
+    },
+    {
+      "ref": "f70b0a75-3033-4927-97da-ee625b4e265a",
+      "dependsOn": []
+    },
+    {
+      "ref": "fcb64aab-adf7-4022-8444-a280f2c9d8c3",
+      "dependsOn": [
+        "0b7f0a52-c0c3-4032-b8bc-1a6e6d85b2c8",
+        "133bf2e8-19b5-4284-bace-85ee95a03e22",
+        "3656fccb-6cce-46e8-9d25-333ea7a5d912",
+        "74ba5523-4cea-4cb3-93ab-e735fc7c345f",
+        "a9a08c7f-de28-41f3-bbd9-b77bbe52248e"
+      ]
     },
     {
       "ref": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.9",
@@ -26942,7 +26942,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -26960,7 +26960,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -27102,7 +27102,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
+          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -27114,7 +27114,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -27522,7 +27522,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -27757,7 +27757,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/03/20/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:1530"
+          "url": "https://access.redhat.com/errata/RHSA-2024:4259"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-52425"
@@ -27766,16 +27766,13 @@
           "url": "https://bugzilla.redhat.com/2262877"
         },
         {
-          "url": "https://bugzilla.redhat.com/2268766"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2262877"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52425"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-1530.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-4259.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:1615"
@@ -27948,7 +27945,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -28009,6 +28006,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -28021,7 +28021,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -28143,7 +28143,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/12/11/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:1671"
+          "url": "https://access.redhat.com/errata/RHSA-2025:1673"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-11053"
@@ -28302,7 +28302,7 @@
           "url": "https://curl.se/docs/CVE-2024-11053.json"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2025-1671.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2025-1673.html"
         },
         {
           "url": "https://hackerone.com/reports/2829063"
@@ -28425,7 +28425,7 @@
       "updated": "2025-01-31T16:15:30+00:00",
       "affects": [
         {
-          "ref": "546e7b98-a570-42de-a51c-a614acdaaa03",
+          "ref": "4926adff-73de-4553-8eaf-0973cd21e9c5",
           "versions": [
             {
               "version": "11.4.0",
@@ -28434,7 +28434,7 @@
           ]
         },
         {
-          "ref": "c5d683e0-0e12-43b1-ad29-a3ee40b7a877",
+          "ref": "fcb64aab-adf7-4022-8444-a280f2c9d8c3",
           "versions": [
             {
               "version": "11.4.0",
@@ -28792,6 +28792,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2024:9404"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3530"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3534"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2236"
         },
         {
@@ -28832,7 +28838,7 @@
         }
       ],
       "published": "2024-03-06T22:15:57+00:00",
-      "updated": "2024-11-21T09:09:19+00:00",
+      "updated": "2025-04-02T17:15:37+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.9",
@@ -28929,7 +28935,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -28944,7 +28950,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -29132,7 +29138,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "low"
         },
         {
           "source": {
@@ -29198,7 +29204,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26458"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26458"
@@ -29208,9 +29214,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -29225,7 +29228,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -29316,7 +29319,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "low"
         },
         {
           "source": {
@@ -29385,7 +29388,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26461"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26461"
@@ -29395,9 +29398,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -29412,7 +29412,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -29888,7 +29888,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-50602"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:9541"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9502"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-50602"
@@ -29903,7 +29903,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-50602"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-9541.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-9502.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:9502"
@@ -30162,6 +30162,12 @@
         },
         {
           "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 7.5,
@@ -30189,6 +30195,9 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/03/15/1"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3531"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-8176"
         },
         {
@@ -30210,6 +30219,12 @@
           "url": "https://gitlab.alpinelinux.org/alpine/aports/-/commit/d068c3ff36fc6f4789988a09c69b434db757db53"
         },
         {
+          "url": "https://linux.oracle.com/cve/CVE-2024-8176.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3531.html"
+        },
+        {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-8176"
         },
         {
@@ -30226,7 +30241,7 @@
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-03-28T15:15:46+00:00",
+      "updated": "2025-04-02T15:15:57+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.9",
@@ -30759,7 +30774,7 @@
       "updated": "2025-02-21T18:15:32+00:00",
       "affects": [
         {
-          "ref": "48c8a13c-e919-4fa0-afdc-d7ec1241edf3",
+          "ref": "0b7f0a52-c0c3-4032-b8bc-1a6e6d85b2c8",
           "versions": [
             {
               "version": "v1.23.5",
@@ -30768,7 +30783,7 @@
           ]
         },
         {
-          "ref": "ea409db4-6973-4d55-a2d8-c1bf60b95a09",
+          "ref": "d52776b0-4ea8-41e2-86cd-39236a22c9c2",
           "versions": [
             {
               "version": "v1.23.5",
@@ -31106,6 +31121,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "azure"
           },
           "severity": "medium"
@@ -31192,7 +31213,25 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
           },
           "severity": "high"
         },
@@ -31252,7 +31291,25 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/03/14/4"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3421"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2025-27363"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2351357"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2025-3421.html"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-27363.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3421.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2025/03/msg00030.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-27363"
@@ -31271,7 +31328,7 @@
         }
       ],
       "published": "2025-03-11T14:15:25+00:00",
-      "updated": "2025-03-14T17:15:51+00:00",
+      "updated": "2025-04-02T22:15:18+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libfreetype6@2.12.1%2Bdfsg-5%2Bdeb12u3?arch=amd64&distro=debian-12.9",
