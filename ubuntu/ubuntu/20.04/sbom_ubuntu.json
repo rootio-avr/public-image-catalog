@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:07d62bc3-291f-4054-9877-d3029c0c9a8c",
+  "serialNumber": "urn:uuid:a09b1974-7d4d-489c-a14b-1b5e6f65be62",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T06:28:14+00:00",
+    "timestamp": "2025-04-03T06:34:14+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "acc1700d-2aa2-4feb-b581-1cd7a4cefeca",
+      "bom-ref": "b89ed0c8-8f65-4e0c-9bae-cc870f3c43c0",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -46,7 +46,7 @@
   },
   "components": [
     {
-      "bom-ref": "39593e6a-c416-437b-9b02-1a5da7916b22",
+      "bom-ref": "c33f97a5-16fa-48ea-9aaa-7edeb1e169d1",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "20.04",
@@ -5999,7 +5999,13 @@
   ],
   "dependencies": [
     {
-      "ref": "39593e6a-c416-437b-9b02-1a5da7916b22",
+      "ref": "b89ed0c8-8f65-4e0c-9bae-cc870f3c43c0",
+      "dependsOn": [
+        "c33f97a5-16fa-48ea-9aaa-7edeb1e169d1"
+      ]
+    },
+    {
+      "ref": "c33f97a5-16fa-48ea-9aaa-7edeb1e169d1",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.0.10?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/base-passwd@3.5.47?arch=amd64&distro=ubuntu-20.04",
@@ -6032,12 +6038,6 @@
         "pkg:deb/ubuntu/sed@4.7-1?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/sensible-utils@0.0.12%2Bnmu1?arch=all&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/sysvinit-utils@2.96-2.1ubuntu1?arch=amd64&distro=ubuntu-20.04"
-      ]
-    },
-    {
-      "ref": "acc1700d-2aa2-4feb-b581-1cd7a4cefeca",
-      "dependsOn": [
-        "39593e6a-c416-437b-9b02-1a5da7916b22"
       ]
     },
     {
@@ -7788,7 +7788,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -7852,7 +7852,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -7913,6 +7913,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -7925,7 +7928,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -8218,6 +8221,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2024:9404"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3530"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3534"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2236"
         },
         {
@@ -8258,7 +8267,7 @@
         }
       ],
       "published": "2024-03-06T22:15:57+00:00",
-      "updated": "2024-11-21T09:09:19+00:00",
+      "updated": "2025-04-02T17:15:37+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=amd64&distro=ubuntu-20.04",
