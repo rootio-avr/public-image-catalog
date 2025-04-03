@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:a85593eb-2c60-4872-8f4b-cf551dbaedfe",
+  "serialNumber": "urn:uuid:10e7d236-c4f4-4729-9c95-2e2b42826786",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T06:21:49+00:00",
+    "timestamp": "2025-04-03T06:22:41+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "6ffd3ab3-bd86-4751-904a-036153574b20",
+      "bom-ref": "3febf29c-a4eb-42ce-897b-801a0f412317",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -90,7 +90,22 @@
   },
   "components": [
     {
-      "bom-ref": "4b669ac3-4931-4f0a-bdfc-bc1b18b8f2a7",
+      "bom-ref": "5fad1f6d-1e80-4a93-809d-5b227bc86663",
+      "type": "application",
+      "name": "manager",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c7046bec-c9f6-401c-b4ed-ccc958b8d974",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -102,21 +117,6 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "f47994ff-6476-4a0f-aa5d-8c32d7b92eec",
-      "type": "application",
-      "name": "manager",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
         }
       ]
     },
@@ -1705,22 +1705,14 @@
   ],
   "dependencies": [
     {
-      "ref": "4b669ac3-4931-4f0a-bdfc-bc1b18b8f2a7",
+      "ref": "3febf29c-a4eb-42ce-897b-801a0f412317",
       "dependsOn": [
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024a-0%2Bdeb12u1?arch=all&distro=debian-12.8"
+        "5fad1f6d-1e80-4a93-809d-5b227bc86663",
+        "c7046bec-c9f6-401c-b4ed-ccc958b8d974"
       ]
     },
     {
-      "ref": "6ffd3ab3-bd86-4751-904a-036153574b20",
-      "dependsOn": [
-        "4b669ac3-4931-4f0a-bdfc-bc1b18b8f2a7",
-        "f47994ff-6476-4a0f-aa5d-8c32d7b92eec"
-      ]
-    },
-    {
-      "ref": "f47994ff-6476-4a0f-aa5d-8c32d7b92eec",
+      "ref": "5fad1f6d-1e80-4a93-809d-5b227bc86663",
       "dependsOn": [
         "pkg:golang/github.com/argoproj/argo-rollouts@v1.7.2",
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
@@ -1780,6 +1772,14 @@
         "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.4.1",
         "pkg:golang/sigs.k8s.io/yaml@v1.4.0",
         "pkg:golang/stdlib@v1.23.1"
+      ]
+    },
+    {
+      "ref": "c7046bec-c9f6-401c-b4ed-ccc958b8d974",
+      "dependsOn": [
+        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/tzdata@2024a-0%2Bdeb12u1?arch=all&distro=debian-12.8"
       ]
     },
     {
