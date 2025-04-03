@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:1e22d1c9-c776-400e-84d8-d7229604f461",
+  "serialNumber": "urn:uuid:b05e05f5-2d0b-4b1f-9071-867400f6b951",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T05:51:23+00:00",
+    "timestamp": "2025-04-03T05:48:05+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "87645925-6c31-4b59-a070-77dadf64b53e",
+      "bom-ref": "4d229b8a-526f-46c4-874e-6ce2793938eb",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -74,61 +74,22 @@
   },
   "components": [
     {
-      "bom-ref": "49ace021-7a92-4e47-b45c-be64684d3a67",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.8",
+      "bom-ref": "29423252-845f-4909-a1cc-bff100a0b509",
+      "type": "application",
+      "name": "usr/local/bin/k6",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
+          "value": "lang-pkgs"
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "debian"
+          "value": "gobinary"
         }
       ]
     },
     {
-      "bom-ref": "a134fed3-77d8-4891-927e-78a8484704a8",
-      "type": "library",
-      "name": "bundler",
-      "version": "2.6.2",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "23f0f9b7f6a3f5d97ac58c32460c365738323e76"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:gem/bundler@2.6.2",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/bundle/specifications/bundler-2.6.2.gemspec"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:35e9101808263a7828aafaf570026637bfa02cb884809fb3ac478f2d6543e9bd"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:7d36ea9a98b74c4ed0864e9c029f704a63a563ab6a63472d7a41c6cfd05e57c5"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gemspec"
-        }
-      ]
-    },
-    {
-      "bom-ref": "cfd63e4d-6c09-473a-bc50-8acc1b16c866",
+      "bom-ref": "9d14ff78-d573-4efa-95ef-b149d35bbf1f",
       "type": "library",
       "name": "bundler",
       "version": "2.6.2",
@@ -166,17 +127,56 @@
       ]
     },
     {
-      "bom-ref": "d7e9128d-dbbb-41f9-9507-14906fd3e514",
-      "type": "application",
-      "name": "usr/local/bin/k6",
+      "bom-ref": "a73f0db5-1930-476e-b3d7-53c53e911f17",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.8",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
+          "value": "os-pkgs"
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e91c613d-46e2-46ff-bca7-6d07abe56362",
+      "type": "library",
+      "name": "bundler",
+      "version": "2.6.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "23f0f9b7f6a3f5d97ac58c32460c365738323e76"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/bundler@2.6.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/bundle/specifications/bundler-2.6.2.gemspec"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:35e9101808263a7828aafaf570026637bfa02cb884809fb3ac478f2d6543e9bd"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:7d36ea9a98b74c4ed0864e9c029f704a63a563ab6a63472d7a41c6cfd05e57c5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gemspec"
         }
       ]
     },
@@ -14201,54 +14201,18 @@
   ],
   "dependencies": [
     {
-      "ref": "49ace021-7a92-4e47-b45c-be64684d3a67",
+      "ref": "29423252-845f-4909-a1cc-bff100a0b509",
       "dependsOn": [
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libyaml-0-2@0.2.5-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8"
+        "pkg:golang/go.k6.io/k6"
       ]
     },
     {
-      "ref": "87645925-6c31-4b59-a070-77dadf64b53e",
+      "ref": "4d229b8a-526f-46c4-874e-6ce2793938eb",
       "dependsOn": [
-        "49ace021-7a92-4e47-b45c-be64684d3a67",
-        "a134fed3-77d8-4891-927e-78a8484704a8",
-        "cfd63e4d-6c09-473a-bc50-8acc1b16c866",
-        "d7e9128d-dbbb-41f9-9507-14906fd3e514",
+        "29423252-845f-4909-a1cc-bff100a0b509",
+        "9d14ff78-d573-4efa-95ef-b149d35bbf1f",
+        "a73f0db5-1930-476e-b3d7-53c53e911f17",
+        "e91c613d-46e2-46ff-bca7-6d07abe56362",
         "pkg:gem/abbrev@0.1.2",
         "pkg:gem/activesupport@7.1.3",
         "pkg:gem/addressable@2.8.6",
@@ -14372,18 +14336,54 @@
       ]
     },
     {
-      "ref": "a134fed3-77d8-4891-927e-78a8484704a8",
+      "ref": "9d14ff78-d573-4efa-95ef-b149d35bbf1f",
       "dependsOn": []
     },
     {
-      "ref": "cfd63e4d-6c09-473a-bc50-8acc1b16c866",
-      "dependsOn": []
-    },
-    {
-      "ref": "d7e9128d-dbbb-41f9-9507-14906fd3e514",
+      "ref": "a73f0db5-1930-476e-b3d7-53c53e911f17",
       "dependsOn": [
-        "pkg:golang/go.k6.io/k6"
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libtinfo6@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libyaml-0-2@0.2.5-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8"
       ]
+    },
+    {
+      "ref": "e91c613d-46e2-46ff-bca7-6d07abe56362",
+      "dependsOn": []
     },
     {
       "ref": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.8",
@@ -18359,7 +18359,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -18377,7 +18377,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -18519,7 +18519,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
+          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -18531,7 +18531,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -18939,7 +18939,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -19098,7 +19098,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -19159,6 +19159,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -19171,7 +19174,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -19578,6 +19581,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2024:9404"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3530"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3534"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2236"
         },
         {
@@ -19618,7 +19627,7 @@
         }
       ],
       "published": "2024-03-06T22:15:57+00:00",
-      "updated": "2024-11-21T09:09:19+00:00",
+      "updated": "2025-04-02T17:15:37+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.8",
@@ -19715,7 +19724,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -19730,7 +19739,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
