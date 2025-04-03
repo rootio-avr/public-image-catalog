@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:59ac80b0-05f4-454d-9588-c5649149f0af",
+  "serialNumber": "urn:uuid:061a0e7b-d3d5-4008-b402-cdbb437881f2",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T05:51:27+00:00",
+    "timestamp": "2025-04-03T05:49:45+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "fa25e682-8076-4007-8dab-09ebcff40339",
+      "bom-ref": "e25e5fe2-ae58-4404-8cc6-1e83a84cbb06",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -62,7 +62,22 @@
   },
   "components": [
     {
-      "bom-ref": "a51f84ef-72cf-4a1c-8055-858a9e23ae39",
+      "bom-ref": "866b647d-9bdc-429f-a2f2-7bc7cef212c0",
+      "type": "application",
+      "name": "usr/local/bin/gitlab-runner",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bbef378f-d8ca-47d1-82fc-a57c9cecc1a3",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "20.04",
@@ -74,21 +89,6 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "ubuntu"
-        }
-      ]
-    },
-    {
-      "bom-ref": "e53ac629-9a3b-4526-8f25-755a7772a284",
-      "type": "application",
-      "name": "usr/local/bin/gitlab-runner",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
         }
       ]
     },
@@ -11704,7 +11704,13 @@
   ],
   "dependencies": [
     {
-      "ref": "a51f84ef-72cf-4a1c-8055-858a9e23ae39",
+      "ref": "866b647d-9bdc-429f-a2f2-7bc7cef212c0",
+      "dependsOn": [
+        "pkg:golang/gitlab.com/gitlab-org/gitlab-runner"
+      ]
+    },
+    {
+      "ref": "bbef378f-d8ca-47d1-82fc-a57c9cecc1a3",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.0.10?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/base-passwd@3.5.47?arch=amd64&distro=ubuntu-20.04",
@@ -11740,16 +11746,10 @@
       ]
     },
     {
-      "ref": "e53ac629-9a3b-4526-8f25-755a7772a284",
+      "ref": "e25e5fe2-ae58-4404-8cc6-1e83a84cbb06",
       "dependsOn": [
-        "pkg:golang/gitlab.com/gitlab-org/gitlab-runner"
-      ]
-    },
-    {
-      "ref": "fa25e682-8076-4007-8dab-09ebcff40339",
-      "dependsOn": [
-        "a51f84ef-72cf-4a1c-8055-858a9e23ae39",
-        "e53ac629-9a3b-4526-8f25-755a7772a284"
+        "866b647d-9bdc-429f-a2f2-7bc7cef212c0",
+        "bbef378f-d8ca-47d1-82fc-a57c9cecc1a3"
       ]
     },
     {
@@ -14635,7 +14635,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -14699,7 +14699,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -14760,6 +14760,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -14772,7 +14775,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -15065,6 +15068,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2024:9404"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3530"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3534"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2236"
         },
         {
@@ -15105,7 +15114,7 @@
         }
       ],
       "published": "2024-03-06T22:15:57+00:00",
-      "updated": "2024-11-21T09:09:19+00:00",
+      "updated": "2025-04-02T17:15:37+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=amd64&distro=ubuntu-20.04",
@@ -15628,6 +15637,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
         {
           "source": {
             "name": "azure"
