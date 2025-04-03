@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:c38c2d10-c63d-49ca-958c-8de972a2d2ce",
+  "serialNumber": "urn:uuid:26504595-511a-43ef-9594-9eee139c8645",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T05:56:00+00:00",
+    "timestamp": "2025-04-03T05:53:21+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "5d1d2365-1184-4639-8e8c-ffc61126b7db",
+      "bom-ref": "a3750fd0-4405-4609-ad4c-98e7df7969c2",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -82,7 +82,7 @@
   },
   "components": [
     {
-      "bom-ref": "2cf80ae2-232d-4a43-9874-63b4c22cc839",
+      "bom-ref": "28f5c80a-c438-4fa8-98f5-3fce2d804f47",
       "type": "application",
       "name": "usr/bin/alloy",
       "properties": [
@@ -97,7 +97,23 @@
       ]
     },
     {
-      "bom-ref": "74d680bb-6831-45bf-87b6-cea118d3cdd4",
+      "bom-ref": "b4580724-7d57-4cc9-acf4-931771288995",
+      "type": "operating-system",
+      "name": "ubuntu",
+      "version": "24.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "ubuntu"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fb3647a1-7236-4e18-b938-84e7ba1c8100",
       "type": "library",
       "name": "./syntax",
       "properties": [
@@ -116,22 +132,6 @@
         {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "76026a0a-39df-4441-a8a3-2b946dda6499",
-      "type": "operating-system",
-      "name": "ubuntu",
-      "version": "24.04",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "ubuntu"
         }
       ]
     },
@@ -26624,24 +26624,20 @@
   ],
   "dependencies": [
     {
-      "ref": "2cf80ae2-232d-4a43-9874-63b4c22cc839",
+      "ref": "28f5c80a-c438-4fa8-98f5-3fce2d804f47",
       "dependsOn": [
         "pkg:golang/github.com/grafana/alloy@v1.5.1"
       ]
     },
     {
-      "ref": "5d1d2365-1184-4639-8e8c-ffc61126b7db",
+      "ref": "a3750fd0-4405-4609-ad4c-98e7df7969c2",
       "dependsOn": [
-        "2cf80ae2-232d-4a43-9874-63b4c22cc839",
-        "76026a0a-39df-4441-a8a3-2b946dda6499"
+        "28f5c80a-c438-4fa8-98f5-3fce2d804f47",
+        "b4580724-7d57-4cc9-acf4-931771288995"
       ]
     },
     {
-      "ref": "74d680bb-6831-45bf-87b6-cea118d3cdd4",
-      "dependsOn": []
-    },
-    {
-      "ref": "76026a0a-39df-4441-a8a3-2b946dda6499",
+      "ref": "b4580724-7d57-4cc9-acf4-931771288995",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04",
         "pkg:deb/ubuntu/bash@5.2.21-2ubuntu4?arch=amd64&distro=ubuntu-24.04",
@@ -26682,6 +26678,10 @@
         "pkg:deb/ubuntu/tzdata@2024a-3ubuntu1.1?arch=all&distro=ubuntu-24.04",
         "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.1?arch=amd64&distro=ubuntu-24.04"
       ]
+    },
+    {
+      "ref": "fb3647a1-7236-4e18-b938-84e7ba1c8100",
+      "dependsOn": []
     },
     {
       "ref": "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04",
@@ -28445,7 +28445,7 @@
     {
       "ref": "pkg:golang/github.com/grafana/alloy@v1.5.1",
       "dependsOn": [
-        "74d680bb-6831-45bf-87b6-cea118d3cdd4",
+        "fb3647a1-7236-4e18-b938-84e7ba1c8100",
         "pkg:golang/cloud.google.com/go/auth/oauth2adapt@v0.2.2",
         "pkg:golang/cloud.google.com/go/auth@v0.7.0",
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.5.2",
@@ -31450,7 +31450,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -31511,6 +31511,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -31523,7 +31526,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -31660,6 +31663,9 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-10963"
         },
         {
+          "url": "https://bugzilla.redhat.com/2319212"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2324291"
         },
         {
@@ -31675,7 +31681,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-10244.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -32081,6 +32087,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2024:9404"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3530"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3534"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2236"
         },
         {
@@ -32121,7 +32133,7 @@
         }
       ],
       "published": "2024-03-06T22:15:57+00:00",
-      "updated": "2024-11-21T09:09:19+00:00",
+      "updated": "2025-04-02T17:15:37+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libgcrypt20@1.10.3-2build1?arch=amd64&distro=ubuntu-24.04",
@@ -33014,6 +33026,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
         {
           "source": {
             "name": "azure"
