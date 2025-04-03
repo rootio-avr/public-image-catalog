@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:1943342c-6b3a-4a81-be27-c71d2017ed57",
+  "serialNumber": "urn:uuid:a3704976-70f0-4418-b7b8-2b2104749b5c",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-02T06:05:12+00:00",
+    "timestamp": "2025-04-03T06:03:12+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "4bff1e2f-7a8a-4077-85c4-9a9fa96889af",
+      "bom-ref": "29771227-1f3f-44ff-8d1f-3d1cb01cb39a",
       "type": "container",
       "name": "/tmp/image.tar",
       "properties": [
@@ -54,49 +54,7 @@
   },
   "components": [
     {
-      "bom-ref": "3d1c0015-46d7-41d6-adaf-71df899f03df",
-      "type": "library",
-      "name": "glob",
-      "version": "7.2.3",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "ec0700462dfce89024e67c0437eabca858407176"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/glob@7.2.3",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/glob/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "glob@7.2.3"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4f369271-cd01-42f5-b329-6a9f74da23ec",
+      "bom-ref": "09124090-415e-486e-8e77-19356f6d3714",
       "type": "library",
       "name": "npm-normalize-package-bin",
       "version": "2.0.0",
@@ -117,7 +75,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/npm-packlist/node_modules/npm-normalize-package-bin/package.json"
+          "value": "usr/local/lib/node_modules/npm/node_modules/npm-bundled/node_modules/npm-normalize-package-bin/package.json"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -138,317 +96,7 @@
       ]
     },
     {
-      "bom-ref": "50c7af29-cc1c-4b19-aa37-872a05a72dd2",
-      "type": "library",
-      "name": "npm-normalize-package-bin",
-      "version": "2.0.0",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/npm-normalize-package-bin/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "npm-normalize-package-bin@2.0.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "56bcd55a-2775-4eb8-9739-e0f3b3c548f9",
-      "type": "operating-system",
-      "name": "debian",
-      "version": "12.1",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "os-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "debian"
-        }
-      ]
-    },
-    {
-      "bom-ref": "59ea2b8a-6c53-4224-93ce-326e0ac1f16a",
-      "type": "library",
-      "name": "minimatch",
-      "version": "3.1.2",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "497003d0b7f274dd0b3bc185a6ea60657933270d"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/minimatch@3.1.2",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/minimatch/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "minimatch@3.1.2"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "61b560d2-6f0a-435b-b9f5-daaaa6c40ff8",
-      "type": "library",
-      "name": "brace-expansion",
-      "version": "1.1.11",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "a3c20e6ee1cae1c72f9ac87e6f2d1fd2a4254b37"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/brace-expansion@1.1.11",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/brace-expansion/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "brace-expansion@1.1.11"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "894f56dc-6f04-43d6-ad6f-a651c9bdea67",
-      "type": "library",
-      "name": "minimatch",
-      "version": "3.1.2",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "497003d0b7f274dd0b3bc185a6ea60657933270d"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/minimatch@3.1.2",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/minimatch/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "minimatch@3.1.2"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8bf4d96d-3f85-45a0-a4a1-beec1f99440c",
-      "type": "library",
-      "name": "npm-normalize-package-bin",
-      "version": "2.0.0",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/bin-links/node_modules/npm-normalize-package-bin/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "npm-normalize-package-bin@2.0.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ab0f2c26-2454-4482-bc58-acb710b84270",
-      "type": "library",
-      "name": "npm-normalize-package-bin",
-      "version": "2.0.0",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "ISC"
-          }
-        }
-      ],
-      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/npm-pick-manifest/node_modules/npm-normalize-package-bin/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "npm-normalize-package-bin@2.0.0"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "b6875da6-d3f7-4a85-9e7a-bd7d963b45b1",
-      "type": "library",
-      "name": "brace-expansion",
-      "version": "1.1.11",
-      "hashes": [
-        {
-          "alg": "SHA-1",
-          "content": "a3c20e6ee1cae1c72f9ac87e6f2d1fd2a4254b37"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/brace-expansion@1.1.11",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/brace-expansion/package.json"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgID",
-          "value": "brace-expansion@1.1.11"
-        },
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "node-pkg"
-        }
-      ]
-    },
-    {
-      "bom-ref": "bb335e5a-5c89-424c-b862-527e96312e03",
+      "bom-ref": "1de9b7dd-a2af-4575-8bfc-72ea49b4cadd",
       "type": "library",
       "name": "glob",
       "version": "7.2.3",
@@ -490,7 +138,7 @@
       ]
     },
     {
-      "bom-ref": "fee62353-3b88-4e25-a2b4-8a016066590f",
+      "bom-ref": "307ffcee-b33c-495a-b8d7-83b6b9f20582",
       "type": "library",
       "name": "npm-normalize-package-bin",
       "version": "2.0.0",
@@ -511,7 +159,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/node_modules/npm/node_modules/npm-bundled/node_modules/npm-normalize-package-bin/package.json"
+          "value": "usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/npm-normalize-package-bin/package.json"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -524,6 +172,358 @@
         {
           "name": "aquasecurity:trivy:PkgID",
           "value": "npm-normalize-package-bin@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "320fc576-8aa0-4399-861c-9c5a574d306c",
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "1.1.11",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a3c20e6ee1cae1c72f9ac87e6f2d1fd2a4254b37"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/brace-expansion@1.1.11",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/brace-expansion/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "brace-expansion@1.1.11"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4787654c-947f-489d-9b3e-6e57ee9c3361",
+      "type": "library",
+      "name": "npm-normalize-package-bin",
+      "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/npm-packlist/node_modules/npm-normalize-package-bin/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "npm-normalize-package-bin@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "531e9690-4059-4926-b2bc-f6389f69cfda",
+      "type": "library",
+      "name": "minimatch",
+      "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "497003d0b7f274dd0b3bc185a6ea60657933270d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minimatch@3.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/rimraf/node_modules/minimatch/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "minimatch@3.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "65bdd31c-3611-4855-8d71-b83ba23b601c",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a7cd73d9-df59-41dd-8973-074dcc6639a2",
+      "type": "library",
+      "name": "glob",
+      "version": "7.2.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ec0700462dfce89024e67c0437eabca858407176"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/glob@7.2.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/glob/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "glob@7.2.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b4fe67f8-6307-4626-871f-2d176f4ff49e",
+      "type": "library",
+      "name": "npm-normalize-package-bin",
+      "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/bin-links/node_modules/npm-normalize-package-bin/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "npm-normalize-package-bin@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d5fe5776-24a9-46e6-9713-6c40c8e6cb08",
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "1.1.11",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a3c20e6ee1cae1c72f9ac87e6f2d1fd2a4254b37"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/brace-expansion@1.1.11",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/brace-expansion/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "brace-expansion@1.1.11"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d8835c3b-c298-4ca0-a8c8-234e6581f695",
+      "type": "library",
+      "name": "npm-normalize-package-bin",
+      "version": "2.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c5e76884ecdb680675b548b66cb6a636e13c2bda"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/npm-normalize-package-bin@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/npm-pick-manifest/node_modules/npm-normalize-package-bin/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "npm-normalize-package-bin@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "node-pkg"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e202be78-f719-4589-9f61-9e424ba3d6ae",
+      "type": "library",
+      "name": "minimatch",
+      "version": "3.1.2",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "497003d0b7f274dd0b3bc185a6ea60657933270d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minimatch@3.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/minimatch/package.json"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:20244d1e9a38e887789418c2e2798907559c6d3ca81d9a031fac61faa467d977"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:075fefbc2ffbf19b76e590482e1f82654df9dda0613b5bd552b9dfb012ec4d32"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "minimatch@3.1.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -15700,24 +15700,28 @@
   ],
   "dependencies": [
     {
-      "ref": "3d1c0015-46d7-41d6-adaf-71df899f03df",
+      "ref": "09124090-415e-486e-8e77-19356f6d3714",
       "dependsOn": []
     },
     {
-      "ref": "4bff1e2f-7a8a-4077-85c4-9a9fa96889af",
+      "ref": "1de9b7dd-a2af-4575-8bfc-72ea49b4cadd",
+      "dependsOn": []
+    },
+    {
+      "ref": "29771227-1f3f-44ff-8d1f-3d1cb01cb39a",
       "dependsOn": [
-        "3d1c0015-46d7-41d6-adaf-71df899f03df",
-        "4f369271-cd01-42f5-b329-6a9f74da23ec",
-        "50c7af29-cc1c-4b19-aa37-872a05a72dd2",
-        "56bcd55a-2775-4eb8-9739-e0f3b3c548f9",
-        "59ea2b8a-6c53-4224-93ce-326e0ac1f16a",
-        "61b560d2-6f0a-435b-b9f5-daaaa6c40ff8",
-        "894f56dc-6f04-43d6-ad6f-a651c9bdea67",
-        "8bf4d96d-3f85-45a0-a4a1-beec1f99440c",
-        "ab0f2c26-2454-4482-bc58-acb710b84270",
-        "b6875da6-d3f7-4a85-9e7a-bd7d963b45b1",
-        "bb335e5a-5c89-424c-b862-527e96312e03",
-        "fee62353-3b88-4e25-a2b4-8a016066590f",
+        "09124090-415e-486e-8e77-19356f6d3714",
+        "1de9b7dd-a2af-4575-8bfc-72ea49b4cadd",
+        "307ffcee-b33c-495a-b8d7-83b6b9f20582",
+        "320fc576-8aa0-4399-861c-9c5a574d306c",
+        "4787654c-947f-489d-9b3e-6e57ee9c3361",
+        "531e9690-4059-4926-b2bc-f6389f69cfda",
+        "65bdd31c-3611-4855-8d71-b83ba23b601c",
+        "a7cd73d9-df59-41dd-8973-074dcc6639a2",
+        "b4fe67f8-6307-4626-871f-2d176f4ff49e",
+        "d5fe5776-24a9-46e6-9713-6c40c8e6cb08",
+        "d8835c3b-c298-4ca0-a8c8-234e6581f695",
+        "e202be78-f719-4589-9f61-9e424ba3d6ae",
         "pkg:npm/%40colors/colors@1.5.0",
         "pkg:npm/%40gar/promisify@1.1.3",
         "pkg:npm/%40isaacs/string-locale-compare@1.1.0",
@@ -15924,15 +15928,23 @@
       ]
     },
     {
-      "ref": "4f369271-cd01-42f5-b329-6a9f74da23ec",
+      "ref": "307ffcee-b33c-495a-b8d7-83b6b9f20582",
       "dependsOn": []
     },
     {
-      "ref": "50c7af29-cc1c-4b19-aa37-872a05a72dd2",
+      "ref": "320fc576-8aa0-4399-861c-9c5a574d306c",
       "dependsOn": []
     },
     {
-      "ref": "56bcd55a-2775-4eb8-9739-e0f3b3c548f9",
+      "ref": "4787654c-947f-489d-9b3e-6e57ee9c3361",
+      "dependsOn": []
+    },
+    {
+      "ref": "531e9690-4059-4926-b2bc-f6389f69cfda",
+      "dependsOn": []
+    },
+    {
+      "ref": "65bdd31c-3611-4855-8d71-b83ba23b601c",
       "dependsOn": [
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.1",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.1",
@@ -15972,35 +15984,23 @@
       ]
     },
     {
-      "ref": "59ea2b8a-6c53-4224-93ce-326e0ac1f16a",
+      "ref": "a7cd73d9-df59-41dd-8973-074dcc6639a2",
       "dependsOn": []
     },
     {
-      "ref": "61b560d2-6f0a-435b-b9f5-daaaa6c40ff8",
+      "ref": "b4fe67f8-6307-4626-871f-2d176f4ff49e",
       "dependsOn": []
     },
     {
-      "ref": "894f56dc-6f04-43d6-ad6f-a651c9bdea67",
+      "ref": "d5fe5776-24a9-46e6-9713-6c40c8e6cb08",
       "dependsOn": []
     },
     {
-      "ref": "8bf4d96d-3f85-45a0-a4a1-beec1f99440c",
+      "ref": "d8835c3b-c298-4ca0-a8c8-234e6581f695",
       "dependsOn": []
     },
     {
-      "ref": "ab0f2c26-2454-4482-bc58-acb710b84270",
-      "dependsOn": []
-    },
-    {
-      "ref": "b6875da6-d3f7-4a85-9e7a-bd7d963b45b1",
-      "dependsOn": []
-    },
-    {
-      "ref": "bb335e5a-5c89-424c-b862-527e96312e03",
-      "dependsOn": []
-    },
-    {
-      "ref": "fee62353-3b88-4e25-a2b4-8a016066590f",
+      "ref": "e202be78-f719-4589-9f61-9e424ba3d6ae",
       "dependsOn": []
     },
     {
@@ -19311,7 +19311,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2022-25883"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:5363"
+          "url": "https://access.redhat.com/errata/RHSA-2023:5362"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2022-25883"
@@ -19329,7 +19329,7 @@
           "url": "https://bugzilla.redhat.com/2230956"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-5363.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-5362.html"
         },
         {
           "url": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw"
@@ -19702,7 +19702,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2022-48303"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:0959"
+          "url": "https://access.redhat.com/errata/RHSA-2023:0842"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2022-48303"
@@ -19717,7 +19717,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48303"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-0959.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-0842.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:0842"
@@ -20154,7 +20154,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -20172,7 +20172,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -20314,7 +20314,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
+          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -20326,7 +20326,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -20820,7 +20820,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4911"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-5453.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-5455.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:5455"
@@ -21113,7 +21113,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -21233,7 +21233,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2249523"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2228.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3128.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-47038.html"
@@ -21409,7 +21409,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4911"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-5453.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-5455.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:5455"
@@ -21640,7 +21640,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4911"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2023-5453.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2023-5455.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:5455"
@@ -21801,7 +21801,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/02/16/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2551"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3271"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-50387"
@@ -21811,15 +21811,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2263896"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2263897"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2263909"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2263911"
         },
         {
           "url": "https://bugzilla.redhat.com/2263914"
@@ -21852,7 +21843,7 @@
           "url": "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2024-01.html"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2551.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3271.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:1782"
@@ -22177,7 +22168,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/02/16/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2551"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3271"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-50868"
@@ -22187,15 +22178,6 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2263896"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2263897"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2263909"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2263911"
         },
         {
           "url": "https://bugzilla.redhat.com/2263914"
@@ -22231,7 +22213,7 @@
           "url": "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2024-01.html"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2551.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3271.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:1782"
@@ -22458,19 +22440,13 @@
           "url": "https://bugzilla.redhat.com/2248445"
         },
         {
-          "url": "https://bugzilla.redhat.com/2258412"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2258544"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2248445"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5981"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-0533.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-0155.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0155"
@@ -22970,7 +22946,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -23134,13 +23110,7 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-0553"
         },
         {
-          "url": "https://bugzilla.redhat.com/2248445"
-        },
-        {
           "url": "https://bugzilla.redhat.com/2258412"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2258544"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2258412"
@@ -23149,7 +23119,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0553"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-0533.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-0627.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0627"
@@ -23374,7 +23344,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -23435,6 +23405,9 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
+          "url": "https://bugzilla.redhat.com/2324291"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -23447,7 +23420,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -23741,6 +23714,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2024:9404"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3530"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3534"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2236"
         },
         {
@@ -23781,7 +23760,7 @@
         }
       ],
       "published": "2024-03-06T22:15:57+00:00",
-      "updated": "2024-11-21T09:09:19+00:00",
+      "updated": "2025-04-02T17:15:37+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.1",
@@ -23878,7 +23857,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -23893,7 +23872,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -24260,9 +24239,6 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-28834"
         },
         {
-          "url": "https://bugzilla.redhat.com/2269084"
-        },
-        {
           "url": "https://bugzilla.redhat.com/2269228"
         },
         {
@@ -24272,7 +24248,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28834"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-2570.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-1784.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:1784"
@@ -24553,7 +24529,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-28863"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:6147"
+          "url": "https://access.redhat.com/errata/RHSA-2024:6148"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-28863"
@@ -24565,7 +24541,7 @@
           "url": "https://bugzilla.redhat.com/2296417"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-6147.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-6148.html"
         },
         {
           "url": "https://github.com/isaacs/node-tar"
@@ -24785,7 +24761,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3269"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2961"
@@ -24794,25 +24770,13 @@
           "url": "https://bugzilla.redhat.com/2273404"
         },
         {
-          "url": "https://bugzilla.redhat.com/2277202"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2277204"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2277205"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2277206"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3269.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3269"
@@ -24958,13 +24922,10 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33599"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25003,7 +24964,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3344"
@@ -25134,13 +25095,10 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33600"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25179,7 +25137,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3344"
@@ -25304,13 +25262,10 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33601"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25349,7 +25304,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3344"
@@ -25474,13 +25429,10 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33602"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -25519,7 +25471,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
+          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3344"
