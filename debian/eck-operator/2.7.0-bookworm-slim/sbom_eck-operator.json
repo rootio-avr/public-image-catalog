@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:5aa87c81-a40e-4ac3-834d-dd5669713156",
+  "serialNumber": "urn:uuid:6437db83-38fa-4fe4-989a-4e84f04947eb",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-03T05:40:31+00:00",
+    "timestamp": "2025-05-06T05:41:13+00:00",
     "tools": {
       "components": [
         {
@@ -17,9 +17,9 @@
       ]
     },
     "component": {
-      "bom-ref": "5c340365-3b9d-4a72-9a66-c968c41246ce",
+      "bom-ref": "b488ae37-d471-4fc7-9997-d0a2984160dc",
       "type": "container",
-      "name": "/tmp/image.tar",
+      "name": "rootioinc/common-eck-operator:2.7.0-bookworm-slim",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -94,7 +94,7 @@
   },
   "components": [
     {
-      "bom-ref": "39f342a3-c49e-403f-938d-f12a322b5a3c",
+      "bom-ref": "173c5054-2a1c-40dd-b5dc-a8ce11c5dccc",
       "type": "operating-system",
       "name": "debian",
       "version": "12.9",
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "bom-ref": "e4d3b057-b359-4471-99bd-6f096cd8b119",
+      "bom-ref": "6305241c-c598-4c32-8248-f046292f1cd5",
       "type": "application",
       "name": "elastic-operator",
       "properties": [
@@ -9280,7 +9280,7 @@
   ],
   "dependencies": [
     {
-      "ref": "39f342a3-c49e-403f-938d-f12a322b5a3c",
+      "ref": "173c5054-2a1c-40dd-b5dc-a8ce11c5dccc",
       "dependsOn": [
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.9",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.9",
@@ -9321,16 +9321,16 @@
       ]
     },
     {
-      "ref": "5c340365-3b9d-4a72-9a66-c968c41246ce",
+      "ref": "6305241c-c598-4c32-8248-f046292f1cd5",
       "dependsOn": [
-        "39f342a3-c49e-403f-938d-f12a322b5a3c",
-        "e4d3b057-b359-4471-99bd-6f096cd8b119"
+        "pkg:golang/github.com/elastic/cloud-on-k8s/v2"
       ]
     },
     {
-      "ref": "e4d3b057-b359-4471-99bd-6f096cd8b119",
+      "ref": "b488ae37-d471-4fc7-9997-d0a2984160dc",
       "dependsOn": [
-        "pkg:golang/github.com/elastic/cloud-on-k8s/v2"
+        "173c5054-2a1c-40dd-b5dc-a8ce11c5dccc",
+        "6305241c-c598-4c32-8248-f046292f1cd5"
       ]
     },
     {
@@ -10439,7 +10439,7 @@
         }
       ],
       "published": "2005-08-10T04:00:00+00:00",
-      "updated": "2024-11-20T23:59:47+00:00",
+      "updated": "2025-04-03T01:03:51+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.9",
@@ -10591,7 +10591,7 @@
         }
       ],
       "published": "2011-03-02T20:00:01+00:00",
-      "updated": "2024-11-21T01:21:41+00:00",
+      "updated": "2025-04-11T00:51:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.9",
@@ -11046,7 +11046,7 @@
         }
       ],
       "published": "2011-09-06T19:55:03+00:00",
-      "updated": "2024-11-21T01:30:25+00:00",
+      "updated": "2025-04-11T00:51:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u4?arch=amd64&distro=debian-12.9",
@@ -11207,7 +11207,7 @@
         }
       ],
       "published": "2013-10-28T22:55:03+00:00",
-      "updated": "2024-11-21T01:55:28+00:00",
+      "updated": "2025-04-11T00:51:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libsystemd0@252.33-1~deb12u1?arch=amd64&distro=debian-12.9",
@@ -11334,7 +11334,7 @@
         }
       ],
       "published": "2017-02-07T15:59:00+00:00",
-      "updated": "2024-11-21T02:48:47+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.9",
@@ -12846,7 +12846,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -12864,7 +12864,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -13006,7 +13006,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -13018,7 +13018,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -13426,7 +13426,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -13585,11 +13585,17 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
@@ -13646,9 +13652,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -13661,7 +13664,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -13741,6 +13744,12 @@
         },
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 4.7,
@@ -13801,6 +13810,9 @@
           "url": "https://security.netapp.com/advisory/ntap-20250124-0005/"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250418-0010/"
+        },
+        {
           "url": "https://ubuntu.com/security/notices/USN-7264-1"
         },
         {
@@ -13808,10 +13820,13 @@
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-13176"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2025.html#AppendixMSQL"
         }
       ],
       "published": "2025-01-20T14:15:26+00:00",
-      "updated": "2025-03-18T08:15:10+00:00",
+      "updated": "2025-04-19T01:15:43+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.9",
@@ -14030,7 +14045,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -14045,7 +14060,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -14200,7 +14215,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/03/08/4"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:4246"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2550"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-24786"
@@ -14212,7 +14227,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24786"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-4246.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2550.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2550"
@@ -14292,9 +14307,21 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "amazon"
           },
           "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
         },
         {
           "source": {
@@ -14313,6 +14340,12 @@
         },
         {
           "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.9,
@@ -14328,7 +14361,19 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-45336"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3772"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-45336"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341750"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341751"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2025-3772.html"
         },
         {
           "url": "https://go.dev/cl/643100"
@@ -14341,6 +14386,12 @@
         },
         {
           "url": "https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-45336.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3772.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45336"
@@ -14378,6 +14429,12 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "amazon"
           },
           "severity": "medium"
@@ -14399,6 +14456,12 @@
         },
         {
           "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 4.2,
@@ -14414,7 +14477,19 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-45341"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3772"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-45341"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341750"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341751"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2025-3772.html"
         },
         {
           "url": "https://go.dev/cl/643099"
@@ -14427,6 +14502,12 @@
         },
         {
           "url": "https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-45341.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3772.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45341"
@@ -14456,12 +14537,117 @@
       ]
     },
     {
+      "id": "CVE-2024-56406",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.3,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        122,
+        787
+      ],
+      "description": "A heap buffer overflow vulnerability was discovered in Perl. \n\nRelease branches 5.34, 5.36, 5.38 and 5.40 are affected, including development versions from 5.33.1 through 5.41.10.\n\nWhen there are non-ASCII bytes in the left-hand-side of the `tr` operator, `S_do_trans_invmap` can overflow the destination pointer `d`.\n\n\u00a0 \u00a0$ perl -e '$_ = \"\\x{FF}\" x 1000000; tr/\\xFF/\\x{100}/;' \n\u00a0 \u00a0Segmentation fault (core dumped)\n\nIt is believed that this vulnerability can enable Denial of Service and possibly Code Execution attacks on platforms that lack sufficient defenses.",
+      "recommendation": "Upgrade perl-base to version 5.36.0-7+deb12u2",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2024-56406"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/3"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/4"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/5"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2024-56406"
+        },
+        {
+          "url": "https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.38.4/changes"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.40.2/changes"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56406"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-56406"
+        }
+      ],
+      "published": "2025-04-13T14:15:14+00:00",
+      "updated": "2025-04-30T15:21:11+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.9",
+          "versions": [
+            {
+              "version": "5.36.0-7+deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2024-56433",
       "source": {
         "name": "debian",
         "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "low"
+        },
         {
           "source": {
             "name": "redhat"
@@ -14537,6 +14723,24 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.5,
@@ -14567,7 +14771,31 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/01/23/2"
         },
         {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/1"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/24/7"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4244"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2025-0395"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2339460"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-4244.html"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-0395.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4244.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00039.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-0395"
@@ -14601,7 +14829,7 @@
         }
       ],
       "published": "2025-01-22T13:15:20+00:00",
-      "updated": "2025-02-28T13:15:26+00:00",
+      "updated": "2025-04-30T05:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.9",
@@ -14775,6 +15003,134 @@
       ]
     },
     {
+      "id": "CVE-2025-22869",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        770
+      ],
+      "description": "SSH servers which implement file transfer protocols are vulnerable to a denial of service attack from clients which complete the key exchange slowly, or not at all, causing pending content to be read into memory, but never transmitted.",
+      "recommendation": "Upgrade golang.org/x/crypto to version 0.35.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-22869"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3833"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-22869"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2348367"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-3833.html"
+        },
+        {
+          "url": "https://github.com/golang/crypto"
+        },
+        {
+          "url": "https://github.com/golang/crypto/commit/7292932d45d55c7199324ab0027cc86e8198aa22"
+        },
+        {
+          "url": "https://go-review.googlesource.com/c/crypto/+/652135"
+        },
+        {
+          "url": "https://go.dev/cl/652135"
+        },
+        {
+          "url": "https://go.dev/issue/71931"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-22869.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3833.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22869"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3487"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20250411-0010"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20250411-0010/"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-22869"
+        }
+      ],
+      "published": "2025-02-26T08:14:24+00:00",
+      "updated": "2025-05-01T19:28:20+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/golang.org/x/crypto@v0.31.0",
+          "versions": [
+            {
+              "version": "v0.31.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2025-22870",
       "source": {
         "name": "ghsa",
@@ -14791,7 +15147,7 @@
           "source": {
             "name": "azure"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -14867,6 +15223,163 @@
       ]
     },
     {
+      "id": "CVE-2025-22871",
+      "source": {
+        "name": "govulndb",
+        "url": "https://pkg.go.dev/vuln/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "bitnami"
+          },
+          "score": 9.1,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.4,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "description": "The net/http package improperly accepts a bare LF as a line terminator in chunked data chunk-size lines. This can permit request smuggling if a net/http server is used in conjunction with a server that incorrectly accepts a bare LF as part of a chunk-ext.",
+      "recommendation": "Upgrade stdlib to version 1.23.8, 1.24.2",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-22871"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/04/4"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-22871"
+        },
+        {
+          "url": "https://go.dev/cl/652998"
+        },
+        {
+          "url": "https://go.dev/issue/71988"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22871"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3563"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-22871"
+        }
+      ],
+      "published": "2025-04-08T20:15:20+00:00",
+      "updated": "2025-04-18T15:15:57+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/stdlib@v1.23.1",
+          "versions": [
+            {
+              "version": "v1.23.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-22872",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "description": "The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).",
+      "recommendation": "Upgrade golang.org/x/net to version 0.38.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-22872"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-22872"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-vvgc-356p-c3xw"
+        },
+        {
+          "url": "https://go.dev/cl/662715"
+        },
+        {
+          "url": "https://go.dev/issue/73070"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/ezSKR9vqbqA"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22872"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3595"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-22872"
+        }
+      ],
+      "published": "2025-04-16T18:16:04+00:00",
+      "updated": "2025-04-17T20:22:16+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/golang.org/x/net@v0.33.0",
+          "versions": [
+            {
+              "version": "v0.33.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2025-30258",
       "source": {
         "name": "debian",
@@ -14881,6 +15394,12 @@
           "severity": "low",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
         }
       ],
       "cwes": [
@@ -14907,6 +15426,9 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-30258"
         },
         {
+          "url": "https://ubuntu.com/security/notices/USN-7412-1"
+        },
+        {
           "url": "https://www.cve.org/CVERecord?id=CVE-2025-30258"
         }
       ],
@@ -14918,6 +15440,98 @@
           "versions": [
             {
               "version": "2.2.40-1.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-31115",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        366,
+        416,
+        476,
+        826
+      ],
+      "description": "XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.",
+      "recommendation": "Upgrade liblzma5 to version 5.4.1-1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-31115"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/03/1"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/03/2"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/03/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-31115"
+        },
+        {
+          "url": "https://github.com/tukaani-project/xz/commit/d5a2ffe41bb77b918a8c96084885d4dbe4bf6480"
+        },
+        {
+          "url": "https://github.com/tukaani-project/xz/security/advisories/GHSA-6cc8-p5mm-29w2"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31115"
+        },
+        {
+          "url": "https://tukaani.org/xz/xz-cve-2025-31115.patch"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7414-1"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-31115"
+        }
+      ],
+      "published": "2025-04-03T17:15:30+00:00",
+      "updated": "2025-04-07T14:18:34+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.9",
+          "versions": [
+            {
+              "version": "5.4.1-0.2",
               "status": "affected"
             }
           ]
@@ -15057,6 +15671,5 @@
         }
       ]
     }
-  ],
-  "ArtifactName": "rootioinc/common-eck-operator:2.7.0-bookworm-slim"
+  ]
 }
