@@ -33,9 +33,9 @@ RUN set -eux; \
 # Environment variables for PHP build
 ENV PHPIZE_DEPS="autoconf dpkg-dev file g++ gcc libc-dev make pkg-config re2c"
 ENV PHP_INI_DIR=/usr/local/etc/php
-ENV PHP_VERSION=8.4.1
-ENV PHP_URL="https://www.php.net/distributions/php-8.4.1.tar.xz"
-ENV PHP_SHA256="94c8a4fd419d45748951fa6d73bd55f6bdf0adaefb8814880a67baa66027311f"
+ENV PHP_VERSION=8.4.6
+ENV PHP_URL="https://www.php.net/distributions/php-8.4.6.tar.xz"
+ENV PHP_SHA256="089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631"
 ENV PHP_CFLAGS="-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
 ENV PHP_CPPFLAGS="$PHP_CFLAGS"
 ENV PHP_LDFLAGS="-Wl,-O1 -pie"
