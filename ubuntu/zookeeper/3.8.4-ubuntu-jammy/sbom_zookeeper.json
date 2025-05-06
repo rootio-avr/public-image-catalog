@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:338662a3-9d92-465a-8699-5a1055301444",
+  "serialNumber": "urn:uuid:5883dabf-d41c-4042-bc7a-d7eee798a6da",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-03T06:34:59+00:00",
+    "timestamp": "2025-05-06T06:32:32+00:00",
     "tools": {
       "components": [
         {
@@ -17,9 +17,9 @@
       ]
     },
     "component": {
-      "bom-ref": "94df4a4f-6613-4284-9794-ec1faf3262e2",
+      "bom-ref": "81ebb730-5512-4a59-b22f-aa40e9a1ef29",
       "type": "container",
-      "name": "/tmp/image.tar",
+      "name": "rootioinc/common-zookeeper:3.8.4-ubuntu-jammy",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -82,7 +82,7 @@
   },
   "components": [
     {
-      "bom-ref": "ac14295a-5a36-4faa-96f8-2816f109e4ee",
+      "bom-ref": "46490a97-b4de-4b5d-bb74-8806daccd836",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "22.04",
@@ -11049,50 +11049,7 @@
   ],
   "dependencies": [
     {
-      "ref": "94df4a4f-6613-4284-9794-ec1faf3262e2",
-      "dependsOn": [
-        "ac14295a-5a36-4faa-96f8-2816f109e4ee",
-        "pkg:maven/ch.qos.logback/logback-classic@1.2.13",
-        "pkg:maven/ch.qos.logback/logback-core@1.2.13",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
-        "pkg:maven/commons-cli/commons-cli@1.5.0",
-        "pkg:maven/commons-io/commons-io@2.11.0",
-        "pkg:maven/io.dropwizard.metrics/metrics-core@4.1.12.1",
-        "pkg:maven/io.netty/netty-buffer@4.1.105.Final",
-        "pkg:maven/io.netty/netty-codec@4.1.105.Final",
-        "pkg:maven/io.netty/netty-common@4.1.105.Final",
-        "pkg:maven/io.netty/netty-handler@4.1.105.Final",
-        "pkg:maven/io.netty/netty-resolver@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport-classes-epoll@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport-native-epoll@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.105.Final",
-        "pkg:maven/io.netty/netty-transport@4.1.105.Final",
-        "pkg:maven/io.prometheus/simpleclient@0.9.0",
-        "pkg:maven/io.prometheus/simpleclient_common@0.9.0",
-        "pkg:maven/io.prometheus/simpleclient_hotspot@0.9.0",
-        "pkg:maven/io.prometheus/simpleclient_servlet@0.9.0",
-        "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
-        "pkg:maven/jline/jline@2.14.6",
-        "pkg:maven/org.apache.yetus/audience-annotations@0.12.0",
-        "pkg:maven/org.apache.zookeeper/zookeeper-jute@3.8.4",
-        "pkg:maven/org.apache.zookeeper/zookeeper-prometheus-metrics@3.8.4",
-        "pkg:maven/org.apache.zookeeper/zookeeper@3.8.4",
-        "pkg:maven/org.eclipse.jetty/jetty-http@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-io@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-security@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-server@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.53.v20231009",
-        "pkg:maven/org.eclipse.jetty/jetty-util@9.4.53.v20231009",
-        "pkg:maven/org.jctools/jctools-core@3.1.0",
-        "pkg:maven/org.slf4j/slf4j-api@1.7.30",
-        "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5"
-      ]
-    },
-    {
-      "ref": "ac14295a-5a36-4faa-96f8-2816f109e4ee",
+      "ref": "46490a97-b4de-4b5d-bb74-8806daccd836",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.4.13?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/base-passwd@3.5.52build1?arch=amd64&distro=ubuntu-22.04",
@@ -11136,6 +11093,49 @@
         "pkg:deb/ubuntu/usrmerge@25ubuntu2?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/wget@1.21.2-2ubuntu1.1?arch=amd64&distro=ubuntu-22.04"
+      ]
+    },
+    {
+      "ref": "81ebb730-5512-4a59-b22f-aa40e9a1ef29",
+      "dependsOn": [
+        "46490a97-b4de-4b5d-bb74-8806daccd836",
+        "pkg:maven/ch.qos.logback/logback-classic@1.2.13",
+        "pkg:maven/ch.qos.logback/logback-core@1.2.13",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
+        "pkg:maven/commons-cli/commons-cli@1.5.0",
+        "pkg:maven/commons-io/commons-io@2.11.0",
+        "pkg:maven/io.dropwizard.metrics/metrics-core@4.1.12.1",
+        "pkg:maven/io.netty/netty-buffer@4.1.105.Final",
+        "pkg:maven/io.netty/netty-codec@4.1.105.Final",
+        "pkg:maven/io.netty/netty-common@4.1.105.Final",
+        "pkg:maven/io.netty/netty-handler@4.1.105.Final",
+        "pkg:maven/io.netty/netty-resolver@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport-classes-epoll@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport-native-epoll@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.105.Final",
+        "pkg:maven/io.netty/netty-transport@4.1.105.Final",
+        "pkg:maven/io.prometheus/simpleclient@0.9.0",
+        "pkg:maven/io.prometheus/simpleclient_common@0.9.0",
+        "pkg:maven/io.prometheus/simpleclient_hotspot@0.9.0",
+        "pkg:maven/io.prometheus/simpleclient_servlet@0.9.0",
+        "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
+        "pkg:maven/jline/jline@2.14.6",
+        "pkg:maven/org.apache.yetus/audience-annotations@0.12.0",
+        "pkg:maven/org.apache.zookeeper/zookeeper-jute@3.8.4",
+        "pkg:maven/org.apache.zookeeper/zookeeper-prometheus-metrics@3.8.4",
+        "pkg:maven/org.apache.zookeeper/zookeeper@3.8.4",
+        "pkg:maven/org.eclipse.jetty/jetty-http@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-io@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-security@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-server@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.53.v20231009",
+        "pkg:maven/org.eclipse.jetty/jetty-util@9.4.53.v20231009",
+        "pkg:maven/org.jctools/jctools-core@3.1.0",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.30",
+        "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5"
       ]
     },
     {
@@ -12527,7 +12527,7 @@
         }
       ],
       "published": "2017-02-07T15:59:00+00:00",
-      "updated": "2024-11-21T02:48:47+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
@@ -12621,7 +12621,7 @@
         }
       ],
       "published": "2017-07-11T03:29:00+00:00",
-      "updated": "2024-11-21T03:07:14+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libpcre3@8.39-13ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
@@ -13192,7 +13192,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2022-4899"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0894"
+          "url": "https://access.redhat.com/errata/RHSA-2024:1141"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2022-4899"
@@ -13423,7 +13423,7 @@
           "url": "https://bugzilla.redhat.com/2258794"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0894.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-1141.html"
         },
         {
           "url": "https://github.com/facebook/zstd"
@@ -14027,7 +14027,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -14091,11 +14091,17 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
@@ -14151,9 +14157,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -14166,7 +14169,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -14236,11 +14239,17 @@
           "source": {
             "name": "azure"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
           },
           "severity": "medium"
         },
@@ -14279,6 +14288,9 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/02/06/6"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4049"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-12133"
         },
         {
@@ -14289,6 +14301,12 @@
         },
         {
           "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-12133.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4049.html"
         },
         {
           "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00025.html"
@@ -14307,7 +14325,7 @@
         }
       ],
       "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T13:15:10+00:00",
+      "updated": "2025-04-23T12:15:15+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?arch=amd64&distro=ubuntu-22.04",
@@ -14329,7 +14347,19 @@
       "ratings": [
         {
           "source": {
+            "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
           },
           "severity": "medium"
         },
@@ -14365,6 +14395,9 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-12243"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4051"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-12243"
         },
         {
@@ -14372,6 +14405,12 @@
         },
         {
           "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-12243.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4051.html"
         },
         {
           "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00027.html"
@@ -14393,7 +14432,7 @@
         }
       ],
       "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T22:15:11+00:00",
+      "updated": "2025-04-23T11:15:45+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.5?arch=amd64&distro=ubuntu-22.04",
@@ -14563,6 +14602,12 @@
         },
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 4.7,
@@ -14623,6 +14668,9 @@
           "url": "https://security.netapp.com/advisory/ntap-20250124-0005/"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250418-0010/"
+        },
+        {
           "url": "https://ubuntu.com/security/notices/USN-7264-1"
         },
         {
@@ -14630,10 +14678,13 @@
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-13176"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2025.html#AppendixMSQL"
         }
       ],
       "published": "2025-01-20T14:15:26+00:00",
-      "updated": "2025-03-18T08:15:10+00:00",
+      "updated": "2025-04-19T01:15:43+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.18?arch=amd64&distro=ubuntu-22.04",
@@ -14778,7 +14829,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -14839,7 +14890,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26458"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26458"
@@ -14849,6 +14900,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -14863,7 +14917,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -14945,7 +14999,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -15009,7 +15063,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26461"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26461"
@@ -15019,6 +15073,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -15033,7 +15090,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -15176,7 +15233,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/09/4"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:8860"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9474"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-3596"
@@ -15197,10 +15254,10 @@
           "url": "https://datatracker.ietf.org/doc/html/rfc2865"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-8860.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9474.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:8860"
+          "url": "https://errata.rockylinux.org/RLSA-2024:4935"
         },
         {
           "url": "https://kb.cert.org/vince/comm/case/1515/"
@@ -15526,12 +15583,117 @@
       ]
     },
     {
+      "id": "CVE-2024-56406",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.3,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        122,
+        787
+      ],
+      "description": "A heap buffer overflow vulnerability was discovered in Perl. \n\nRelease branches 5.34, 5.36, 5.38 and 5.40 are affected, including development versions from 5.33.1 through 5.41.10.\n\nWhen there are non-ASCII bytes in the left-hand-side of the `tr` operator, `S_do_trans_invmap` can overflow the destination pointer `d`.\n\n\u00a0 \u00a0$ perl -e '$_ = \"\\x{FF}\" x 1000000; tr/\\xFF/\\x{100}/;' \n\u00a0 \u00a0Segmentation fault (core dumped)\n\nIt is believed that this vulnerability can enable Denial of Service and possibly Code Execution attacks on platforms that lack sufficient defenses.",
+      "recommendation": "Upgrade perl-base to version 5.34.0-3ubuntu1.4",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2024-56406"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/3"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/4"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/5"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2024-56406"
+        },
+        {
+          "url": "https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.38.4/changes"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.40.2/changes"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56406"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-56406"
+        }
+      ],
+      "published": "2025-04-13T14:15:14+00:00",
+      "updated": "2025-04-30T15:21:11+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.3?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "5.34.0-3ubuntu1.3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2024-56433",
       "source": {
         "name": "ubuntu",
         "url": "https://git.launchpad.net/ubuntu-cve-tracker"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "low"
+        },
         {
           "source": {
             "name": "redhat"
@@ -15693,6 +15855,18 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "cbl-mariner"
           },
           "severity": "high"
@@ -15702,6 +15876,12 @@
             "name": "oracle-oval"
           },
           "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
         },
         {
           "source": {
@@ -15723,6 +15903,7 @@
         674
       ],
       "description": "A stack overflow vulnerability exists in the libexpat library due to the way it handles recursive entity expansion in XML documents. When parsing an XML document with deeply nested entity references, libexpat can be forced to recurse indefinitely, exhausting the stack space and causing a crash. This issue could lead to denial of service (DoS) or, in some cases, exploitable memory corruption, depending on the environment and library usage.",
+      "recommendation": "Upgrade libexpat1 to version 2.4.7-1ubuntu0.6",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-8176"
@@ -15734,16 +15915,43 @@
           "url": "https://access.redhat.com/errata/RHSA-2025:3531"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3734"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3913"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4048"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4446"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4447"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4448"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4449"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-8176"
         },
         {
           "url": "https://blog.hartwork.org/posts/expat-2-7-0-released/"
         },
         {
+          "url": "https://bugzilla.redhat.com/2310137"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2310137"
         },
         {
           "url": "https://bugzilla.suse.com/show_bug.cgi?id=1239618"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-3531.html"
         },
         {
           "url": "https://github.com/libexpat/libexpat/blob/R_2_7_0/expat/Changes#L40-L52"
@@ -15758,7 +15966,7 @@
           "url": "https://linux.oracle.com/cve/CVE-2024-8176.html"
         },
         {
-          "url": "https://linux.oracle.com/errata/ELSA-2025-3531.html"
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4048.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-8176"
@@ -15773,11 +15981,14 @@
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
+          "url": "https://ubuntu.com/security/notices/USN-7424-1"
+        },
+        {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-8176"
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-04-02T15:15:57+00:00",
+      "updated": "2025-05-05T08:15:15+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libexpat1@2.4.7-1ubuntu0.5?arch=amd64&distro=ubuntu-22.04",
@@ -16002,6 +16213,12 @@
         },
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "low"
+        },
+        {
+          "source": {
             "name": "photon"
           },
           "severity": "medium"
@@ -16069,6 +16286,24 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.5,
@@ -16099,7 +16334,31 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/01/23/2"
         },
         {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/1"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/24/7"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4244"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2025-0395"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2339460"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-4244.html"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-0395.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4244.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00039.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-0395"
@@ -16133,7 +16392,7 @@
         }
       ],
       "published": "2025-01-22T13:15:20+00:00",
-      "updated": "2025-02-28T13:15:26+00:00",
+      "updated": "2025-04-30T05:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.8?arch=amd64&distro=ubuntu-22.04",
@@ -16238,82 +16497,6 @@
           "versions": [
             {
               "version": "1:2.44-1ubuntu0.22.04.1",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "CVE-2025-23022",
-      "source": {
-        "name": "ubuntu",
-        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "amazon"
-          },
-          "severity": "high"
-        },
-        {
-          "source": {
-            "name": "nvd"
-          },
-          "score": 6.2,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        },
-        {
-          "source": {
-            "name": "redhat"
-          },
-          "score": 5.5,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
-        },
-        {
-          "source": {
-            "name": "ubuntu"
-          },
-          "severity": "medium"
-        }
-      ],
-      "cwes": [
-        190
-      ],
-      "description": "FreeType 2.8.1 has a signed integer overflow in cf2_doFlex in cff/cf2intrp.c.",
-      "advisories": [
-        {
-          "url": "https://avd.aquasec.com/nvd/cve-2025-23022"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2025-23022"
-        },
-        {
-          "url": "https://gitlab.freedesktop.org/freetype/freetype/-/issues/1312"
-        },
-        {
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-23022"
-        },
-        {
-          "url": "https://security-tracker.debian.org/tracker/CVE-2025-23022"
-        },
-        {
-          "url": "https://www.cve.org/CVERecord?id=CVE-2025-23022"
-        }
-      ],
-      "published": "2025-01-10T15:15:16+00:00",
-      "updated": "2025-01-16T21:12:15+00:00",
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libfreetype6@2.11.1%2Bdfsg-1ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
-          "versions": [
-            {
-              "version": "2.11.1+dfsg-1ubuntu0.2",
               "status": "affected"
             }
           ]
@@ -16489,10 +16672,16 @@
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2025-24970"
+        },
+        {
+          "url": "https://www.vicarius.io/vsociety/posts/cve-2025-24970-netty-vulnerability-detection"
+        },
+        {
+          "url": "https://www.vicarius.io/vsociety/posts/cve-2025-24970-netty-vulnerability-mitigation"
         }
       ],
       "published": "2025-02-10T22:15:38+00:00",
-      "updated": "2025-02-21T18:15:36+00:00",
+      "updated": "2025-04-16T16:15:30+00:00",
       "affects": [
         {
           "ref": "pkg:maven/io.netty/netty-handler@4.1.105.Final",
@@ -16621,6 +16810,12 @@
         },
         {
           "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 8.1,
@@ -16724,7 +16919,335 @@
           ]
         }
       ]
+    },
+    {
+      "id": "CVE-2025-29088",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "bitnami"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        190,
+        400
+      ],
+      "description": "In SQLite 3.49.0 before 3.49.1, certain argument values to sqlite3_db_config (in the C-language API) can cause a denial of service (application crash). An sz*nBig multiplication is not cast to a 64-bit integer, and consequently some memory allocations may be incorrect.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-29088"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-29088"
+        },
+        {
+          "url": "https://gist.github.com/ylwango613/d3883fb9f6ba8a78086356779ce88248"
+        },
+        {
+          "url": "https://github.com/sqlite/sqlite/commit/56d2fd008b108109f489339f5fd55212bb50afd4"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-29088"
+        },
+        {
+          "url": "https://sqlite.org/forum/forumpost/48f365daec"
+        },
+        {
+          "url": "https://sqlite.org/releaselog/3_49_1.html"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-29088"
+        },
+        {
+          "url": "https://www.sqlite.org/cves.html"
+        }
+      ],
+      "published": "2025-04-10T14:15:27+00:00",
+      "updated": "2025-04-30T16:40:41+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libsqlite3-0@3.37.2-2ubuntu0.3?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "3.37.2-2ubuntu0.3",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-30258",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 2.7,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        754
+      ],
+      "description": "In GnuPG before 2.5.5, if a user chooses to import a certificate with certain crafted subkey data that lacks a valid backsig or that has incorrect usage flags, the user loses the ability to verify signatures made from certain other signing keys, aka a \"verification DoS.\"",
+      "recommendation": "Upgrade dirmngr to version 2.2.27-3ubuntu2.3; Upgrade gnupg to version 2.2.27-3ubuntu2.3; Upgrade gnupg-l10n to version 2.2.27-3ubuntu2.3; Upgrade gnupg-utils to version 2.2.27-3ubuntu2.3; Upgrade gpg to version 2.2.27-3ubuntu2.3; Upgrade gpg-agent to version 2.2.27-3ubuntu2.3; Upgrade gpg-wks-client to version 2.2.27-3ubuntu2.3; Upgrade gpg-wks-server to version 2.2.27-3ubuntu2.3; Upgrade gpgconf to version 2.2.27-3ubuntu2.3; Upgrade gpgsm to version 2.2.27-3ubuntu2.3; Upgrade gpgv to version 2.2.27-3ubuntu2.3",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-30258"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-30258"
+        },
+        {
+          "url": "https://dev.gnupg.org/T7527"
+        },
+        {
+          "url": "https://dev.gnupg.org/rG48978ccb4e20866472ef18436a32744350a65158"
+        },
+        {
+          "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2025q1/000491.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-30258"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7412-1"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-30258"
+        }
+      ],
+      "published": "2025-03-19T20:15:20+00:00",
+      "updated": "2025-03-19T20:15:20+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/dirmngr@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gnupg-l10n@2.2.27-3ubuntu2.1?arch=all&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gnupg-utils@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gnupg@2.2.27-3ubuntu2.1?arch=all&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg-agent@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg-wks-client@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg-wks-server@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpgconf@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpgsm@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-3576",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.9,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        328
+      ],
+      "description": "A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-3576"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-3576"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2359465"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-3576"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-3576"
+        }
+      ],
+      "published": "2025-04-15T06:15:44+00:00",
+      "updated": "2025-04-15T18:39:27+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.4?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
     }
-  ],
-  "ArtifactName": "rootioinc/common-zookeeper:3.8.4-ubuntu-jammy"
+  ]
 }
