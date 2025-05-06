@@ -20,9 +20,9 @@ RUN set -eux; \
 	; \
 	rm -rf /var/lib/apt/lists/*
 
-ENV REDIS_VERSION 7.4.1
-ENV REDIS_DOWNLOAD_URL http://download.redis.io/releases/redis-7.4.1.tar.gz
-ENV REDIS_DOWNLOAD_SHA bc34b878eb89421bbfca6fa78752343bf37af312a09eb0fae47c9575977dfaa2
+ENV REDIS_VERSION 7.4.3
+ENV REDIS_DOWNLOAD_URL http://download.redis.io/releases/redis-7.4.3.tar.gz
+ENV REDIS_DOWNLOAD_SHA e1807d7c0f824f4c5450244ef50c1e596b8d09b35d03a83f4e018fb7316acf45
 
 RUN set -eux; \
 	\
