@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:7326c590-66a7-4315-8a85-3669f321c49d",
+  "serialNumber": "urn:uuid:820f441a-7717-44b7-9fe5-a9145c9cd9dc",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-05-06T06:25:16+00:00",
+    "timestamp": "2025-05-06T09:15:36+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "4e7a8a50-ed91-4f93-a7d6-0b67d6d1d17d",
+      "bom-ref": "a49256e6-455f-4d26-a3b2-cdfd2e214581",
       "type": "container",
       "name": "rootioinc/common-ruby:3.1-bookworm-slim",
       "properties": [
@@ -54,7 +54,7 @@
   },
   "components": [
     {
-      "bom-ref": "0e90d116-90e5-4b5f-92be-b14e44213f77",
+      "bom-ref": "d6157c96-3951-4e22-b4cf-6ca061d33da8",
       "type": "operating-system",
       "name": "debian",
       "version": "12.10",
@@ -10707,52 +10707,9 @@
   ],
   "dependencies": [
     {
-      "ref": "0e90d116-90e5-4b5f-92be-b14e44213f77",
+      "ref": "a49256e6-455f-4d26-a3b2-cdfd2e214581",
       "dependsOn": [
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10&epoch=1",
-        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.10",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.10&epoch=1",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.10",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.10&epoch=1",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u10?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libncurses6@6.4-4?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.10",
-        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/libyaml-0-2@0.2.5-1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.10&epoch=1",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.10",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.10",
-        "pkg:deb/debian/tzdata@2025a-0%2Bdeb12u1?arch=all&distro=debian-12.10",
-        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10"
-      ]
-    },
-    {
-      "ref": "4e7a8a50-ed91-4f93-a7d6-0b67d6d1d17d",
-      "dependsOn": [
-        "0e90d116-90e5-4b5f-92be-b14e44213f77",
+        "d6157c96-3951-4e22-b4cf-6ca061d33da8",
         "pkg:gem/abbrev@0.1.0",
         "pkg:gem/base64@0.1.1",
         "pkg:gem/benchmark@0.2.0",
@@ -10838,6 +10795,49 @@
         "pkg:gem/weakref@0.1.1",
         "pkg:gem/yaml@0.2.0",
         "pkg:gem/zlib@2.1.1"
+      ]
+    },
+    {
+      "ref": "d6157c96-3951-4e22-b4cf-6ca061d33da8",
+      "dependsOn": [
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10&epoch=1",
+        "pkg:deb/debian/ca-certificates@20230311?arch=all&distro=debian-12.10",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.10&epoch=1",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/init-system-helpers@1.65.2?arch=all&distro=debian-12.10",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.10&epoch=1",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u10?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libncurses6@6.4-4?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.10",
+        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/libyaml-0-2@0.2.5-1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.10&epoch=1",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.10",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.10",
+        "pkg:deb/debian/tzdata@2025a-0%2Bdeb12u1?arch=all&distro=debian-12.10",
+        "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.10"
       ]
     },
     {
