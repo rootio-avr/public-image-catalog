@@ -1,0 +1,103 @@
+version: "3.7"
+
+x-superset-user: &superset-user root
+x-superset-depends-on: &superset-depends-on
+  - db
+  - redis
+x-superset-volumes: &superset-volumes
+  - ./docker:/app/docker
+  - ./superset:/app/superset
+  - ./superset-frontend:/app/superset-frontend
+  - superset_home:/app/superset_home
+  - ./tests:/app/tests
+
+services:
+  db:
+    image: postgres:15
+    container_name: superset_db
+    restart: unless-stopped
+    env_file: docker/.env
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - db_home:/var/lib/postgresql/data
+      - ./docker/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+
+  redis:
+    image: redis:7
+    container_name: superset_cache
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - redis:/data
+
+  superset:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: superset_app
+    command: ["/app/docker/docker-bootstrap.sh", "app"]
+    env_file: docker/.env
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
+    user: *superset-user
+    depends_on: *superset-depends-on
+    volumes: *superset-volumes
+
+  superset-init:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: superset_init
+    command: ["/app/docker/docker-init.sh"]
+    env_file: docker/.env
+    depends_on: *superset-depends-on
+    user: *superset-user
+    volumes: *superset-volumes
+    healthcheck:
+      disable: true
+
+  superset-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: superset_worker
+    command: ["/app/docker/docker-bootstrap.sh", "worker"]
+    env_file: docker/.env
+    restart: unless-stopped
+    depends_on: *superset-depends-on
+    user: *superset-user
+    volumes: *superset-volumes
+    healthcheck:
+      test: ["CMD-SHELL", "celery -A superset.tasks.celery_app:app inspect ping -d celery@$$HOSTNAME"]
+
+  superset-worker-beat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: superset_worker_beat
+    command: ["/app/docker/docker-bootstrap.sh", "beat"]
+    env_file: docker/.env
+    restart: unless-stopped
+    depends_on: *superset-depends-on
+    user: *superset-user
+    volumes: *superset-volumes
+    healthcheck:
+      disable: true
+
+  superset-node:
+    image: node:22-bookworm-slim
+    container_name: superset_node
+    command: ["/app/docker/docker-frontend.sh"]
+    env_file: docker/.env
+    depends_on: *superset-depends-on
+    environment:
+      SCARF_ANALYTICS: "${SCARF_ANALYTICS}"
+    volumes: *superset-volumes
+
+volumes:
+  superset_home:
+  db_home:
+  redis:
