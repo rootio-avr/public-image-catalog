@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:10e7d236-c4f4-4729-9c95-2e2b42826786",
+  "serialNumber": "urn:uuid:25b23678-2903-434c-ac72-97282cec6fd0",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-03T06:22:41+00:00",
+    "timestamp": "2025-05-06T06:25:18+00:00",
     "tools": {
       "components": [
         {
@@ -17,9 +17,9 @@
       ]
     },
     "component": {
-      "bom-ref": "3febf29c-a4eb-42ce-897b-801a0f412317",
+      "bom-ref": "dc02ad6f-2779-4c0f-bd64-7f1cae6fdc27",
       "type": "container",
-      "name": "/tmp/image.tar",
+      "name": "rootioinc/common-stakater-reloader:v1.2.0-debian-bookworm",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -90,22 +90,7 @@
   },
   "components": [
     {
-      "bom-ref": "5fad1f6d-1e80-4a93-809d-5b227bc86663",
-      "type": "application",
-      "name": "manager",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gobinary"
-        }
-      ]
-    },
-    {
-      "bom-ref": "c7046bec-c9f6-401c-b4ed-ccc958b8d974",
+      "bom-ref": "718139e5-4bc0-4ea8-b23c-82ae6180f7e6",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -117,6 +102,21 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f21316f2-a5ca-4929-9de7-3a7a4df3de3e",
+      "type": "application",
+      "name": "manager",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
         }
       ]
     },
@@ -1705,14 +1705,22 @@
   ],
   "dependencies": [
     {
-      "ref": "3febf29c-a4eb-42ce-897b-801a0f412317",
+      "ref": "718139e5-4bc0-4ea8-b23c-82ae6180f7e6",
       "dependsOn": [
-        "5fad1f6d-1e80-4a93-809d-5b227bc86663",
-        "c7046bec-c9f6-401c-b4ed-ccc958b8d974"
+        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/tzdata@2024a-0%2Bdeb12u1?arch=all&distro=debian-12.8"
       ]
     },
     {
-      "ref": "5fad1f6d-1e80-4a93-809d-5b227bc86663",
+      "ref": "dc02ad6f-2779-4c0f-bd64-7f1cae6fdc27",
+      "dependsOn": [
+        "718139e5-4bc0-4ea8-b23c-82ae6180f7e6",
+        "f21316f2-a5ca-4929-9de7-3a7a4df3de3e"
+      ]
+    },
+    {
+      "ref": "f21316f2-a5ca-4929-9de7-3a7a4df3de3e",
       "dependsOn": [
         "pkg:golang/github.com/argoproj/argo-rollouts@v1.7.2",
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
@@ -1772,14 +1780,6 @@
         "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.4.1",
         "pkg:golang/sigs.k8s.io/yaml@v1.4.0",
         "pkg:golang/stdlib@v1.23.1"
-      ]
-    },
-    {
-      "ref": "c7046bec-c9f6-401c-b4ed-ccc958b8d974",
-      "dependsOn": [
-        "pkg:deb/debian/base-files@12.4%2Bdeb12u8?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/netbase@6.4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024a-0%2Bdeb12u1?arch=all&distro=debian-12.8"
       ]
     },
     {
@@ -2037,9 +2037,21 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "amazon"
           },
           "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
         },
         {
           "source": {
@@ -2058,6 +2070,12 @@
         },
         {
           "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.9,
@@ -2073,7 +2091,19 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-45336"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3772"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-45336"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341750"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341751"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2025-3772.html"
         },
         {
           "url": "https://go.dev/cl/643100"
@@ -2086,6 +2116,12 @@
         },
         {
           "url": "https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-45336.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3772.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45336"
@@ -2123,6 +2159,12 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "amazon"
           },
           "severity": "medium"
@@ -2144,6 +2186,12 @@
         },
         {
           "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 4.2,
@@ -2159,7 +2207,19 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-45341"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3772"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-45341"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341750"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2341751"
+        },
+        {
+          "url": "https://errata.almalinux.org/8/ALSA-2025-3772.html"
         },
         {
           "url": "https://go.dev/cl/643099"
@@ -2172,6 +2232,12 @@
         },
         {
           "url": "https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-45341.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3772.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45341"
@@ -2288,7 +2354,7 @@
           "source": {
             "name": "azure"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -2362,7 +2428,163 @@
           ]
         }
       ]
+    },
+    {
+      "id": "CVE-2025-22871",
+      "source": {
+        "name": "govulndb",
+        "url": "https://pkg.go.dev/vuln/"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "bitnami"
+          },
+          "score": 9.1,
+          "severity": "critical",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.4,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "description": "The net/http package improperly accepts a bare LF as a line terminator in chunked data chunk-size lines. This can permit request smuggling if a net/http server is used in conjunction with a server that incorrectly accepts a bare LF as part of a chunk-ext.",
+      "recommendation": "Upgrade stdlib to version 1.23.8, 1.24.2",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-22871"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/04/4"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-22871"
+        },
+        {
+          "url": "https://go.dev/cl/652998"
+        },
+        {
+          "url": "https://go.dev/issue/71988"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/Y2uBTVKjBQk"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22871"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3563"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-22871"
+        }
+      ],
+      "published": "2025-04-08T20:15:20+00:00",
+      "updated": "2025-04-18T15:15:57+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/stdlib@v1.23.1",
+          "versions": [
+            {
+              "version": "v1.23.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-22872",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "description": "The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. <math>, <svg>, etc contexts).",
+      "recommendation": "Upgrade golang.org/x/net to version 0.38.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-22872"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-22872"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-vvgc-356p-c3xw"
+        },
+        {
+          "url": "https://go.dev/cl/662715"
+        },
+        {
+          "url": "https://go.dev/issue/73070"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/ezSKR9vqbqA"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-22872"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3595"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-22872"
+        }
+      ],
+      "published": "2025-04-16T18:16:04+00:00",
+      "updated": "2025-04-17T20:22:16+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/golang.org/x/net@v0.26.0",
+          "versions": [
+            {
+              "version": "v0.26.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
     }
-  ],
-  "ArtifactName": "rootioinc/common-stakater-reloader:v1.2.0-debian-bookworm"
+  ]
 }
