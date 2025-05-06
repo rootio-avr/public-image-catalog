@@ -40,12 +40,12 @@ RUN curl -fsSL https://github.com/adoptium/temurin21-binaries/releases/download/
 FROM java-base AS jenkins-download
 
 ENV JENKINS_HOME=/var/jenkins_home \
-    JENKINS_VERSION=latest \
+    JENKINS_VERSION=2.508 \
     JENKINS_UC=https://updates.jenkins.io
 
 # Create directory first, then download Jenkins
 RUN mkdir -p /usr/share/jenkins && \
-    curl -fsSL https://get.jenkins.io/war-stable/latest/jenkins.war -o /usr/share/jenkins/jenkins.war
+    curl -fsSL https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/2.508/jenkins-war-2.508.war -o /usr/share/jenkins/jenkins.war
 
 # Stage 4: Final stage
 FROM debian:bookworm-slim
