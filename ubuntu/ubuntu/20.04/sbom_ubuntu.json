@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:a09b1974-7d4d-489c-a14b-1b5e6f65be62",
+  "serialNumber": "urn:uuid:21a17dc5-60a8-4121-9ff2-ef9d1c909929",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-03T06:34:14+00:00",
+    "timestamp": "2025-05-06T06:31:07+00:00",
     "tools": {
       "components": [
         {
@@ -17,17 +17,17 @@
       ]
     },
     "component": {
-      "bom-ref": "b89ed0c8-8f65-4e0c-9bae-cc870f3c43c0",
+      "bom-ref": "061e992f-0ffb-4a12-8278-ac6b866d8dc7",
       "type": "container",
-      "name": "/tmp/image.tar",
+      "name": "rootioinc/common-ubuntu:20.04",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:ImageID",
-          "value": "sha256:6013ae1a63c2ee58a8949f03c6366a3ef6a2f386a7db27d86de2de965e9f450b"
+          "value": "sha256:b7bab04fd9aa0c771e5720bf0cc7cbf993fd6946645983d9096126e5af45d713"
         },
         {
           "name": "aquasecurity:trivy:Labels:org.opencontainers.image.ref.name",
@@ -46,7 +46,7 @@
   },
   "components": [
     {
-      "bom-ref": "c33f97a5-16fa-48ea-9aaa-7edeb1e169d1",
+      "bom-ref": "ebcfe08b-628d-4bbd-a6f9-713fec1b7b49",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "20.04",
@@ -86,11 +86,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -134,11 +134,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -177,11 +177,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -231,11 +231,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -274,11 +274,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -391,11 +391,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -449,11 +449,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -502,11 +502,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -555,11 +555,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -608,11 +608,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -657,11 +657,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -711,11 +711,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -782,11 +782,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -830,11 +830,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -947,11 +947,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1005,11 +1005,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1077,11 +1077,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1106,13 +1106,13 @@
       ]
     },
     {
-      "bom-ref": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.2?arch=amd64&distro=ubuntu-20.04",
+      "bom-ref": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.4?arch=amd64&distro=ubuntu-20.04",
       "type": "library",
       "supplier": {
         "name": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
       },
       "name": "gpgv",
-      "version": "2.2.19-3ubuntu2.2",
+      "version": "2.2.19-3ubuntu2.4",
       "licenses": [
         {
           "license": {
@@ -1175,19 +1175,19 @@
           }
         }
       ],
-      "purl": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.2?arch=amd64&distro=ubuntu-20.04",
+      "purl": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.4?arch=amd64&distro=ubuntu-20.04",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "gpgv@2.2.19-3ubuntu2.2"
+          "value": "gpgv@2.2.19-3ubuntu2.4"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -1199,7 +1199,7 @@
         },
         {
           "name": "aquasecurity:trivy:SrcRelease",
-          "value": "3ubuntu2.2"
+          "value": "3ubuntu2.4"
         },
         {
           "name": "aquasecurity:trivy:SrcVersion",
@@ -1237,11 +1237,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1284,11 +1284,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1337,11 +1337,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1396,11 +1396,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1460,11 +1460,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1512,11 +1512,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1576,11 +1576,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1643,11 +1643,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1710,11 +1710,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1831,11 +1831,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1889,11 +1889,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -1918,13 +1918,13 @@
       ]
     },
     {
-      "bom-ref": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+      "bom-ref": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
       "type": "library",
       "supplier": {
         "name": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
       },
       "name": "libc-bin",
-      "version": "2.31-0ubuntu9.16",
+      "version": "2.31-0ubuntu9.17",
       "licenses": [
         {
           "license": {
@@ -1937,19 +1937,19 @@
           }
         }
       ],
-      "purl": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+      "purl": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "libc-bin@2.31-0ubuntu9.16"
+          "value": "libc-bin@2.31-0ubuntu9.17"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -1961,7 +1961,7 @@
         },
         {
           "name": "aquasecurity:trivy:SrcRelease",
-          "value": "0ubuntu9.16"
+          "value": "0ubuntu9.17"
         },
         {
           "name": "aquasecurity:trivy:SrcVersion",
@@ -1970,13 +1970,13 @@
       ]
     },
     {
-      "bom-ref": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+      "bom-ref": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
       "type": "library",
       "supplier": {
         "name": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
       },
       "name": "libc6",
-      "version": "2.31-0ubuntu9.16",
+      "version": "2.31-0ubuntu9.17",
       "licenses": [
         {
           "license": {
@@ -1989,19 +1989,19 @@
           }
         }
       ],
-      "purl": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+      "purl": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "libc6@2.31-0ubuntu9.16"
+          "value": "libc6@2.31-0ubuntu9.17"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -2013,7 +2013,7 @@
         },
         {
           "name": "aquasecurity:trivy:SrcRelease",
-          "value": "0ubuntu9.16"
+          "value": "0ubuntu9.17"
         },
         {
           "name": "aquasecurity:trivy:SrcVersion",
@@ -2056,11 +2056,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2096,11 +2096,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2142,11 +2142,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2192,11 +2192,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2238,11 +2238,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2286,11 +2286,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2403,11 +2403,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2456,11 +2456,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2496,11 +2496,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2548,11 +2548,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2610,11 +2610,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2643,13 +2643,13 @@
       ]
     },
     {
-      "bom-ref": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.11?arch=amd64&distro=ubuntu-20.04",
+      "bom-ref": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.12?arch=amd64&distro=ubuntu-20.04",
       "type": "library",
       "supplier": {
         "name": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
       },
       "name": "libgnutls30",
-      "version": "3.6.13-2ubuntu1.11",
+      "version": "3.6.13-2ubuntu1.12",
       "licenses": [
         {
           "license": {
@@ -2717,19 +2717,19 @@
           }
         }
       ],
-      "purl": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.11?arch=amd64&distro=ubuntu-20.04",
+      "purl": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.12?arch=amd64&distro=ubuntu-20.04",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "libgnutls30@3.6.13-2ubuntu1.11"
+          "value": "libgnutls30@3.6.13-2ubuntu1.12"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -2741,7 +2741,7 @@
         },
         {
           "name": "aquasecurity:trivy:SrcRelease",
-          "value": "2ubuntu1.11"
+          "value": "2ubuntu1.12"
         },
         {
           "name": "aquasecurity:trivy:SrcVersion",
@@ -2799,11 +2799,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2839,11 +2839,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2922,11 +2922,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -2979,11 +2979,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3096,11 +3096,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3213,11 +3213,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3253,11 +3253,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3293,11 +3293,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3380,11 +3380,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3447,11 +3447,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3494,11 +3494,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3541,11 +3541,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3588,11 +3588,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3635,11 +3635,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3675,11 +3675,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3715,11 +3715,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3791,11 +3791,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3842,11 +3842,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3900,11 +3900,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -3958,11 +3958,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4016,11 +4016,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4068,11 +4068,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4185,11 +4185,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4225,11 +4225,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4265,11 +4265,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4347,11 +4347,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4376,19 +4376,13 @@
       ]
     },
     {
-      "bom-ref": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2?arch=amd64&distro=ubuntu-20.04",
+      "bom-ref": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
       "type": "library",
       "supplier": {
         "name": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
       },
       "name": "libtasn1-6",
-      "version": "4.16.0-2",
-      "hashes": [
-        {
-          "alg": "SHA-256",
-          "content": "f4d9cbcc2c915a58557ecf3ea6ffb42321c8a2f444945af57e64d9ce18744329"
-        }
-      ],
+      "version": "4.16.0-2ubuntu0.1",
       "licenses": [
         {
           "license": {
@@ -4411,19 +4405,19 @@
           }
         }
       ],
-      "purl": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2?arch=amd64&distro=ubuntu-20.04",
+      "purl": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "libtasn1-6@4.16.0-2"
+          "value": "libtasn1-6@4.16.0-2ubuntu0.1"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -4435,7 +4429,7 @@
         },
         {
           "name": "aquasecurity:trivy:SrcRelease",
-          "value": "2"
+          "value": "2ubuntu0.1"
         },
         {
           "name": "aquasecurity:trivy:SrcVersion",
@@ -4455,11 +4449,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4537,11 +4531,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4640,11 +4634,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4757,11 +4751,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4824,11 +4818,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4871,11 +4865,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4927,11 +4921,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -4985,11 +4979,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5034,11 +5028,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5151,11 +5145,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5191,11 +5185,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5231,11 +5225,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5278,11 +5272,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5449,11 +5443,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5521,11 +5515,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5578,11 +5572,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5651,11 +5645,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5705,11 +5699,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5757,11 +5751,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5804,11 +5798,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5917,11 +5911,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5964,11 +5958,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+          "value": "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          "value": "sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -5999,13 +5993,13 @@
   ],
   "dependencies": [
     {
-      "ref": "b89ed0c8-8f65-4e0c-9bae-cc870f3c43c0",
+      "ref": "061e992f-0ffb-4a12-8278-ac6b866d8dc7",
       "dependsOn": [
-        "c33f97a5-16fa-48ea-9aaa-7edeb1e169d1"
+        "ebcfe08b-628d-4bbd-a6f9-713fec1b7b49"
       ]
     },
     {
-      "ref": "c33f97a5-16fa-48ea-9aaa-7edeb1e169d1",
+      "ref": "ebcfe08b-628d-4bbd-a6f9-713fec1b7b49",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.0.10?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/base-passwd@3.5.47?arch=amd64&distro=ubuntu-20.04",
@@ -6023,7 +6017,7 @@
         "pkg:deb/ubuntu/hostname@3.23?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libacl1@2.2.53-6?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libattr1@2.4.48-5?arch=amd64&distro=ubuntu-20.04&epoch=1",
-        "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libdb5.3@5.3.28%2Bdfsg1-0.6ubuntu2?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libext2fs2@1.45.5-2ubuntu1.2?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libpam-modules-bin@1.3.1-5ubuntu4.7?arch=amd64&distro=ubuntu-20.04",
@@ -6051,11 +6045,11 @@
       "ref": "pkg:deb/ubuntu/apt@2.0.10?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/adduser@3.118ubuntu2?arch=all&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.2?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.4?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libapt-pkg6.0@2.0.10?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgcc-s1@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.11?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.12?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libseccomp2@2.5.1-1ubuntu1~20.04.2?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libstdc%2B%2B6@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libsystemd0@245.4-4ubuntu3.24?arch=amd64&distro=ubuntu-20.04",
@@ -6065,14 +6059,14 @@
     {
       "ref": "pkg:deb/ubuntu/base-files@11ubuntu5.8?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libcrypt1@4.4.10-10ubuntu4?arch=amd64&distro=ubuntu-20.04&epoch=1"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/base-passwd@3.5.47?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libdebconfclient0@0.251ubuntu1?arch=amd64&distro=ubuntu-20.04"
       ]
     },
@@ -6091,7 +6085,7 @@
       "ref": "pkg:deb/ubuntu/bzip2@1.0.8-2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/libbz2-1.0@1.0.8-2?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
@@ -6133,7 +6127,7 @@
     {
       "ref": "pkg:deb/ubuntu/fdisk@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libfdisk1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libmount1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libncursesw6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04",
@@ -6150,10 +6144,10 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.2?arch=amd64&distro=ubuntu-20.04",
+      "ref": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.4?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/libbz2-1.0@1.0.8-2?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgpg-error0@1.37-1?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/zlib1g@1.2.11.dfsg-2ubuntu1.5?arch=amd64&distro=ubuntu-20.04&epoch=1"
@@ -6184,14 +6178,14 @@
     {
       "ref": "pkg:deb/ubuntu/libacl1@2.2.53-6?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libapt-pkg6.0@2.0.10?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/libbz2-1.0@1.0.8-2?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgcc-s1@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/liblz4-1@1.9.2-2ubuntu0.20.04.1?arch=amd64&distro=ubuntu-20.04",
@@ -6206,7 +6200,7 @@
     {
       "ref": "pkg:deb/ubuntu/libattr1@2.4.48-5?arch=amd64&distro=ubuntu-20.04&epoch=1",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
@@ -6217,30 +6211,30 @@
       "ref": "pkg:deb/ubuntu/libaudit1@2.8.5-2ubuntu6?arch=amd64&distro=ubuntu-20.04&epoch=1",
       "dependsOn": [
         "pkg:deb/ubuntu/libaudit-common@2.8.5-2ubuntu6?arch=all&distro=ubuntu-20.04&epoch=1",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.1build1?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libblkid1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libbz2-1.0@1.0.8-2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
-      "ref": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+      "ref": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
-      "ref": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+      "ref": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/libcrypt1@4.4.10-10ubuntu4?arch=amd64&distro=ubuntu-20.04&epoch=1",
         "pkg:deb/ubuntu/libgcc-s1@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04"
@@ -6249,96 +6243,96 @@
     {
       "ref": "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.1build1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libcom-err2@1.45.5-2ubuntu1.2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libcrypt1@4.4.10-10ubuntu4?arch=amd64&distro=ubuntu-20.04&epoch=1",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libdb5.3@5.3.28%2Bdfsg1-0.6ubuntu2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libdebconfclient0@0.251ubuntu1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libext2fs2@1.45.5-2ubuntu1.2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libfdisk1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/libblkid1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libuuid1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libffi7@3.3-4?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libgcc-s1@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/gcc-10-base@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgpg-error0@1.37-1?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libgmp10@6.2.0%2Bdfsg-4ubuntu0.1?arch=amd64&distro=ubuntu-20.04&epoch=2",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
-      "ref": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.11?arch=amd64&distro=ubuntu-20.04",
+      "ref": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.12?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgmp10@6.2.0%2Bdfsg-4ubuntu0.1?arch=amd64&distro=ubuntu-20.04&epoch=2",
         "pkg:deb/ubuntu/libhogweed5@3.5.1%2Breally3.5.1-2ubuntu0.2?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libidn2-0@2.2.0-2?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libnettle7@3.5.1%2Breally3.5.1-2ubuntu0.2?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libp11-kit0@0.23.20-1ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libtasn1-6@4.16.0-2?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libtasn1-6@4.16.0-2ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libunistring2@0.9.10-2?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libgpg-error0@1.37-1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libhogweed5@3.5.1%2Breally3.5.1-2ubuntu0.2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgmp10@6.2.0%2Bdfsg-4ubuntu0.1?arch=amd64&distro=ubuntu-20.04&epoch=2",
         "pkg:deb/ubuntu/libnettle7@3.5.1%2Breally3.5.1-2ubuntu0.2?arch=amd64&distro=ubuntu-20.04"
       ]
@@ -6346,54 +6340,54 @@
     {
       "ref": "pkg:deb/ubuntu/libidn2-0@2.2.0-2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libunistring2@0.9.10-2?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/liblz4-1@1.9.2-2ubuntu0.20.04.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/liblzma5@5.2.4-1ubuntu1.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libmount1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/libblkid1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libselinux1@3.0-1build2?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libncurses6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libncursesw6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libnettle7@3.5.1%2Breally3.5.1-2ubuntu0.2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libp11-kit0@0.23.20-1ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libffi7@3.3-4?arch=amd64&distro=ubuntu-20.04"
       ]
     },
@@ -6401,7 +6395,7 @@
       "ref": "pkg:deb/ubuntu/libpam-modules-bin@1.3.1-5ubuntu4.7?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/libaudit1@2.8.5-2ubuntu6?arch=amd64&distro=ubuntu-20.04&epoch=1",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libcrypt1@4.4.10-10ubuntu4?arch=amd64&distro=ubuntu-20.04&epoch=1",
         "pkg:deb/ubuntu/libpam0g@1.3.1-5ubuntu4.7?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libselinux1@3.0-1build2?arch=amd64&distro=ubuntu-20.04"
@@ -6423,38 +6417,38 @@
       "dependsOn": [
         "pkg:deb/ubuntu/debconf@1.5.73?arch=all&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libaudit1@2.8.5-2ubuntu6?arch=amd64&distro=ubuntu-20.04&epoch=1",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libpcre2-8-0@10.34-7ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libpcre3@8.39-12ubuntu0.1?arch=amd64&distro=ubuntu-20.04&epoch=2",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libprocps8@3.3.16-1ubuntu2.4?arch=amd64&distro=ubuntu-20.04&epoch=2",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libsystemd0@245.4-4ubuntu3.24?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libseccomp2@2.5.1-1ubuntu1~20.04.2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libselinux1@3.0-1build2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libpcre2-8-0@10.34-7ubuntu0.1?arch=amd64&distro=ubuntu-20.04"
       ]
     },
@@ -6467,7 +6461,7 @@
       "dependsOn": [
         "pkg:deb/ubuntu/libaudit1@2.8.5-2ubuntu6?arch=amd64&distro=ubuntu-20.04&epoch=1",
         "pkg:deb/ubuntu/libbz2-1.0@1.0.8-2?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libselinux1@3.0-1build2?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libsemanage-common@3.0-1build2?arch=all&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libsepol1@3.0-1ubuntu0.1?arch=amd64&distro=ubuntu-20.04"
@@ -6476,19 +6470,19 @@
     {
       "ref": "pkg:deb/ubuntu/libsepol1@3.0-1ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libsmartcols1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libss2@1.45.5-2ubuntu1.2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libcom-err2@1.45.5-2ubuntu1.2?arch=amd64&distro=ubuntu-20.04"
       ]
     },
@@ -6496,7 +6490,7 @@
       "ref": "pkg:deb/ubuntu/libstdc%2B%2B6@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/gcc-10-base@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libgcc-s1@10.5.0-1ubuntu1~20.04?arch=amd64&distro=ubuntu-20.04"
       ]
     },
@@ -6505,39 +6499,39 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2?arch=amd64&distro=ubuntu-20.04",
+      "ref": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libtinfo6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libudev1@245.4-4ubuntu3.24?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libunistring2@0.9.10-2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libuuid1@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
       "ref": "pkg:deb/ubuntu/libzstd1@1.4.4%2Bdfsg-3ubuntu0.1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
@@ -6547,7 +6541,7 @@
     {
       "ref": "pkg:deb/ubuntu/logsave@1.45.5-2ubuntu1.2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
@@ -6557,7 +6551,7 @@
     {
       "ref": "pkg:deb/ubuntu/mawk@1.3.4.20200120-2?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     },
     {
@@ -6578,7 +6572,7 @@
       "ref": "pkg:deb/ubuntu/passwd@4.8.1-1ubuntu5.20.04.5?arch=amd64&distro=ubuntu-20.04&epoch=1",
       "dependsOn": [
         "pkg:deb/ubuntu/libaudit1@2.8.5-2ubuntu6?arch=amd64&distro=ubuntu-20.04&epoch=1",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libcrypt1@4.4.10-10ubuntu4?arch=amd64&distro=ubuntu-20.04&epoch=1",
         "pkg:deb/ubuntu/libpam-modules@1.3.1-5ubuntu4.7?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libpam0g@1.3.1-5ubuntu4.7?arch=amd64&distro=ubuntu-20.04",
@@ -6594,7 +6588,7 @@
       "ref": "pkg:deb/ubuntu/procps@3.3.16-1ubuntu2.4?arch=amd64&distro=ubuntu-20.04&epoch=2",
       "dependsOn": [
         "pkg:deb/ubuntu/init-system-helpers@1.57?arch=all&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libncurses6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libncursesw6@6.2-0ubuntu2.1?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/libprocps8@3.3.16-1ubuntu2.4?arch=amd64&distro=ubuntu-20.04&epoch=2",
@@ -6614,7 +6608,7 @@
       "ref": "pkg:deb/ubuntu/sysvinit-utils@2.96-2.1ubuntu1?arch=amd64&distro=ubuntu-20.04",
       "dependsOn": [
         "pkg:deb/ubuntu/init-system-helpers@1.57?arch=all&distro=ubuntu-20.04",
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu2?arch=all&distro=ubuntu-20.04",
         "pkg:deb/ubuntu/util-linux@2.34-0.1ubuntu9.6?arch=amd64&distro=ubuntu-20.04"
       ]
@@ -6636,7 +6630,7 @@
     {
       "ref": "pkg:deb/ubuntu/zlib1g@1.2.11.dfsg-2ubuntu1.5?arch=amd64&distro=ubuntu-20.04&epoch=1",
       "dependsOn": [
-        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04"
+        "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04"
       ]
     }
   ],
@@ -6825,19 +6819,19 @@
       "updated": "2024-11-21T02:47:33+00:00",
       "affects": [
         {
-          "ref": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+          "ref": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
           "versions": [
             {
-              "version": "2.31-0ubuntu9.16",
+              "version": "2.31-0ubuntu9.17",
               "status": "affected"
             }
           ]
         },
         {
-          "ref": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
+          "ref": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.17?arch=amd64&distro=ubuntu-20.04",
           "versions": [
             {
-              "version": "2.31-0ubuntu9.16",
+              "version": "2.31-0ubuntu9.17",
               "status": "affected"
             }
           ]
@@ -6943,7 +6937,7 @@
         }
       ],
       "published": "2017-02-07T15:59:00+00:00",
-      "updated": "2024-11-21T02:48:47+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2?arch=amd64&distro=ubuntu-20.04",
@@ -7037,7 +7031,7 @@
         }
       ],
       "published": "2017-07-11T03:29:00+00:00",
-      "updated": "2024-11-21T03:07:14+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libpcre3@8.39-12ubuntu0.1?arch=amd64&distro=ubuntu-20.04&epoch=2",
@@ -7119,10 +7113,10 @@
       "updated": "2025-03-12T21:15:38+00:00",
       "affects": [
         {
-          "ref": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.2?arch=amd64&distro=ubuntu-20.04",
+          "ref": "pkg:deb/ubuntu/gpgv@2.2.19-3ubuntu2.4?arch=amd64&distro=ubuntu-20.04",
           "versions": [
             {
-              "version": "2.2.19-3ubuntu2.2",
+              "version": "2.2.19-3ubuntu2.4",
               "status": "affected"
             }
           ]
@@ -7788,7 +7782,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -7852,11 +7846,17 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
@@ -7913,9 +7913,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -7928,7 +7925,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -7981,187 +7978,6 @@
           "versions": [
             {
               "version": "1.3.1-5ubuntu4.7",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "CVE-2024-12133",
-      "source": {
-        "name": "ubuntu",
-        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "azure"
-          },
-          "severity": "high"
-        },
-        {
-          "source": {
-            "name": "cbl-mariner"
-          },
-          "severity": "medium"
-        },
-        {
-          "source": {
-            "name": "photon"
-          },
-          "severity": "high"
-        },
-        {
-          "source": {
-            "name": "redhat"
-          },
-          "score": 5.3,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
-        },
-        {
-          "source": {
-            "name": "ubuntu"
-          },
-          "severity": "medium"
-        }
-      ],
-      "cwes": [
-        407
-      ],
-      "description": "A flaw in libtasn1 causes inefficient handling of specific certificate data. When processing a large number of elements in a certificate, libtasn1 takes much longer than expected, which can slow down or even crash the system. This flaw allows an attacker to send a specially crafted certificate, causing a denial of service attack.",
-      "recommendation": "Upgrade libtasn1-6 to version 4.16.0-2ubuntu0.1",
-      "advisories": [
-        {
-          "url": "https://avd.aquasec.com/nvd/cve-2024-12133"
-        },
-        {
-          "url": "http://www.openwall.com/lists/oss-security/2025/02/06/6"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2024-12133"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2344611"
-        },
-        {
-          "url": "https://gitlab.com/gnutls/libtasn1/-/blob/master/doc/security/CVE-2024-12133.md?ref_type=heads"
-        },
-        {
-          "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
-        },
-        {
-          "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00025.html"
-        },
-        {
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-12133"
-        },
-        {
-          "url": "https://ubuntu.com/security/notices/USN-7275-1"
-        },
-        {
-          "url": "https://ubuntu.com/security/notices/USN-7275-2"
-        },
-        {
-          "url": "https://www.cve.org/CVERecord?id=CVE-2024-12133"
-        }
-      ],
-      "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T13:15:10+00:00",
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2?arch=amd64&distro=ubuntu-20.04",
-          "versions": [
-            {
-              "version": "4.16.0-2",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "CVE-2024-12243",
-      "source": {
-        "name": "ubuntu",
-        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "cbl-mariner"
-          },
-          "severity": "medium"
-        },
-        {
-          "source": {
-            "name": "photon"
-          },
-          "severity": "medium"
-        },
-        {
-          "source": {
-            "name": "redhat"
-          },
-          "score": 5.3,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
-        },
-        {
-          "source": {
-            "name": "ubuntu"
-          },
-          "severity": "medium"
-        }
-      ],
-      "cwes": [
-        407
-      ],
-      "description": "A flaw was found in GnuTLS, which relies on libtasn1 for ASN.1 data processing. Due to an inefficient algorithm in libtasn1, decoding certain DER-encoded certificate data can take excessive time, leading to increased resource consumption. This flaw allows a remote attacker to send a specially crafted certificate, causing GnuTLS to become unresponsive or slow, resulting in a denial-of-service condition.",
-      "recommendation": "Upgrade libgnutls30 to version 3.6.13-2ubuntu1.12",
-      "advisories": [
-        {
-          "url": "https://avd.aquasec.com/nvd/cve-2024-12243"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2024-12243"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2344615"
-        },
-        {
-          "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
-        },
-        {
-          "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00027.html"
-        },
-        {
-          "url": "https://lists.gnupg.org/pipermail/gnutls-help/2025-February/004875.html"
-        },
-        {
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-12243"
-        },
-        {
-          "url": "https://ubuntu.com/security/notices/USN-7281-1"
-        },
-        {
-          "url": "https://www.cve.org/CVERecord?id=CVE-2024-12243"
-        },
-        {
-          "url": "https://www.gnutls.org/security-new.html#GNUTLS-SA-2025-02-07"
-        }
-      ],
-      "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T22:15:11+00:00",
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libgnutls30@3.6.13-2ubuntu1.11?arch=amd64&distro=ubuntu-20.04",
-          "versions": [
-            {
-              "version": "3.6.13-2ubuntu1.11",
               "status": "affected"
             }
           ]
@@ -8289,6 +8105,12 @@
       "ratings": [
         {
           "source": {
+            "name": "azure"
+          },
+          "severity": "low"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 3.6,
@@ -8352,102 +8174,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "CVE-2025-0395",
-      "source": {
-        "name": "ubuntu",
-        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "redhat"
-          },
-          "score": 5.5,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:H"
-        },
-        {
-          "source": {
-            "name": "ubuntu"
-          },
-          "severity": "medium"
-        }
-      ],
-      "cwes": [
-        131
-      ],
-      "description": "When the assert() function in the GNU C Library versions 2.13 to 2.40 fails, it does not allocate enough space for the assertion failure message string and size information, which may lead to a buffer overflow if the message string size aligns to page size.",
-      "recommendation": "Upgrade libc-bin to version 2.31-0ubuntu9.17; Upgrade libc6 to version 2.31-0ubuntu9.17",
-      "advisories": [
-        {
-          "url": "https://avd.aquasec.com/nvd/cve-2025-0395"
-        },
-        {
-          "url": "http://www.openwall.com/lists/oss-security/2025/01/22/4"
-        },
-        {
-          "url": "http://www.openwall.com/lists/oss-security/2025/01/23/2"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2025-0395"
-        },
-        {
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-0395"
-        },
-        {
-          "url": "https://security.netapp.com/advisory/ntap-20250228-0006/"
-        },
-        {
-          "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=32582"
-        },
-        {
-          "url": "https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2025-0001"
-        },
-        {
-          "url": "https://sourceware.org/pipermail/libc-announce/2025/000044.html"
-        },
-        {
-          "url": "https://ubuntu.com/security/notices/USN-7259-1"
-        },
-        {
-          "url": "https://ubuntu.com/security/notices/USN-7259-2"
-        },
-        {
-          "url": "https://ubuntu.com/security/notices/USN-7259-3"
-        },
-        {
-          "url": "https://www.cve.org/CVERecord?id=CVE-2025-0395"
-        },
-        {
-          "url": "https://www.openwall.com/lists/oss-security/2025/01/22/4"
-        }
-      ],
-      "published": "2025-01-22T13:15:20+00:00",
-      "updated": "2025-02-28T13:15:26+00:00",
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libc-bin@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
-          "versions": [
-            {
-              "version": "2.31-0ubuntu9.16",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "ref": "pkg:deb/ubuntu/libc6@2.31-0ubuntu9.16?arch=amd64&distro=ubuntu-20.04",
-          "versions": [
-            {
-              "version": "2.31-0ubuntu9.16",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
     }
-  ],
-  "ArtifactName": "rootioinc/common-ubuntu:20.04"
+  ]
 }
