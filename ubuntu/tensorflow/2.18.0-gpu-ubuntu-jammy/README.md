@@ -83,7 +83,7 @@ This image includes software under the following licenses:
 - PD
 - PD-debian
 - PERMISSIVE
-- Python Software Foundation License
+- PSF-2.0
 - REGCOMP
 - RFC-Reference
 - RRA-KEEP-THIS-NOTICE

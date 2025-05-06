@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:2544fc6b-fa6b-4d9c-84f4-9b843cb76550",
+  "serialNumber": "urn:uuid:0dc1c2bc-8ae1-4821-a845-87657c163e88",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-03T06:28:17+00:00",
+    "timestamp": "2025-05-06T06:30:00+00:00",
     "tools": {
       "components": [
         {
@@ -17,9 +17,9 @@
       ]
     },
     "component": {
-      "bom-ref": "c4ae2c9f-d4b2-4dc9-90ed-ea32f2b0deb5",
+      "bom-ref": "75b1b618-fffd-43b7-8fa3-1e9a1ca6fbde",
       "type": "container",
-      "name": "/tmp/image.tar",
+      "name": "rootioinc/common-tensorflow:2.18.0-gpu-ubuntu-jammy",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -27,15 +27,7 @@
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:057101887b459c1996f55eb5a647e467aa6377cba5e94412904c9c74eb5c883a"
-        },
-        {
-          "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:1beb6c62ee79e0653d43d242e728bd136d59fc8a451c3b0e6402d69ebc5a77cb"
-        },
-        {
-          "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:2549f801f3ae17e0c6e4f48320b2f6a9f317f253d17b7e6d8c1a44eac695ce0a"
+          "value": "sha256:1f5455e16562d3474089c9cdc5e98f2d637aacc7ebf51f101812806f5b023bfb"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -47,7 +39,19 @@
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:25c77c40bd5e91179254c1555e4f5c6b5e1580746427cb64a0d370d9121586b8"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:48144380ead08265dee5aace4eaed157260d19049bcf7c34646a47d51135b154"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:4ab055154007c17cdf865cf783ea9de68e0c6f85a8d83f37d98714dfebc6879c"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:4e6aa646f0a3cec998a43a20df10a27b8fe57e535254e852bcbafbd14aa631c7"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -55,11 +59,11 @@
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:65e222765af19b94ebca4ae89f9ca287ece50af9aa55c5ee0b462d6e6615610b"
+          "value": "sha256:6518d6097963408c8595776116bc09072210a38c46306b0ee721b17425275d93"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:76863f2b75dd96bcc38a4082d8023defc9600de09f618cd52c1b58b59885cba4"
+          "value": "sha256:65e222765af19b94ebca4ae89f9ca287ece50af9aa55c5ee0b462d6e6615610b"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -71,23 +75,23 @@
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:83e78d00ab0bdb94dbd7653d97ed5e210aa065ee5d5cdd04420c59a1b5b8c0a6"
-        },
-        {
-          "name": "aquasecurity:trivy:DiffID",
           "value": "sha256:8fd6fe4620441007293487a4aac349c16efbc3fbb1a2d23adb29e5127adf87e7"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:991d3469ec69e664f9435bec501948a575510980af38273ea98a522af32e4a6f"
+          "value": "sha256:9d1900863217d5c05f5a9ef9166a857dafaf6ae1611a7250afe591e66a1ab9bc"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:c56e33f7a37701be047bec1125eb0ba455fe9ce87e508c4055742a7eaa63c9f8"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:dd47f6dedbc726f4ede90cad1fb2aff114e12e6c5a4e952309b96b5b273a84e0"
+          "value": "sha256:c99e66c9084a4625dbe654fa29943e352135b6172f5f1f17cddac8d9b320c278"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:caaefeb801fd9b7d9ac38467acbffd9943300816deae3bff6446327388b4dc05"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -95,15 +99,11 @@
         },
         {
           "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:e6ac5b77423550e443e267f1c113d8f45da4a11373d0968b9ab1b627a4dba81c"
-        },
-        {
-          "name": "aquasecurity:trivy:DiffID",
           "value": "sha256:fa9c963de60f76f1a6bbad4bbe328d2387f393d29ceb7aae7816bd75c28a7c72"
         },
         {
           "name": "aquasecurity:trivy:ImageID",
-          "value": "sha256:f6ea93cee053f1ef2e24102fb22b855e6c8aa33d6d902f17797b356db9116571"
+          "value": "sha256:5e2bc222505b9d99ebde62b9c17f39e160dec60e130dbfe42a859116f98d0ace"
         },
         {
           "name": "aquasecurity:trivy:Labels:maintainer",
@@ -126,7 +126,7 @@
   },
   "components": [
     {
-      "bom-ref": "d7a390c4-87ea-4742-b83e-d2c06eba6af7",
+      "bom-ref": "0624eb37-7f56-4d41-b3bb-bcd130a5bb1d",
       "type": "operating-system",
       "name": "ubuntu",
       "version": "22.04",
@@ -4460,11 +4460,11 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:83e78d00ab0bdb94dbd7653d97ed5e210aa065ee5d5cdd04420c59a1b5b8c0a6"
+          "value": "sha256:caaefeb801fd9b7d9ac38467acbffd9943300816deae3bff6446327388b4dc05"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:7a42fc6b857924674e31b3af416cf33c5526ab21b8cc04afeca991e56b4ee320"
+          "value": "sha256:7a6b764365db292cb31f6aa74ca8485280bfacca28be747616eb9a650b28cef7"
         },
         {
           "name": "aquasecurity:trivy:PkgID",
@@ -9316,14 +9316,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/absl-py@2.1.0",
+      "bom-ref": "pkg:pypi/absl-py@2.2.2",
       "type": "library",
       "name": "absl-py",
-      "version": "2.1.0",
+      "version": "2.2.2",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "1268049003ab622f3591aedfab3bbdfb1e2d01ca"
+          "content": "e2a6aa161d7566f51b8482a04806aa58ec486659"
         }
       ],
       "licenses": [
@@ -9333,19 +9333,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/absl-py@2.1.0",
+      "purl": "pkg:pypi/absl-py@2.2.2",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/absl_py-2.1.0.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/absl_py-2.2.2.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9379,11 +9379,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9392,14 +9392,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/certifi@2025.1.31",
+      "bom-ref": "pkg:pypi/certifi@2025.4.26",
       "type": "library",
       "name": "certifi",
-      "version": "2025.1.31",
+      "version": "2025.4.26",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "25bbdeca64b4bd71ae4a687a3ce67072ec08c996"
+          "content": "e9999452a5fb1769bceda0c20d90493d510e8a82"
         }
       ],
       "licenses": [
@@ -9409,19 +9409,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/certifi@2025.1.31",
+      "purl": "pkg:pypi/certifi@2025.4.26",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/certifi-2025.1.31.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/certifi-2025.4.26.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9455,11 +9455,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9493,11 +9493,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9536,11 +9536,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9574,11 +9574,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9587,14 +9587,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/flatbuffers@25.1.24",
+      "bom-ref": "pkg:pypi/flatbuffers@25.2.10",
       "type": "library",
       "name": "flatbuffers",
-      "version": "25.1.24",
+      "version": "25.2.10",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "78051215b34c9fcaef3c592700c93a4a123ee11d"
+          "content": "9037803c355cf30873db5e99623f3c3b8dd2c057"
         }
       ],
       "licenses": [
@@ -9604,19 +9604,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/flatbuffers@25.1.24",
+      "purl": "pkg:pypi/flatbuffers@25.2.10",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/flatbuffers-25.1.24.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/flatbuffers-25.2.10.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9650,11 +9650,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9688,11 +9688,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9701,14 +9701,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/grpcio@1.70.0",
+      "bom-ref": "pkg:pypi/grpcio@1.71.0",
       "type": "library",
       "name": "grpcio",
-      "version": "1.70.0",
+      "version": "1.71.0",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "4ce4eeb7ce2484f47520433b4b98dbe7df7c3e64"
+          "content": "59cbcfc68e3c64a16c9c2381cfefd366eacce767"
         }
       ],
       "licenses": [
@@ -9718,19 +9718,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/grpcio@1.70.0",
+      "purl": "pkg:pypi/grpcio@1.71.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/grpcio-1.70.0.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/grpcio-1.71.0.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9739,14 +9739,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/h5py@3.12.1",
+      "bom-ref": "pkg:pypi/h5py@3.13.0",
       "type": "library",
       "name": "h5py",
-      "version": "3.12.1",
+      "version": "3.13.0",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "cc06f68814fcbb8d4b3b835d284842735cce541b"
+          "content": "0efd58aad27ba30eb31fffc14de4a9594a92dbdf"
         }
       ],
       "licenses": [
@@ -9756,19 +9756,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/h5py@3.12.1",
+      "purl": "pkg:pypi/h5py@3.13.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/h5py-3.12.1.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/h5py-3.13.0.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9802,11 +9802,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9815,14 +9815,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/keras@3.8.0",
+      "bom-ref": "pkg:pypi/keras@3.9.2",
       "type": "library",
       "name": "keras",
-      "version": "3.8.0",
+      "version": "3.9.2",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "8bbc0c8d8d69c6a0401eeaffb5b849ade874a04b"
+          "content": "cb1af4a9e051ed8620eeba98870dd79d447c4c57"
         }
       ],
       "licenses": [
@@ -9832,19 +9832,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/keras@3.8.0",
+      "purl": "pkg:pypi/keras@3.9.2",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/keras-3.8.0.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/keras-3.9.2.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9878,11 +9878,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9916,11 +9916,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9929,14 +9929,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/markdown@3.7",
+      "bom-ref": "pkg:pypi/markdown@3.8",
       "type": "library",
       "name": "Markdown",
-      "version": "3.7",
+      "version": "3.8",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "8d8d79dc091b2d82755f3fecc4088d7e66ccdd95"
+          "content": "daf4e4988ded0e254df10cbe5ef1f9a5350a0bf2"
         }
       ],
       "licenses": [
@@ -9946,19 +9946,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/markdown@3.7",
+      "purl": "pkg:pypi/markdown@3.8",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/Markdown-3.7.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/markdown-3.8.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -9992,11 +9992,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10030,11 +10030,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10068,11 +10068,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10081,36 +10081,29 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/namex@0.0.8",
+      "bom-ref": "pkg:pypi/namex@0.0.9",
       "type": "library",
       "name": "namex",
-      "version": "0.0.8",
+      "version": "0.0.9",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "95df3d2723f4b33eebb9057e2e821a5baac1da6f"
+          "content": "e603e52b121c892c213d8bbd4363c0fab408f249"
         }
       ],
-      "licenses": [
-        {
-          "license": {
-            "name": "Apache-2.0"
-          }
-        }
-      ],
-      "purl": "pkg:pypi/namex@0.0.8",
+      "purl": "pkg:pypi/namex@0.0.9",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/namex-0.0.8.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/namex-0.0.9.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10144,11 +10137,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10182,11 +10175,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10195,14 +10188,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/optree@0.14.0",
+      "bom-ref": "pkg:pypi/optree@0.15.0",
       "type": "library",
       "name": "optree",
-      "version": "0.14.0",
+      "version": "0.15.0",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "751c63350f5887475483b66b2e36f63e44dc8b63"
+          "content": "dafdc15efa0a43191e4ba0220f759b10b44b6022"
         }
       ],
       "licenses": [
@@ -10212,19 +10205,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/optree@0.14.0",
+      "purl": "pkg:pypi/optree@0.15.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/optree-0.14.0.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/optree-0.15.0.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10233,14 +10226,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/packaging@24.2",
+      "bom-ref": "pkg:pypi/packaging@25.0",
       "type": "library",
       "name": "packaging",
-      "version": "24.2",
+      "version": "25.0",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "292b8d19cdc308e072817b6407cac3cb5175a060"
+          "content": "32af9c5aa394de56998fdd07d63bc6eda82d983b"
         }
       ],
       "licenses": [
@@ -10255,19 +10248,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/packaging@24.2",
+      "purl": "pkg:pypi/packaging@25.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/packaging-24.2.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/packaging-25.0.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10276,14 +10269,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/pip@25.0",
+      "bom-ref": "pkg:pypi/pip@25.1",
       "type": "library",
       "name": "pip",
-      "version": "25.0",
+      "version": "25.1",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "9ff8adf3747d701df377559e3f8de8c2d63b0a9a"
+          "content": "45b0aad66c83b5e2b093dff828183d22a3371d13"
         }
       ],
       "licenses": [
@@ -10293,19 +10286,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/pip@25.0",
+      "purl": "pkg:pypi/pip@25.1",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/pip-25.0.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/pip-25.1.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10314,14 +10307,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/protobuf@5.29.3",
+      "bom-ref": "pkg:pypi/protobuf@5.29.4",
       "type": "library",
       "name": "protobuf",
-      "version": "5.29.3",
+      "version": "5.29.4",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "7fc3732a0a9ed56d744a2beb16052e0209c35701"
+          "content": "fc0c1bd328b07028eeaeecc9d598c8488ac349c0"
         }
       ],
       "licenses": [
@@ -10331,19 +10324,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/protobuf@5.29.3",
+      "purl": "pkg:pypi/protobuf@5.29.4",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/protobuf-5.29.3.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/protobuf-5.29.4.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10377,11 +10370,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10415,11 +10408,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10453,11 +10446,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10491,11 +10484,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10504,14 +10497,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/rich@13.9.4",
+      "bom-ref": "pkg:pypi/rich@14.0.0",
       "type": "library",
       "name": "rich",
-      "version": "13.9.4",
+      "version": "14.0.0",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "d340ca2c4a33cd3afb0f14e7c924555176d474e6"
+          "content": "49921a9bdc034eee819ff894de2cdeb728ead4d8"
         }
       ],
       "licenses": [
@@ -10521,19 +10514,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/rich@13.9.4",
+      "purl": "pkg:pypi/rich@14.0.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/rich-13.9.4.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/rich-14.0.0.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10567,11 +10560,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10605,11 +10598,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10643,11 +10636,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10681,11 +10674,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10719,11 +10712,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10757,11 +10750,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10770,14 +10763,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/termcolor@2.5.0",
+      "bom-ref": "pkg:pypi/termcolor@3.1.0",
       "type": "library",
       "name": "termcolor",
-      "version": "2.5.0",
+      "version": "3.1.0",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "0da7ece8d83511a489bd023368b2be2f9b5b0e3a"
+          "content": "68c5739344a18221f249e04408d23721b2dfa83c"
         }
       ],
       "licenses": [
@@ -10787,19 +10780,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/termcolor@2.5.0",
+      "purl": "pkg:pypi/termcolor@3.1.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/termcolor-2.5.0.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/termcolor-3.1.0.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10808,36 +10801,36 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/typing-extensions@4.12.2",
+      "bom-ref": "pkg:pypi/typing-extensions@4.13.2",
       "type": "library",
       "name": "typing_extensions",
-      "version": "4.12.2",
+      "version": "4.13.2",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "b6ada54b9516d20b69a5dd5cded868da22c5e252"
+          "content": "e4d9ae567691e73371024d24728ef654f29b4719"
         }
       ],
       "licenses": [
         {
           "license": {
-            "name": "Python Software Foundation License"
+            "name": "PSF-2.0"
           }
         }
       ],
-      "purl": "pkg:pypi/typing-extensions@4.12.2",
+      "purl": "pkg:pypi/typing-extensions@4.13.2",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/typing_extensions-4.12.2.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/typing_extensions-4.13.2.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10846,14 +10839,14 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/urllib3@2.3.0",
+      "bom-ref": "pkg:pypi/urllib3@2.4.0",
       "type": "library",
       "name": "urllib3",
-      "version": "2.3.0",
+      "version": "2.4.0",
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "38b638a43ac53e0156dd807437f4b3aa7df43943"
+          "content": "3940e3d03ec5507b69b3b29542e87cca4ab88713"
         }
       ],
       "licenses": [
@@ -10863,19 +10856,19 @@
           }
         }
       ],
-      "purl": "pkg:pypi/urllib3@2.3.0",
+      "purl": "pkg:pypi/urllib3@2.4.0",
       "properties": [
         {
           "name": "aquasecurity:trivy:FilePath",
-          "value": "usr/local/lib/python3.11/site-packages/urllib3-2.3.0.dist-info/METADATA"
+          "value": "usr/local/lib/python3.11/site-packages/urllib3-2.4.0.dist-info/METADATA"
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10909,11 +10902,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10947,11 +10940,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -10985,11 +10978,11 @@
         },
         {
           "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:c6e14a3768454ce5d8bd1a344e417ec81bf7854afbaa5cd39a8ddf7a92219563"
+          "value": "sha256:37b7c329d7bc76b5eca08f8894b99e7612eb53620f64e2ba0c9d3da69acb7121"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:c96955c836befd2f471f634c7b1cfa5133a5b20ce0fdc9d54acb296aefbde3e0"
+          "value": "sha256:420880273fda7eefe0d242c08ea404867c0be1ba271be68448456e36e14d2519"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -11000,57 +10993,7 @@
   ],
   "dependencies": [
     {
-      "ref": "c4ae2c9f-d4b2-4dc9-90ed-ea32f2b0deb5",
-      "dependsOn": [
-        "d7a390c4-87ea-4742-b83e-d2c06eba6af7",
-        "pkg:pypi/absl-py@2.1.0",
-        "pkg:pypi/astunparse@1.6.3",
-        "pkg:pypi/certifi@2025.1.31",
-        "pkg:pypi/cffi@1.17.1",
-        "pkg:pypi/charset-normalizer@3.4.1",
-        "pkg:pypi/cryptography@42.0.4",
-        "pkg:pypi/example@21.12",
-        "pkg:pypi/flatbuffers@25.1.24",
-        "pkg:pypi/gast@0.6.0",
-        "pkg:pypi/google-pasta@0.2.0",
-        "pkg:pypi/grpcio@1.70.0",
-        "pkg:pypi/h5py@3.12.1",
-        "pkg:pypi/idna@3.10",
-        "pkg:pypi/keras@3.8.0",
-        "pkg:pypi/libclang@18.1.1",
-        "pkg:pypi/markdown-it-py@3.0.0",
-        "pkg:pypi/markdown@3.7",
-        "pkg:pypi/markupsafe@3.0.2",
-        "pkg:pypi/mdurl@0.1.2",
-        "pkg:pypi/ml-dtypes@0.4.1",
-        "pkg:pypi/namex@0.0.8",
-        "pkg:pypi/numpy@2.0.2",
-        "pkg:pypi/opt-einsum@3.4.0",
-        "pkg:pypi/optree@0.14.0",
-        "pkg:pypi/packaging@24.2",
-        "pkg:pypi/pip@25.0",
-        "pkg:pypi/protobuf@5.29.3",
-        "pkg:pypi/pycparser@2.22",
-        "pkg:pypi/pygments@2.19.1",
-        "pkg:pypi/pyjwt@2.4.0",
-        "pkg:pypi/requests@2.32.3",
-        "pkg:pypi/rich@13.9.4",
-        "pkg:pypi/setuptools@70.0.0",
-        "pkg:pypi/six@1.17.0",
-        "pkg:pypi/tensorboard-data-server@0.7.2",
-        "pkg:pypi/tensorboard@2.18.0",
-        "pkg:pypi/tensorflow-io-gcs-filesystem@0.37.1",
-        "pkg:pypi/tensorflow@2.18.0",
-        "pkg:pypi/termcolor@2.5.0",
-        "pkg:pypi/typing-extensions@4.12.2",
-        "pkg:pypi/urllib3@2.3.0",
-        "pkg:pypi/werkzeug@3.1.3",
-        "pkg:pypi/wheel@0.45.1",
-        "pkg:pypi/wrapt@1.17.2"
-      ]
-    },
-    {
-      "ref": "d7a390c4-87ea-4742-b83e-d2c06eba6af7",
+      "ref": "0624eb37-7f56-4d41-b3bb-bcd130a5bb1d",
       "dependsOn": [
         "pkg:deb/ubuntu/apt@2.4.10?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/base-passwd@3.5.52build1?arch=amd64&distro=ubuntu-22.04",
@@ -11095,6 +11038,56 @@
         "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?arch=amd64&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/usrmerge@25ubuntu2?arch=all&distro=ubuntu-22.04",
         "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3?arch=amd64&distro=ubuntu-22.04"
+      ]
+    },
+    {
+      "ref": "75b1b618-fffd-43b7-8fa3-1e9a1ca6fbde",
+      "dependsOn": [
+        "0624eb37-7f56-4d41-b3bb-bcd130a5bb1d",
+        "pkg:pypi/absl-py@2.2.2",
+        "pkg:pypi/astunparse@1.6.3",
+        "pkg:pypi/certifi@2025.4.26",
+        "pkg:pypi/cffi@1.17.1",
+        "pkg:pypi/charset-normalizer@3.4.1",
+        "pkg:pypi/cryptography@42.0.4",
+        "pkg:pypi/example@21.12",
+        "pkg:pypi/flatbuffers@25.2.10",
+        "pkg:pypi/gast@0.6.0",
+        "pkg:pypi/google-pasta@0.2.0",
+        "pkg:pypi/grpcio@1.71.0",
+        "pkg:pypi/h5py@3.13.0",
+        "pkg:pypi/idna@3.10",
+        "pkg:pypi/keras@3.9.2",
+        "pkg:pypi/libclang@18.1.1",
+        "pkg:pypi/markdown-it-py@3.0.0",
+        "pkg:pypi/markdown@3.8",
+        "pkg:pypi/markupsafe@3.0.2",
+        "pkg:pypi/mdurl@0.1.2",
+        "pkg:pypi/ml-dtypes@0.4.1",
+        "pkg:pypi/namex@0.0.9",
+        "pkg:pypi/numpy@2.0.2",
+        "pkg:pypi/opt-einsum@3.4.0",
+        "pkg:pypi/optree@0.15.0",
+        "pkg:pypi/packaging@25.0",
+        "pkg:pypi/pip@25.1",
+        "pkg:pypi/protobuf@5.29.4",
+        "pkg:pypi/pycparser@2.22",
+        "pkg:pypi/pygments@2.19.1",
+        "pkg:pypi/pyjwt@2.4.0",
+        "pkg:pypi/requests@2.32.3",
+        "pkg:pypi/rich@14.0.0",
+        "pkg:pypi/setuptools@70.0.0",
+        "pkg:pypi/six@1.17.0",
+        "pkg:pypi/tensorboard-data-server@0.7.2",
+        "pkg:pypi/tensorboard@2.18.0",
+        "pkg:pypi/tensorflow-io-gcs-filesystem@0.37.1",
+        "pkg:pypi/tensorflow@2.18.0",
+        "pkg:pypi/termcolor@3.1.0",
+        "pkg:pypi/typing-extensions@4.13.2",
+        "pkg:pypi/urllib3@2.4.0",
+        "pkg:pypi/werkzeug@3.1.3",
+        "pkg:pypi/wheel@0.45.1",
+        "pkg:pypi/wrapt@1.17.2"
       ]
     },
     {
@@ -12112,7 +12105,7 @@
       ]
     },
     {
-      "ref": "pkg:pypi/absl-py@2.1.0",
+      "ref": "pkg:pypi/absl-py@2.2.2",
       "dependsOn": []
     },
     {
@@ -12120,7 +12113,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/certifi@2025.1.31",
+      "ref": "pkg:pypi/certifi@2025.4.26",
       "dependsOn": []
     },
     {
@@ -12140,7 +12133,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/flatbuffers@25.1.24",
+      "ref": "pkg:pypi/flatbuffers@25.2.10",
       "dependsOn": []
     },
     {
@@ -12152,11 +12145,11 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/grpcio@1.70.0",
+      "ref": "pkg:pypi/grpcio@1.71.0",
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/h5py@3.12.1",
+      "ref": "pkg:pypi/h5py@3.13.0",
       "dependsOn": []
     },
     {
@@ -12164,7 +12157,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/keras@3.8.0",
+      "ref": "pkg:pypi/keras@3.9.2",
       "dependsOn": []
     },
     {
@@ -12176,7 +12169,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/markdown@3.7",
+      "ref": "pkg:pypi/markdown@3.8",
       "dependsOn": []
     },
     {
@@ -12192,7 +12185,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/namex@0.0.8",
+      "ref": "pkg:pypi/namex@0.0.9",
       "dependsOn": []
     },
     {
@@ -12204,19 +12197,19 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/optree@0.14.0",
+      "ref": "pkg:pypi/optree@0.15.0",
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/packaging@24.2",
+      "ref": "pkg:pypi/packaging@25.0",
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/pip@25.0",
+      "ref": "pkg:pypi/pip@25.1",
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/protobuf@5.29.3",
+      "ref": "pkg:pypi/protobuf@5.29.4",
       "dependsOn": []
     },
     {
@@ -12236,7 +12229,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/rich@13.9.4",
+      "ref": "pkg:pypi/rich@14.0.0",
       "dependsOn": []
     },
     {
@@ -12264,15 +12257,15 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/termcolor@2.5.0",
+      "ref": "pkg:pypi/termcolor@3.1.0",
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/typing-extensions@4.12.2",
+      "ref": "pkg:pypi/typing-extensions@4.13.2",
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/urllib3@2.3.0",
+      "ref": "pkg:pypi/urllib3@2.4.0",
       "dependsOn": []
     },
     {
@@ -12464,7 +12457,7 @@
         }
       ],
       "published": "2017-02-07T15:59:00+00:00",
-      "updated": "2024-11-21T02:48:47+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?arch=amd64&distro=ubuntu-22.04",
@@ -12558,7 +12551,7 @@
         }
       ],
       "published": "2017-07-11T03:29:00+00:00",
-      "updated": "2024-11-21T03:07:14+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libpcre3@8.39-13ubuntu0.22.04.1?arch=amd64&distro=ubuntu-22.04&epoch=2",
@@ -12983,7 +12976,7 @@
         }
       ],
       "published": "2023-01-05T15:15:10+00:00",
-      "updated": "2024-11-21T07:20:05+00:00",
+      "updated": "2025-04-10T15:15:50+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/bash@5.1-6ubuntu1?arch=amd64&distro=ubuntu-22.04",
@@ -13276,7 +13269,7 @@
         }
       ],
       "published": "2022-12-12T06:15:10+00:00",
-      "updated": "2024-11-21T07:31:17+00:00",
+      "updated": "2025-05-05T16:15:22+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libsqlite3-0@3.37.2-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
@@ -13449,7 +13442,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2022-4899"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0894"
+          "url": "https://access.redhat.com/errata/RHSA-2024:1141"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2022-4899"
@@ -13680,7 +13673,7 @@
           "url": "https://bugzilla.redhat.com/2258794"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0894.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-1141.html"
         },
         {
           "url": "https://github.com/facebook/zstd"
@@ -14136,7 +14129,7 @@
         }
       ],
       "published": "2023-07-14T12:15:09+00:00",
-      "updated": "2024-11-21T07:59:40+00:00",
+      "updated": "2025-04-23T17:16:32+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.10?arch=amd64&distro=ubuntu-22.04",
@@ -14243,13 +14236,31 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/05/16/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0888"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2447"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-3446"
         },
         {
+          "url": "https://bugzilla.redhat.com/2223016"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2224962"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2227852"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2248616"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2257571"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258502"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2259944"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2224962"
@@ -14300,7 +14311,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45235"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0888.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2447.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2264"
@@ -14358,7 +14369,7 @@
         }
       ],
       "published": "2023-07-19T12:15:10+00:00",
-      "updated": "2024-11-21T08:17:17+00:00",
+      "updated": "2025-04-23T17:16:36+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.10?arch=amd64&distro=ubuntu-22.04",
@@ -14629,10 +14640,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/11/06/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7877"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2447"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-3817"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2223016"
         },
         {
           "url": "https://bugzilla.redhat.com/2224962"
@@ -14644,7 +14658,16 @@
           "url": "https://bugzilla.redhat.com/2248616"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7877.html"
+          "url": "https://bugzilla.redhat.com/2257571"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258502"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2259944"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2447.html"
         },
         {
           "url": "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a1eb62c29db6cb5eec707f9338aee00f44e26f5"
@@ -14702,7 +14725,7 @@
         }
       ],
       "published": "2023-07-31T16:15:10+00:00",
-      "updated": "2024-11-21T08:18:08+00:00",
+      "updated": "2025-05-05T16:15:47+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.10?arch=amd64&distro=ubuntu-22.04",
@@ -14865,7 +14888,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-4016"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7187"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6705"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-4016"
@@ -14880,7 +14903,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4016"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7187.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6705.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7187"
@@ -15257,7 +15280,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -15377,7 +15400,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2249523"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3128.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2228.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-47038.html"
@@ -15505,6 +15528,9 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/10/03/8"
         },
         {
+          "url": "https://access.redhat.com/errata/RHBA-2024:2413"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2023:5453"
         },
         {
@@ -15553,7 +15579,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4911"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-5455.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-5453.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:5455"
@@ -15593,7 +15619,7 @@
         }
       ],
       "published": "2023-09-18T17:15:55+00:00",
-      "updated": "2024-11-21T08:36:00+00:00",
+      "updated": "2025-04-30T20:15:19+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
@@ -15633,6 +15659,12 @@
             "name": "amazon"
           },
           "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
         },
         {
           "source": {
@@ -15690,6 +15722,9 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/10/03/8"
         },
         {
+          "url": "https://access.redhat.com/errata/RHBA-2024:2413"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2023:5453"
         },
         {
@@ -15738,7 +15773,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4911"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-5455.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-5453.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:5455"
@@ -15766,7 +15801,7 @@
         }
       ],
       "published": "2023-09-12T22:15:08+00:00",
-      "updated": "2024-11-21T08:36:01+00:00",
+      "updated": "2025-04-30T20:15:20+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
@@ -16268,10 +16303,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/03/11/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7877"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2447"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-5678"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2223016"
         },
         {
           "url": "https://bugzilla.redhat.com/2224962"
@@ -16283,7 +16321,16 @@
           "url": "https://bugzilla.redhat.com/2248616"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7877.html"
+          "url": "https://bugzilla.redhat.com/2257571"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258502"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2259944"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2447.html"
         },
         {
           "url": "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=34efaef6c103d636ab507a0cc34dca4d3aecc055"
@@ -16456,13 +16503,19 @@
           "url": "https://bugzilla.redhat.com/2248445"
         },
         {
+          "url": "https://bugzilla.redhat.com/2258412"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258544"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2248445"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5981"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0155.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-0533.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0155"
@@ -16903,7 +16956,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7008"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3203.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2463.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:2463"
@@ -16979,10 +17032,10 @@
           "source": {
             "name": "bitnami"
           },
-          "score": 5.5,
+          "score": 7.3,
           "severity": "high",
           "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
         },
         {
           "source": {
@@ -17044,7 +17097,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-7104"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0253"
+          "url": "https://access.redhat.com/errata/RHSA-2024:0465"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-7104"
@@ -17059,7 +17112,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7104"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0253.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-0465.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0253"
@@ -17229,7 +17282,13 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-0553"
         },
         {
+          "url": "https://bugzilla.redhat.com/2248445"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2258412"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2258544"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2258412"
@@ -17238,7 +17297,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0553"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0627.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-0533.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0627"
@@ -17657,11 +17716,17 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
@@ -17717,9 +17782,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -17732,7 +17794,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -17802,11 +17864,17 @@
           "source": {
             "name": "azure"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
           },
           "severity": "medium"
         },
@@ -17845,6 +17913,9 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/02/06/6"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4049"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-12133"
         },
         {
@@ -17855,6 +17926,12 @@
         },
         {
           "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-12133.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4049.html"
         },
         {
           "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00025.html"
@@ -17873,7 +17950,7 @@
         }
       ],
       "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T13:15:10+00:00",
+      "updated": "2025-04-23T12:15:15+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?arch=amd64&distro=ubuntu-22.04",
@@ -17895,7 +17972,19 @@
       "ratings": [
         {
           "source": {
+            "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
           },
           "severity": "medium"
         },
@@ -17931,6 +18020,9 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-12243"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4051"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-12243"
         },
         {
@@ -17938,6 +18030,12 @@
         },
         {
           "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-12243.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4051.html"
         },
         {
           "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00027.html"
@@ -17959,7 +18057,7 @@
         }
       ],
       "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T22:15:11+00:00",
+      "updated": "2025-04-23T11:15:45+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
@@ -18124,6 +18222,12 @@
         },
         {
           "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 4.7,
@@ -18184,6 +18288,9 @@
           "url": "https://security.netapp.com/advisory/ntap-20250124-0005/"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250418-0010/"
+        },
+        {
           "url": "https://ubuntu.com/security/notices/USN-7264-1"
         },
         {
@@ -18191,10 +18298,13 @@
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-13176"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2025.html#AppendixMSQL"
         }
       ],
       "published": "2025-01-20T14:15:26+00:00",
-      "updated": "2025-03-18T08:15:10+00:00",
+      "updated": "2025-04-19T01:15:43+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.10?arch=amd64&distro=ubuntu-22.04",
@@ -18412,7 +18522,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -18427,7 +18537,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -18667,7 +18777,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -18728,7 +18838,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26458"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26458"
@@ -18738,6 +18848,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -18752,7 +18865,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -18834,7 +18947,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -18898,7 +19011,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26461"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26461"
@@ -18908,6 +19021,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -18922,7 +19038,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -19274,7 +19390,13 @@
           "url": "https://access.redhat.com/security/cve/CVE-2024-28834"
         },
         {
+          "url": "https://bugzilla.redhat.com/2269084"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2269228"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2269084"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2269228"
@@ -19283,10 +19405,13 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28834"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-1784.html"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28835"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:1784"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2570.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2024:2570"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2024-28834.html"
@@ -19584,7 +19709,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3269"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-2961"
@@ -19593,16 +19718,52 @@
           "url": "https://bugzilla.redhat.com/2273404"
         },
         {
+          "url": "https://bugzilla.redhat.com/2277202"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2277204"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2277205"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2277206"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277204"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277205"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3269.html"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3269"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33600"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33601"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2024-2961.html"
@@ -19745,10 +19906,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33599"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -19763,6 +19927,9 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -19773,6 +19940,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -19787,10 +19957,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
@@ -19918,10 +20088,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33600"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -19936,6 +20109,9 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -19946,6 +20122,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -19960,10 +20139,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
@@ -20085,10 +20264,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33601"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -20103,6 +20285,9 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -20113,6 +20298,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -20127,10 +20315,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
@@ -20252,10 +20440,13 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/22/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3344"
+          "url": "https://access.redhat.com/errata/RHSA-2024:3339"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-33602"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2273404"
         },
         {
           "url": "https://bugzilla.redhat.com/2277202"
@@ -20270,6 +20461,9 @@
           "url": "https://bugzilla.redhat.com/2277206"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2273404"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277202"
         },
         {
@@ -20280,6 +20474,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2277206"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33599"
@@ -20294,10 +20491,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3344.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-3339.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3344"
+          "url": "https://errata.rockylinux.org/RLSA-2024:3339"
         },
         {
           "url": "https://inbox.sourceware.org/libc-alpha/cover.1713974801.git.fweimer@redhat.com/"
@@ -20428,7 +20625,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/07/09/4"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:8860"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9474"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-3596"
@@ -20449,10 +20646,10 @@
           "url": "https://datatracker.ietf.org/doc/html/rfc2865"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-8860.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9474.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:8860"
+          "url": "https://errata.rockylinux.org/RLSA-2024:4935"
         },
         {
           "url": "https://kb.cert.org/vince/comm/case/1515/"
@@ -20613,7 +20810,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-37370"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:5312"
+          "url": "https://access.redhat.com/errata/RHSA-2024:6166"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-37370"
@@ -20625,7 +20822,7 @@
           "url": "https://bugzilla.redhat.com/2294677"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-5312.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-6166.html"
         },
         {
           "url": "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef"
@@ -20774,7 +20971,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-37371"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:1673"
+          "url": "https://access.redhat.com/errata/RHSA-2025:1671"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-37371"
@@ -20927,7 +21124,7 @@
           "url": "https://bugzilla.redhat.com/2339305"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-1673.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-1671.html"
         },
         {
           "url": "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef"
@@ -21254,6 +21451,12 @@
         },
         {
           "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "cbl-mariner"
           },
           "severity": "high"
@@ -21457,7 +21660,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/08/15/1"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:1673"
+          "url": "https://access.redhat.com/errata/RHSA-2025:1671"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-5535"
@@ -21616,7 +21819,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5535"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-1673.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-1671.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:7848"
@@ -21691,12 +21894,117 @@
       ]
     },
     {
+      "id": "CVE-2024-56406",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.3,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        122,
+        787
+      ],
+      "description": "A heap buffer overflow vulnerability was discovered in Perl. \n\nRelease branches 5.34, 5.36, 5.38 and 5.40 are affected, including development versions from 5.33.1 through 5.41.10.\n\nWhen there are non-ASCII bytes in the left-hand-side of the `tr` operator, `S_do_trans_invmap` can overflow the destination pointer `d`.\n\n\u00a0 \u00a0$ perl -e '$_ = \"\\x{FF}\" x 1000000; tr/\\xFF/\\x{100}/;' \n\u00a0 \u00a0Segmentation fault (core dumped)\n\nIt is believed that this vulnerability can enable Denial of Service and possibly Code Execution attacks on platforms that lack sufficient defenses.",
+      "recommendation": "Upgrade perl-base to version 5.34.0-3ubuntu1.4",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2024-56406"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/3"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/4"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/5"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2024-56406"
+        },
+        {
+          "url": "https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.38.4/changes"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.40.2/changes"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56406"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-56406"
+        }
+      ],
+      "published": "2025-04-13T14:15:14+00:00",
+      "updated": "2025-04-30T15:21:11+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.2?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "5.34.0-3ubuntu1.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2024-56433",
       "source": {
         "name": "ubuntu",
         "url": "https://git.launchpad.net/ubuntu-cve-tracker"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "low"
+        },
         {
           "source": {
             "name": "redhat"
@@ -22049,6 +22357,24 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.5,
@@ -22079,7 +22405,31 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/01/23/2"
         },
         {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/1"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/24/7"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4244"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2025-0395"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2339460"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-4244.html"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-0395.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4244.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00039.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-0395"
@@ -22113,7 +22463,7 @@
         }
       ],
       "published": "2025-01-22T13:15:20+00:00",
-      "updated": "2025-02-28T13:15:26+00:00",
+      "updated": "2025-04-30T05:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.4?arch=amd64&distro=ubuntu-22.04",
@@ -22209,89 +22559,6 @@
           "versions": [
             {
               "version": "1:2.44-1ubuntu0.22.04.1",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "CVE-2025-1550",
-      "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "azure"
-          },
-          "severity": "high"
-        },
-        {
-          "source": {
-            "name": "ghsa"
-          },
-          "severity": "high"
-        },
-        {
-          "source": {
-            "name": "redhat"
-          },
-          "score": 8.2,
-          "severity": "high",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
-        },
-        {
-          "source": {
-            "name": "ubuntu"
-          },
-          "severity": "medium"
-        }
-      ],
-      "cwes": [
-        94
-      ],
-      "description": "The Keras Model.load_model function permits arbitrary code execution, even with safe_mode=True, through a manually constructed, malicious .keras archive. By altering the config.json file within the archive, an attacker can specify arbitrary Python modules and functions, along with their arguments, to be loaded and executed during model loading.",
-      "recommendation": "Upgrade keras to version 3.9.0",
-      "advisories": [
-        {
-          "url": "https://avd.aquasec.com/nvd/cve-2025-1550"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2025-1550"
-        },
-        {
-          "url": "https://github.com/keras-team/keras"
-        },
-        {
-          "url": "https://github.com/keras-team/keras/commit/e67ac8ffd0c883bec68eb65bb52340c7f9d3a903"
-        },
-        {
-          "url": "https://github.com/keras-team/keras/pull/20751"
-        },
-        {
-          "url": "https://github.com/keras-team/keras/releases/tag/v3.9.0"
-        },
-        {
-          "url": "https://github.com/keras-team/keras/security/advisories/GHSA-48g7-3x6r-xfhp"
-        },
-        {
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-1550"
-        },
-        {
-          "url": "https://www.cve.org/CVERecord?id=CVE-2025-1550"
-        }
-      ],
-      "published": "2025-03-11T09:15:25+00:00",
-      "updated": "2025-03-11T09:15:25+00:00",
-      "affects": [
-        {
-          "ref": "pkg:pypi/keras@3.8.0",
-          "versions": [
-            {
-              "version": "3.8.0",
               "status": "affected"
             }
           ]
@@ -22410,6 +22677,344 @@
       ]
     },
     {
+      "id": "CVE-2025-29088",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "bitnami"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        190,
+        400
+      ],
+      "description": "In SQLite 3.49.0 before 3.49.1, certain argument values to sqlite3_db_config (in the C-language API) can cause a denial of service (application crash). An sz*nBig multiplication is not cast to a 64-bit integer, and consequently some memory allocations may be incorrect.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-29088"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-29088"
+        },
+        {
+          "url": "https://gist.github.com/ylwango613/d3883fb9f6ba8a78086356779ce88248"
+        },
+        {
+          "url": "https://github.com/sqlite/sqlite/commit/56d2fd008b108109f489339f5fd55212bb50afd4"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-29088"
+        },
+        {
+          "url": "https://sqlite.org/forum/forumpost/48f365daec"
+        },
+        {
+          "url": "https://sqlite.org/releaselog/3_49_1.html"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-29088"
+        },
+        {
+          "url": "https://www.sqlite.org/cves.html"
+        }
+      ],
+      "published": "2025-04-10T14:15:27+00:00",
+      "updated": "2025-04-30T16:40:41+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libsqlite3-0@3.37.2-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "3.37.2-2ubuntu0.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-30258",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 2.7,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        754
+      ],
+      "description": "In GnuPG before 2.5.5, if a user chooses to import a certificate with certain crafted subkey data that lacks a valid backsig or that has incorrect usage flags, the user loses the ability to verify signatures made from certain other signing keys, aka a \"verification DoS.\"",
+      "recommendation": "Upgrade dirmngr to version 2.2.27-3ubuntu2.3; Upgrade gnupg to version 2.2.27-3ubuntu2.3; Upgrade gnupg-l10n to version 2.2.27-3ubuntu2.3; Upgrade gnupg-utils to version 2.2.27-3ubuntu2.3; Upgrade gnupg2 to version 2.2.27-3ubuntu2.3; Upgrade gpg to version 2.2.27-3ubuntu2.3; Upgrade gpg-agent to version 2.2.27-3ubuntu2.3; Upgrade gpg-wks-client to version 2.2.27-3ubuntu2.3; Upgrade gpg-wks-server to version 2.2.27-3ubuntu2.3; Upgrade gpgconf to version 2.2.27-3ubuntu2.3; Upgrade gpgsm to version 2.2.27-3ubuntu2.3; Upgrade gpgv to version 2.2.27-3ubuntu2.3",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-30258"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-30258"
+        },
+        {
+          "url": "https://dev.gnupg.org/T7527"
+        },
+        {
+          "url": "https://dev.gnupg.org/rG48978ccb4e20866472ef18436a32744350a65158"
+        },
+        {
+          "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2025q1/000491.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-30258"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7412-1"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-30258"
+        }
+      ],
+      "published": "2025-03-19T20:15:20+00:00",
+      "updated": "2025-03-19T20:15:20+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/dirmngr@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gnupg-l10n@2.2.27-3ubuntu2.1?arch=all&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gnupg-utils@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gnupg2@2.2.27-3ubuntu2.1?arch=all&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gnupg@2.2.27-3ubuntu2.1?arch=all&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg-agent@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg-wks-client@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg-wks-server@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpg@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpgconf@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpgsm@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "2.2.27-3ubuntu2.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-3576",
+      "source": {
+        "name": "ubuntu",
+        "url": "https://git.launchpad.net/ubuntu-cve-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.9,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        328
+      ],
+      "description": "A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-3576"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-3576"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2359465"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-3576"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-3576"
+        }
+      ],
+      "published": "2025-04-15T06:15:44+00:00",
+      "updated": "2025-04-15T18:39:27+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.2?arch=amd64&distro=ubuntu-22.04",
+          "versions": [
+            {
+              "version": "1.19.2-2ubuntu0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "GHSA-h4gh-qq45-vh27",
       "source": {
         "name": "ghsa",
@@ -22451,6 +23056,5 @@
         }
       ]
     }
-  ],
-  "ArtifactName": "rootioinc/common-tensorflow:2.18.0-gpu-ubuntu-jammy"
+  ]
 }
