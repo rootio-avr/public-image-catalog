@@ -1,0 +1,22 @@
+# Use the official Grafana 11.6.1 Ubuntu-based image as the base
+FROM grafana/grafana:11.6.1-ubuntu
+
+# Set maintainer label (optional)
+LABEL maintainer="your-email@example.com"
+
+# Install any additional packages you need (optional)
+# Example: install curl and vim
+# RUN apt-get update && apt-get install -y curl vim && apt-get clean
+
+# Copy custom configuration files (if any)
+# COPY ./custom.ini /etc/grafana/grafana.ini
+
+# Expose the default Grafana port
+EXPOSE 3000
+
+# Optional: set environment variables
+# ENV GF_SECURITY_ADMIN_USER=admin
+# ENV GF_SECURITY_ADMIN_PASSWORD=admin
+
+# Start Grafana (default CMD is fine unless you need custom entrypoint)
+CMD ["/run.sh"]
