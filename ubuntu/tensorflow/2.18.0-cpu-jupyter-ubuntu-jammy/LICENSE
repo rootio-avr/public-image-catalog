@@ -18,7 +18,6 @@ BSD-4-clause-POWERDOG
 BSL-1.0
 BZIP
 CC0-1.0
-CMU License (MIT-CMU)
 Chromium
 DONT-CHANGE-THE-GPL
 FSF-manpages
@@ -68,6 +67,7 @@ OpenSSL
 PD
 PD-debian
 PERMISSIVE
+PSF-2.0
 Python Software Foundation License
 REGCOMP
 RFC-Reference

@@ -37,7 +37,6 @@ This image includes software under the following licenses:
 - BSL-1.0
 - BZIP
 - CC0-1.0
-- CMU License (MIT-CMU)
 - Chromium
 - DONT-CHANGE-THE-GPL
 - FSF-manpages
@@ -87,6 +86,7 @@ This image includes software under the following licenses:
 - PD
 - PD-debian
 - PERMISSIVE
+- PSF-2.0
 - Python Software Foundation License
 - REGCOMP
 - RFC-Reference
