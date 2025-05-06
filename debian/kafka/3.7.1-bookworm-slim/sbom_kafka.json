@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:2b62c369-bf43-469e-b4c9-87a83a1d0eaa",
+  "serialNumber": "urn:uuid:bd649473-d818-467e-ba69-ef0ac23ed6ea",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-04-03T05:56:35+00:00",
+    "timestamp": "2025-05-06T05:57:59+00:00",
     "tools": {
       "components": [
         {
@@ -17,9 +17,9 @@
       ]
     },
     "component": {
-      "bom-ref": "5997f5e8-dcb3-453a-a554-db7ab1da0ac5",
+      "bom-ref": "91bb3ec9-84b3-4f98-864d-44f5a34bdba7",
       "type": "container",
-      "name": "/tmp/image.tar",
+      "name": "rootioinc/common-kafka:3.7.1-bookworm-slim",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -78,7 +78,7 @@
   },
   "components": [
     {
-      "bom-ref": "ebf53725-c254-49ea-b002-924f8a7e1743",
+      "bom-ref": "610309dc-4ccc-40b4-8b19-c6cb341600e2",
       "type": "operating-system",
       "name": "debian",
       "version": "12.8",
@@ -14585,9 +14585,56 @@
   ],
   "dependencies": [
     {
-      "ref": "5997f5e8-dcb3-453a-a554-db7ab1da0ac5",
+      "ref": "610309dc-4ccc-40b4-8b19-c6cb341600e2",
       "dependsOn": [
-        "ebf53725-c254-49ea-b002-924f8a7e1743",
+        "pkg:deb/debian/alsa-topology-conf@1.2.5.1-2?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/alsa-ucm-conf@1.2.8-1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/krb5-locales@1.20.1-2%2Bdeb12u2?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libglib2.0-data@2.74.6-2%2Bdeb12u4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libgpm2@1.20.7-10%2Bb1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
+        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/procps@4.0.2-3?arch=amd64&distro=debian-12.8&epoch=2",
+        "pkg:deb/debian/psmisc@23.6-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/shared-mime-info@2.2-1?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
+        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
+        "pkg:deb/debian/xdg-user-dirs@0.18-1?arch=amd64&distro=debian-12.8"
+      ]
+    },
+    {
+      "ref": "91bb3ec9-84b3-4f98-864d-44f5a34bdba7",
+      "dependsOn": [
+        "610309dc-4ccc-40b4-8b19-c6cb341600e2",
         "pkg:maven/ai.superstream/kafka-clients@3.7.1",
         "pkg:maven/ch.qos.reload4j/reload4j@1.2.25",
         "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.16.2",
@@ -14720,53 +14767,6 @@
         "pkg:maven/org.slf4j/slf4j-api@1.7.36",
         "pkg:maven/org.slf4j/slf4j-reload4j@1.7.36",
         "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.5"
-      ]
-    },
-    {
-      "ref": "ebf53725-c254-49ea-b002-924f8a7e1743",
-      "dependsOn": [
-        "pkg:deb/debian/alsa-topology-conf@1.2.5.1-2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/alsa-ucm-conf@1.2.8-1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bash@5.2.15-2%2Bb7?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/e2fsprogs@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/grep@3.8-5?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/krb5-locales@1.20.1-2%2Bdeb12u2?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libext2fs2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libglib2.0-data@2.74.6-2%2Bdeb12u4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libgpm2@1.20.7-10%2Bb1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libmd0@1.0.4-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/libss2@1.47.0-2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bb1?arch=amd64&distro=debian-12.8&epoch=1",
-        "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u2?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/procps@4.0.2-3?arch=amd64&distro=debian-12.8&epoch=2",
-        "pkg:deb/debian/psmisc@23.6-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/shared-mime-info@2.2-1?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.8",
-        "pkg:deb/debian/tzdata@2024b-0%2Bdeb12u1?arch=all&distro=debian-12.8",
-        "pkg:deb/debian/xdg-user-dirs@0.18-1?arch=amd64&distro=debian-12.8"
       ]
     },
     {
@@ -16300,7 +16300,7 @@
         }
       ],
       "published": "2005-08-10T04:00:00+00:00",
-      "updated": "2024-11-20T23:59:47+00:00",
+      "updated": "2025-04-03T01:03:51+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -16452,7 +16452,7 @@
         }
       ],
       "published": "2011-03-02T20:00:01+00:00",
-      "updated": "2024-11-21T01:21:41+00:00",
+      "updated": "2025-04-11T00:51:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
@@ -16907,7 +16907,7 @@
         }
       ],
       "published": "2011-09-06T19:55:03+00:00",
-      "updated": "2024-11-21T01:30:25+00:00",
+      "updated": "2025-04-11T00:51:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
@@ -17071,7 +17071,7 @@
         }
       ],
       "published": "2012-01-14T17:55:01+00:00",
-      "updated": "2025-01-21T19:15:09+00:00",
+      "updated": "2025-04-11T00:51:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libglib2.0-0@2.74.6-2%2Bdeb12u4?arch=amd64&distro=debian-12.8",
@@ -17153,7 +17153,7 @@
         }
       ],
       "published": "2013-10-28T22:55:03+00:00",
-      "updated": "2024-11-21T01:55:28+00:00",
+      "updated": "2025-04-11T00:51:21+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libsystemd0@252.31-1~deb12u1?arch=amd64&distro=debian-12.8",
@@ -17294,8 +17294,8 @@
           },
           "score": 9.8,
           "severity": "critical",
-          "method": "CVSSv3",
-          "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
         },
         {
           "source": {
@@ -17303,9 +17303,6 @@
           },
           "severity": "medium"
         }
-      ],
-      "cwes": [
-        254
       ],
       "description": "In all versions of AppArmor mount rules are accidentally widened when compiled.",
       "advisories": [
@@ -17338,7 +17335,7 @@
         }
       ],
       "published": "2019-04-22T16:29:01+00:00",
-      "updated": "2024-11-21T02:46:41+00:00",
+      "updated": "2025-05-02T14:12:14+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libapparmor1@3.0.8-3?arch=amd64&distro=debian-12.8",
@@ -17456,7 +17453,7 @@
         }
       ],
       "published": "2017-02-07T15:59:00+00:00",
-      "updated": "2024-11-21T02:48:47+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.8",
@@ -17547,7 +17544,7 @@
         }
       ],
       "published": "2017-12-27T19:29:00+00:00",
-      "updated": "2024-11-21T03:08:19+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libnss3@3.87.1-1%2Bdeb12u1?arch=amd64&distro=debian-12.8&epoch=2",
@@ -17638,7 +17635,7 @@
         }
       ],
       "published": "2017-12-27T19:29:00+00:00",
-      "updated": "2024-11-21T03:08:19+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libnss3@3.87.1-1%2Bdeb12u1?arch=amd64&distro=debian-12.8&epoch=2",
@@ -17729,7 +17726,7 @@
         }
       ],
       "published": "2017-12-27T19:29:00+00:00",
-      "updated": "2024-11-21T03:08:19+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libnss3@3.87.1-1%2Bdeb12u1?arch=amd64&distro=debian-12.8&epoch=2",
@@ -17820,7 +17817,7 @@
         }
       ],
       "published": "2017-12-27T19:29:00+00:00",
-      "updated": "2024-11-21T03:08:19+00:00",
+      "updated": "2025-04-20T01:37:25+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libnss3@3.87.1-1%2Bdeb12u1?arch=amd64&distro=debian-12.8&epoch=2",
@@ -19352,7 +19349,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "medium"
+          "severity": "high"
         },
         {
           "source": {
@@ -19398,13 +19395,13 @@
         416
       ],
       "description": "xmlXIncludeAddNode in xinclude.c in libxml2 before 2.11.0 has a use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-49043"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:1517"
+          "url": "https://access.redhat.com/errata/RHSA-2025:1350"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2022-49043"
@@ -19419,7 +19416,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-49043"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-1517.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-1350.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2025:1517"
@@ -19535,7 +19532,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-25193"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:2980"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2410"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-25193"
@@ -19547,7 +19544,7 @@
           "url": "https://chromium.googlesource.com/chromium/src/+/e1f324aa681af54101c1f2d173d92adb80e37088/DEPS#361"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-2980.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2410.html"
         },
         {
           "url": "https://github.com/harfbuzz/harfbuzz/blob/2822b589bc837fae6f66233e2cf2eef0f6ce8470/src/hb-ot-layout-gsubgpos.hh"
@@ -19993,7 +19990,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3094"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6539"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31484"
@@ -20011,7 +20008,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31484"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3094.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6539.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:6539"
@@ -20153,7 +20150,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2023/05/07/2"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7174"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6542"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-31486"
@@ -20165,7 +20162,7 @@
           "url": "https://bugzilla.redhat.com/2228392"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7174.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6542.html"
         },
         {
           "url": "https://github.com/chansen/p5-http-tiny/pull/153"
@@ -20290,13 +20287,10 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-38469"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7836"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2433"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-38469"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/1939614"
         },
         {
           "url": "https://bugzilla.redhat.com/2191687"
@@ -20350,7 +20344,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38473"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7836.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2433.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7836"
@@ -20481,13 +20475,10 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-38470"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7836"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2433"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-38470"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/1939614"
         },
         {
           "url": "https://bugzilla.redhat.com/2191687"
@@ -20541,7 +20532,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38473"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7836.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2433.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7836"
@@ -20672,13 +20663,10 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-38471"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7836"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2433"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-38471"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/1939614"
         },
         {
           "url": "https://bugzilla.redhat.com/2191687"
@@ -20732,7 +20720,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38473"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7836.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2433.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7836"
@@ -20863,13 +20851,10 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-38472"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7836"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2433"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-38472"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/1939614"
         },
         {
           "url": "https://bugzilla.redhat.com/2191687"
@@ -20923,7 +20908,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38473"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7836.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2433.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7836"
@@ -21054,13 +21039,10 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-38473"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7836"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2433"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-38473"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/1939614"
         },
         {
           "url": "https://bugzilla.redhat.com/2191687"
@@ -21114,7 +21096,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38473"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7836.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2433.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7836"
@@ -21221,13 +21203,13 @@
         119
       ],
       "description": "Xmlsoft Libxml2 v2.11.0 was discovered to contain an out-of-bounds read via the xmlSAX2StartElement() function at /libxml2/SAX2.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted XML file. NOTE: the vendor's position is that the product does not support the legacy SAX1 interface with custom callbacks; there is a crash even without crafted input.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-39615"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0119"
+          "url": "https://access.redhat.com/errata/RHSA-2023:7747"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-39615"
@@ -21236,7 +21218,7 @@
           "url": "https://bugzilla.redhat.com/2235864"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0119.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-7747.html"
         },
         {
           "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/535"
@@ -21334,7 +21316,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-4016"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2023:7187"
+          "url": "https://access.redhat.com/errata/RHSA-2023:6705"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-4016"
@@ -21349,7 +21331,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4016"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7187.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6705.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2023:7187"
@@ -21589,7 +21571,7 @@
         416
       ],
       "description": "libxml2 through 2.11.5 has a use-after-free that can only occur after a certain memory allocation fails. This occurs in xmlUnlinkNode in tree.c. NOTE: the vendor's position is \"I don't think these issues are critical enough to warrant a CVE ID ... because an attacker typically can't control when memory allocations fail.\"",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2023-45322"
@@ -21861,7 +21843,7 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2215945"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2023-7112.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2023-6632.html"
         },
         {
           "url": "https://linux.oracle.com/cve/CVE-2023-4641.html"
@@ -22105,7 +22087,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/03/20/5"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:4259"
+          "url": "https://access.redhat.com/errata/RHSA-2024:1530"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-52425"
@@ -22114,13 +22096,16 @@
           "url": "https://bugzilla.redhat.com/2262877"
         },
         {
+          "url": "https://bugzilla.redhat.com/2268766"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2262877"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52425"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-4259.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-1530.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:1615"
@@ -22341,7 +22326,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-5388"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:1494"
+          "url": "https://access.redhat.com/errata/RHSA-2024:1493"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-5388"
@@ -22431,7 +22416,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2614"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-1494.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-1493.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:1494"
@@ -22567,7 +22552,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2023-6135"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:0786"
+          "url": "https://access.redhat.com/errata/RHSA-2024:0790"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2023-6135"
@@ -22585,7 +22570,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6135"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-0786.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-0790.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:0786"
@@ -22652,11 +22637,17 @@
           "source": {
             "name": "alma"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
@@ -22713,9 +22704,6 @@
           "url": "https://bugzilla.redhat.com/2319212"
         },
         {
-          "url": "https://bugzilla.redhat.com/2324291"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2319212"
         },
         {
@@ -22728,7 +22716,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10963"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-10379.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-11250.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:10379"
@@ -22798,11 +22786,17 @@
           "source": {
             "name": "azure"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
             "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
           },
           "severity": "medium"
         },
@@ -22841,6 +22835,9 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/02/06/6"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4049"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-12133"
         },
         {
@@ -22851,6 +22848,12 @@
         },
         {
           "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-12133.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4049.html"
         },
         {
           "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00025.html"
@@ -22869,7 +22872,7 @@
         }
       ],
       "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T13:15:10+00:00",
+      "updated": "2025-04-23T12:15:15+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libtasn1-6@4.19.0-2?arch=amd64&distro=debian-12.8",
@@ -22891,7 +22894,19 @@
       "ratings": [
         {
           "source": {
+            "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "cbl-mariner"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
           },
           "severity": "medium"
         },
@@ -22927,6 +22942,9 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-12243"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4051"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-12243"
         },
         {
@@ -22934,6 +22952,12 @@
         },
         {
           "url": "https://gitlab.com/gnutls/libtasn1/-/issues/52"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2024-12243.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4051.html"
         },
         {
           "url": "https://lists.debian.org/debian-lts-announce/2025/02/msg00027.html"
@@ -22955,7 +22979,7 @@
         }
       ],
       "published": "2025-02-10T16:15:37+00:00",
-      "updated": "2025-02-21T22:15:11+00:00",
+      "updated": "2025-04-23T11:15:45+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u3?arch=amd64&distro=debian-12.8",
@@ -22984,6 +23008,12 @@
         {
           "source": {
             "name": "azure"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
           },
           "severity": "medium"
         },
@@ -23049,6 +23079,9 @@
           "url": "https://security.netapp.com/advisory/ntap-20250124-0005/"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250418-0010/"
+        },
+        {
           "url": "https://ubuntu.com/security/notices/USN-7264-1"
         },
         {
@@ -23056,10 +23089,13 @@
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-13176"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2025.html#AppendixMSQL"
         }
       ],
       "published": "2025-01-20T14:15:26+00:00",
-      "updated": "2025-03-18T08:15:10+00:00",
+      "updated": "2025-04-19T01:15:43+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libssl3@3.0.15-1~deb12u1?arch=amd64&distro=debian-12.8",
@@ -23278,7 +23314,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2024/01/18/3"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3163"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2438"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-22365"
@@ -23293,7 +23329,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22365"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3163.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2438.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3163"
@@ -23442,13 +23478,13 @@
         416
       ],
       "description": "An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-25062"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3626"
+          "url": "https://access.redhat.com/errata/RHSA-2024:2679"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-25062"
@@ -23463,10 +23499,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25062"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3626.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-2679.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2024:3626"
+          "url": "https://errata.rockylinux.org/RLSA-2024:2679"
         },
         {
           "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/604"
@@ -23518,7 +23554,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -23584,7 +23620,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26458"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26458"
@@ -23594,6 +23630,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -23608,7 +23647,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -23699,7 +23738,7 @@
           "source": {
             "name": "alma"
           },
-          "severity": "low"
+          "severity": "medium"
         },
         {
           "source": {
@@ -23768,7 +23807,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-26461"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:3268"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9331"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-26461"
@@ -23778,6 +23817,9 @@
         },
         {
           "url": "https://bugzilla.redhat.com/2266740"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2266742"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2266731"
@@ -23792,7 +23834,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-3268.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9331.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:3268"
@@ -24531,7 +24573,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2024-50602"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2024:9502"
+          "url": "https://access.redhat.com/errata/RHSA-2024:9541"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-50602"
@@ -24546,7 +24588,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-50602"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2024-9502.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2024-9541.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2024:9502"
@@ -24561,14 +24603,20 @@
           "url": "https://linux.oracle.com/errata/ELSA-2024-9541.html"
         },
         {
+          "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00040.html"
+        },
+        {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-50602"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20250404-0008/"
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-50602"
         }
       ],
       "published": "2024-10-27T05:15:04+00:00",
-      "updated": "2024-10-30T18:35:16+00:00",
+      "updated": "2025-04-30T20:15:20+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -24745,7 +24793,7 @@
         330
       ],
       "description": "A flaw was found in Avahi-daemon, which relies on fixed source ports for wide-area DNS queries. This issue simplifies attacks where malicious DNS responses are injected.",
-      "recommendation": "Upgrade libavahi-client3 to version 0.8-10+deb12u1.root.io.1; Upgrade libavahi-common-data to version 0.8-10+deb12u1.root.io.1; Upgrade libavahi-common3 to version 0.8-10+deb12u1.root.io.1",
+      "recommendation": "Upgrade libavahi-client3 to version 0.8-10+deb12u1.root.io.2; Upgrade libavahi-common-data to version 0.8-10+deb12u1.root.io.2; Upgrade libavahi-common3 to version 0.8-10+deb12u1.root.io.2",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-52615"
@@ -24846,6 +24894,7 @@
         334
       ],
       "description": "A flaw was found in the Avahi-daemon, where it initializes DNS transaction IDs randomly only once at startup, incrementing them sequentially after that. This predictable behavior facilitates DNS spoofing attacks, allowing attackers to guess transaction IDs.",
+      "recommendation": "Upgrade libavahi-client3 to version 0.8-10+deb12u1.root.io.2; Upgrade libavahi-common-data to version 0.8-10+deb12u1.root.io.2; Upgrade libavahi-common3 to version 0.8-10+deb12u1.root.io.2",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-52616"
@@ -24964,13 +25013,13 @@
         416
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a use-after-free in xmlSchemaIDCFillNodeTables and xmlSchemaBubbleIDCNodeTables in xmlschemas.c. To exploit this, a crafted XML document must be validated against an XML schema with certain identity constraints, or a crafted XML schema must be used.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-56171"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:2686"
+          "url": "https://access.redhat.com/errata/RHSA-2025:2679"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-56171"
@@ -24982,7 +25031,7 @@
           "url": "https://bugzilla.redhat.com/2346421"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-2686.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-2679.html"
         },
         {
           "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/828"
@@ -25024,12 +25073,117 @@
       ]
     },
     {
+      "id": "CVE-2024-56406",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.3,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        122,
+        787
+      ],
+      "description": "A heap buffer overflow vulnerability was discovered in Perl. \n\nRelease branches 5.34, 5.36, 5.38 and 5.40 are affected, including development versions from 5.33.1 through 5.41.10.\n\nWhen there are non-ASCII bytes in the left-hand-side of the `tr` operator, `S_do_trans_invmap` can overflow the destination pointer `d`.\n\n\u00a0 \u00a0$ perl -e '$_ = \"\\x{FF}\" x 1000000; tr/\\xFF/\\x{100}/;' \n\u00a0 \u00a0Segmentation fault (core dumped)\n\nIt is believed that this vulnerability can enable Denial of Service and possibly Code Execution attacks on platforms that lack sufficient defenses.",
+      "recommendation": "Upgrade perl-base to version 5.36.0-7+deb12u2",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2024-56406"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/3"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/4"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/5"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2024-56406"
+        },
+        {
+          "url": "https://github.com/Perl/perl5/commit/87f42aa0e0096e9a346c9672aa3a0bd3bef8c1dd.patch"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.38.4/changes"
+        },
+        {
+          "url": "https://metacpan.org/release/SHAY/perl-5.40.2/changes"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56406"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7434-2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-56406"
+        }
+      ],
+      "published": "2025-04-13T14:15:14+00:00",
+      "updated": "2025-04-30T15:21:11+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "5.36.0-7+deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2024-56433",
       "source": {
         "name": "debian",
         "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "low"
+        },
         {
           "source": {
             "name": "redhat"
@@ -25224,6 +25378,12 @@
             "name": "ruby-advisory-db"
           },
           "severity": "high"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
         }
       ],
       "cwes": [
@@ -25278,11 +25438,20 @@
           "url": "https://security.netapp.com/advisory/ntap-20241213-0010/"
         },
         {
+          "url": "https://security.netapp.com/advisory/ntap-20250418-0006"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20250418-0006/"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7435-1"
+        },
+        {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-7254"
         }
       ],
       "published": "2024-09-19T01:15:10+00:00",
-      "updated": "2024-12-13T14:15:22+00:00",
+      "updated": "2025-04-19T01:15:44+00:00",
       "affects": [
         {
           "ref": "pkg:maven/com.google.protobuf/protobuf-java@3.23.4",
@@ -25389,6 +25558,18 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "cbl-mariner"
           },
           "severity": "high"
@@ -25398,6 +25579,12 @@
             "name": "oracle-oval"
           },
           "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
         },
         {
           "source": {
@@ -25431,16 +25618,43 @@
           "url": "https://access.redhat.com/errata/RHSA-2025:3531"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3734"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3913"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4048"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4446"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4447"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4448"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4449"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2024-8176"
         },
         {
           "url": "https://blog.hartwork.org/posts/expat-2-7-0-released/"
         },
         {
+          "url": "https://bugzilla.redhat.com/2310137"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2310137"
         },
         {
           "url": "https://bugzilla.suse.com/show_bug.cgi?id=1239618"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-3531.html"
         },
         {
           "url": "https://github.com/libexpat/libexpat/blob/R_2_7_0/expat/Changes#L40-L52"
@@ -25455,7 +25669,7 @@
           "url": "https://linux.oracle.com/cve/CVE-2024-8176.html"
         },
         {
-          "url": "https://linux.oracle.com/errata/ELSA-2025-3531.html"
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4048.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-8176"
@@ -25470,11 +25684,14 @@
           "url": "https://ubuntu.com/security/CVE-2024-8176"
         },
         {
+          "url": "https://ubuntu.com/security/notices/USN-7424-1"
+        },
+        {
           "url": "https://www.cve.org/CVERecord?id=CVE-2024-8176"
         }
       ],
       "published": "2025-03-14T09:15:14+00:00",
-      "updated": "2025-04-02T15:15:57+00:00",
+      "updated": "2025-05-05T08:15:15+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u1?arch=amd64&distro=debian-12.8",
@@ -25577,6 +25794,24 @@
       "ratings": [
         {
           "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 5.5,
@@ -25607,7 +25842,31 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/01/23/2"
         },
         {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/13/1"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/24/7"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:4244"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2025-0395"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2339460"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-4244.html"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-0395.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-4244.html"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00039.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-0395"
@@ -25641,7 +25900,7 @@
         }
       ],
       "published": "2025-01-22T13:15:20+00:00",
-      "updated": "2025-02-28T13:15:26+00:00",
+      "updated": "2025-04-30T05:15:46+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u9?arch=amd64&distro=debian-12.8",
@@ -25812,7 +26071,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-21502"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-0426.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-0426.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2025:0426"
@@ -25865,6 +26124,110 @@
       ],
       "published": "2025-01-21T21:15:15+00:00",
       "updated": "2025-02-07T11:15:10+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "17.0.13+11-2~deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-21587",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.4,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        284
+      ],
+      "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE:8u441, 8u441-perf, 11.0.26, 17.0.14, 21.0.6, 24; Oracle GraalVM for JDK:17.0.14, 21.0.6, 24; Oracle GraalVM Enterprise Edition:20.3.17 and  21.3.13. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data as well as  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 7.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+      "recommendation": "Upgrade openjdk-17-jre-headless to version 17.0.15+6-1~deb12u1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-21587"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3845"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-21587"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-3845.html"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk11u/commit/2adb01e8c5fbcc3dfa9f82df3deccb3a1705bf13"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk17u/commit/73aa304234f2ec17abbb640b7f2d0503cf1bfc91"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk21u/commit/d5c94adf69ba20f5652453729620c4f1c8e4860e"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk8u/commit/3cdd3081565d890801a27a1f9ac8bc53e5711ce6"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-21587.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3855.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-21587"
+        },
+        {
+          "url": "https://openjdk.org/groups/vulnerability/advisories/2025-04-15"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-21587"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2025.html"
+        }
+      ],
+      "published": "2025-04-15T21:15:54+00:00",
+      "updated": "2025-04-29T20:03:13+00:00",
       "affects": [
         {
           "ref": "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
@@ -26060,13 +26423,13 @@
         121
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a stack-based buffer overflow in xmlSnprintfElements in valid.c. To exploit this, DTD validation must occur for an untrusted document or untrusted DTD. NOTE: this is similar to CVE-2017-9047.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-24928"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:2686"
+          "url": "https://access.redhat.com/errata/RHSA-2025:2679"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2025-24928"
@@ -26078,7 +26441,7 @@
           "url": "https://bugzilla.redhat.com/2346421"
         },
         {
-          "url": "https://errata.almalinux.org/8/ALSA-2025-2686.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-2679.html"
         },
         {
           "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/847"
@@ -26180,10 +26543,16 @@
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2025-24970"
+        },
+        {
+          "url": "https://www.vicarius.io/vsociety/posts/cve-2025-24970-netty-vulnerability-detection"
+        },
+        {
+          "url": "https://www.vicarius.io/vsociety/posts/cve-2025-24970-netty-vulnerability-mitigation"
         }
       ],
       "published": "2025-02-10T22:15:38+00:00",
-      "updated": "2025-02-21T18:15:36+00:00",
+      "updated": "2025-04-16T16:15:30+00:00",
       "affects": [
         {
           "ref": "pkg:maven/io.netty/netty-handler@4.1.110.Final",
@@ -26323,10 +26692,10 @@
           "source": {
             "name": "redhat"
           },
-          "score": 2.9,
+          "score": 3.1,
           "severity": "low",
           "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
         },
         {
           "source": {
@@ -26339,7 +26708,7 @@
         476
       ],
       "description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a NULL pointer dereference in xmlPatMatch in pattern.c.",
-      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.3",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-27113"
@@ -26408,6 +26777,12 @@
         {
           "source": {
             "name": "oracle-oval"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
           },
           "severity": "high"
         },
@@ -26518,6 +26893,132 @@
       ]
     },
     {
+      "id": "CVE-2025-29070",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "debian"
+          },
+          "severity": "low"
+        }
+      ],
+      "description": "A heap buffer overflow vulnerability has been identified in thesmooth2() in cmsgamma.c in lcms2-2.16 which allows a remote attacker to cause a denial of service. NOTE: the Supplier disputes this because \"this is not exploitable as this function is never called on normal color management, is there only as a helper for low-level programming and investigation.\"",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-29070"
+        },
+        {
+          "url": "https://github.com/mm2/Little-CMS/issues/475"
+        },
+        {
+          "url": "https://github.com/mm2/Little-CMS/issues/475#issuecomment-2696785063"
+        }
+      ],
+      "published": "2025-04-01T21:15:44+00:00",
+      "updated": "2025-04-04T02:15:18+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/liblcms2-2@2.14-2?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "2.14-2",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-29088",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "bitnami"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        190,
+        400
+      ],
+      "description": "In SQLite 3.49.0 before 3.49.1, certain argument values to sqlite3_db_config (in the C-language API) can cause a denial of service (application crash). An sz*nBig multiplication is not cast to a 64-bit integer, and consequently some memory allocations may be incorrect.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-29088"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-29088"
+        },
+        {
+          "url": "https://gist.github.com/ylwango613/d3883fb9f6ba8a78086356779ce88248"
+        },
+        {
+          "url": "https://github.com/sqlite/sqlite/commit/56d2fd008b108109f489339f5fd55212bb50afd4"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-29088"
+        },
+        {
+          "url": "https://sqlite.org/forum/forumpost/48f365daec"
+        },
+        {
+          "url": "https://sqlite.org/releaselog/3_49_1.html"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-29088"
+        },
+        {
+          "url": "https://www.sqlite.org/cves.html"
+        }
+      ],
+      "published": "2025-04-10T14:15:27+00:00",
+      "updated": "2025-04-30T16:40:41+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libsqlite3-0@3.40.1-2%2Bdeb12u1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "3.40.1-2+deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2025-30258",
       "source": {
         "name": "debian",
@@ -26532,6 +27033,12 @@
           "severity": "low",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
         }
       ],
       "cwes": [
@@ -26558,6 +27065,9 @@
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-30258"
         },
         {
+          "url": "https://ubuntu.com/security/notices/USN-7412-1"
+        },
+        {
           "url": "https://www.cve.org/CVERecord?id=CVE-2025-30258"
         }
       ],
@@ -26569,6 +27079,676 @@
           "versions": [
             {
               "version": "2.2.40-1.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-30691",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 4.8,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        284
+      ],
+      "description": "Vulnerability in Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 21.0.6, 24; Oracle GraalVM for JDK: 21.0.6 and  24. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE accessible data as well as  unauthorized read access to a subset of Oracle Java SE accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 4.8 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N).",
+      "recommendation": "Upgrade openjdk-17-jre-headless to version 17.0.15+6-1~deb12u1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-30691"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3845"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-30691"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-3845.html"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk11u/commit/2b70822671cf5f9b37956949421e7c77da082c8e"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk17u/commit/5b0a5f436fb9817d679f64302b37543bf160d43d"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk21u/commit/11067d7e975ce71bedbfdd314519ec9ff689a7e7"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk8u/commit/949c6ffc54efaa92d6559a3e7897432b95e99253"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-30691.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3855.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-30691"
+        },
+        {
+          "url": "https://openjdk.org/groups/vulnerability/advisories/2025-04-15"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20250418-0004/"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-30691"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2025.html"
+        }
+      ],
+      "published": "2025-04-15T21:15:58+00:00",
+      "updated": "2025-04-19T01:15:44+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "17.0.13+11-2~deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-30698",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "alma"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "oracle-oval"
+          },
+          "severity": "medium"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        284
+      ],
+      "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: 2D).  Supported versions that are affected are Oracle Java SE: 8u441, 8u441-perf, 11.0.26, 17.0.14, 21.0.6, 24; Oracle GraalVM for JDK: 17.0.14, 21.0.6, 24; Oracle GraalVM Enterprise Edition: 20.3.17 and  21.3.13. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data as well as  unauthorized read access to a subset of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 5.6 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L).",
+      "recommendation": "Upgrade openjdk-17-jre-headless to version 17.0.15+6-1~deb12u1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-30698"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2025:3845"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-30698"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2025-3845.html"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk11u/commit/ea1389c971827876134a6d1d3ab2934681e9f3d6"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk17u/commit/0a89eb2588334226531e8e25ac340eabbc00bd6d"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk21u/commit/3048e287d8ea7d5e0d19d9188eb4212801ebf2a2"
+        },
+        {
+          "url": "https://github.com/openjdk/jdk8u/commit/68d10daabaf9c939a5d2e665994c6d348f38cfd5"
+        },
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2025-30698.html"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2025-3855.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-30698"
+        },
+        {
+          "url": "https://openjdk.org/groups/vulnerability/advisories/2025-04-15"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-30698"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2025.html"
+        }
+      ],
+      "published": "2025-04-15T21:15:59+00:00",
+      "updated": "2025-04-29T20:03:21+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/openjdk-17-jre-headless@17.0.13%2B11-2~deb12u1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "17.0.13+11-2~deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-31115",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "azure"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        366,
+        416,
+        476,
+        826
+      ],
+      "description": "XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.",
+      "recommendation": "Upgrade liblzma5 to version 5.4.1-1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-31115"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/03/1"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/03/2"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2025/04/03/3"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-31115"
+        },
+        {
+          "url": "https://github.com/tukaani-project/xz/commit/d5a2ffe41bb77b918a8c96084885d4dbe4bf6480"
+        },
+        {
+          "url": "https://github.com/tukaani-project/xz/security/advisories/GHSA-6cc8-p5mm-29w2"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31115"
+        },
+        {
+          "url": "https://tukaani.org/xz/xz-cve-2025-31115.patch"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7414-1"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-31115"
+        }
+      ],
+      "published": "2025-04-03T17:15:30+00:00",
+      "updated": "2025-04-07T14:18:34+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/liblzma5@5.4.1-0.2?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "5.4.1-0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-32414",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.6,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        393,
+        252
+      ],
+      "description": "In libxml2 before 2.13.8 and 2.14.x before 2.14.2, out-of-bounds memory access can occur in the Python API (Python bindings) because of an incorrect return value. This occurs in xmlPythonFileRead and xmlPythonFileReadRaw because of a difference between bytes and characters.",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-32414"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-32414"
+        },
+        {
+          "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/889"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32414"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7467-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7467-2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-32414"
+        }
+      ],
+      "published": "2025-04-08T03:15:15+00:00",
+      "updated": "2025-04-23T19:09:35+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "2.9.14+dfsg-1.3~deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-32415",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "photon"
+          },
+          "severity": "low"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 2.9,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        1284,
+        125
+      ],
+      "description": "In libxml2 before 2.13.8 and 2.14.x before 2.14.2, xmlSchemaIDCFillNodeTables in xmlschemas.c has a heap-based buffer under-read. To exploit this, a crafted XML document must be validated against an XML schema with certain identity constraints, or a crafted XML schema must be used.",
+      "recommendation": "Upgrade libxml2 to version 2.9.14+dfsg-1.3~deb12u1.root.io.5",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-32415"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-32415"
+        },
+        {
+          "url": "https://gitlab.gnome.org/GNOME/libxml2/-/issues/890"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32415"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7467-1"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-7467-2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-32415"
+        }
+      ],
+      "published": "2025-04-17T17:15:33+00:00",
+      "updated": "2025-04-23T18:17:52+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "2.9.14+dfsg-1.3~deb12u1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-3360",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 3.7,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes": [
+        190
+      ],
+      "description": "A flaw was found in GLib. An integer overflow and buffer under-read occur when parsing a long invalid ISO 8601 timestamp with the g_date_time_new_from_iso8601() function.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-3360"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-3360"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2357754"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00024.html"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-3360"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-3360"
+        }
+      ],
+      "published": "2025-04-07T13:15:43+00:00",
+      "updated": "2025-04-14T12:15:16+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libglib2.0-0@2.74.6-2%2Bdeb12u4?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "2.74.6-2+deb12u4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libglib2.0-data@2.74.6-2%2Bdeb12u4?arch=all&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "2.74.6-2+deb12u4",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-3576",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.9,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "ubuntu"
+          },
+          "severity": "medium"
+        }
+      ],
+      "cwes": [
+        328
+      ],
+      "description": "A vulnerability in the MIT Kerberos implementation allows GSSAPI-protected messages using RC4-HMAC-MD5 to be spoofed due to weaknesses in the MD5 checksum design. If RC4 is preferred over stronger encryption types, an attacker could exploit MD5 collisions to forge message integrity codes. This may lead to unauthorized message tampering.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-3576"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-3576"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2359465"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-3576"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-3576"
+        }
+      ],
+      "published": "2025-04-15T06:15:44+00:00",
+      "updated": "2025-04-15T18:39:27+00:00",
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/krb5-locales@1.20.1-2%2Bdeb12u2?arch=all&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.20.1-2+deb12u2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.20.1-2+deb12u2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.20.1-2+deb12u2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.20.1-2+deb12u2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u2?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "1.20.1-2+deb12u2",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-4056",
+      "source": {
+        "name": "debian",
+        "url": "https://salsa.debian.org/security-tracker-team/security-tracker"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 3.7,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "description": "A flaw was found in GLib. A denial of service on Windows platforms may occur if an application attempts to spawn a program using long command lines.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2025-4056"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2025-4056"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-4056"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-4056"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/debian/libglib2.0-0@2.74.6-2%2Bdeb12u4?arch=amd64&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "2.74.6-2+deb12u4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "ref": "pkg:deb/debian/libglib2.0-data@2.74.6-2%2Bdeb12u4?arch=all&distro=debian-12.8",
+          "versions": [
+            {
+              "version": "2.74.6-2+deb12u4",
               "status": "affected"
             }
           ]
@@ -26708,6 +27888,5 @@
         }
       ]
     }
-  ],
-  "ArtifactName": "rootioinc/common-kafka:3.7.1-bookworm-slim"
+  ]
 }
